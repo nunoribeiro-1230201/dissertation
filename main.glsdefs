@@ -1,0 +1,336 @@
+\glsdefs@newdocentry{IPC}%
+{%
+name={\acronymfont {\glsentryshort {IPC}}},%
+sort={IPC},%
+type={acronym},%
+first={IPC},%
+firstplural={IPCs},%
+text={IPC},%
+plural={IPCs},%
+description={Interprocess Communication},%
+descriptionplural={Interprocess Communication},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Interprocess Communication},%
+longplural={Interprocess Communications},%
+short={IPC},%
+shortplural={IPCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{URL}%
+{%
+name={\acronymfont {\glsentryshort {URL}}},%
+sort={URL},%
+type={acronym},%
+first={URL},%
+firstplural={URLs},%
+text={URL},%
+plural={URLs},%
+description={Uniform Resource Locator},%
+descriptionplural={Uniform Resource Locator},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Uniform Resource Locator},%
+longplural={Uniform Resource Locators},%
+short={URL},%
+shortplural={URLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{RPC}%
+{%
+name={\acronymfont {\glsentryshort {RPC}}},%
+sort={RPC},%
+type={acronym},%
+first={RPC},%
+firstplural={RPCs},%
+text={RPC},%
+plural={RPCs},%
+description={Remote Procedure Call},%
+descriptionplural={Remote Procedure Call},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Remote Procedure Call},%
+longplural={Remote Procedure Calls},%
+short={RPC},%
+shortplural={RPCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{WWW}%
+{%
+name={\acronymfont {\glsentryshort {WWW}}},%
+sort={WWW},%
+type={acronym},%
+first={WWW},%
+firstplural={WWWs},%
+text={WWW},%
+plural={WWWs},%
+description={World Wide Web},%
+descriptionplural={World Wide Web},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={World Wide Web},%
+longplural={World Wide Webs},%
+short={WWW},%
+shortplural={WWWs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{P2P}%
+{%
+name={\acronymfont {\glsentryshort {P2P}}},%
+sort={P2P},%
+type={acronym},%
+first={P2P},%
+firstplural={P2Ps},%
+text={P2P},%
+plural={P2Ps},%
+description={Peer to Peer},%
+descriptionplural={Peer to Peer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Peer to Peer},%
+longplural={Peer to Peers},%
+short={P2P},%
+shortplural={P2Ps},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{IoT}%
+{%
+name={\acronymfont {\glsentryshort {IoT}}},%
+sort={IoT},%
+type={acronym},%
+first={IoT},%
+firstplural={IoTs},%
+text={IoT},%
+plural={IoTs},%
+description={Internet of Things},%
+descriptionplural={Internet of Things},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Internet of Things},%
+longplural={Internet of Thingss},%
+short={IoT},%
+shortplural={IoTs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ML}%
+{%
+name={\acronymfont {\glsentryshort {ML}}},%
+sort={ML},%
+type={acronym},%
+first={ML},%
+firstplural={MLs},%
+text={ML},%
+plural={MLs},%
+description={Machine Learning},%
+descriptionplural={Machine Learning},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Machine Learning},%
+longplural={Machine Learnings},%
+short={ML},%
+shortplural={MLs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{AI}%
+{%
+name={\acronymfont {\glsentryshort {AI}}},%
+sort={AI},%
+type={acronym},%
+first={AI},%
+firstplural={AIs},%
+text={AI},%
+plural={AIs},%
+description={Artificial Intelligence},%
+descriptionplural={Artificial Intelligence},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Artificial Intelligence},%
+longplural={Artificial Intelligences},%
+short={AI},%
+shortplural={AIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{OTP}%
+{%
+name={\acronymfont {\glsentryshort {OTP}}},%
+sort={OTP},%
+type={acronym},%
+first={OTP},%
+firstplural={OTPs},%
+text={OTP},%
+plural={OTPs},%
+description={Open Telecom Platform},%
+descriptionplural={Open Telecom Platform},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Open Telecom Platform},%
+longplural={Open Telecom Platforms},%
+short={OTP},%
+shortplural={OTPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{CPU}%
+{%
+name={\acronymfont {\glsentryshort {CPU}}},%
+sort={CPU},%
+type={acronym},%
+first={CPU},%
+firstplural={CPUs},%
+text={CPU},%
+plural={CPUs},%
+description={Central Processing Unit},%
+descriptionplural={Central Processing Unit},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Central Processing Unit},%
+longplural={Central Processing Units},%
+short={CPU},%
+shortplural={CPUs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{CSP}%
+{%
+name={\acronymfont {\glsentryshort {CSP}}},%
+sort={CSP},%
+type={acronym},%
+first={CSP},%
+firstplural={CSPs},%
+text={CSP},%
+plural={CSPs},%
+description={Communicating Sequential Processes},%
+descriptionplural={Communicating Sequential Processes},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Communicating Sequential Processes},%
+longplural={Communicating Sequential Processess},%
+short={CSP},%
+shortplural={CSPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{DSM}%
+{%
+name={\acronymfont {\glsentryshort {DSM}}},%
+sort={DSM},%
+type={acronym},%
+first={DSM},%
+firstplural={DSMs},%
+text={DSM},%
+plural={DSMs},%
+description={Distributed Shared Memory},%
+descriptionplural={Distributed Shared Memory},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Distributed Shared Memory},%
+longplural={Distributed Shared Memorys},%
+short={DSM},%
+shortplural={DSMs},%
+counter={page},%
+parent={},%
+%
+}%
+

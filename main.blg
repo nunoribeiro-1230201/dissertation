@@ -1,0 +1,26 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[55] biber-darwin:340> INFO - === Sun Nov 24, 2024, 20:09:35
+[68] Biber.pm:419> INFO - Reading 'main.bcf'
+[149] Biber.pm:979> INFO - Found 52 citekeys in bib section 0
+[160] Biber.pm:4419> INFO - Processing section 0
+[168] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[175] bibtex.pm:1713> INFO - LaTeX decoding ...
+[229] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[431] Biber.pm:4610> INFO - Looking for bibtex file 'other_references.bib' for section 0
+[432] bibtex.pm:1713> INFO - LaTeX decoding ...
+[440] bibtex.pm:1519> INFO - Found BibTeX data source 'other_references.bib'
+[493] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[493] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[493] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[493] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[519] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[541] bbl.pm:763> INFO - Output to main.bbl
+[541] Biber.pm:131> WARN - I didn't find a database entry for 'Fochi2021' (section 0)
+[541] Biber.pm:131> WARN - I didn't find a database entry for 'Hussain2021' (section 0)
+[541] Biber.pm:131> WARN - I didn't find a database entry for 'Ghosh2021' (section 0)
+[541] Biber.pm:131> WARN - I didn't find a database entry for 'Arafa2021' (section 0)
+[541] Biber.pm:131> WARN - I didn't find a database entry for 'Khalili2021' (section 0)
+[541] Biber.pm:131> WARN - I didn't find a database entry for 'Knasmueller2021' (section 0)
+[541] Biber.pm:131> WARN - I didn't find a database entry for 'Fowler2014' (section 0)
+[541] Biber.pm:133> INFO - WARNINGS: 7

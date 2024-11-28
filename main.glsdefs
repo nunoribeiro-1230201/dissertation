@@ -334,3 +334,87 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{HTTP}%
+{%
+name={\acronymfont {\glsentryshort {HTTP}}},%
+sort={HTTP},%
+type={acronym},%
+first={HTTP},%
+firstplural={HTTPs},%
+text={HTTP},%
+plural={HTTPs},%
+description={Hypertext Transfer Protocol},%
+descriptionplural={Hypertext Transfer Protocol},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hypertext Transfer Protocol},%
+longplural={Hypertext Transfer Protocols},%
+short={HTTP},%
+shortplural={HTTPs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gRPC}%
+{%
+name={\acronymfont {\glsentryshort {gRPC}}},%
+sort={gRPC},%
+type={acronym},%
+first={gRPC},%
+firstplural={gRPCs},%
+text={gRPC},%
+plural={gRPCs},%
+description={Google Remote Procedure Call},%
+descriptionplural={Google Remote Procedure Call},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Google Remote Procedure Call},%
+longplural={Google Remote Procedure Calls},%
+short={gRPC},%
+shortplural={gRPCs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{JVM}%
+{%
+name={\acronymfont {\glsentryshort {JVM}}},%
+sort={JVM},%
+type={acronym},%
+first={JVM},%
+firstplural={JVMs},%
+text={JVM},%
+plural={JVMs},%
+description={Java Virtual Machine},%
+descriptionplural={Java Virtual Machine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Java Virtual Machine},%
+longplural={Java Virtual Machines},%
+short={JVM},%
+shortplural={JVMs},%
+counter={page},%
+parent={},%
+%
+}%
+

@@ -8,7 +8,7 @@
 
 \section{Distributed Systems}
 
-In the early days of computing, computers were large and expensive, operating as standalone machines without the ability to communicate with each other. As technology advanced, smaller and more affordable computers, such as smartphones and other devices, were developed, along with high-speed networking that allowed connectivity across a network \cite{Tanenbaum2023}. These innovations made it possible to create systems distributed across nodes where tasks could be processed collectively to achieve a common goal \cite{Sharma2016}. Nodes in a distributed system may refer to physical devices or software processes\cite{Vitillo2021}.
+In the early days of computing, computers were large and expensive, operating as standalone machines without the ability to communicate with each other. As technology advanced, smaller and more affordable computers, such as smartphones and other devices, were developed, along with high-speed networking that allowed connectivity across a network \cite{Tanenbaum2023}. These innovations made it possible to create systems distributed across nodes where tasks could be processed collectively to achieve a common goal \cite{Sharma2016}. Nodes in a distributed system may refer to physical devices or software processes \cite{Vitillo2021}.
 
 To the end-user, distributed systems appear as a single, large virtual system, making the underlying logic transparent \cite{Naik2021}. These systems achieve a shared objective by transmitting messages through various nodes and dividing computational tasks among them, increasing resilience and isolating business logic \cite{Lamport1978, Sari2015, Vitillo2021}. Distributed systems can present heterogeneity, such as differing clocks, memory, programming languages, operating systems, or geographical locations, all of which must be abstracted from the end-user \cite{Sari2015, Tanenbaum2023}.
 
@@ -75,7 +75,7 @@ The primary goal of a fault-tolerant system is to enable continuous operation by
 
 \subsection{Communication}
 
-In distributed systems, communication between nodes is crucial for coordination and data exchange. When nodes are separated by a network, communication occurs over that network, whereas nodes on the same machine uses \gls{IPC} (Inter-Process Communication) \cite{Vitillo2021}. Network-based communication can introduce delays or be unreliable, making asynchronous communication advantageous in many situations \cite{Yuan2020}. However, some scenarios require synchronous communication for immediate feedback.
+In distributed systems, communication between nodes is crucial for coordination and data exchange. When nodes are separated by a network, communication occurs over that network, whereas nodes on the same machine uses \gls{IPC} \cite{Vitillo2021}. Network-based communication can introduce delays or be unreliable, making asynchronous communication advantageous in many situations \cite{Yuan2020}. However, some scenarios require synchronous communication for immediate feedback.
 
 \subsubsection{Synchronous and asynchronous communication}
 
@@ -111,6 +111,8 @@ The CAP theorem says that in a system where nodes are networked and share data, 
 
 According to the CAP theorem, when a network partition occurs, a distributed system must prioritize either consistency or availability, as achieving all three properties is not feasible in practice \cite{Tanenbaum2023, ibm-cap-theorem, Vitillo2021}. This concept is directly relevant to this dissertation, as fault tolerance strategies discussed later will account for these trade-offs to optimize specific properties.
 
+\begin{comment}
+
 \subsection{Evolution of distributed systems}
 
 Distributed systems have been a significant area of research in computer science. The journey began with early client-server models in mainframe computing, which allowed virtualization to increase efficiency, which is an popular approach still in use today \cite{Lindsay2021}. This was followed by the development of cluster computing, offering affordable ways to boost computing power without relying on costly mainframes \cite{Lindsay2021, Gill2024}. During this phase, the Internet and the \gls{WWW} were created, marking an important point in history \cite{Lindsay2021}.
@@ -123,7 +125,7 @@ Subsequently, \gls{P2P} systems emerged, decentralizing computing through cooper
 	\item \textbf{Dew Computing:} Complements cloud, edge, and fog computing by enabling local devices to perform data processing even when disconnected from centralized resources, enhancing resilience and accessibility for remote or offline scenarios \cite{Gusev2021, Gill2024}.
 	\item \textbf{Serverless Computing:} Enables developers to execute code without managing underlying servers, automatically scaling resources based on demand. This model reduces operational overhead and allows efficient, event-driven architectures \cite{Yongkang2023, Gill2024}.
 \end{itemize}
-
+\end{comment}
     
 %%%%%%%%%%%%%%%%%%%%%%%%%%% FAULT TOLERANCE %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -186,6 +188,8 @@ The check-pointing strategy periodically saves the state of a process so that, i
 
 Message logging is a lighter-weight approach with a similar goal. Instead of saving entire checkpoints, it records all the necessary messages that lead the process to a specific state. In case of a failure, the messages are replayed in the same order, guiding the system back to the desired state \cite{Ledmi2018}.
 
+\begin{comment}
+
 \subsection{Evolution and the State-of-the-Art}
 
 \todo[]{ajustar isto}
@@ -205,53 +209,102 @@ Current strategies can be categorized into three types:
 \end{itemize}
 
 Several innovative techniques have been proposed to address specific challenges in fault tolerance. Examples include the use of erasure coding in distributed file systems to balance storage costs and redundancy \cite{Arafa2021}, adaptive learning for fault detection in multi-agent systems \cite{Khalili2021}, and circuit breaker patterns for fault recovery in stream processing architectures \cite{Knasmueller2021}. 
+\end{comment}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Distributed Programming Languages %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Distributed and Concurrency Programming}
 
-Distributed and concurrent programming languages play an important role in building resilient, scalable, and fault-tolerant systems \cite{Armstrong2013}. In distributed systems, where components operate across multiple nodes, and in concurrent systems, where tasks can execute in parallel on the same machine's \gls{CPU}, programming languages must provide mechanisms to manage faults effectively. These mechanisms should isolate faults to prevent cascading failures, at the same time ensuring overall system reliability and availability \cite{Nystrom2009}, or should have forms to equip the language with capacities to handle this type of systems.
+Distributed and concurrent programming languages play an important role in building resilient and fault-tolerant systems \cite{Armstrong2013}. In distributed systems, where components operate across multiple nodes, and in concurrent systems, where tasks can execute in parallel or concurrently on the same machine's \gls{CPU}, programming languages must provide mechanisms to manage faults effectively. These mechanisms should isolate faults to prevent cascading failures, at the same time ensuring overall system reliability and availability \cite{Nystrom2009}, or should have forms to equip the language with capacities to handle this type of systems by frameworks or libraries.
 
-The evolution of distributed programming languages has been driven by the need to address the complexities of developing distributed systems, which include issues such as concurrency, parallelism, fault tolerance, and secure communication. This has driven the evolution of new paradigms, languages, frameworks, and libraries aimed at reducing development complexity in distributed and concurrent systems \cite{Valkov2018}.
+The evolution of distributed programming languages help to address the complexities of developing distributed systems, which include issues such as concurrency, parallelism, fault tolerance, and secure communication \cite{Armstrong2013}. This has driven the evolution of new paradigms, languages, frameworks, and libraries aimed at reducing development complexity in distributed and concurrent systems \cite{Valkov2018}.
 
 \subsection{Models and Paradigms}
 
 The field of distributed programming has been shaped by research and development in concurrency and parallelism, and some models and paradigms have been developed to address this challenge, where some ideas had some focus restricted to the research others have been addressed to the industry. In the following it will be described the models and paradigms that bring interest to this dissertation:
+
 \subsubsection{Actor Model}
 
 The Actor Model, a conceptual framework for concurrent and distributed computing, was introduced by Carl Hewitt in 1973 \cite{Hewitt1973}. It defines a communication paradigm where an actor, the fundamental unit of computation, interacts with other actors exclusively through asynchronous message passing, with messages serving as the basic unit of communication \cite{Trinder2017}. Each actor is equipped with its own mailbox, which receives messages and processes them sequentially \cite{Koster2016}.
 
-A core principle of the Actor Model is isolation, maintaining their own internal state that is inaccessible and immutable by others \cite{Koster2016}. This eliminates the need for shared memory, reducing complexity and potential data races. Another key feature is location communication, which allows actors to communicate seamlessly regardless of their physical location, whether on the same machine or across a distributed network. This transparency is achieved because all interactions are inherently message-based \cite{Trinder2017}.
+A core principle of the Actor Model is isolation, maintaining their own internal state that is inaccessible and immutable by others \cite{Koster2016}. This eliminates the need for shared memory, reducing complexity and potential data races \cite{Valkov2018}.
 
 The Actor Model also introduces the concept of supervision, where actors can monitor the behavior of other actors and take corrective actions in the event of a failure. This supervisory mechanism significantly enhances fault tolerance, enabling systems to recover gracefully from errors without compromising overall reliability \cite{Trinder2017}.
 
 The Actor Model has been instrumental in shaping distributed system design and has been natively implemented in programming languages such as Erlang, Clojure and Elixir \cite{Randtoul2022}. Additionally, the model has been extended to other languages through frameworks and libraries. For instance, Akka brings actor-based concurrency to Scala, C\texttt{\#} and F\texttt{\#} while Kilim offers similar functionality for Java \cite{Trinder2017}. Comparable patterns can also be adopted in other languages like Go, Rust, and Ruby using libraries or custom abstractions.
 
-
 \subsubsection{\gls{CSP}}
 
-The field of distributed computing emphasizes mathematical rigor in algorithm analysis, with one of the most influential models being Communicating Sequential Processes (\gls{CSP}), introduced by C.A.R. Hoare in 1978 \cite{Hoare1983}.
+The field of distributed computing emphasizes mathematical rigor in algorithm analysis, with one of the most influential models being \gls{CSP}, introduced by C.A.R. Hoare in 1978 \cite{Hoare1978}.
 
-\todo[inline]{refs}
+\gls{CSP} offers an abstract and formal framework for modeling interactions between concurrent processes through channels, which serve as the communication medium between them \cite{Paduraru2018}. Processes operate independently, but they are coupled via these channels, and communication is typically synchronous, requiring the sender and receiver to synchronize for message transfer \cite{Hoare1978}. While similar in some respects to the Actor Model, \gls{CSP} distinguishes itself through its emphasis on direct coupling via channels and synchronization.
 
-\gls{CSP} offers an abstract and formal framework for modeling interactions between concurrent processes through channels, which serve as the communication medium between them \cite{Paduraru2018}. Processes operate independently, but they are coupled via these channels, and communication is typically synchronous, requiring the sender and receiver to synchronize for message transfer. While similar in some respects to the Actor Model, \gls{CSP} distinguishes itself through its emphasis on direct coupling via channels and strict synchronization \cite{}.
-
-The \gls{CSP} model has had a profound influence on programming languages and frameworks. For example, Go integrates \gls{CSP} concepts in its implementation of goroutines and channels, enabling structured concurrency and communication \cite{go-docs, Valkov2018}. Additionally, the language Occam offers a more direct and faithful realization of \gls{CSP} principles, making it a pioneering choice \cite{Brolos2021}.
+The \gls{CSP} model influenced on programming languages and frameworks. For example, Go integrates \gls{CSP} concepts in its implementation of goroutines and channels \cite{go-docs, Valkov2018,Paduraru2018}. In addition, the language Occam attempts to offer a direct implementation of \gls{CSP} principles with its focus on critical projects such as satellites \cite{Brolos2021}.
 
 \subsubsection{Microservices Architectures}
 
-Despite extensive research in distributed programming languages, many have not achieved widespread adoption in industry \cite{}. As a result, a new approach for designing distributed systems has emerged: microservices architectures. This paradigm shifts the focus to a higher level of abstraction, making the architecture language-agnostic by decomposing a system into a collection of loosely coupled services, each responsible for a specific function. These services interact using lightweight protocols such as HTTP/REST, gRPC, or message queues, promoting separation of concerns, modularity, and flexibility \cite{Fowler2014}.
+A significant evolution in designing distributed systems has emerged with the appearance of microservices architectures. This paradigm elevates the focus to a higher level of abstraction, enabling language-agnostic systems by decomposing a monolithic application into a collection of loosely coupled, independently deployable services, each responsible for a specific function \cite{Jamshidi2018}. These services communicate using lightweight protocols such as \gls{HTTP}, \gls{gRPC}, or message queues, fostering separation of concerns, modularity, scalability, and fault tolerance \cite{Jamshidi2018}.
 
-This design approach has enabled general-purpose programming languages to compete with, and sometimes complement, native distributed programming paradigms. By combining robust frameworks or libraries with microservices principles, these languages can facilitate the development of distributed and fault-tolerant systems, bridging the gap between traditional distributed models and modern software architecture practices. In some cases, microservices architectures even incorporate features from native paradigms, merging their strengths to create scalable, resilient systems.
+Microservices architectures allow general purpose programming languages to participate in distributed computing paradigms by leveraging frameworks, libraries, and microservices principles \cite{Guidi2017}.
 
-\subsubsection{Comparison of Models and Paradigms}
+Although microservices are often associated with strict business principles, their abstract concepts can be adapted to focus on architectural designs that leverage communication middleware for distributed communication. By adopting these principles, it becomes possible to create distributed systems with fault-tolerant capabilities using general-purpose programming languages.
 
 
 \subsection{Distributed and Concurrent Programming Languages}
 
+Distributed and concurrent programming languages are designed to handle multiple tasks simultaneously across systems or threads. Some languages, such as Java, Rust, and lower-level languages like C with PThreads, require developers to explicitly manage concurrency \cite{Valkov2018,Paduraru2018}. These approaches often introduce complexity, increasing the probability of deadlocks or race conditions. This has driven the need for languages and frameworks that abstract away these challenges, offering safer and more developer-friendly concurrency models \cite{Valkov2018}.
+
+One widely adopted paradigm for mitigating concurrency issues is the Actor Model. By avoiding shared state and using message passing for communication, the Actor Model reduces risks inherent in traditional concurrency mechanisms such as mutexes and locks. Erlang, for instance, is renowned for its fault tolerance and “let-it-crash” philosophy, which delegates error handling to its virtual machine \cite{Nystrom2009}. Supervising actors monitor and recover from failures, making Erlang highly suitable for building robust distributed systems \cite{Armstrong2013}. Building on Erlang’s foundation, Elixir introduces modern syntax and developer tooling while retaining Erlang’s strengths for creating large-scale, fault-tolerant systems. These features make Elixir a popular choice for modern distributed systems development \cite{Juric2024}.
+
+Haskell, a pure functional programming language, provides a deterministic approach to concurrency, ensuring consistent results regardless of execution order \cite{Valkov2018}. Its extension, Cloud Haskell\footnote{Official website of Cloud Haskell: \url{https://haskell-distributed.github.io/} (accessed 25 November 2024)}, builds on the Actor Model to enable distributed computation through message passing, drawing inspiration from Erlang.
+
+Similarly, Akka, a framework built with Scala, adopts the Actor Model to support distributed and concurrent applications. Akka combines Scala’s strengths in functional and object-oriented programming, enabling developers to merge these paradigms effectively \cite{Valkov2018}. Unlike Erlang, Akka operates on the \gls{JVM}, providing seamless interoperability with Java-based systems \cite{Abraham2023}.
+
+Go, developed by Google, simplifies concurrent programming through its lightweight goroutines and channels, inspired by the \gls{CSP} paradigm, which abstracts threading complexities \cite{Brolos2021}. Go’s emphasis on simplicity and performance has made it a preferred choice for developing scalable microservices and cloud-native applications, particularly as microservices architectures continue to gain popularity \cite{go-docs}.
+
+For specialized use cases like Big Data processing, frameworks such as Hadoop provide distributed computing capabilities tailored to data-intensive tasks. Hadoop abstracts the complexities of handling distributed storage and processing, offering features such as scalability, fault tolerance, and data replication \cite{Polato2014}.
+
+Other pioneer languages, such as Emerald, Oz, and Hermes, still exist but have minimal community and industry support, as reflected in popularity rankings like RedMonk January 2024\footnote{RedMonk January 2024: \url{https://redmonk.com/sogrady/2024/03/08/language-rankings-1-24/} (accessed 28 November 2024)} and Tiobe November 2024\footnote{Tiobe November 2024: \url{https://www.tiobe.com/tiobe-index/} (accessed 28 November 2024)}.
+
+Conversely, some relatively recent languages have gained attention. Unison\footnote{Official website of Unison: \url{https://www.unisonweb.org/} (accessed 27 November 2024)} employs content-addressed programming using hash references to improve code management and distribution. Gleam\footnote{Official website of Gleam: \url{https://gleam.run/} (accessed 27 November 2024)} compiles to Erlang and offers its own type-safe implementation of \gls{OTP}, Erlang’s actor framework. Pony\footnote{Official website of Pony: \url{https://www.ponylang.io/} (accessed 27 November 2024)}, an object-oriented language based on the Actor Model, introduces reference capabilities to ensure concurrency safety. However, these languages have yet to achieve significant industry adoption, as evidenced by their absence from the RedMonk January 2024 and Tiobe November 2024 rankings.
+
+In Table \ref{tab:languages_comparison}, the most relevant languages and frameworks for this theme are presented to facilitate a concise analysis. Additionally, rankings from TIOBE November 2024 and IEEE Spectrum August 2024\footnote{IEEE Spectrum 2024: \url{https://spectrum.ieee.org/top-programming-languages-2024/} (accessed 28 November 2024)} are included to provide an overview of their popularity and adoption.
+
+\begin{table}[h!]
+    \centering
+    \hspace*{-0.2cm}
+    \begin{tabular}{|l|p{4cm}|p{3cm}|p{2cm}|p{2cm}|}
+      \hline
+      \textbf{Name} & \textbf{Concurrency Strategy} & \textbf{Model}  & \textbf{TIOBE Nov 2024} & \textbf{IEEE Spectrum 2024} \\ \hline
+      Java          & Explicit                      & Object-Oriented & 3                       & 2                           \\ \hline
+      Rust          & Explicit                      & Procedural       & 14                      & 11                          \\ \hline
+      C (PThreads)  & Explicit                      & Procedural       & 4                       & 9                           \\ \hline
+      Erlang        & Actor Model                   & Functional       & 50+                     & 48                          \\ \hline
+      Elixir        & Actor Model                   & Functional       & 44                      & 35                          \\ \hline
+      Haskell       & Evaluation Strategy           & Functional       & 34                      & 38                          \\ \hline
+      Scala (Akka)  & Actor Model                   & Functional       & 30                      & 16                          \\ \hline
+      Go            & CSP                           & Procedural       & 7                       & 8                           \\ \hline
+      Hadoop        & Distributed Framework         & Procedural       & N/A                     & N/A                         \\ \hline
+      Unison        & Hash References               & Functional       & N/A                     & N/A                         \\ \hline
+      Gleam         & Actor Model                   & Functional       & N/A                     & N/A                         \\ \hline
+      Pony          & Actor Model                   & Object-Oriented  & N/A                     & N/A                         \\ \hline
+    \end{tabular}
+    \caption{Characteristics of Distributed and Concurrent Programming Languages}
+    \label{tab:languages_comparison}
+\end{table}
 
 \subsubsection{Analyses and Justification}
+
+The focus of this dissertation is on Elixir as the central language for comparison. Elixir is chosen due to its modern syntax, developer-friendly tooling, and robust foundation on the BEAM virtual machine \cite{Juric2024}. Since Elixir inherits all the strengths of Erlang \cite{Valkov2018}, including fault tolerance and the Actor Model, a direct comparison with Erlang is unnecessary as they share the same core runtime and strategies. Such a comparison would likely yield redundant results and add little value to the research.
+
+On the other hand, comparing Elixir with low-level languages like Java, Rust, and C would also be less effective. These languages require explicit management of concurrency and fault tolerance \cite{Valkov2018}, introducing complexities that diverge significantly from Elixir's high-level abstractions. A comparison in this context might be unfair and would not provide meaningful insights given the focus on fault tolerance and distributed systems.
+
+Instead, a comparison with Scala and Akka provides a more relevant perspective. Both Elixir and Akka share the paradigm Actor Model for concurrency and fault tolerance, but their underlying virtual machines differ: the BEAM for Elixir and the \gls{JVM} for Akka \cite{Abraham2023}. Additionally, Scala with Akka is notable for its community acceptance \cite{Valkov2018}. This comparison is valuable because it explores how different implementations of the same paradigm can influence fault tolerance strategies and performance, offering meaningful insights for developers choosing between these ecosystems.
+
+Furthermore, too recent or older languages with minimal popularity, such as Emerald, Oz, Unison and Gleam are excluded from this study. These languages lack widespread adoption, and insights derived from them would have limited applicability for the majority of developers, as demonstrated in Table \ref{tab:languages_comparison} with a non-appearance in the Tiobe and IEEE Spectum rankings.
+
+From another perspective, the inclusion of Go in this study adds an interesting dimension to the comparison. Go, unlike Elixir and Akka, does not have built-in support for native distributed systems. However, its increasing popularity and industry adoption make it a strong candidate for exploration \cite{Brolos2021}. By examining how Go can achieve fault tolerance using libraries and abstractions under a microservices strategy, the study can assess whether an external abstraction layer can match or exceed the capabilities of languages with native support. This investigation could reveal whether the flexibility of a non-native distributed model can compensate for the lack of built-in features, providing valuable insights for developers operating in modern cloud-native environments.
 
 \begin{comment}
 

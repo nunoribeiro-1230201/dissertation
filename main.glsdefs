@@ -418,3 +418,31 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{WBS}%
+{%
+name={\acronymfont {\glsentryshort {WBS}}},%
+sort={WBS},%
+type={acronym},%
+first={WBS},%
+firstplural={WBSs},%
+text={WBS},%
+plural={WBSs},%
+description={Work Breakdown Structure},%
+descriptionplural={Work Breakdown Structure},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Work Breakdown Structure},%
+longplural={Work Breakdown Structures},%
+short={WBS},%
+shortplural={WBSs},%
+counter={page},%
+parent={},%
+%
+}%
+

@@ -5,36 +5,36 @@
 \contentsline {section}{\numberline {1.1}Context and Problem}{1}{section.8}%
 \contentsline {section}{\numberline {1.2}Objectives}{1}{section.9}%
 \contentsline {section}{\numberline {1.3}Ethical Considerations}{1}{section.10}%
-\contentsline {section}{\numberline {1.4}Document structure}{1}{section.11}%
-\contentsline {chapter}{\numberline {2}Background}{3}{chapter.12}%
-\contentsline {section}{\numberline {2.1}Distributed Systems}{3}{section.13}%
-\contentsline {subsection}{\numberline {2.1.1}Characteristics}{3}{subsection.14}%
-\contentsline {subsubsection}{Transparency}{3}{section*.15}%
-\contentsline {subsubsection}{Reliability and Availability}{3}{section*.16}%
-\contentsline {subsubsection}{Scalability}{4}{section*.17}%
-\contentsline {subsubsection}{Fault tolerance}{4}{section*.18}%
-\contentsline {subsection}{\numberline {2.1.2}Communication}{4}{subsection.19}%
-\contentsline {subsection}{\numberline {2.1.3}Challenges}{4}{subsection.20}%
-\contentsline {subsubsection}{CAP theorem}{4}{section*.21}%
-\contentsline {section}{\numberline {2.2}Fault Tolerance}{5}{section.22}%
-\contentsline {subsection}{\numberline {2.2.1}Fault Tolerance Taxonomy}{5}{subsection.23}%
-\contentsline {subsection}{\numberline {2.2.2}Strategies}{6}{subsection.25}%
-\contentsline {subsubsection}{Retry}{6}{section*.26}%
-\contentsline {subsubsection}{Replication}{6}{section*.27}%
-\contentsline {subsubsection}{Check-pointing and Message Logging}{6}{section*.28}%
-\contentsline {section}{\numberline {2.3}Distributed and Concurrency Programming}{6}{section.29}%
-\contentsline {subsection}{\numberline {2.3.1}Models and Paradigms}{7}{subsection.30}%
-\contentsline {subsubsection}{Actor Model}{7}{section*.31}%
-\contentsline {subsubsection}{Communicating Sequential Processes}{7}{section*.32}%
-\contentsline {subsubsection}{Microservices Architectures}{8}{section*.33}%
-\contentsline {subsection}{\numberline {2.3.2}Distributed and Concurrent Programming Languages}{8}{subsection.34}%
-\contentsline {subsubsection}{Analyses and Language Choice Justification}{9}{section*.43}%
-\contentsline {chapter}{\numberline {3}Literature Review}{11}{chapter.44}%
-\contentsline {section}{\numberline {3.1}Research Questions}{11}{section.45}%
-\contentsline {section}{\numberline {3.2}State of Art}{11}{section.46}%
-\contentsline {section}{\numberline {3.3}Conclusions}{11}{section.47}%
-\contentsline {chapter}{\numberline {4}Planning}{13}{chapter.48}%
-\contentsline {section}{\numberline {4.1}Project Charter}{13}{section.49}%
-\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{14}{section.51}%
-\contentsline {section}{\numberline {4.3}Gantt Diagram}{17}{section.55}%
-\contentsline {section}{\numberline {4.4}Risk Management}{17}{section.56}%
+\contentsline {section}{\numberline {1.4}Document structure}{2}{section.15}%
+\contentsline {chapter}{\numberline {2}Background}{3}{chapter.16}%
+\contentsline {section}{\numberline {2.1}Distributed Systems}{3}{section.17}%
+\contentsline {subsection}{\numberline {2.1.1}Characteristics}{3}{subsection.18}%
+\contentsline {subsubsection}{Transparency}{3}{section*.19}%
+\contentsline {subsubsection}{Reliability and Availability}{3}{section*.20}%
+\contentsline {subsubsection}{Scalability}{4}{section*.21}%
+\contentsline {subsubsection}{Fault tolerance}{4}{section*.22}%
+\contentsline {subsection}{\numberline {2.1.2}Communication}{4}{subsection.23}%
+\contentsline {subsection}{\numberline {2.1.3}Challenges}{4}{subsection.24}%
+\contentsline {subsubsection}{CAP theorem}{4}{section*.25}%
+\contentsline {section}{\numberline {2.2}Fault Tolerance}{5}{section.26}%
+\contentsline {subsection}{\numberline {2.2.1}Fault Tolerance Taxonomy}{5}{subsection.27}%
+\contentsline {subsection}{\numberline {2.2.2}Strategies}{6}{subsection.29}%
+\contentsline {subsubsection}{Retry}{6}{section*.30}%
+\contentsline {subsubsection}{Replication}{6}{section*.31}%
+\contentsline {subsubsection}{Check-pointing and Message Logging}{6}{section*.32}%
+\contentsline {section}{\numberline {2.3}Distributed and Concurrency Programming}{6}{section.33}%
+\contentsline {subsection}{\numberline {2.3.1}Models and Paradigms}{7}{subsection.34}%
+\contentsline {subsubsection}{Actor Model}{7}{section*.35}%
+\contentsline {subsubsection}{Communicating Sequential Processes}{7}{section*.36}%
+\contentsline {subsubsection}{Microservices Architectures}{8}{section*.37}%
+\contentsline {subsection}{\numberline {2.3.2}Distributed and Concurrent Programming Languages}{8}{subsection.38}%
+\contentsline {subsubsection}{Analyses and Language Choice Justification}{9}{section*.47}%
+\contentsline {chapter}{\numberline {3}Literature Review}{11}{chapter.48}%
+\contentsline {section}{\numberline {3.1}Research Questions}{11}{section.49}%
+\contentsline {section}{\numberline {3.2}State of Art}{11}{section.50}%
+\contentsline {section}{\numberline {3.3}Conclusions}{11}{section.51}%
+\contentsline {chapter}{\numberline {4}Planning}{13}{chapter.52}%
+\contentsline {section}{\numberline {4.1}Project Charter}{13}{section.53}%
+\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{14}{section.55}%
+\contentsline {section}{\numberline {4.3}Gantt Diagram}{17}{section.59}%
+\contentsline {section}{\numberline {4.4}Risk Management}{17}{section.60}%

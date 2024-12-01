@@ -19,6 +19,47 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{EthicDeb2018}{book}{}
+      \name{author}{3}{}{%
+        {{hash=bcfe04c9acb7b8be977876addd32053c}{%
+           family={Deb},
+           familyi={D\bibinitperiod},
+           given={Dipankar},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f2ba39a57b73e39e10dd504237e35f4f}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Rajeeb},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c2e15b2106bbf571486d09bbd7a819bb}{%
+           family={Balas},
+           familyi={B\bibinitperiod},
+           given={Valentina\bibnamedelima E.},
+           giveni={V\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{fullhash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{bibnamehash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{authorbibnamehash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{authornamehash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{authorfullhash}{d948e66f1d6fb953c74652512c6aa277}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Engineering Research Methodology}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1007/978-981-13-2947-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-981-13-2947-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-981-13-2947-0
+      \endverb
+    \endentry
     \entry{Tanenbaum2023}{book}{}
       \name{author}{2}{}{%
         {{hash=47480cd610c72d1e7c2edc59e8457169}{%
@@ -41,8 +82,8 @@
       \strng{authorbibnamehash}{f1f53133e29b8df3266bb778c27356ca}
       \strng{authornamehash}{f1f53133e29b8df3266bb778c27356ca}
       \strng{authorfullhash}{f1f53133e29b8df3266bb778c27356ca}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{edition}{4}
@@ -64,8 +105,8 @@
       \strng{authorbibnamehash}{5603251445876a4b8dc0b524fd8f6646}
       \strng{authornamehash}{5603251445876a4b8dc0b524fd8f6646}
       \strng{authorfullhash}{5603251445876a4b8dc0b524fd8f6646}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1838430202}
@@ -94,8 +135,8 @@
       \strng{authorbibnamehash}{b1bfd48ab51eb1f0389135a2badcbcba}
       \strng{authornamehash}{b1bfd48ab51eb1f0389135a2badcbcba}
       \strng{authorfullhash}{b1bfd48ab51eb1f0389135a2badcbcba}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The use of technology has increased vastly and today computer systems are interconnected via different communication medium. The use of distributed systems in our day to day activities has solely improved with data distributions. This is because distributed systems enable nodes to or-ganise and allow their resources to be used among the connected systems or devices that make people to be integrated with geographically distributed computing facilities. The distributed sys-tems may lead to lack of service availability due to multiple system failures on multiple failure points. This article highlights the different fault tolerance mechanism in distributed systems used to prevent multiple system failures on multiple failure points by considering replication, high re-dundancy and high availability of the distributed services.}
@@ -138,8 +179,8 @@
       \strng{authorbibnamehash}{51d3900ba53a39656e149c51ab177f91}
       \strng{authornamehash}{51d3900ba53a39656e149c51ab177f91}
       \strng{authorfullhash}{51d3900ba53a39656e149c51ab177f91}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{"Part Number: CFP18PAD-ART.".}
@@ -176,8 +217,8 @@
       \strng{authorbibnamehash}{730f1fe685590bb8a27a9d7bf7801863}
       \strng{authornamehash}{730f1fe685590bb8a27a9d7bf7801863}
       \strng{authorfullhash}{914dc5a7cfb5b71f39fea221cfbef156}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-0-13-214301-1}
@@ -899,8 +940,8 @@
       \strng{authorbibnamehash}{b870f031689288c18126a30fb71ec7d8}
       \strng{authornamehash}{b870f031689288c18126a30fb71ec7d8}
       \strng{authorfullhash}{efd7aadd60d0557a9db671436f7e7599}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Distributed actor languages are an effective means of constructing scalable reliable systems, and the Erlang programming language has a well-established and influential model. While the Erlang model conceptually provides reliable scalability, it has some inherent scalability limits and these force developers to depart from the model at scale. This article establishes the scalability limits of Erlang systems and reports the work of the EU RELEASE project to improve the scalability and understandability of the Erlang reliable distributed actor model. We systematically study the scalability limits of Erlang and then address the issues at the virtual machine, language, and tool levels. More specifically: (1) We have evolved the Erlang virtual machine so that it can work effectively in large-scale single-host multicore and NUMA architectures. We have made important changes and architectural improvements to the widely used Erlang/OTP release. (2) We have designed and implemented Scalable Distributed (SD) Erlang libraries to address language-level scalability issues and provided and validated a set of semantics for the new language constructs. (3) To make large Erlang systems easier to deploy, monitor, and debug, we have developed and made open source releases of five complementary tools, some specific to SD Erlang. Throughout the article we use two case studies to investigate the capabilities of our new technologies and tools: a distributed hash table based Orbit calculation and Ant Colony Optimisation (ACO). Chaos Monkey experiments show that two versions of ACO survive random process failure and hence that SD Erlang preserves the Erlang reliability model. While we report measurements on a range of NUMA and cluster architectures, the key scalability experiments are conducted on the Athos cluster with 256 hosts (6,144 cores). Even for programs with no global recovery data to maintain, SD Erlang partitions the network to reduce network traffic and hence improves performance of the Orbit and ACO benchmarks above 80 hosts. ACO measurements show that maintaining global recovery data dramatically limits scalability; however, scalability is recovered by partitioning the recovery data. We exceed the established scalability limits of distributed Erlang, and do not reach the limits of SD Erlang for these benchmarks at this scale (256 hosts, 6,144 cores).}
@@ -1104,8 +1145,8 @@
       \strng{authorbibnamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
       \strng{authornamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
       \strng{authorfullhash}{5f075ae3e1f9d0382bb8c4632991f96f}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 10.11.2024}
@@ -1277,8 +1318,8 @@
       \strng{authorbibnamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
       \strng{authornamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
       \strng{authorfullhash}{08ce6d86d6c5bbf9d1e364348c357e74}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781633438514}

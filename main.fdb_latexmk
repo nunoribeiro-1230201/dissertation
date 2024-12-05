@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1733084047.10962 "main.bcf" "main.bbl" "main" 1733085285.65791 0
-  "main.bcf" 1733085285.49642 114351 186b13359805129a94022824a68aa93a "pdflatex"
+["biber main"] 1733084047.10962 "main.bcf" "main.bbl" "main" 1733367570.44678 0
+  "main.bcf" 1733367570.26761 114351 186b13359805129a94022824a68aa93a "pdflatex"
   "other_references.bib" 1733084007.71232 7943 555d636a2f47f9b2ea5cf2877a99947a ""
   "references.bib" 1732850123.58347 81824 5e9d989bce6c9adb3eb8d80c8f65aeda ""
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1733085282.24458 "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" "main.pdf" "main" 1733085285.65829 0
+["pdflatex"] 1733367566.29178 "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" "main.pdf" "main" 1733367570.4472 0
   "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" 1732892187.14929 7798 c191a77627a10b82a4fcc5055820f16c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
@@ -304,22 +304,22 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1732457566 8221431 1d22d14dd836c3f19bfec4964a3c81a4 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "ch-background/chapter-background.tex" 1732980619.10236 42279 5b6ae33047207dda95480cc6dcb5d392 ""
-  "ch-intro/chapter-intro.tex" 1733085282.01763 2944 099fdd7ed286f4854ecb8ce086932586 ""
+  "ch-intro/chapter-intro.tex" 1733303185.73631 3094 cbbac682455e741868baf568a11acda9 ""
   "ch-planning/assets/wbs.png" 1732892361.88431 255982 f08d08cbc13d88326a6ae439fba41ab4 ""
-  "ch-planning/chapter-planning.tex" 1733076885.01084 22319 5f03b176a17f277707abee8b7a26a422 ""
-  "ch-state/chapter-state.tex" 1732818985.40734 235 b0faf4352e2a8b191ecb166b9df0a6cc ""
+  "ch-planning/chapter-planning.tex" 1733367561.46553 22227 43fb36a588e9bde1689f912f74996ede ""
+  "ch-state/chapter-state.tex" 1733090871.93481 639 10fff5ac75538ee74d287863e6aa0e94 ""
   "frontmatter/frontmatter.tex" 1732476592 6149 6b943ea3bc3698503f16738d65ccc95e ""
   "frontmatter/glossary.tex" 1732892456.91171 788 3a39b7100f88fb3a6f11805ffa0fa682 ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1733085285.48763 15732 dca1ca27f9741814ca67275c276223f0 "pdflatex"
+  "main.aux" 1733367570.25567 17298 be91bb0855e2292158405a828fac889c "pdflatex"
   "main.bbl" 1733084049.72158 78614 47ed2f76afb904bfa3e73235d2091400 "biber main"
-  "main.glsdefs" 1733085285.48537 8080 62aad4c9f5aadd27e1abf78c207f00bc "pdflatex"
-  "main.lof" 1733085285.49737 222 4ed29c5e6ea3a73b9affc20b1d2aca8b "pdflatex"
-  "main.lot" 1733085285.4974 370 b731a6bffd429e26e090a4b3920fb619 "pdflatex"
-  "main.out" 1733085285.49329 5808 2a6a13699903d66f8d9aeb55e6644d46 "pdflatex"
-  "main.run.xml" 1733085285.4972 2386 8b5dbf88ad6e50e3695d3cc2b82f7d41 "pdflatex"
+  "main.glsdefs" 1733367570.25275 8080 62aad4c9f5aadd27e1abf78c207f00bc "pdflatex"
+  "main.lof" 1733367570.26873 640 6669bea57f558bfd8d98c0b039462d9b "pdflatex"
+  "main.lot" 1733367570.26876 456 c43d4ddbdd355ea458596cf70340d776 "pdflatex"
+  "main.out" 1733367570.26367 6643 b0e1bf315304e9298eafe7ef98ea3240 "pdflatex"
+  "main.run.xml" 1733367570.26858 2386 8b5dbf88ad6e50e3695d3cc2b82f7d41 "pdflatex"
   "main.tex" 1732892187.14929 7798 c191a77627a10b82a4fcc5055820f16c ""
-  "main.toc" 1733085285.49734 2941 a0a3826be9f9a97e99387ee832c7dd85 "pdflatex"
+  "main.toc" 1733367570.2687 3310 551ff6c5d86f36b34942095b794994ef "pdflatex"
   "tmdei-style.cls" 1732476592 24417 ee516c35460fc0d99d3f103a2b1fd289 ""
   (generated)
   "main.acn"

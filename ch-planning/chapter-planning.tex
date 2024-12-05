@@ -5,8 +5,6 @@
 %-------------------------------------------------------------------------------
 %---------
 
-This chapter serves to outline the planning aspects of the project. It begins with the definition of the Project Charter, where it is defined the important aspects of the project, marking it as the starting point. After this is defined, the \gls{WBS} is defined, leading to an overall view of the project. For the last one a Gantt diagram is presented detailing in a more fine-grand aspects all the tasks necessary to the project.
-
 \section{Project Charter}
 
 The project charter provides a comprehensive overview of the project scope, stakeholders, benefits, assumptions, and restrictions.
@@ -14,60 +12,44 @@ The project charter provides a comprehensive overview of the project scope, stak
 \noindent \textbf{Stakeholder}
 
 \begin{table}[h!]
-    \centering
-    \begin{tabular}{|p{11cm}|c|c|}
-        \hline
-        \textbf{Identification}                                                         & \textbf{Power} & \textbf{Interest} \\ \hline
-        External reviewers who may evaluate the dissertation                            & Low            & Low               \\ \hline
-        Students or developers in the areas of distributed systems and fault tolerance  & Low            & Low               \\ \hline
-        Administration of the master's program, responsible for dissertation evaluation & Medium         & Low               \\ \hline
-        Supervisor (advisor)                                                            & High           & High              \\ \hline
-    \end{tabular}
+      \centering
+      \begin{tabular}{|p{11cm}|c|c|}
+            \hline
+            \textbf{Identification}                                                         & \textbf{Power} & \textbf{Interest} \\ \hline
+            Students or developers in the areas of distributed systems and fault tolerance  & Low            & Low               \\ \hline
+            Administration of the master's program, responsible for dissertation evaluation & Medium         & Low               \\ \hline
+            Advisor                                                                         & High           & High              \\ \hline
+      \end{tabular}
 \end{table}
 
-The external reviewers and developers represent an indirect audience with limited direct influence but potential interest in the outcomes. The master's program administration has moderate influence due to institutional requirements, while the supervisor holds the most significant influence and interest, as their guidance and approval are critical for project success.
+The master's program administration has moderate influence due to institutional requirements but potential interest in the outcomes, while the advisor holds the most significant influence and interest, as their guidance and approval are critical for project success.
 
 \textbf{Benefits}
 
 \begin{itemize}
-    \item \textbf{Decision Support for Developers:}
-          The project will provide a detailed analysis of fault tolerance aspects in Elixir, Go, and Scala with Akka, offering developers and system architects a practical guide to help them choose the most suitable language for specific fault-tolerant distributed systems scenarios.
+      \item \textbf{Decision Support for Developers:}
+            The project will provide a detailed analysis of fault tolerance aspects in Elixir, Go, and Scala with Akka, offering developers and system architects a practical guide to help them choose the most suitable language for specific fault-tolerant distributed systems scenarios.
 
-    \item \textbf{Open Source Opportunities:}
-          The findings could reveal areas for improvement in the evaluated languages, inspiring open-source developers to create libraries, frameworks, or enhancements tailored to fault tolerance in distributed environments.
+      \item \textbf{Open Source Opportunities:}
+            The findings could reveal areas for improvement in the evaluated languages, inspiring open-source developers to create libraries, frameworks, or enhancements tailored to fault tolerance in distributed environments.
 
-    \item \textbf{Academic Contributions:}
-          The dissertation will contribute to the existing body of knowledge in the areas of distributed systems, fault tolerance, and microservices. It will provide insights into comparative aspects in the languages of debate..
+      \item \textbf{Academic Contributions:}
+            The dissertation will contribute to the existing body of knowledge in the areas of distributed systems, fault tolerance, and microservices. It will provide insights into comparative aspects in the languages of debate.
 
 \end{itemize}
 
 \noindent \textbf{Assumptions}
 
 \begin{itemize}
-    \item \textbf{Computational Resources:}
-          It is assumed that the available computational resources, including hardware and software tools, will suffice to simulate the benchmarking scenarios for each language under realistic system conditions.
+      \item \textbf{Computational Resources:}
+            It is assumed that the available computational resources, including hardware and software tools, will suffice to simulate the benchmarking scenarios for each language under realistic system conditions.
 
-    \item \textbf{Support and Guidance:}
-          The supervisor will provide timely and effective feedback on each deliverable, ensuring alignment with project objectives.
+      \item \textbf{Support and Guidance:}
+            The advisor will provide timely and effective feedback on each deliverable, ensuring alignment with project objectives.
 
-    \item \textbf{Consistency Across Languages:}
-          The chosen languages (Elixir, Go, Scala with Akka) have sufficient community support, libraries, and tools to implement the required benchmarking scenarios consistently.
+      \item \textbf{Consistency Across Languages:}
+            The chosen languages (Elixir, Go, Scala with Akka) have sufficient community support, libraries, and tools to implement the required benchmarking scenarios consistently.
 \end{itemize}
-
-\noindent \textbf{Restrictions}
-
-\begin{itemize}
-    \item \textbf{Timeframe:}
-          The project must adhere to the deadlines set by the master's program, requiring the completion of all deliverables before the final submission date.
-
-    \item \textbf{Academic Guidelines:}
-          All deliverables, including the dissertation and presentation, must comply with institutional formatting, structure, and content standards.
-
-\end{itemize}
-
-
-\noindent \textbf{Risks}
-
 
 \section{Work Breakdown Structure}
 
@@ -79,148 +61,119 @@ The final phase, the conclusion, consolidates all findings and results, translat
 
 
 \begin{figure}
-    \centeringçç
-    \includegraphics[width=\linewidth]{ch-planning/assets/wbs.png}
-    \caption{The \gls{WBS} of the project.}
-    \label{fig:wbs}
+      \centering
+      \includegraphics[width=\linewidth]{ch-planning/assets/wbs.png}
+      \caption{The \gls{WBS} of the project.}
+      \label{fig:wbs}
 \end{figure}
 
 
-\textbf{Work Breakdown Structure Dictionary} Following is described the \gls{WBS} Dictionary that as the responsibility of detailing each phase in order to be defined what are the goals and the acceptance criteria in a concise and clear way.
+\textbf{Work Breakdown Structure Dictionary.} Following is described the \gls{WBS} Dictionary that as the responsibility of detailing each phase in order to be defined what are the goals and the acceptance criteria in a concise and clear way.
 
 \begin{longtable}{|p{3cm}|p{2.5cm}|p{8cm}|}
-    \hline
-    \textbf{Item Name}             & \textbf{Type of Item} & \textbf{Additional Description / Acceptance Criteria}                                                                                                                                                                                                                                                                                                     \\ \hline
-    \endfirsthead
-    \hline
-    \textbf{Item Name}             & \textbf{Type of Item} & \textbf{Additional Description / Acceptance Criteria}                                                                                                                                                                                                                                                                                                     \\ \hline
-    \endhead
-    (1.1) Planning                 & Phase                 & This phase includes all initial project setup tasks.                                                                                                                                                                                                                                                                                                      \\ \hline
-    (1.1.1) Project Charter        & Deliverable           & The project charter must be created following the project's scope and management guidelines. \newline \textbf{Acceptance Criteria:} The project charter must be approved by the supervisor.                                                                                                                                                               \\ \hline
-    (1.1.2) \gls{WBS}              & Deliverable           & The \gls{WBS} should break down the project into manageable components. \newline \textbf{Acceptance Criteria:} The WBS should be validated by the supervisor and include all project elements.                                                                                                                                                            \\ \hline
-    (1.1.3) Gantt Chart            & Deliverable           & A detailed timeline outlining tasks, dependencies, action plan, milestones, and the dissertation deadline. \newline \textbf{Acceptance Criteria:} The Gantt chart must accurately reflect project phases and be reviewed by the supervisor.                                                                                                               \\ \hline
-    \hline % Separator between phases
+      \hline
+      \textbf{Item Name}             & \textbf{Type of Item} & \textbf{Additional Description / Acceptance Criteria}                                                                                                                                                                                                                                                                                                     \\ \hline
+      \endfirsthead
+      \hline
+      \textbf{Item Name}             & \textbf{Type of Item} & \textbf{Additional Description / Acceptance Criteria}                                                                                                                                                                                                                                                                                                     \\ \hline
+      \endhead
+      (1.1) Planning                 & Phase                 & This phase includes all initial project setup tasks.                                                                                                                                                                                                                                                                                                      \\ \hline
+      (1.1.1) Project Charter        & Deliverable           & The project charter must be created following the project's scope and management guidelines. \newline \textbf{Acceptance Criteria:} The project charter must be approved by the advisor.                                                                                                                                                                  \\ \hline
+      (1.1.2) \gls{WBS}              & Deliverable           & The \gls{WBS} should break down the project into manageable components. \newline \textbf{Acceptance Criteria:} The WBS should be validated by the advisor and include all project elements.                                                                                                                                                               \\ \hline
+      (1.1.3) Gantt Chart            & Deliverable           & A detailed timeline outlining tasks, dependencies, action plan, milestones, and the dissertation deadline. \newline \textbf{Acceptance Criteria:} The Gantt chart must accurately reflect project phases and be reviewed by the advisor.                                                                                                                  \\ \hline
+      \hline % Separator between phases
 
-    (1.2) Research                 & Phase                 & This phase focuses on gathering the required knowledge and literature to support the project.                                                                                                                                                                                                                                                             \\ \hline
-    (1.2.1) Objectives             & Deliverable           & Clear objectives for the project, that must detail what are the excepted outcomes. \newline \textbf{Acceptance Criteria:} Objectives should align with the research goals and be validated by the supervisor.                                                                                                                                             \\ \hline
-    (1.2.2) Background             & Deliverable           & Research and summarize the background of fault tolerance in distributed systems and the distributed and concurrent programming languages.  \newline \textbf{Acceptance Criteria:} The background section should include sufficient theoretical content approved by the supervisor, and must include a clear justification for the languages chosen.       \\ \hline
-    (1.2.3) State-of-art           & Deliverable           & Review the current literature on fault tolerance in Elixir, Go, and Scala with Akka. Also, what are the latest techniques for benchmarking distributed and concurrent programming, and if there are already studies on this topic. \newline \textbf{Acceptance Criteria:} State-of-the-art review must highlight gaps and relevance to the project scope. \\ \hline
-    \hline % Separator between phases
+      (1.2) Research                 & Phase                 & This phase focuses on gathering the required knowledge and literature to support the project.                                                                                                                                                                                                                                                             \\ \hline
+      (1.2.1) Objectives             & Deliverable           & Clear objectives for the project, that must detail what are the excepted outcomes. \newline \textbf{Acceptance Criteria:} Objectives should align with the research goals and be validated by the advisor.                                                                                                                                                \\ \hline
+      (1.2.2) Background             & Deliverable           & Research and summarize the background of fault tolerance in distributed systems and the distributed and concurrent programming languages.  \newline \textbf{Acceptance Criteria:} The background section should include sufficient theoretical content approved by the advisor, and must include a clear justification for the languages chosen.          \\ \hline
+      (1.2.3) State-of-art           & Deliverable           & Review the current literature on fault tolerance in Elixir, Go, and Scala with Akka. Also, what are the latest techniques for benchmarking distributed and concurrent programming, and if there are already studies on this topic. \newline \textbf{Acceptance Criteria:} State-of-the-art review must highlight gaps and relevance to the project scope. \\ \hline
+      \hline % Separator between phases
 
-    (1.3) Design                   & Phase                 & This phase involves requirements gathering, testing plan, and benchmarking design.                                                                                                                                                                                                                                                                        \\ \hline
-    (1.3.1) Requirements Gathering & Deliverable           & Collect requirements for the benchmarking and evaluation of fault tolerance aspects. \newline \textbf{Acceptance Criteria:} Requirements must be detailed, reviewed, and approved by the supervisor.                                                                                                                                                      \\ \hline
-    (1.3.2) Testing Plan           & Deliverable           & A plan for testing different fault tolerance strategies and mechanisms in Elixir, Go, and Scala with Akka. \newline \textbf{Acceptance Criteria:} Testing plan must include scenarios and validation methods, reviewed by the supervisor.                                                                                                                 \\ \hline
-    (1.3.3) Benchmarking Design    & Deliverable           & Define the design for benchmarking environments. \newline \textbf{Acceptance Criteria:} Benchmarking environments design must be validated by the supervisor, and must adhere to the test plan created.                                                                                                                                                   \\ \hline
-    \hline % Separator between phases
+      (1.3) Design                   & Phase                 & This phase involves requirements gathering, testing plan, and benchmarking design.                                                                                                                                                                                                                                                                        \\ \hline
+      (1.3.1) Requirements Gathering & Deliverable           & Collect requirements for the benchmarking and evaluation of fault tolerance aspects. \newline \textbf{Acceptance Criteria:} Requirements must be detailed, reviewed, and approved by the advisor.                                                                                                                                                         \\ \hline
+      (1.3.2) Testing Plan           & Deliverable           & A plan for testing different fault tolerance strategies and mechanisms in Elixir, Go, and Scala with Akka. \newline \textbf{Acceptance Criteria:} Testing plan must include scenarios and validation methods, reviewed by the advisor.                                                                                                                    \\ \hline
+      (1.3.3) Benchmarking Design    & Deliverable           & Define the design for benchmarking environments. \newline \textbf{Acceptance Criteria:} Benchmarking environments design must be validated by the advisor, and must adhere to the test plan created.                                                                                                                                                      \\ \hline
+      \hline % Separator between phases
 
-    (1.4) Implementation           & Phase                 & This phase involves the development of benchmarking prototypes.                                                                                                                                                                                                                                                                                           \\ \hline
-    (1.4.1) Prototypes             & Deliverable           & Develop prototypes in Elixir, Go, and Scala with Akka for fault tolerance testing. \newline \textbf{Acceptance Criteria:} Prototypes must meet the test plan previously created and must be supported on the benchmarking design planned.                                                                                                                 \\ \hline
-    (1.4.2) Test Triggers          & Deliverable           & Create fault injection mechanisms for testing fault tolerance. \newline \textbf{Acceptance Criteria:} Fault injection methods must simulate real-world scenarios and be validated by tests.                                                                                                                                                               \\ \hline
-    (1.4.3) Observability          & Deliverable           & Implement observability tools for monitoring system behavior during tests. \newline \textbf{Acceptance Criteria:} Observability setup must capture the metrics defined on the test validations methods.                                                                                                                                                   \\ \hline
-    \hline % Separator between phases
+      (1.4) Implementation           & Phase                 & This phase involves the development of benchmarking prototypes.                                                                                                                                                                                                                                                                                           \\ \hline
+      (1.4.1) Prototypes             & Deliverable           & Develop prototypes in Elixir, Go, and Scala with Akka for fault tolerance testing. \newline \textbf{Acceptance Criteria:} Prototypes must meet the test plan previously created and must be supported on the benchmarking design planned.                                                                                                                 \\ \hline
+      (1.4.2) Test Triggers          & Deliverable           & Create fault injection mechanisms for testing fault tolerance. \newline \textbf{Acceptance Criteria:} Fault injection methods must simulate real-world scenarios and be validated by tests.                                                                                                                                                               \\ \hline
+      (1.4.3) Observability          & Deliverable           & Implement observability tools for monitoring system behavior during tests. \newline \textbf{Acceptance Criteria:} Observability setup must capture the metrics defined on the test validations methods.                                                                                                                                                   \\ \hline
+      \hline % Separator between phases
 
-    (1.5) Evaluation               & Phase                 & Evaluate the results of the benchmarking tests.                                                                                                                                                                                                                                                                                                           \\ \hline
-    (1.5.1) Benchmarking Result    & Deliverable           & Analyze and document the outcomes of benchmarking fault tolerance aspects. \newline \textbf{Acceptance Criteria:} Results must be clear, reproducible, and reviewed by the supervisor.                                                                                                                                                                    \\ \hline
-    \hline % Separator between phases
+      (1.5) Evaluation               & Phase                 & Evaluate the results of the benchmarking tests.                                                                                                                                                                                                                                                                                                           \\ \hline
+      (1.5.1) Benchmarking Result    & Deliverable           & Analyze and document the outcomes of benchmarking fault tolerance aspects. \newline \textbf{Acceptance Criteria:} Results must be clear, reproducible, and reviewed by the advisor.                                                                                                                                                                       \\ \hline
+      \hline % Separator between phases
 
-    (1.6) Conclusions              & Phase                 & Finalize and present the results of the dissertation.                                                                                                                                                                                                                                                                                                     \\ \hline
-    (1.6.1) Dissertation           & Deliverable           & Compile the dissertation document with findings and analyses. \newline \textbf{Acceptance Criteria:} Dissertation must meet university formatting and content guidelines.                                                                                                                                                                                 \\ \hline
-    (1.6.2) Conclusions            & Deliverable           & Write concise conclusions summarizing key findings from the research, with the goal of creating a guide for future developers consult. \newline \textbf{Acceptance Criteria:} Conclusions must be concise and detail what are the cons and pros of using each language for each specific case, so that develops can easily decide.                        \\ \hline
-    (1.6.3) Presentation           & Deliverable           & Prepare and deliver the final presentation to the evaluation committee. \newline \textbf{Acceptance Criteria:} Presentation must be clear and precise.                                                                                                                                                                                                    \\ \hline
+      (1.6) Conclusions              & Phase                 & Finalize and present the results of the dissertation.                                                                                                                                                                                                                                                                                                     \\ \hline
+      (1.6.1) Dissertation           & Deliverable           & Compile the dissertation document with findings and analyses. \newline \textbf{Acceptance Criteria:} Dissertation must meet university formatting and content guidelines.                                                                                                                                                                                 \\ \hline
+      (1.6.2) Conclusions            & Deliverable           & Write concise conclusions summarizing key findings from the research, with the goal of creating a guide for future developers consult. \newline \textbf{Acceptance Criteria:} Conclusions must be concise and detail what are the cons and pros of using each language for each specific case, so that develops can easily decide.                        \\ \hline
+      (1.6.3) Presentation           & Deliverable           & Prepare and deliver the final presentation to the evaluation committee. \newline \textbf{Acceptance Criteria:} Presentation must be clear and precise.                                                                                                                                                                                                    \\ \hline
+      \caption{WBS dictionary}
 \end{longtable}
 
-\begin{comment}
-
-\textbf{Item Name: (1.1) Planning} \\
-\textbf{Type of Item:} Phase \\
-\textbf{Description/Acceptance Criteria:} This phase includes initial project setup tasks. \\[0.5em]
-
-\hspace{10mm} \textbf{Item Name: (1.1.1) Project Charter} \\
-\hspace{10mm} \textbf{Type of Item:} Deliverable \\
-\hspace{10mm} \textbf{Description/Acceptance Criteria:} The project charter must be created following the project's scope and management guidelines. \textbf{Acceptance Criteria:} It must be approved by the supervisor. \\[0.5em]
-
-\textbf{Item Name: (1.1.2) WBS} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Break down the project into manageable components using best practices. \textbf{Acceptance Criteria:} It must be validated by the supervisor and include all project elements. \\[0.5em]
-
-\textbf{Item Name: (1.1.3) Gantt Chart} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Create a detailed timeline outlining tasks, dependencies, and milestones. \textbf{Acceptance Criteria:} It must reflect project phases and be reviewed by the supervisor. \\[0.5em]
-
-\textbf{Item Name: (1.2) Research} \\
-\textbf{Type of Item:} Phase \\
-\textbf{Description/Acceptance Criteria:} Focus on gathering required knowledge and literature for the project. \\[0.5em]
-
-\textbf{Item Name: (1.2.1) Objectives} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Define clear objectives for the comparison of fault tolerance in Elixir, Go, and Akka. \textbf{Acceptance Criteria:} Objectives must align with research goals and be validated by the supervisor. \\[0.5em]
-
-\textbf{Item Name: (1.2.2) Background} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Research and summarize the theoretical background of fault tolerance in distributed systems. \textbf{Acceptance Criteria:} It must cover sufficient depth and breadth and be approved by the supervisor. \\[0.5em]
-
-\textbf{Item Name: (1.2.3) State-of-art} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Review current literature on fault tolerance in Elixir, Go, and Akka. \textbf{Acceptance Criteria:} Must highlight gaps and relevance to the project scope. \\[0.5em]
-
-\textbf{Item Name: (1.3) Design} \\
-\textbf{Type of Item:} Phase \\
-\textbf{Description/Acceptance Criteria:} Includes requirements gathering, testing plan, and benchmarking design. \\[0.5em]
-
-\textbf{Item Name: (1.3.1) Requirements Gathering} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Collect requirements for benchmarking and evaluating fault tolerance aspects. \textbf{Acceptance Criteria:} Requirements must be detailed, reviewed, and approved by the supervisor. \\[0.5em]
-
-\textbf{Item Name: (1.3.2) Testing Plan} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Plan for testing fault tolerance mechanisms in Elixir, Go, and Akka. \textbf{Acceptance Criteria:} The plan must include scenarios and validation methods, reviewed by the supervisor. \\[0.5em]
-
-\textbf{Item Name: (1.3.3) Benchmarking Design} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Define the methodology for benchmarking fault tolerance. \textbf{Acceptance Criteria:} It must be clear and validated by the supervisor. \\[0.5em]
-
-\textbf{Item Name: (1.4) Implementation} \\
-\textbf{Type of Item:} Phase \\
-\textbf{Description/Acceptance Criteria:} Involves the development and deployment of benchmarking prototypes. \\[0.5em]
-
-\textbf{Item Name: (1.4.1) Prototypes} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Develop prototypes in Elixir, Go, and Akka for fault tolerance testing. \textbf{Acceptance Criteria:} Prototypes must meet design specifications and function as intended. \\[0.5em]
-
-\textbf{Item Name: (1.4.2) Test Triggers} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Create fault injection mechanisms for testing fault tolerance. \textbf{Acceptance Criteria:} Fault injection methods must simulate real-world scenarios and be validated by tests. \\[0.5em]
-
-\textbf{Item Name: (1.4.3) Observability} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Implement observability tools for monitoring system behavior during tests. \textbf{Acceptance Criteria:} The setup must capture necessary metrics and be validated. \\[0.5em]
-
-\textbf{Item Name: (1.5) Evaluation} \\
-\textbf{Type of Item:} Phase \\
-\textbf{Description/Acceptance Criteria:} Evaluate results from benchmarking tests. \\[0.5em]
-
-\textbf{Item Name: (1.5.1) Benchmarking Result} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Analyze and document outcomes of benchmarking fault tolerance. \textbf{Acceptance Criteria:} Results must be clear, reproducible, and reviewed by the supervisor. \\[0.5em]
-
-\textbf{Item Name: (1.6) Conclusions} \\
-\textbf{Type of Item:} Phase \\
-\textbf{Description/Acceptance Criteria:} Finalize and present the dissertation results. \\[0.5em]
-
-\textbf{Item Name: (1.6.1) Dissertation} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Compile the dissertation with findings and analyses. \textbf{Acceptance Criteria:} Must meet university formatting and content guidelines. \\[0.5em]
-
-\textbf{Item Name: (1.6.2) Conclusions} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Write conclusions summarizing key insights from the research. \textbf{Acceptance Criteria:} Must align with research objectives and supervisor feedback. \\[0.5em]
-
-\textbf{Item Name: (1.6.3) Presentation} \\
-\textbf{Type of Item:} Deliverable \\
-\textbf{Description/Acceptance Criteria:} Prepare and deliver the final presentation to the evaluation committee. \textbf{Acceptance Criteria:} Presentation must be clear, engaging, and adhere to the allocated time. \\[0.5em]
-\end{comment}
-
 \section{Gantt Diagram}
+
+\subsection{Project Management and Scheduling}
+
+For project management, the start date was established as 02/02/2025, after the 1º semester exams. The scheduling mode was set to automated by adding up the days of each task. The schedule is based on a calendar with no restrictions on working days, meaning all days, including weekends, are considered working days to ensure continuous progress.
+
+\textbf{Estimation Rationale.} Task duration estimates were determined based on the complexity and importance of each phase. The background and state-of-the-art sections were assigned the highest weights due to their critical role in forming the foundation of the research. These sections require extensive literature review and analysis, which are time-intensive. After completing the research phase, the design stage was given significant weight, as it involves defining requirements and developing a comprehensive testing plan, both of which are essential for a successful implementation.
+
+The duration of the implementation phase was estimated considering the iterative nature of prototyping and testing triggers, ensuring sufficient time for observability and adjustments. The evaluation phase, particularly benchmarking results, was scheduled with adequate time to ensure thorough analysis and interpretation of the findings. Lastly, the conclusions phase was planned with sufficient time to synthesize the project outcomes and finalize the dissertation.
+
+\textbf{Resource Allocation and Monitoring.} A resource table was included in the project plan to track resource allocation, focusing on the student and advisor as the primary stakeholders. The advisor’s role is pivotal in control and monitoring tasks, providing feedback and guidance throughout the project lifecycle.
+
+\textbf{Cost Management.} The cost component was excluded from the project plan, as it is not applicable to this type of academic project, which primarily involves intellectual effort and existing institutional resources rather than financial expenditure.
+
+\subsubsection{Monitoring and Controlling Procedures}
+
+The strategy defined to have control over the progress of each task was to mark its progress by an estimated percentage of completion. This method ensures that the progress of the task is clearly visible and measurable, giving both the student and the advisor a view of progress, like it is possible to observe the “\% Completed” column on the Figure \ref{fig:gantt_monitoring}.
+
+To improve this process, specific tasks dedicated to monitoring and control have been incorporated, such as \textit{“Validation and Refinement with the Advisor”}, like illustrated on Figure \ref{fig:gantt_monitoring}. These tasks have two main objectives, firstly, to make the student responsible for presenting the partial document ready to be assessed. Secondly, to ensure that the supervisor is warned in advance of the need for closer and more active feedback on these pre-defined days. Feedback can be given asynchronously via messages or synchronously during scheduled meetings. After the feedback time is up, the goal is to be able to present a refined partial document, referred to as the \textit{“Document version X”} task, also possible to observe on Figure \ref{fig:gantt_monitoring}.
+
+\begin{figure}
+      \centering
+      \includegraphics[width=\linewidth]{ch-planning/assets/wbs.png}
+      \caption{Monitoring and control procedures displayed on the Gantt chart.}
+      \label{fig:gantt_monitoring}
+\end{figure}
+
+Additionally, milestones have been defined to mark the completion of each significant project phase. These milestones serve as checkpoints to ensure progress is on track and can be observed in Figure \ref{fig:gantt_monitoring} under the main task \textit{“Milestones”}.
+
+To manage potential delays, a baseline has been established. This baseline records the initial schedule, allowing deviations to be tracked throughout the project. This mechanism provides an overview of delays and their impact on the schedule. The \textit{“Variance”} column in Figure \ref{fig:gantt_monitoring} illustrates this feature, enabling a clear visualization of discrepancies between planned and actual progress.
+
+\subsection{Meeting Sessions}
+
+To ensure consistent communication and effective progress monitoring with the advisor, a series of biweekly meetings has been scheduled on Wednesdays, with each session expected to last between 30 minutes and one hour. While the schedule includes a predefined list of sessions, it remains flexible, allowing adjustments to the frequency of meetings as the project evolves. For instance, the number of meetings may increase during the final stages of the project, at which point the Gantt chart will be updated accordingly to reflect these changes.
+
+\begin{figure}
+      \centering
+      \includegraphics[width=\linewidth]{ch-planning/assets/wbs.png}
+      \caption{Meeting sessions represented on the Gantt chart.}
+      \label{fig:gantt_meetings}
+\end{figure}
+
+The meeting schedule is illustrated in Figure \ref{fig:gantt_meetings}, which includes 11 recurring tasks organized under the main task \textit{“Meeting Sessions”}. These meetings are planned to take place online, via Microsoft Teams, to ensure accessibility and convenience for both participants.
+
+\subsection{Competencies Development Plan}
+
+To address the competencies identified during the diagnosis of critical skills required for the completion of the dissertation, a dedicated section titled "Competencies Development Plan” has been incorporated into the project plan, as illustrated in Figure \ref{fig:gantt_competency}. This section outlines targeted tasks designed to address these areas for improvement.
+
+\begin{figure}
+      \centering
+      \includegraphics[width=\linewidth]{ch-planning/assets/wbs.png}
+      \caption{Competencies Development Plan represented on the Gantt chart.}
+      \label{fig:gantt_competency}
+\end{figure}
+
+For stress management and resilience, the plan includes the completion of a "Managing Stress" course
+\footnote{Managing Stress Course: \url{https://www.linkedin.com/learning/managing-stress-2019/}}
+, which focuses on these critical skills. To enhance self-discipline and time management, the initial task involves identifying and installing at least one productivity application, such as tools that restrict smartphone usage during certain periods, for example. Additionally, time management will be further strengthened through the completion of "Time Management Fundamentals" course
+\footnote{Time Management Fundamentals Course: \url{https://www.linkedin.com/learning/time-management-fundamentals-14548057/the-power-of-managing-your-time/}}.
+
+Communication, another key area of focus, will be developed by attending to the "Communicating with Confidence" course
+\footnote{Communicating with Confidence Course: \url{https://www.linkedin.com/learning/como-se-comunicar-com-confianca/}}.
 
 \section{Risk Management}
 

@@ -37,4 +37,8 @@
 \contentsline {section}{\numberline {4.1}Project Charter}{13}{section.53}%
 \contentsline {section}{\numberline {4.2}Work Breakdown Structure}{14}{section.55}%
 \contentsline {section}{\numberline {4.3}Gantt Diagram}{17}{section.59}%
-\contentsline {section}{\numberline {4.4}Risk Management}{17}{section.60}%
+\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{17}{subsection.60}%
+\contentsline {subsubsection}{Monitoring and Controlling Procedures}{17}{section*.61}%
+\contentsline {subsection}{\numberline {4.3.2}Meeting Sessions}{18}{subsection.63}%
+\contentsline {subsection}{\numberline {4.3.3}Competencies Development Plan}{18}{subsection.65}%
+\contentsline {section}{\numberline {4.4}Risk Management}{20}{section.70}%

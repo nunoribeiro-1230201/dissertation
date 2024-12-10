@@ -87,17 +87,109 @@ Failures are the external manifestations of the internal faults, as outlined in 
 
 Various strategies and mechanisms can be applied to a system to achieve fault tolerance, and these must be chosen to suit the specific system type. This dissertation will primarily focus on software fault tolerance strategies, and focused on those suitable for the programming languages bellow presented. Therefore, next it will be shown some strategies that it will serve as a theoretical basis for some of techniques that it will be used.
 
-\subsubsection{Retry}
+\subsubsection{Retry Mechanism}
 
-The retry strategy is a popular and straightforward technique that involves repeating an operation that initially failed, under the assumption that it might succeed upon retry \cite{Ledmi2018,Noor2019}.
+The retry mechanism is a widely adopted and straightforward technique that involves reattempting a failed operation under the assumption that transient faults may resolve over time \cite{Ledmi2018}. Despite its simplicity, this strategy is highly suitable in many scenarios, particularly when implementing more complex fault-tolerance mechanisms would introduce unnecessary cost in environments with a high likelihood of transient faults. However, it is crucial to recognize that retrying in the case of a permanent error is pointless. Moreover, if the failure is caused by system overload, uncontrolled retries can aggravate the issue. To address these challenges, implementing a maximum retry limit and incorporating strategies such as exponential backoff, where retries are spaced out with increasing delays, becomes essential \cite{Kleppmann2017,Vitillo2021}.
 
-\subsubsection{Replication}
+This approach operates by attempting the operation a predefined number of times or until a set timeout is reached. If the retries ultimately fail, the system can fall back on alternative measures, such as logging the failure, invoking a fallback operation, or redirecting the request to another asset \cite{Isukapalli2024}. These measures ensure that in the event of a persistent fault, the system will make controlled attempts and roll back in a safe manner.
 
-Replication is a technique aimed at masking errors by creating redundant task clones. In this approach, multiple replicas of a job run simultaneously, acting as a group that performs the same operations. This redundancy allows the system to provide a response even in the event of a host, network, or other types of errors. Replication strategies can vary in communication modes, which may be synchronous or asynchronous. In some cases, a consensus algorithm is needed to reach a final decision among the replicas \cite{Isukapalli2024,Tanenbaum2023,Ledmi2018}.
+The retry mechanism’s simplicity and low implementation overhead make it ideal for scenarios where the cost of a retry is negligible compared to the complexity of alternative solutions. It is particularly effective in network communication, where transient issues such as dropped packets or server unavailability often resolve with subsequent attempts. Additionally, it is well-suited for database systems to handle transient locking or deadlock conditions, as well as in microservice architectures, where downstream services may temporarily become unresponsive but recover shortly thereafter \cite{Kleppmann2017}.
 
-\subsubsection{Check-pointing and Message Logging}
+This strategy aligns effectively with Actor Models due to their inherent monitoring capabilities, which detect errors and initiate retries automatically. Frameworks such as Akka with Scala have built-in support for this mechanism \cite{Isukapalli2024}.
 
-The check-pointing strategy periodically saves the state of a process so that, in the event of a failure, the process can restart from the last saved state, or "checkpoint," rather than start all over. This approach reduces the need to repeat the entire operation \cite{Isukapalli2024,Coulouris2012}.
+\subsubsection{Circuit Breaker Pattern}
+
+The Circuit Breaker pattern, inspired by electrical circuits, is designed to prevent the failure of a single subsystem from cascading and compromising an entire system. This pattern tries to maintain the overall system stable by isolating failing components \cite{Vitillo2021}. By actively monitoring the health of operations and selectively blocking problematic ones, circuit breakers act as safeguards against system overload and degradation \cite{fowler-circuit-breakers}.
+
+Circuit breakers operate in three primary states: Closed, Open, and Half-Open \cite{Vitillo2021, fowler-circuit-breakers}. In the Closed state (illustrated in Figure \ref{fig:circuit-breaker} by first request), operations proceed as usual, with all requests passing through the circuit breaker while it monitors for potential failures. When failures exceed a predefined threshold within a specified time window, whether measured as a count or a percentage of failed attempts, the circuit breaker transitions to the Open state (illustrated in Figure \ref{fig:circuit-breaker} by third request). In this state, all requests are blocked to prevent greater pressure on the failing subsystem. During this time, it is essential to issue an alert to monitoring systems to ensure operational visibility \cite{Vitillo2021, fowler-circuit-breakers}. After a cool-down period, the circuit breaker moves to the Half-Open state, where it permits a limited number of test requests to verify if the underlying issue has been resolved. If these test requests succeed, the circuit breaker resets to the Closed state and resumes normal operation. Otherwise, it reverts to the Open state \cite{fowler-circuit-breakers}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{ch-background/assets/circuit-breaker.png}
+    \caption[Circuit Breaker States]{Diagram illustrating the states of a Circuit Breaker \footnotemark.}
+    \label{fig:circuit-breaker}
+\end{figure}
+\footnotetext{Adapted from Oscar Blancarte Blog. \url{https://www.oscarblancarteblog.com/2018/12/04/circuit-breaker-pattern/} (accessed 8 December 2024).}
+
+The Circuit Breaker pattern is particularly well-suited for distributed systems, such as microservice architectures, where dependencies on external services can lead to cascading failures \cite{fowler-circuit-breakers}. For instance, if a downstream service becomes unresponsive, the circuit breaker blocks further requests, providing the service with time to heal and avoiding the risk of overloading it with retries \cite{Vitillo2021}. It is equally effective in scenarios involving third-party APIs, where temporary rate limits or outages can impact availability. In database systems, circuit breakers can mitigate the effects of resource contention or extended downtime by isolating problematic queries, ensuring the broader system remains operational.
+
+When compared to pure retry mechanisms, the Circuit Breaker pattern provides a more sophisticated approach to fault tolerance. While retries focus on recovering from transient faults, they can harm even more issues under conditions such as system overload or persistent failures \cite{Vitillo2021}. In contrast, circuit breakers proactively block failing operations, reducing the risk of cascading failures and preserving overall system stability. This type of isolation makes circuit breakers an valuable strategy in building fault-tolerant systems.
+
+\subsubsection{Replication and Redundancy}
+
+Replication is a fundamental strategy for achieving fault tolerance in distributed systems and is widely used across various domains \cite{Sari2015}. By creating multiple copies (replicas) of data or processes, replication eliminates single points of failure, ensuring system reliability, availability, and transparency \cite{Coulouris2012}. This approach allows a system to tolerate faults by introducing redundancy, which distributes operations across a group of replicas rather than relying on a single vulnerable node \cite{Tanenbaum2023}.
+
+To effectively coordinate replicas and maintain consistency, replication mechanisms employ various strategies, which can be categorized as follows \cite{Isukapalli2024}:
+
+\begin{itemize}
+\item	\textbf{Active Replication (Semi-Active):} In this strategy, all replicas process incoming requests simultaneously, and the system relies on consensus algorithms to maintain consistency among the results.
+\item	\textbf{Passive Replication (Semi-Passive):} One replica, designated as the leader or primary, handles all client requests and updates other replicas (backups) with state information. In case of a primary failure, backup replicas are promoted or synchronized to restore the system’s functioning.
+\item	\textbf{Passive Backup (Fully Passive):} Replicas act as standby backups in this approach. A backup replica is only activated when the primary fails, minimizing overhead during normal operation.
+\end{itemize}
+
+These replication strategies align with the principles of the CAP theorem, which states that a distributed system can guarantee at most two of the following three properties: consistency, availability, and partition tolerance. Replication strategies often emphasize availability and partition tolerance, potentially compromising consistency due to the inherent challenges of achieving consensus and synchronizing data across replicas. Nonetheless, this trade-off enables systems to scale, increase availability, and provide geographical transparency to end users \cite{Kleppmann2017}.
+
+\textbf{Consensus Algorithms}
+
+Achieving consensus is essential in distributed systems to ensure that a group of processes operates cohesively as a single entity \cite{Tanenbaum2023}. Consensus algorithms enable replicas to agree on a shared state or a sequence of operations, even in the presence of faults. Two widely used consensus algorithms in distributed systems are Raft and Paxos.
+
+\textit{Raft}
+
+Raft is a consensus protocol designed to enable fault-tolerant operation in distributed systems. It ensures that a process will eventually detect if another process has failed and take appropriate corrective action. Raft was developed as a more comprehensible and practical alternative to Paxos, addressing its complexity and promoting clarity \cite{Tanenbaum2023}.
+
+Each process in Raft maintains a log of operations, which may include both committed and uncommitted (pending) entries. The primary goal of Raft is to ensure that these logs remain consistent across all servers, such that committed operations appear in the same order and position in every log \cite{Tanenbaum2023}. To achieve this, Raft uses a leader-based approach, where one server assumes the role of leader while the remaining servers act as followers. The leader is responsible for determining the sequence of operations and ensuring their consistent replication \cite{Vitillo2021}.
+
+When a client submits an operation request, it communicates directly with the leader. If a follower receives the request, it redirects the client to the leader. The leader appends the operation to its log as a tuple ⟨o, t, k⟩, where:
+\begin{itemize}
+    \item o: The operation to be executed.
+    \item t: The current term of the leader.
+    \item k: The index of the operation in the leader’s log.
+\end{itemize}
+
+The leader propagates the operation to the followers using a process inspired by the two-phase commit protocol:
+\begin{enumerate}
+    \item Append Phase: The leader sends the new log entry to all followers, including its term and index. Followers append the entry to their logs and send acknowledgments back to the leader.
+    \item Commit Phase: Upon receiving acknowledgments from a majority of followers, the leader marks the entry as committed, executes the operation, updates its state, and notifies the client of the result. At the same time, the leader informs all followers of the commitment, ensuring their logs reflect the updated status.
+\end{enumerate}
+
+This two-step process guarantees that committed entries are replicated on a majority of servers, preserving durability and consistency, even in case of server failures. However, there are cases where the leader fails, and so a leader election in Raft ensures seamless operation in the event of a leader’s failure. Each server begins as a follower, expecting periodic heartbeat messages from the leader. To prevent multiple followers from initiating elections simultaneously, heartbeat timeouts are randomized. If no heartbeat is received within the timeout period, either because the leader has failed or during system initialization, the follower assumes a new leader is needed and triggers an election \cite{Vitillo2021, Tanenbaum2023}.
+
+The election process consists of the following steps \cite{Vitillo2021}:
+\begin{enumerate}
+    \item 	1.	Transition to Candidate: A follower transitions to a candidate state, increments its term number, and broadcasts requests for votes from other servers.
+    \item 	2.	Voting: Each server can vote for one candidate per term. A server grants its vote only if the candidate’s log is at least as complete as its own, ensuring that the elected leader has the most up-to-date log.
+    \item 	3.	Leader Selection: If a candidate receives votes from a majority of servers, it becomes the leader for the current term.
+\end{enumerate}
+
+Once elected, the new leader reconciles any inconsistencies by broadcasting missing log entries to followers during subsequent operations, ensuring consistency across the cluster.
+
+Conclusion
+
+Raft’s structured and modular design prioritizes simplicity, reliability, and fault tolerance. Its leader-based model centralizes decision-making and log synchronization, while its robust mechanisms for log replication and leader election ensure consistency and availability even in the face of failures. This combination of clarity and fault tolerance makes Raft a practical choice for achieving consensus in distributed systems.
+
+\textit{Paxos}
+
+Paxos is a consensus algorithm focused on achieving agreement in distributed systems despite faults. It is based on three roles:
+
+\begin{itemize}
+\item \textbf{Proposers:} Suggest values for consensus.
+\item \textbf{Acceptors:} Vote on proposed values, ensuring fault tolerance by maintaining a quorum.
+\item \textbf{Learners:} Observe the agreed values and disseminate the result.
+\end{itemize}
+
+Paxos operates in two main phases:
+
+\begin{itemize}
+\item \textbf{Prepare Phase:} A proposer sends a prepare request to acceptors. If an acceptor hasn’t promised any prior value, it responds with a promise not to accept earlier proposals.
+\item \textbf{Accept Phase:} The proposer sends an accept request with the proposed value. Acceptors agree to accept the value if no conflicting promises exist.
+\end{itemize}
+
+While Paxos is robust and ensures consistency, its complexity and subtleties often make it challenging to implement, leading to the development of alternatives like Raft for practical applications \cite{Lamport2001}.
+
+
+\subsubsection{Checkpointing and Message Logging}
+
+The checkpointing strategy periodically saves the state of a process so that, in the event of a failure, the process can restart from the last saved state, or "checkpoint," rather than start all over. This approach reduces the need to repeat the entire operation \cite{Isukapalli2024,Coulouris2012}.
 
 Message logging is a lighter-weight approach with a similar goal. Instead of saving entire checkpoints, it records all the necessary messages that lead the process to a specific state. In case of a failure, the messages are replayed in the same order, guiding the system back to the desired state \cite{Ledmi2018}.
 

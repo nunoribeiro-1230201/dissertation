@@ -814,6 +814,86 @@
       \verb https://martinfowler.com/bliki/CircuitBreaker.html
       \endverb
     \endentry
+    \entry{Howard2020}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ab451ce5642ffe31693f5d0a199bee34}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Heidi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ba494cf2fcd5b5c3ed0f9d081c6a4556}{%
+           family={Mortier},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{fullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{bibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authorbibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authornamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authorfullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Distributed consensus is a fundamental primitive for constructing fault-tolerant, strongly-consistent distributed systems. Though many distributed consensus algorithms have been proposed, just two dominate production systems: Paxos, the traditional, famously subtle, algorithm; and Raft, a more recent algorithm positioned as a more understandable alternative to Paxos. In this paper, we consider the question of which algorithm, Paxos or Raft, is the better solution to distributed consensus? We analyse both to determine exactly how they differ by describing a simplified Paxos algorithm using Raft’s terminology and pragmatic abstractions. We find that both Paxos and Raft take a very similar approach to distributed consensus, differing only in their approach to leader election. Most notably, Raft only allows servers with up-to-date logs to become leaders, whereas Paxos allows any server to be leader provided it then updates its log to ensure it is up-to-date. Raft’s approach is surprisingly efficient given its simplicity as, unlike Paxos, it does not require log entries to be exchanged during leader election. We surmise that much of the understandability of Raft comes from the paper’s clear presentation rather than being fundamental to the underlying algorithm being presented.}
+      \field{booktitle}{Proceedings of the 7th Workshop on Principles and Practice of Consistency for Distributed Data, PaPoC 2020}
+      \field{isbn}{9781450375245}
+      \field{month}{4}
+      \field{title}{Paxos vs Raft: Have we reached consensus on distributed consensus?}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1145/3380787.3393681
+      \endverb
+      \keyw{Distributed consensus,Paxos,Raft,State machine replication}
+    \endentry
+    \entry{raft-diego}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=7cd6def2de460a2efcd2ef9fb4ce7f68}{%
+           family={Ongaro},
+           familyi={O\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ecac04ff101bba23ba67c9332853d538}{%
+           family={Ousterhout},
+           familyi={O\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, PA}%
+      }
+      \list{publisher}{1}{%
+        {USENIX Association}%
+      }
+      \strng{namehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{fullhash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{bibnamehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{authorbibnamehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{authornamehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{authorfullhash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 USENIX Annual Technical Conference (USENIX ATC 14)}
+      \field{isbn}{978-1-931971-10-2}
+      \field{month}{6}
+      \field{title}{In Search of an Understandable Consensus Algorithm}
+      \field{year}{2014}
+      \field{pages}{305\bibrangedash 319}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro
+      \endverb
+    \endentry
     \entry{Armstrong2013}{book}{}
       \name{author}{1}{}{%
         {{hash=e9a00852e213280e28c2aeef1d167186}{%
@@ -828,8 +908,8 @@
       \strng{authorbibnamehash}{e9a00852e213280e28c2aeef1d167186}
       \strng{authornamehash}{e9a00852e213280e28c2aeef1d167186}
       \strng{authorfullhash}{e9a00852e213280e28c2aeef1d167186}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This second edition of Joe's seminal Programming Erlang is a welcome update, covering not only the core language and framework fundamentals but also key community projects such as rebar and cowboy. Even experienced Erlang programmers will find helpful tips and new insights throughout the book, and beginners to the language will appreciate the clear and methodical way Joe introduces and explains key language concepts.}
@@ -851,8 +931,8 @@
       \strng{authorbibnamehash}{704d07f4c928b805bbe4bea255a4c4f9}
       \strng{authornamehash}{704d07f4c928b805bbe4bea255a4c4f9}
       \strng{authorfullhash}{704d07f4c928b805bbe4bea255a4c4f9}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-91-554-7532-1}
@@ -890,8 +970,8 @@
       \strng{authorbibnamehash}{d817a759ef9c3f2d2856a6479bf631a1}
       \strng{authornamehash}{d817a759ef9c3f2d2856a6479bf631a1}
       \strng{authorfullhash}{d817a759ef9c3f2d2856a6479bf631a1}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper proposes a modular ACTOR architecture and definitional method for artificial intelligence that is conceptually based on a single kind of object: actors [or, if you will, virtual processors, activation frames, or streams]. The formalism makes no presuppositions about the representation of primitive data structures and control structures. Such structures can be programmed, micro-coded, or hard wired in a uniform modular fashion. In fact it is impossible to determine whether a given object is "really" represented as a list, a vector, a hash table, a function, or a process. The architecture will efficiently run the coming generation of PLANNER-like artificial intelligence languages including those requiring a high degree of parallelism. The efficiency is gained without loss of programming generality because it only makes certain actors more efficient; it does not change their behavioral characteristics. The architecture is general with respect to control structure and does not have or need goto, interrupt, or semaphore primitives. The formalism achieves the goals that the disallowed constructs are intended to achieve by other more structured methods.}
@@ -1042,8 +1122,8 @@
       \strng{authorbibnamehash}{b870f031689288c18126a30fb71ec7d8}
       \strng{authornamehash}{b870f031689288c18126a30fb71ec7d8}
       \strng{authorfullhash}{efd7aadd60d0557a9db671436f7e7599}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Distributed actor languages are an effective means of constructing scalable reliable systems, and the Erlang programming language has a well-established and influential model. While the Erlang model conceptually provides reliable scalability, it has some inherent scalability limits and these force developers to depart from the model at scale. This article establishes the scalability limits of Erlang systems and reports the work of the EU RELEASE project to improve the scalability and understandability of the Erlang reliable distributed actor model. We systematically study the scalability limits of Erlang and then address the issues at the virtual machine, language, and tool levels. More specifically: (1) We have evolved the Erlang virtual machine so that it can work effectively in large-scale single-host multicore and NUMA architectures. We have made important changes and architectural improvements to the widely used Erlang/OTP release. (2) We have designed and implemented Scalable Distributed (SD) Erlang libraries to address language-level scalability issues and provided and validated a set of semantics for the new language constructs. (3) To make large Erlang systems easier to deploy, monitor, and debug, we have developed and made open source releases of five complementary tools, some specific to SD Erlang. Throughout the article we use two case studies to investigate the capabilities of our new technologies and tools: a distributed hash table based Orbit calculation and Ant Colony Optimisation (ACO). Chaos Monkey experiments show that two versions of ACO survive random process failure and hence that SD Erlang preserves the Erlang reliability model. While we report measurements on a range of NUMA and cluster architectures, the key scalability experiments are conducted on the Athos cluster with 256 hosts (6,144 cores). Even for programs with no global recovery data to maintain, SD Erlang partitions the network to reduce network traffic and hence improves performance of the Orbit and ACO benchmarks above 80 hosts. ACO measurements show that maintaining global recovery data dramatically limits scalability; however, scalability is recovered by partitioning the recovery data. We exceed the established scalability limits of distributed Erlang, and do not reach the limits of SD Erlang for these benchmarks at this scale (256 hosts, 6,144 cores).}
@@ -1089,8 +1169,8 @@
       \strng{authorbibnamehash}{7e295867afb442264d2ea8e0d010d85b}
       \strng{authornamehash}{7e295867afb442264d2ea8e0d010d85b}
       \strng{authorfullhash}{7e295867afb442264d2ea8e0d010d85b}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Actor Model is a message passing concurrency model that was originally proposed by Hewitt et al. in 1973. It is now 43 years later and since then researchers have explored a plethora of variations on this model. This paper presents a history of the Actor Model throughout those years. The goal of this paper is not to provide an exhaustive overview of every actor system in existence but rather to give an overview of some of the exemplar languages and libraries that influenced the design and rationale of other actor systems throughout those years. This paper therefore shows that most actor systems can be roughly classified into four families, namely: Classic Actors, Active Objects, Processes and Communicating Event-Loops. This paper also defines the Isolated Turn Principle as a unifying principle across those four families. Additionally this paper lists some of the key properties along which actor systems can be evaluated and formulates some general insights about the design and rationale of the different actor families across those dimensions.}
@@ -1134,8 +1214,8 @@
       \strng{authorbibnamehash}{c2c7f10188bc88f4c5af96993ac3fab7}
       \strng{authornamehash}{c2c7f10188bc88f4c5af96993ac3fab7}
       \strng{authorfullhash}{c2c7f10188bc88f4c5af96993ac3fab7}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Erlang 2022 - Proceedings of the 21st ACM SIGPLAN International Workshop on Erlang}
@@ -1170,8 +1250,8 @@
       \strng{authorbibnamehash}{d6facc8397f631d3ef01dd70be993640}
       \strng{authornamehash}{d6facc8397f631d3ef01dd70be993640}
       \strng{authorfullhash}{d6facc8397f631d3ef01dd70be993640}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper suggests that input and output are basic primitives of programming and that parallel composition of communicating sequential processes is a fundamental program structuring method. When combined with a development of Dijkstra's guarded command, these concepts are surprisingly versatile. Their use is illustrated by sample solutions of a variety of a familiar programming exercises.}
@@ -1218,8 +1298,8 @@
       \strng{authorbibnamehash}{4610062e886a24e883ca5c09d0bc2806}
       \strng{authornamehash}{4610062e886a24e883ca5c09d0bc2806}
       \strng{authorfullhash}{4610062e886a24e883ca5c09d0bc2806}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Programming parallelism with shared memory raises some technical difficulties in synchronization and accessing memory in a thread-safe way. Most of the time the result is a trade-off between application's source code understandability, maintainability and error-prone on one side, and performance on the other side. This trade-off is even tighter when using low-level languages such as C++. The paper presents an open-source library for C++ that provides a Sequential Communicating Processes method for communication and synchronization, and overall, aims to simplify the shared memory parallelism development, make it more predictable and less error-prone, without sacrificing performance. The efficiency of the solution is proven through a set of concrete examples and benchmarks.}
@@ -1247,8 +1327,8 @@
       \strng{authorbibnamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
       \strng{authornamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
       \strng{authorfullhash}{5f075ae3e1f9d0382bb8c4632991f96f}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 10.11.2024}
@@ -1288,8 +1368,8 @@
       \strng{authorbibnamehash}{5a071eb3cad1f1915f674b4bb0140d44}
       \strng{authornamehash}{5a071eb3cad1f1915f674b4bb0140d44}
       \strng{authorfullhash}{5a071eb3cad1f1915f674b4bb0140d44}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Occam is a programming language built on CSP, which for many years has been used for writing safety-critical systems used in space technology and at CERN among others. However, the language has not been developed or maintained for the last 25 years, which makes it difficult to maintain the programs which currently has a code base in Occam. As changing the entire code base for such systems will prove both expensive and time consuming, it is desirable to find an easy and secure way to translate Occam programs into another programming language.This paper lays the foundation of a transpiler from Occam to the newer programming language Go using Haskell. Go is a modern programming language which also implements many of the CSP principles found in Occam, making it a suitable target.The transpiler is implemented for a subset of Occam including only basic functionality, and is successful in translating simple programs from Occam to Go, showing that it is indeed possible to automatically translate Occam programs into Go.}
@@ -1337,8 +1417,8 @@
       \strng{authorbibnamehash}{d5e18dc4c3db773421c8bc2d65abd02c}
       \strng{authornamehash}{d5e18dc4c3db773421c8bc2d65abd02c}
       \strng{authorfullhash}{d25549247f3d7171c1acd240367866c7}
-      \field{sortinit}{8}
-      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Software}
@@ -1385,8 +1465,8 @@
       \strng{authorbibnamehash}{0a3c33d75499a24109fd446d70b040b8}
       \strng{authornamehash}{0a3c33d75499a24109fd446d70b040b8}
       \strng{authorfullhash}{af03f383c875cf5bd70d95b6ce7e0bed}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Microservices is an emerging development paradigm where software is obtained by composing autonomous entities, called (micro)services. However, microservice systems are currently developed using general-purpose programming languages that do not provide dedicated abstractions for service composition. Instead, current practice is focused on the deployment aspects of microservices, in particular by using containerization. In this chapter, we make the case for a language-based approach to the engineering ofmicroservice architectures,which we believe is complementary to current practice. We discuss the approach in general, and then we instantiate it in terms of the Jolie programming language.}
@@ -1420,8 +1500,8 @@
       \strng{authorbibnamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
       \strng{authornamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
       \strng{authorfullhash}{08ce6d86d6c5bbf9d1e364348c357e74}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781633438514}
@@ -1446,8 +1526,8 @@
       \strng{authorbibnamehash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
       \strng{authornamehash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
       \strng{authorfullhash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{9781617299216}
@@ -1504,7 +1584,6 @@
       \keyw{Apache Hadoop,HDFS,MapReduce,Survey,Systematic literature review}
     \endentry
   \enddatalist
-  \missing{Lamport2001}
 \endrefsection
 \endinput
 

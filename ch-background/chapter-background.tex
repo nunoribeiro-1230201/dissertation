@@ -101,7 +101,7 @@ This strategy aligns effectively with Actor Models due to their inherent monitor
 
 The Circuit Breaker pattern, inspired by electrical circuits, is designed to prevent the failure of a single subsystem from cascading and compromising an entire system. This pattern tries to maintain the overall system stable by isolating failing components \cite{Vitillo2021}. By actively monitoring the health of operations and selectively blocking problematic ones, circuit breakers act as safeguards against system overload and degradation \cite{fowler-circuit-breakers}.
 
-Circuit breakers operate in three primary states: Closed, Open, and Half-Open \cite{Vitillo2021, fowler-circuit-breakers}. In the Closed state (illustrated in Figure \ref{fig:circuit-breaker} by first request), operations proceed as usual, with all requests passing through the circuit breaker while it monitors for potential failures. When failures exceed a predefined threshold within a specified time window, whether measured as a count or a percentage of failed attempts, the circuit breaker transitions to the Open state (illustrated in Figure \ref{fig:circuit-breaker} by third request). In this state, all requests are blocked to prevent greater pressure on the failing subsystem. During this time, it is essential to issue an alert to monitoring systems to ensure operational visibility \cite{Vitillo2021, fowler-circuit-breakers}. After a cool-down period, the circuit breaker moves to the Half-Open state, where it permits a limited number of test requests to verify if the underlying issue has been resolved. If these test requests succeed, the circuit breaker resets to the Closed state and resumes normal operation. Otherwise, it reverts to the Open state \cite{fowler-circuit-breakers}.
+Circuit breakers operate in three primary states: Closed, Open, and Half-Open \cite{Vitillo2021, fowler-circuit-breakers}. In the Closed state, illustrated in Figure \ref{fig:circuit-breaker} by first request, operations proceed as usual, with all requests passing through the circuit breaker while it monitors for potential failures. When failures exceed a predefined threshold within a specified time window, whether measured as a count or a percentage of failed attempts, the circuit breaker transitions to the Open state, illustrated in Figure \ref{fig:circuit-breaker} by third request. In this state, all requests are blocked to prevent greater pressure on the failing subsystem. During this time, it is essential to issue an alert to monitoring systems to ensure operational visibility \cite{Vitillo2021, fowler-circuit-breakers}. After a cool-down period, the circuit breaker moves to the Half-Open state, where it permits a limited number of test requests to verify if the underlying issue has been resolved. If these test requests succeed, the circuit breaker resets to the Closed state and resumes normal operation. Otherwise, it reverts to the Open state \cite{fowler-circuit-breakers}.
 
 \begin{figure}
     \centering
@@ -117,77 +117,106 @@ When compared to pure retry mechanisms, the Circuit Breaker pattern provides a m
 
 \subsubsection{Replication and Redundancy}
 
-Replication is a fundamental strategy for achieving fault tolerance in distributed systems and is widely used across various domains \cite{Sari2015}. By creating multiple copies (replicas) of data or processes, replication eliminates single points of failure, ensuring system reliability, availability, and transparency \cite{Coulouris2012}. This approach allows a system to tolerate faults by introducing redundancy, which distributes operations across a group of replicas rather than relying on a single vulnerable node \cite{Tanenbaum2023}.
+Replication is a fundamental strategy for achieving fault tolerance in distributed systems and is widely used across various domains \cite{Sari2015}. By creating multiple copies, also called replicas, of data or processes, replication eliminates single points of failure, ensuring system reliability, availability, and transparency \cite{Coulouris2012}. This approach allows a system to tolerate faults by introducing redundancy, which distributes operations across a group of replicas rather than relying on a single vulnerable node \cite{Tanenbaum2023}.
 
 To effectively coordinate replicas and maintain consistency, replication mechanisms employ various strategies, which can be categorized as follows \cite{Isukapalli2024}:
 
 \begin{itemize}
-\item	\textbf{Active Replication (Semi-Active):} In this strategy, all replicas process incoming requests simultaneously, and the system relies on consensus algorithms to maintain consistency among the results.
-\item	\textbf{Passive Replication (Semi-Passive):} One replica, designated as the leader or primary, handles all client requests and updates other replicas (backups) with state information. In case of a primary failure, backup replicas are promoted or synchronized to restore the system’s functioning.
-\item	\textbf{Passive Backup (Fully Passive):} Replicas act as standby backups in this approach. A backup replica is only activated when the primary fails, minimizing overhead during normal operation.
+    \item	\textbf{Active Replication (Semi-Active):} In this strategy, all replicas process incoming requests simultaneously, and the system relies on consensus algorithms to maintain consistency among the results.
+    \item	\textbf{Passive Replication (Semi-Passive):} One replica, designated as the leader or primary, handles all client requests and updates other replicas (backups) with state information. In case of a primary failure, backup replicas are promoted or synchronized to restore the system’s functioning.
+    \item	\textbf{Passive Backup (Fully Passive):} Replicas act as standby backups in this approach. A backup replica is only activated when the primary fails, minimizing overhead during normal operation.
 \end{itemize}
 
 These replication strategies align with the principles of the CAP theorem, which states that a distributed system can guarantee at most two of the following three properties: consistency, availability, and partition tolerance. Replication strategies often emphasize availability and partition tolerance, potentially compromising consistency due to the inherent challenges of achieving consensus and synchronizing data across replicas. Nonetheless, this trade-off enables systems to scale, increase availability, and provide geographical transparency to end users \cite{Kleppmann2017}.
 
 \textbf{Consensus Algorithms}
 
-Achieving consensus is essential in distributed systems to ensure that a group of processes operates cohesively as a single entity \cite{Tanenbaum2023}. Consensus algorithms enable replicas to agree on a shared state or a sequence of operations, even in the presence of faults. Two widely used consensus algorithms in distributed systems are Raft and Paxos.
+Achieving consensus is essential in distributed systems to ensure that a group of processes operates cohesively as a single entity \cite{Tanenbaum2023}. Consensus algorithms enable replicas to agree on a shared state or a sequence of operations, even in the presence of faults. Two famous used consensus algorithms in distributed systems are Raft and Paxos \cite{Tanenbaum2023}.
 
-\textit{Raft}
+\textit{\underline{Paxos}}
 
-Raft is a consensus protocol designed to enable fault-tolerant operation in distributed systems. It ensures that a process will eventually detect if another process has failed and take appropriate corrective action. Raft was developed as a more comprehensible and practical alternative to Paxos, addressing its complexity and promoting clarity \cite{Tanenbaum2023}.
+Paxos first appeared in 1989 and has evolved over time, earning a reputation as a complex and difficult to understand algorithm \cite{Tanenbaum2023}. Due to its challenges and the availability of newer alternatives, such as Raft, that is described bellow. This Paxos explanation will focus on its core concepts without delving into exhaustive details.
 
-Each process in Raft maintains a log of operations, which may include both committed and uncommitted (pending) entries. The primary goal of Raft is to ensure that these logs remain consistent across all servers, such that committed operations appear in the same order and position in every log \cite{Tanenbaum2023}. To achieve this, Raft uses a leader-based approach, where one server assumes the role of leader while the remaining servers act as followers. The leader is responsible for determining the sequence of operations and ensuring their consistent replication \cite{Vitillo2021}.
+Paxos ensures that a group of distributed replicas agrees on a single value, even in the presence of faults. It operates under challenging conditions: replicas may crash and recover, messages can be delayed, reordered, or lost, and no assumptions are made about message delivery timing \cite{Howard2020, Tanenbaum2023}. The algorithm revolves around three distinct roles \cite{Coulouris2012, Howard2020}:
 
-When a client submits an operation request, it communicates directly with the leader. If a follower receives the request, it redirects the client to the leader. The leader appends the operation to its log as a tuple ⟨o, t, k⟩, where:
 \begin{itemize}
-    \item o: The operation to be executed.
-    \item t: The current term of the leader.
-    \item k: The index of the operation in the leader’s log.
+    \item \textbf{Proposers:} Suggest values for the system to agree upon.
+    \item \textbf{Acceptors:} Vote on proposals, ensuring fault tolerance by requiring a majority for decisions.
+    \item \textbf{Learners:} Observe the final agreed value and disseminate the result across the system.
 \end{itemize}
 
-The leader propagates the operation to the followers using a process inspired by the two-phase commit protocol:
+With the roles defined, the Paxos algorithm progresses through the following phases to achieve consensus \cite{Tanenbaum2023, Coulouris2012, Howard2020}:
+
+\begin{itemize}
+    \item \textbf{Prepare Phase:}
+          A proposer generates a proposal with a unique sequence number and sends a \textit{prepare request} to a list of acceptors.
+          \begin{itemize}
+              \item Acceptors respond with a \textit{promise} not to accept earlier proposals.
+              \item If an acceptor has already accepted a value, it shares this value with the proposer.
+          \end{itemize}
+
+    \item \textbf{Accept Phase:}
+          Based on responses from the prepare phase, the proposer sends an \textit{accept request} with a value:
+          \begin{itemize}
+              \item If an acceptor had previously accepted a value, the proposer adopts that value.
+              \item Otherwise, the proposer chooses its own value.
+              \item Acceptors respond by accepting the value if it doesn’t conflict with their earlier promises.
+          \end{itemize}
+
+    \item \textbf{Commit (or Learn) Phase:}
+          Once a majority of acceptors accepts the value, consensus is achieved.
+          \begin{itemize}
+              \item The proposer informs all replicas, which then commit the value.
+          \end{itemize}
+\end{itemize}
+
+While Paxos is robust in theory and guarantees consistency, its complexity and subtle behaviors make it difficult to implement correctly or faithfully to its original design \cite{Tanenbaum2023}. Over time, new variations and extensions, such as Multi-Paxos, have been developed. Multi-Paxos enables the system to achieve consensus on multiple values, making it more practical for real-world applications, like Chubby lock service of Google \cite{Coulouris2012}, but in general it is not considered a highly adopted algorithm.
+
+The inherent complexity of Paxos has also driven the creation of simpler consensus algorithms, such as Raft, which aim to provide the same guarantees while being easier to understand and implement \cite{Tanenbaum2023, Howard2020}.
+
+\textit{\underline{Raft}}
+
+Raft is a consensus protocol designed to enable fault-tolerant operation in distributed systems. It ensures that a process will eventually detect if another process has failed and take appropriate corrective action. Raft was developed as a more comprehensible and practical alternative to Paxos, addressing its complexity and promoting clarity \cite{raft-diego,Tanenbaum2023}. This algorithm fits on semi passive replication strategy.
+
+Each process in Raft maintains a log of operations, which may include both committed and uncommitted entries. The primary goal of Raft is to ensure that these logs remain consistent across all servers, such that committed operations appear in the same order and position in every log \cite{Tanenbaum2023}. To achieve this, Raft uses a leader-based approach, where one server assumes the role of leader while the remaining servers act as followers. The leader is responsible for determining the sequence of operations and ensuring their consistent replication \cite{Vitillo2021}. The typical number of nodes is five, which theoretically allows for two failures \cite{raft-diego}.
+
+When a operation request is submitted, the leader appends the operation to its log as a tuple where it contains: the operation to be executed, the current term of the leader, and the index of the operation in the leader's logs \cite{Tanenbaum2023}. The term is reset every time an election occurs, starting from zero \cite{raft-diego}. This information is then propagated to the followers using a process inspired by the two-phase commit protocol, where it consists on \cite{Tanenbaum2023,Vitillo2021}:
 \begin{enumerate}
-    \item Append Phase: The leader sends the new log entry to all followers, including its term and index. Followers append the entry to their logs and send acknowledgments back to the leader.
-    \item Commit Phase: Upon receiving acknowledgments from a majority of followers, the leader marks the entry as committed, executes the operation, updates its state, and notifies the client of the result. At the same time, the leader informs all followers of the commitment, ensuring their logs reflect the updated status.
+    \item \textbf{Append Phase:} The leader sends the new log entry to all followers. The followers append the entry to their logs and send an acknowledgment signal back to the leader.
+    \item \textbf{Commit Phase:} Upon receiving the acknowledgments from a majority of followers, the leader marks the entry as committed, executes the operation, updates its state, and notifies the client of the result. At the same time, the leader informs all followers of the commitment, ensuring their logs reflect the updated status.
 \end{enumerate}
 
-This two-step process guarantees that committed entries are replicated on a majority of servers, preserving durability and consistency, even in case of server failures. However, there are cases where the leader fails, and so a leader election in Raft ensures seamless operation in the event of a leader’s failure. Each server begins as a follower, expecting periodic heartbeat messages from the leader. To prevent multiple followers from initiating elections simultaneously, heartbeat timeouts are randomized. If no heartbeat is received within the timeout period, either because the leader has failed or during system initialization, the follower assumes a new leader is needed and triggers an election \cite{Vitillo2021, Tanenbaum2023}.
+This two-step process guarantees that committed entries are replicated on a majority of servers, preserving durability and consistency, even in case of server failures \cite{Tanenbaum2023}. However, there are cases where the leader fails and an election starts among the followers. The followers acknowledge the leader’s failure through the heartbeat strategy, where after a certain time without receiving any signal sent by the leader, the follower starts an election \cite{Vitillo2021,raft-diego}, like represented on Figure \ref{fig:state-raft} by the change of state from follower to candidate. To prevent multiple followers from initiating elections simultaneously, heartbeat timeouts are randomized. \cite{Vitillo2021, Tanenbaum2023}.
 
-The election process consists of the following steps \cite{Vitillo2021}:
+The change of state of the node is displayed on the Figure \ref{fig:state-raft} and the process consists on the following steps \cite{Vitillo2021,raft-diego}:
 \begin{enumerate}
-    \item 	1.	Transition to Candidate: A follower transitions to a candidate state, increments its term number, and broadcasts requests for votes from other servers.
-    \item 	2.	Voting: Each server can vote for one candidate per term. A server grants its vote only if the candidate’s log is at least as complete as its own, ensuring that the elected leader has the most up-to-date log.
-    \item 	3.	Leader Selection: If a candidate receives votes from a majority of servers, it becomes the leader for the current term.
+    \item 	\textbf{Transition to Candidate:} A follower transitions to a candidate state, increments its term number, and broadcasts requests for votes from other servers.
+    \item 	\textbf{Voting:} Each server can vote for one candidate per term. A server grants its vote only if the candidate’s log is at least as complete as its own, ensuring that the elected leader has the most up-to-date log.
+    \item 	\textbf{Leader Selection:} If a candidate receives votes from a majority of servers, it becomes the leader for the current term.
 \end{enumerate}
 
-Once elected, the new leader reconciles any inconsistencies by broadcasting missing log entries to followers during subsequent operations, ensuring consistency across the cluster.
+Once elected, the new leader reconciles any inconsistencies by broadcasting missing log entries to followers during subsequent operations, ensuring consistency across the cluster \cite{Tanenbaum2023}.
 
-Conclusion
+\begin{figure}
+    \centering
+    \includegraphics[scale=1]{ch-background/assets/state-raft.png}
+    \caption[State Diagram of Nodes in Raft]{Diagram illustrating the states of a node in the Raft algorithm \footnotemark.}
+    \label{fig:state-raft}
+\end{figure}
+\footnotetext{Adapted from Jinjie Xu and colleagues. \url{https://doi.org/10.3390/sym14061122/} (accessed 8 December 2024).}
 
-Raft’s structured and modular design prioritizes simplicity, reliability, and fault tolerance. Its leader-based model centralizes decision-making and log synchronization, while its robust mechanisms for log replication and leader election ensure consistency and availability even in the face of failures. This combination of clarity and fault tolerance makes Raft a practical choice for achieving consensus in distributed systems.
+Raft’s structured and modular design prioritizes simplicity, reliability, and fault tolerance. Its leader-based model centralizes decision-making and log synchronization, while its robust mechanisms for log replication and leader election ensure consistency and availability even in the face of failures.
 
-\textit{Paxos}
+\textit{\underline{Comparison on Paxos and Raft}}
 
-Paxos is a consensus algorithm focused on achieving agreement in distributed systems despite faults. It is based on three roles:
+Both Paxos and Raft are leader-based distributed consensus algorithms designed to ensure consistency in replicated state machines \cite{Howard2020}. The key difference lies in their approach to leader election and log replication. Raft prioritizes simplicity and readability, requiring candidates to have up-to-date logs before becoming leaders, avoiding complex log synchronization steps common in Paxos. Paxos, while general and flexible, allows for greater complexity, such as out-of-order log replication and term adjustments during leadership changes \cite{Tanenbaum2023}.
 
-\begin{itemize}
-\item \textbf{Proposers:} Suggest values for consensus.
-\item \textbf{Acceptors:} Vote on proposed values, ensuring fault tolerance by maintaining a quorum.
-\item \textbf{Learners:} Observe the agreed values and disseminate the result.
-\end{itemize}
-
-Paxos operates in two main phases:
-
-\begin{itemize}
-\item \textbf{Prepare Phase:} A proposer sends a prepare request to acceptors. If an acceptor hasn’t promised any prior value, it responds with a promise not to accept earlier proposals.
-\item \textbf{Accept Phase:} The proposer sends an accept request with the proposed value. Acceptors agree to accept the value if no conflicting promises exist.
-\end{itemize}
-
-While Paxos is robust and ensures consistency, its complexity and subtleties often make it challenging to implement, leading to the development of alternatives like Raft for practical applications \cite{Lamport2001}.
-
+Raft is widely used in distributed systems requiring high availability and consistent state management. Notable applications include etcd for distributed key-value storage, Consul for service discovery, and CockroachDB for scalable, consistent databases \cite{Howard2020,Vitillo2021}. Paxos, on the other hand, is often found in legacy systems and specialized applications like Google’s Chubby service \cite{Howard2020}. 
 
 \subsubsection{Checkpointing and Message Logging}
+
+This strategies focuses more on the recovery part of the faults, so they actuate over an error. This strategies have the goal to recover a error-free state \cite{Tanenbaum2023}. 
+
 
 The checkpointing strategy periodically saves the state of a process so that, in the event of a failure, the process can restart from the last saved state, or "checkpoint," rather than start all over. This approach reduces the need to repeat the entire operation \cite{Isukapalli2024,Coulouris2012}.
 

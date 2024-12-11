@@ -1,0 +1,21 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[57] biber-darwin:340> INFO - === Wed Dec 11, 2024, 22:29:07
+[77] Biber.pm:419> INFO - Reading 'main.bcf'
+[160] Biber.pm:979> INFO - Found 40 citekeys in bib section 0
+[171] Biber.pm:4419> INFO - Processing section 0
+[179] Biber.pm:4610> INFO - Looking for bibtex file './references.bib' for section 0
+[186] bibtex.pm:1713> INFO - LaTeX decoding ...
+[246] bibtex.pm:1519> INFO - Found BibTeX data source './references.bib'
+[386] Biber.pm:4610> INFO - Looking for bibtex file './other_references.bib' for section 0
+[388] bibtex.pm:1713> INFO - LaTeX decoding ...
+[400] bibtex.pm:1519> INFO - Found BibTeX data source './other_references.bib'
+[465] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[465] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[465] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[465] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[487] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[504] bbl.pm:763> INFO - Output to main.bbl
+[504] Biber.pm:131> WARN - Duplicate entry key: 'Haridi1998' in file './references.bib', skipping ...
+[504] Biber.pm:131> WARN - Duplicate entry key: 'Trinder2017' in file './references.bib', skipping ...
+[504] Biber.pm:133> INFO - WARNINGS: 2

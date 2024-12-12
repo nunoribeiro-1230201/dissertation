@@ -7,7 +7,7 @@
 
 \section{Project Charter}
 
-The project charter provides a overview of the stakeholders, benefits, and assumptions of the project to state the begin of the project.
+The project charter provides an overview of the stakeholders, benefits, and assumptions of the project to state the beginning of the project. This document serves as an formal source that captures the project's initial vision.
 
 \noindent \textbf{Stakeholder}
 
@@ -22,7 +22,9 @@ The project charter provides a overview of the stakeholders, benefits, and assum
       \end{tabular}
 \end{table}
 
-The administration of the master's degree programme exerts a moderate influence due to the necessity of complying with institutional requirements. Also, there is potential interest in the results, given that it will be a project for the institution. In contrast, the advisor exerts a high level of influence and interest, as his guidance and approval are fundamental to the success of the project. Furthermore, students and developers in general have an interest in the outcome of this project, considering it to be a guide for a better choice related to the fault tolerance aspects, but they exert low influence.
+The administration of the master's degree programme has a moderate level of influence and interest in the project, as they must ensure compliance with institutional requirements and rules. Additionally, they have interest in the project's outcome, given its association with the institution. In contrast, the advisor has a high level of influence and interest, as their guidance and approval are crucial to the project's success. 
+
+On the other hand, students and developers in the field of software engineering have an interest in the project's outcome, as it will provide guidance on selecting languages and strategies related to fault tolerance. However, they have limited power to influence the project's direction.
 
 \textbf{Benefits}
 
@@ -60,7 +62,6 @@ As shown in Figure \ref{fig:wbs}, the main point of this project is the disserta
 Once the planning phase is complete, the subsequent phases align with the Design and Creation research method. This research method was chosen given the nature of the project, because while the final objective is clear, there are uncertainties about how to achieve each stage, as every step builds on the outcomes of the previous one. Consequently, the method divides the project into sequential phases: design, implementation, and conclusion. Each phase has clearly defined deliverables that align with the \gls{WBS}, ensuring that progress can be monitored and adjustments can be made as needed.
 
 The final phase, the conclusion, consolidates all findings and results, translating them into the completed dissertation.
-
 
 \begin{figure}
       \centering
@@ -116,7 +117,7 @@ The final phase, the conclusion, consolidates all findings and results, translat
 
 \section{Gantt Diagram}
 
-This section relates the details of the gantt diagram. The gantt diagram it was done on the Microsoft Project, and its timeline it is possible to observe on Figure \ref{fig:gantt_timeline}. For simplicity it is only shown the main phases, the milestones, and the periodically of the control and feedback meetings. Also, the time that the development of competencies it will cover in terms of tasks. The detailed information it will be described bellow. This gives an overview and sees that the organization of thr project its mateched wiht the \gls{WBS}. However, for further detail, on the AppendixA section of the planning is displayed on the Appendix Chapter \ref{AppendixA}. \todo{texto e appendix}
+This section provides details about the Gantt diagram, created using Microsoft Project. The timeline is illustrated in Figure \ref{fig:gantt_timeline}, where only the main phases, milestones, and the periodic schedule of control and feedback meetings are shown for simplicity. Additionally, the tasks covering the development of competencies are highlighted. Detailed information is provided below, offering an overview that demonstrates how the project’s organization aligns with the Work Breakdown Structure (WBS). For more in-depth details, refer to \nameref{AppendixA} for a representation of all tasks related.
 
 \begin{figure}
       \centering
@@ -128,23 +129,23 @@ This section relates the details of the gantt diagram. The gantt diagram it was 
 
 \subsection{Project Management and Scheduling}
 
-For the project management, the start date was set to 02/02/2025, after the first semester exams, and the end date to the predefined date associated with the project of 30/06/2025, like illustrated in Figure \ref{fig:gantt_timeline}. The scheduling strategy is to use the automatic mode where it calculates the dates based on the days of each task and the relationship between them, leveraging on the estimation on days. The schedule is based on a calendar with no restrictions on working days, meaning all days, including weekends, are considered working days to ensure continuous progress.
+The project’s start date was set for 02/02/2025, following the first semester exams, with the end date aligned to the predefined project formalization deadline of 30/06/2025, as illustrated in Figure \ref{fig:gantt_timeline}. The scheduling strategy employed automatic mode, enabling the calculation of dates based on task durations and their interdependencies. The schedule assumes a calendar without restrictions on working days, meaning all days, including weekends, are treated as working days to ensure continuous progress.
 
-\todo[inline]{melhorar esta parte de baixo}
+\textbf{Estimation Rationale.} Task durations were estimated by evaluating the complexity and importance of each project phase like illustrated by the column \textit{"Duration"} in Figure \ref{fig:gantt_monitoring}. The background and state-of-the-art have a considerable slice, given their foundational role in the research. These stages demand research and analysis, making them time-consuming. Following this, the design phase received significant attention, as it involves defining system requirements and developing a detailed testing plan, which are important steps for the implementation.
 
-\textbf{Estimation Rationale.} Task duration estimates were determined based on the complexity and importance of each phase. The background and state-of-the-art sections were assigned the highest weights due to their critical role in forming the foundation of the research. These sections require extensive literature review and analysis, which are time-intensive. After completing the research phase, the design stage was given significant weight, as it involves defining requirements and developing a comprehensive testing plan, both of which are essential for a successful implementation.
+The implementation phase was planned taking in considerations the necessity of prototyping, testing, and possible adjustments, making it the most time-consuming task. The evaluation phase, particularly benchmarking, was allocated less time compared to implementation, but enough time for a thorough analysis and interpretation of results. Finally, the conclusion phase was planned with a related similarly time to the state-of-art to synthesize findings, document outcomes, and finalize the dissertation.
 
-The duration of the implementation phase was estimated considering the iterative nature of prototyping and testing triggers, ensuring sufficient time for observability and adjustments. The evaluation phase, particularly benchmarking results, was scheduled with adequate time to ensure thorough analysis and interpretation of the findings. Lastly, the conclusions phase was planned with sufficient time to synthesize the project outcomes and finalize the dissertation.
+Given the dependency between phases, this project is difficult to parallelize. The implementation phase relies heavily on the preceding design phase, and the evaluation phase depends on a functional implementation. While test-driven development (TDD) methodologies could be considered in some projects, they are unsuitable here due to the need for a fully realized implementation to generate reliable metric data for evaluation. 
 
-\textbf{Resource Allocation and Monitoring.} A resource table was included in the project plan to track resource allocation, focusing on the student and advisor as the primary stakeholders. The advisor’s role is focused on controlling and monitoring tasks, providing feedback and guidance throughout the project.
+\textbf{Resource Allocation.} A resource column was included in the project plan to track resource allocation, focusing on the student and advisor as the primary stakeholders as illustrated in Figure \ref{fig:gantt_timeline}. The advisor’s role is focused on controlling and monitoring tasks, providing feedback and guidance throughout the project.
 
 \textbf{Cost Management.} The cost component was excluded from the project plan, as it is not applicable to this type of academic project.
 
 \subsection{Monitoring and Controlling Procedures}
 
-The strategy defined to have control over the progress of each task was to mark its progress by an estimated percentage of completion. This strategy ensures that the progress of the task is clearly visible and measurable, giving both the student and the advisor a view of progress, like it is possible to observe the “\% Completed” column on the Figure \ref{fig:gantt_monitoring}.
+The strategy defined to have control over the progress of each task was to mark its progress by an estimated percentage of completion. This strategy ensures that the progress of the task is clearly visible and measurable, giving both the student and the advisor a view of progress, like it is possible to observe the \textit{“\% Completed”} column on the Figure \ref{fig:gantt_monitoring}.
 
-To improve this process, specific tasks dedicated to monitoring and control have been incorporated, such as \textit{“Validation and Refinement with the Advisor”}, like illustrated on Figure \ref{fig:gantt_monitoring}. These tasks have two main objectives, firstly, to make the student responsible for presenting the partial document ready to be assessed. Secondly, to ensure that the advisor is warned in advance of the need for closer and more active feedback on these pre-defined days. Feedback can be given asynchronously via messages or synchronously during scheduled meetings. After the feedback time is up, the goal is to be able to present a refined partial document, referred to as the \textit{“Document version X”} task, also possible to observe on Figure \ref{fig:gantt_monitoring}.
+To improve this process, specific tasks dedicated to monitoring and control have been incorporated, such as \textit{“Validation and Refinement with the Advisor”}, like illustrated in Figure \ref{fig:gantt_monitoring}. These tasks have two main objectives, firstly, to make the student responsible for presenting the partial document ready to be assessed. Secondly, to ensure that the advisor is warned in advance of the need for closer and more active feedback on these pre-defined days. Feedback can be given asynchronously via messages or synchronously during scheduled meetings. After the feedback time is up, the goal is to be able to present a refined partial document, referred to as the \textit{“Document version X”} task, also possible to observe in Figure \ref{fig:gantt_monitoring}.
 
 \begin{figure}
       \centering
@@ -155,11 +156,11 @@ To improve this process, specific tasks dedicated to monitoring and control have
 
 Additionally, milestones have been defined to mark the completion of each significant project phase. These milestones serve as checkpoints to ensure progress is on track and can be observed in Figure \ref{fig:gantt_monitoring} under the main task \textit{“Milestones”}.
 
-To manage potential delays, a baseline has been established. This baseline records the initial schedule, allowing deviations to be tracked throughout the project. This mechanism provides an overview of delays and their impact on the schedule. The \textit{“Column Variance”} column in Figure \ref{fig:gantt_monitoring} illustrates this feature, allowing a visualization of changes between planned and actual progress.
+To manage potential delays, a baseline has been established. This baseline records the initial schedule, allowing deviations to be tracked throughout the project. This mechanism provides an overview of delays and their impact on the schedule. The column \textit{"Duration Variance”} column in Figure \ref{fig:gantt_monitoring} illustrates this feature, allowing a visualization of changes between planned and actual progress.
 
 \subsection{Meeting Sessions}
 
-To ensure consistent communication and effective progress monitoring with the advisor, a series of biweekly meetings has been scheduled on Wednesdays, with each session expected to last between 30 minutes and 1 hour. While the schedule includes a predefined list of sessions, it remains flexible, allowing adjustments to the frequency of meetings as the project evolves. For instance, the number of meetings may increase during the final stages of the project, at which point the Gantt chart will be updated accordingly.
+To ensure consistent communication and effective progress monitoring with the advisor, a series of biweekly meetings has been scheduled on Wednesdays, with each session expected to last between 30 minutes and 1 hour. While the schedule includes a predefined list of sessions, it remains flexible, allowing adjustments to the frequency of meetings as the project evolves. For instance, the number of meetings may increase during the final stages of the project, at which point the Gantt chart should be updated accordingly.
 
 \begin{figure}
       \centering
@@ -168,7 +169,7 @@ To ensure consistent communication and effective progress monitoring with the ad
       \label{fig:gantt_meetings}
 \end{figure}
 
-The meeting schedule is illustrated in Figure \ref{fig:gantt_meetings}, which includes 11 recurring tasks organized under the main task \textit{“Meeting Sessions”}. These meetings are planned to take place online.
+The meeting schedule is illustrated in Figure \ref{fig:gantt_meetings}, which includes eleven recurring tasks organized under the main task \textit{“Meeting Sessions”}. These meetings are planned to take place online.
 
 \subsection{Competencies Development Plan}
 
@@ -206,7 +207,7 @@ Effective risk management seeks to transform potential uncertainties into more p
 
 \textbf{Risk Response Strategy:} To mitigate this risk, alternative libraries will be identified for each strategy and language in advance. At least two or three libraries will be shortlisted and prioritized. If the primary library encounters significant bugs or issues, the next library on the list will be utilized.
 
-\textbf{Expected Result Without Action:} If no action is taken, delays in prototype development will occur.
+\textbf{Expected Result Without Action:} If no action is taken, delays in prototypes development will occur.
 
 \textbf{Risk Response Type:} Mitigation.
 
@@ -227,8 +228,8 @@ Effective risk management seeks to transform potential uncertainties into more p
 
 \textbf{Risk Response Strategy:} To mitigate this risk, dependencies and versions will be carefully managed using dependency management tools (e.g., \textit{mix} for Elixir, \textit{go.mod} for Go,  \textit{sbt} for Scala). Component integration will also be tested incrementally to identify issues early.
 
-\textbf{Expected Result Without Action:} Significant delays during the integration phase.
+\textbf{Expected Result Without Action:} Significant delays during the integration of components on the implementation phase.
 
 \textbf{Risk Response Type:} Mitigation.
 
-\textbf{Response Description:} Incremental integration and version control practices will ensure smoother component interaction.
+\textbf{Response Description:} Incremental integration practices will ensure smoother component interaction.

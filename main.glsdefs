@@ -446,3 +446,9 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{API}%
+{%
+name={\acronymfont {\glsentryshort {API}}},%
+sort={API},%
+type={acronym},%
+first={

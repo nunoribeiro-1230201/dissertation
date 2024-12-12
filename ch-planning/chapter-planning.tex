@@ -1,13 +1,13 @@
 % Chapter 3
 % 
-\chapter{Planning} % Main chapter title
+\chapter{Project Planning} % Main chapter title
 
 %-------------------------------------------------------------------------------
 %---------
 
 \section{Project Charter}
 
-The project charter provides a overview of the stakeholders, benefits, and assumptions.
+The project charter provides a overview of the stakeholders, benefits, and assumptions of the project to state the begin of the project.
 
 \noindent \textbf{Stakeholder}
 
@@ -16,13 +16,13 @@ The project charter provides a overview of the stakeholders, benefits, and assum
       \begin{tabular}{|p{11cm}|c|c|}
             \hline
             \textbf{Identification}                                                         & \textbf{Power} & \textbf{Interest} \\ \hline
-            Students or developers in the areas of distributed systems and fault tolerance  & Low            & Low               \\ \hline
-            Administration of the master's program, responsible for dissertation evaluation & Medium         & Low               \\ \hline
+            Students and developers in the areas of distributed systems and fault tolerance & Low            & Medium            \\ \hline
+            Administration of the master's program, responsible for dissertation evaluation & Medium         & Medium            \\ \hline
             Advisor                                                                         & High           & High              \\ \hline
       \end{tabular}
 \end{table}
 
-The administration of the master's program has a moderate influence due to institutional requirements, but a potential interest in the results, since it will be a project for the institution. The advisor, on the other hand, has a high level of influence and interest, as his guidance and approval are fundamental to the success of the project. In addition, students and developers in general may have an interest in the outcome in order to have a guide for a better choice of their projects, but low influence.
+The administration of the master's degree programme exerts a moderate influence due to the necessity of complying with institutional requirements. Also, there is potential interest in the results, given that it will be a project for the institution. In contrast, the advisor exerts a high level of influence and interest, as his guidance and approval are fundamental to the success of the project. Furthermore, students and developers in general have an interest in the outcome of this project, considering it to be a guide for a better choice related to the fault tolerance aspects, but they exert low influence.
 
 \textbf{Benefits}
 
@@ -116,9 +116,19 @@ The final phase, the conclusion, consolidates all findings and results, translat
 
 \section{Gantt Diagram}
 
+This section relates the details of the gantt diagram. The gantt diagram it was done on the Microsoft Project, and its timeline it is possible to observe on Figure \ref{fig:gantt_timeline}. For simplicity it is only shown the main phases, the milestones, and the periodically of the control and feedback meetings. Also, the time that the development of competencies it will cover in terms of tasks. The detailed information it will be described bellow. This gives an overview and sees that the organization of thr project its mateched wiht the \gls{WBS}. However, for further detail, on the AppendixA section of the planning is displayed on the Appendix Chapter \ref{AppendixA}. \todo{texto e appendix}
+
+\begin{figure}
+      \centering
+      \frame{\includegraphics[width=\linewidth]{ch-planning/assets/gantt_timeline.png}}
+      \caption{Gantt timeline of the project}
+      \label{fig:gantt_timeline}
+\end{figure}
+
+
 \subsection{Project Management and Scheduling}
 
-For project management, the start date was established as 02/02/2025, after the 1º semester exams. The scheduling mode was set to automatically, where it calculates the dates based on the days of each task. The schedule is based on a calendar with no restrictions on working days, meaning all days, including weekends, are considered working days to ensure continuous progress.
+For the project management, the start date was set to 02/02/2025, after the first semester exams, and the end date to the predefined date associated with the project of 30/06/2025, like illustrated in Figure \ref{fig:gantt_timeline}. The scheduling strategy is to use the automatic mode where it calculates the dates based on the days of each task and the relationship between them, leveraging on the estimation on days. The schedule is based on a calendar with no restrictions on working days, meaning all days, including weekends, are considered working days to ensure continuous progress.
 
 \todo[inline]{melhorar esta parte de baixo}
 
@@ -138,14 +148,14 @@ To improve this process, specific tasks dedicated to monitoring and control have
 
 \begin{figure}
       \centering
-      \includegraphics[width=\linewidth]{ch-planning/assets/wbs.png}
+      \frame{\includegraphics[width=\linewidth]{ch-planning/assets/gantt_monitoring.png}}
       \caption{Monitoring and control procedures displayed on the Gantt chart.}
       \label{fig:gantt_monitoring}
 \end{figure}
 
 Additionally, milestones have been defined to mark the completion of each significant project phase. These milestones serve as checkpoints to ensure progress is on track and can be observed in Figure \ref{fig:gantt_monitoring} under the main task \textit{“Milestones”}.
 
-To manage potential delays, a baseline has been established. This baseline records the initial schedule, allowing deviations to be tracked throughout the project. This mechanism provides an overview of delays and their impact on the schedule. The \textit{“Variance”} column in Figure \ref{fig:gantt_monitoring} illustrates this feature, allowing a visualization of changes between planned and actual progress.
+To manage potential delays, a baseline has been established. This baseline records the initial schedule, allowing deviations to be tracked throughout the project. This mechanism provides an overview of delays and their impact on the schedule. The \textit{“Column Variance”} column in Figure \ref{fig:gantt_monitoring} illustrates this feature, allowing a visualization of changes between planned and actual progress.
 
 \subsection{Meeting Sessions}
 
@@ -153,7 +163,7 @@ To ensure consistent communication and effective progress monitoring with the ad
 
 \begin{figure}
       \centering
-      \includegraphics[width=\linewidth]{ch-planning/assets/wbs.png}
+      \frame{\includegraphics[width=\linewidth]{ch-planning/assets/gantt_meetings.png}}
       \caption{Meeting sessions represented on the Gantt chart.}
       \label{fig:gantt_meetings}
 \end{figure}
@@ -166,7 +176,7 @@ To address the competencies identified during the diagnosis of critical skills r
 
 \begin{figure}
       \centering
-      \includegraphics[width=\linewidth]{ch-planning/assets/wbs.png}
+      \frame{\includegraphics[width=\linewidth,scale=0.5]{ch-planning/assets/gantt_skills.png}}
       \caption{Competencies development plan represented on the Gantt chart.}
       \label{fig:gantt_competency}
 \end{figure}

@@ -34,14 +34,15 @@
 \contentsline {section}{\numberline {3.1}Research Questions}{17}{section.56}%
 \contentsline {section}{\numberline {3.2}State of Art}{17}{section.57}%
 \contentsline {section}{\numberline {3.3}Conclusions}{17}{section.58}%
-\contentsline {chapter}{\numberline {4}Planning}{19}{chapter.59}%
+\contentsline {chapter}{\numberline {4}Project Planning}{19}{chapter.59}%
 \contentsline {section}{\numberline {4.1}Project Charter}{19}{section.60}%
 \contentsline {section}{\numberline {4.2}Work Breakdown Structure}{20}{section.62}%
 \contentsline {section}{\numberline {4.3}Gantt Diagram}{23}{section.65}%
-\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{23}{subsection.66}%
-\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{23}{subsection.68}%
-\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{24}{subsection.70}%
-\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{24}{subsection.72}%
-\contentsline {section}{\numberline {4.4}Risk Management}{26}{section.77}%
-\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{26}{subsection.78}%
-\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{27}{subsection.79}%
+\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{23}{subsection.68}%
+\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{24}{subsection.70}%
+\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{25}{subsection.72}%
+\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{25}{subsection.74}%
+\contentsline {section}{\numberline {4.4}Risk Management}{27}{section.79}%
+\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{27}{subsection.80}%
+\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{27}{subsection.81}%
+\contentsline {chapter}{\numberline {5}Appendix A Gantt Details}{29}{chapter.82}%

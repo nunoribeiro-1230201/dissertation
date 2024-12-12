@@ -15,33 +15,33 @@
 \contentsline {subsubsection}{Fault tolerance}{4}{section*.18}%
 \contentsline {subsection}{\numberline {2.1.2}Communication}{4}{subsection.19}%
 \contentsline {subsection}{\numberline {2.1.3}Challenges}{4}{subsection.20}%
-\contentsline {subsubsection}{CAP theorem}{4}{section*.21}%
-\contentsline {section}{\numberline {2.2}Fault Tolerance}{5}{section.22}%
-\contentsline {subsection}{\numberline {2.2.1}Fault Tolerance Taxonomy}{5}{subsection.23}%
+\contentsline {section}{\numberline {2.2}Fault Tolerance}{5}{section.21}%
+\contentsline {subsection}{\numberline {2.2.1}Fault Tolerance Taxonomy}{5}{subsection.22}%
 \contentsline {subsection}{\numberline {2.2.2}Strategies}{6}{subsection.25}%
 \contentsline {subsubsection}{Retry Mechanism}{6}{section*.26}%
-\contentsline {subsubsection}{Circuit Breaker Pattern}{6}{section*.27}%
-\contentsline {subsubsection}{Replication and Redundancy}{7}{section*.30}%
-\contentsline {subsubsection}{Checkpointing and Message Logging}{11}{section*.38}%
-\contentsline {section}{\numberline {2.3}Distributed and Concurrency Programming}{11}{section.39}%
-\contentsline {subsection}{\numberline {2.3.1}Models and Paradigms}{12}{subsection.40}%
-\contentsline {subsubsection}{Actor Model}{12}{section*.41}%
-\contentsline {subsubsection}{Communicating Sequential Processes}{12}{section*.42}%
-\contentsline {subsubsection}{Microservices Architectures}{13}{section*.43}%
-\contentsline {subsection}{\numberline {2.3.2}Distributed and Concurrent Programming Languages}{13}{subsection.44}%
-\contentsline {subsubsection}{Analyses and Language Choice Justification}{14}{section*.53}%
-\contentsline {chapter}{\numberline {3}Literature Review}{17}{chapter.54}%
-\contentsline {section}{\numberline {3.1}Research Questions}{17}{section.55}%
-\contentsline {section}{\numberline {3.2}State of Art}{17}{section.56}%
-\contentsline {section}{\numberline {3.3}Conclusions}{17}{section.57}%
-\contentsline {chapter}{\numberline {4}Planning}{19}{chapter.58}%
-\contentsline {section}{\numberline {4.1}Project Charter}{19}{section.59}%
-\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{20}{section.61}%
-\contentsline {section}{\numberline {4.3}Gantt Diagram}{23}{section.64}%
-\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{23}{subsection.65}%
-\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{23}{subsection.67}%
-\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{24}{subsection.69}%
-\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{24}{subsection.71}%
-\contentsline {section}{\numberline {4.4}Risk Management}{26}{section.76}%
-\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{26}{subsection.77}%
-\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{27}{subsection.78}%
+\contentsline {subsubsection}{Circuit Breaker Pattern}{7}{section*.27}%
+\contentsline {subsubsection}{Replication and Redundancy}{8}{section*.30}%
+\contentsline {subsubsection}{Check-pointing and Message Logging}{11}{section*.38}%
+\contentsline {subsubsection}{Briefly Comparison}{12}{section*.39}%
+\contentsline {section}{\numberline {2.3}Distributed and Concurrency Programming}{12}{section.40}%
+\contentsline {subsection}{\numberline {2.3.1}Models and Paradigms}{13}{subsection.41}%
+\contentsline {subsubsection}{Actor Model}{13}{section*.42}%
+\contentsline {subsubsection}{Communicating Sequential Processes}{13}{section*.43}%
+\contentsline {subsubsection}{Microservices Architectures}{14}{section*.44}%
+\contentsline {subsection}{\numberline {2.3.2}Distributed and Concurrent Programming Languages}{14}{subsection.45}%
+\contentsline {subsubsection}{Analyses and Language Choice Justification}{15}{section*.54}%
+\contentsline {chapter}{\numberline {3}Literature Review}{17}{chapter.55}%
+\contentsline {section}{\numberline {3.1}Research Questions}{17}{section.56}%
+\contentsline {section}{\numberline {3.2}State of Art}{17}{section.57}%
+\contentsline {section}{\numberline {3.3}Conclusions}{17}{section.58}%
+\contentsline {chapter}{\numberline {4}Planning}{19}{chapter.59}%
+\contentsline {section}{\numberline {4.1}Project Charter}{19}{section.60}%
+\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{20}{section.62}%
+\contentsline {section}{\numberline {4.3}Gantt Diagram}{23}{section.65}%
+\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{23}{subsection.66}%
+\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{23}{subsection.68}%
+\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{24}{subsection.70}%
+\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{24}{subsection.72}%
+\contentsline {section}{\numberline {4.4}Risk Management}{26}{section.77}%
+\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{26}{subsection.78}%
+\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{27}{subsection.79}%

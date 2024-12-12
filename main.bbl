@@ -894,6 +894,19 @@
       \verb https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro
       \endverb
     \endentry
+    \entry{apache-flick}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{Apache Flink Documentation}
+      \verb{urlraw}
+      \verb https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/fault-tolerance/checkpointing/
+      \endverb
+      \verb{url}
+      \verb https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/fault-tolerance/checkpointing/
+      \endverb
+    \endentry
     \entry{Armstrong2013}{book}{}
       \name{author}{1}{}{%
         {{hash=e9a00852e213280e28c2aeef1d167186}{%
@@ -908,8 +921,8 @@
       \strng{authorbibnamehash}{e9a00852e213280e28c2aeef1d167186}
       \strng{authornamehash}{e9a00852e213280e28c2aeef1d167186}
       \strng{authorfullhash}{e9a00852e213280e28c2aeef1d167186}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This second edition of Joe's seminal Programming Erlang is a welcome update, covering not only the core language and framework fundamentals but also key community projects such as rebar and cowboy. Even experienced Erlang programmers will find helpful tips and new insights throughout the book, and beginners to the language will appreciate the clear and methodical way Joe introduces and explains key language concepts.}
@@ -931,8 +944,8 @@
       \strng{authorbibnamehash}{704d07f4c928b805bbe4bea255a4c4f9}
       \strng{authornamehash}{704d07f4c928b805bbe4bea255a4c4f9}
       \strng{authorfullhash}{704d07f4c928b805bbe4bea255a4c4f9}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{978-91-554-7532-1}
@@ -970,8 +983,8 @@
       \strng{authorbibnamehash}{d817a759ef9c3f2d2856a6479bf631a1}
       \strng{authornamehash}{d817a759ef9c3f2d2856a6479bf631a1}
       \strng{authorfullhash}{d817a759ef9c3f2d2856a6479bf631a1}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{This paper proposes a modular ACTOR architecture and definitional method for artificial intelligence that is conceptually based on a single kind of object: actors [or, if you will, virtual processors, activation frames, or streams]. The formalism makes no presuppositions about the representation of primitive data structures and control structures. Such structures can be programmed, micro-coded, or hard wired in a uniform modular fashion. In fact it is impossible to determine whether a given object is "really" represented as a list, a vector, a hash table, a function, or a process. The architecture will efficiently run the coming generation of PLANNER-like artificial intelligence languages including those requiring a high degree of parallelism. The efficiency is gained without loss of programming generality because it only makes certain actors more efficient; it does not change their behavioral characteristics. The architecture is general with respect to control structure and does not have or need goto, interrupt, or semaphore primitives. The formalism achieves the goals that the disallowed constructs are intended to achieve by other more structured methods.}
@@ -1122,8 +1135,8 @@
       \strng{authorbibnamehash}{b870f031689288c18126a30fb71ec7d8}
       \strng{authornamehash}{b870f031689288c18126a30fb71ec7d8}
       \strng{authorfullhash}{efd7aadd60d0557a9db671436f7e7599}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Distributed actor languages are an effective means of constructing scalable reliable systems, and the Erlang programming language has a well-established and influential model. While the Erlang model conceptually provides reliable scalability, it has some inherent scalability limits and these force developers to depart from the model at scale. This article establishes the scalability limits of Erlang systems and reports the work of the EU RELEASE project to improve the scalability and understandability of the Erlang reliable distributed actor model. We systematically study the scalability limits of Erlang and then address the issues at the virtual machine, language, and tool levels. More specifically: (1) We have evolved the Erlang virtual machine so that it can work effectively in large-scale single-host multicore and NUMA architectures. We have made important changes and architectural improvements to the widely used Erlang/OTP release. (2) We have designed and implemented Scalable Distributed (SD) Erlang libraries to address language-level scalability issues and provided and validated a set of semantics for the new language constructs. (3) To make large Erlang systems easier to deploy, monitor, and debug, we have developed and made open source releases of five complementary tools, some specific to SD Erlang. Throughout the article we use two case studies to investigate the capabilities of our new technologies and tools: a distributed hash table based Orbit calculation and Ant Colony Optimisation (ACO). Chaos Monkey experiments show that two versions of ACO survive random process failure and hence that SD Erlang preserves the Erlang reliability model. While we report measurements on a range of NUMA and cluster architectures, the key scalability experiments are conducted on the Athos cluster with 256 hosts (6,144 cores). Even for programs with no global recovery data to maintain, SD Erlang partitions the network to reduce network traffic and hence improves performance of the Orbit and ACO benchmarks above 80 hosts. ACO measurements show that maintaining global recovery data dramatically limits scalability; however, scalability is recovered by partitioning the recovery data. We exceed the established scalability limits of distributed Erlang, and do not reach the limits of SD Erlang for these benchmarks at this scale (256 hosts, 6,144 cores).}
@@ -1169,8 +1182,8 @@
       \strng{authorbibnamehash}{7e295867afb442264d2ea8e0d010d85b}
       \strng{authornamehash}{7e295867afb442264d2ea8e0d010d85b}
       \strng{authorfullhash}{7e295867afb442264d2ea8e0d010d85b}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The Actor Model is a message passing concurrency model that was originally proposed by Hewitt et al. in 1973. It is now 43 years later and since then researchers have explored a plethora of variations on this model. This paper presents a history of the Actor Model throughout those years. The goal of this paper is not to provide an exhaustive overview of every actor system in existence but rather to give an overview of some of the exemplar languages and libraries that influenced the design and rationale of other actor systems throughout those years. This paper therefore shows that most actor systems can be roughly classified into four families, namely: Classic Actors, Active Objects, Processes and Communicating Event-Loops. This paper also defines the Isolated Turn Principle as a unifying principle across those four families. Additionally this paper lists some of the key properties along which actor systems can be evaluated and formulates some general insights about the design and rationale of the different actor families across those dimensions.}

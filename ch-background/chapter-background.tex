@@ -41,9 +41,9 @@ Communication is fundamental in distributed systems for coordination and data ex
 
 \subsection{Challenges}
 
-Distributed systems encounter numerous challenges, including scalability \cite{Ahmed2013}, managing software, network, and disk failures \cite{Naik2021, aws-challenges-dist-sys}, heterogeneity \cite{Coulouris2012}, coordination among nodes \cite{Vitillo2021}, and difficulties on debugging and testing \cite{Beschastnikh2020, aws-challenges-dist-sys}. For the scope of this dissertation only the CAP theorem will be discussed.
+Distributed systems encounter numerous challenges, including scalability \cite{Ahmed2013}, managing software, network, and disk failures \cite{Naik2021, aws-challenges-dist-sys}, heterogeneity \cite{Coulouris2012}, coordination among nodes, and difficulties on debugging and testing \cite{Vitillo2021, aws-challenges-dist-sys}. For the scope of this dissertation only the CAP theorem will be discussed.
 
-\textbf{CAP Theorem.} The CAP theorem says that in a system where nodes are networked and share data, it is impossible to simultaneously achieve all three properties of Consistency, Availability, and Partition Tolerance \cite{Tanenbaum2023, Vitillo2021}. This theorem underlines a critical trade-off in distributed systems: only two of these properties can be fully ensured at any given time \cite{ibm-cap-theorem, Gilbert2012}. A description of the properties can be given by:
+\textbf{CAP Theorem.} The CAP theorem says that in a system where nodes are networked and share data, it is impossible to simultaneously achieve all three properties of Consistency, Availability, and Partition Tolerance \cite{Tanenbaum2023, Vitillo2021}. This theorem underlines a critical trade-off in distributed systems: only two of these properties can be fully ensured at any given time \cite{ibm-cap-theorem}. A description of the properties can be given by:
 
 \begin{itemize}
     \item \textbf{Consistency:} Ensures that all nodes in the system reflect the same data at any time, so each read returns the latest write.
@@ -199,6 +199,7 @@ When a operation request is submitted, the leader appends the operation to its l
 
 This two-step process guarantees that committed entries are replicated on a majority of servers, preserving durability and consistency, even in case of server failures \cite{Tanenbaum2023}. However, there are cases where the leader fails and an election starts among the followers. The followers acknowledge the leader’s failure through the heartbeat strategy, where after a certain time without receiving any signal sent by the leader, the follower starts an election \cite{Vitillo2021,raft-diego}, like represented on Figure \ref{fig:state-raft} by the change of state from follower to candidate. To prevent multiple followers from initiating elections simultaneously, heartbeat timeouts are randomized \cite{Vitillo2021, Tanenbaum2023}.
 
+
 The change of state of the node is displayed on the Figure \ref{fig:state-raft} and the process consists on the following steps \cite{Vitillo2021,raft-diego}:
 \begin{enumerate}
     \item 	\textbf{Transition to Candidate:} A follower transitions to a candidate state, increments its term number, and broadcasts requests for votes from other servers.
@@ -218,7 +219,7 @@ Once elected, the new leader reconciles any inconsistencies by broadcasting miss
 
 Raft’s structured and modular design prioritizes simplicity, reliability, and fault tolerance. Its leader-based model centralizes decision-making and log synchronization, while its robust mechanisms for log replication and leader election ensure consistency and availability even in the face of failures.
 
-\textit{\underline{Comparison on Paxos and Raft}}
+\textit{\underline{Comparison of Paxos and Raft}}
 
 Both Paxos and Raft are leader-based distributed consensus algorithms designed to ensure consistency in replicated state machines \cite{Howard2020}. The key difference lies in their approach to leader election and log replication. Raft prioritizes simplicity and readability, requiring candidates to have up-to-date logs before becoming leaders, avoiding complex log synchronization steps common in Paxos. Paxos, while general and flexible, allows for greater complexity, such as out-of-order log replication and term adjustments during leadership changes \cite{Tanenbaum2023}.
 
@@ -285,7 +286,7 @@ Although microservices are often associated with strict business principles, the
 
 Distributed and concurrent programming languages are designed to handle multiple tasks simultaneously across systems or threads. Some languages, such as Java, Rust, and lower-level languages like C with PThreads, require developers to explicitly manage concurrency \cite{Valkov2018,Paduraru2018}. These approaches often introduce complexity, increasing the probability of deadlocks or race conditions. This has driven the need for languages and frameworks that abstract away these challenges, offering safer and more developer-friendly concurrency models \cite{Valkov2018}.
 
-One widely adopted paradigm for mitigating concurrency issues is the Actor Model. By avoiding shared state and using message passing for communication, the Actor Model reduces risks inherent in traditional concurrency mechanisms such as mutexes and locks \cite{Valkov2018}. Erlang, for instance, is renowned for its fault tolerance and “let-it-crash” philosophy, which delegates error handling to its virtual machine \cite{Nystrom2009}. Supervising actors monitor and recover from failures, making Erlang highly suitable for building robust distributed systems \cite{Armstrong2013}. Building on Erlang’s foundation, Elixir introduces modern syntax and developer tooling while retaining Erlang’s strengths for creating large-scale, fault-tolerant systems. These features make Elixir a popular choice for modern distributed systems development \cite{Juric2024}.
+One widely adopted paradigm for mitigating concurrency issues is the Actor Model. By avoiding shared state and using message passing for communication, the Actor Model reduces risks inherent in traditional concurrency mechanisms such as mutexes and locks \cite{Valkov2018}. Erlang, for instance, is renowned for its fault tolerance and “let-it-crash” philosophy \cite{Armstrong2013}. Supervising actors monitor and recover from failures, making Erlang highly suitable for building robust distributed systems \cite{Armstrong2013}. Building on Erlang’s foundation, Elixir introduces modern syntax and developer tooling while retaining Erlang’s strengths for creating large-scale, fault-tolerant systems. These features make Elixir a popular choice for modern distributed systems development \cite{Juric2024}.
 
 Haskell, a pure functional programming language, provides a deterministic approach to concurrency, ensuring consistent results regardless of execution order \cite{Valkov2018}. Its extension, Cloud Haskell\footnote{Official website of Cloud Haskell: \url{https://haskell-distributed.github.io/} (accessed 25 November 2024)}, builds upon the Actor Model, drawing inspiration from Erlang, to allow distributed computation through message passing.
 
@@ -326,7 +327,7 @@ In Table \ref{tab:languages_comparison}, the most relevant languages and framewo
 
 \subsubsection{Analyses and Language Choice Justification}
 
-The focus of this dissertation is on Elixir as the central language for comparison. Elixir is chosen due to its modern syntax, developer-friendly tooling, and robust foundation on the BEAM virtual machine \cite{Juric2024}. Since Elixir inherits all the strengths of Erlang \cite{Valkov2018}, including fault tolerance and the Actor Model, a direct comparison with Erlang is unnecessary as they share the same core runtime and strategies. Such a comparison would likely yield redundant results and add little value to the research.
+The focus of this dissertation is on Elixir as the central language for comparison. Elixir is chosen due to its modern syntax, developer-friendly tooling, and robust foundation on the \gls{BEAM} also know as Erlang \gls{VM} \cite{Juric2024}. Since Elixir inherits all the strengths of Erlang \cite{Valkov2018}, including fault tolerance and the Actor Model, a direct comparison with Erlang is unnecessary as they share the same core runtime and strategies. Such a comparison would likely yield redundant results and add little value to the research.
 
 On the other hand, comparing Elixir with low-level languages like Java, Rust, and C would also be less effective. These languages require explicit management of concurrency and fault tolerance \cite{Valkov2018}, introducing complexities that diverge significantly from Elixir's high-level abstractions. A comparison in this context might be unfair and would not provide meaningful insights given the focus on fault tolerance and distributed systems.
 

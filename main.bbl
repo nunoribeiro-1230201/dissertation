@@ -542,65 +542,6 @@
       \verb https://aws.amazon.com/builders-library/challenges-with-distributed-systems/
       \endverb
     \endentry
-    \entry{Beschastnikh2020}{article}{}
-      \name{author}{6}{}{%
-        {{hash=375bad94e8582a40ada8808f51fa124c}{%
-           family={Beschastnikh},
-           familyi={B\bibinitperiod},
-           given={Ivan},
-           giveni={I\bibinitperiod}}}%
-        {{hash=cb79cfcf082a891d82ed9375f1812641}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Perry},
-           giveni={P\bibinitperiod}}}%
-        {{hash=127796fd746732a7f9aa005dd4a71dea}{%
-           family={Xing},
-           familyi={X\bibinitperiod},
-           given={Albert},
-           giveni={A\bibinitperiod}}}%
-        {{hash=2c93c57d50648b183d9c2f3e0cb37107}{%
-           family={Wang},
-           familyi={W\bibinitperiod},
-           given={Patty},
-           giveni={P\bibinitperiod}}}%
-        {{hash=50d318905ad3aee25f38197244a8718f}{%
-           family={Brun},
-           familyi={B\bibinitperiod},
-           given={Yuriy},
-           giveni={Y\bibinitperiod}}}%
-        {{hash=7cc1cf4fe6d5d2a0088aa8f3f40ffc8f}{%
-           family={Ernst},
-           familyi={E\bibinitperiod},
-           given={Michael\bibnamedelima D.},
-           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{187f7f31a3cb482c61714d1afc668d1b}
-      \strng{fullhash}{129fa647b4d85d860cd3585a7977360f}
-      \strng{bibnamehash}{187f7f31a3cb482c61714d1afc668d1b}
-      \strng{authorbibnamehash}{187f7f31a3cb482c61714d1afc668d1b}
-      \strng{authornamehash}{187f7f31a3cb482c61714d1afc668d1b}
-      \strng{authorfullhash}{129fa647b4d85d860cd3585a7977360f}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Distributed systems pose unique challenges for software developers. Understanding the system's communication topology and reasoning about concurrent activities of system hosts can be difficult. The standard approach, analyzing system logs, can be a tedious and complex process that involves reconstructing a system log from multiple hosts' logs, reconciling timestamps among hosts with non-synchronized clocks, and understanding what took place during the execution encoded by the log. This article presents a novel approach for tackling three tasks frequently performed during analysis of distributed system executions: (1) understanding the relative ordering of events, (2) searching for specific patterns of interaction between hosts, and (3) identifying structural similarities and differences between pairs of executions. Our approach consists of XVector, which instruments distributed systems to capture partial ordering information that encodes the happens-before relation between events, and ShiViz, which processes the resulting logs and presents distributed system executions as interactive time-space diagrams. Two user studies with a total of 109 students and a case study with 2 developers showed that our method was effective, helping participants answer statistically significantly more system-comprehension questions correctly, with a very large effect size.}
-      \field{issn}{15577392}
-      \field{issue}{2}
-      \field{journaltitle}{ACM Transactions on Software Engineering and Methodology}
-      \field{month}{3}
-      \field{title}{Visualizing Distributed System Executions}
-      \field{volume}{29}
-      \field{year}{2020}
-      \verb{doi}
-      \verb 10.1145/3375633
-      \endverb
-      \keyw{Distributed systems,log analysis,program comprehension}
-    \endentry
     \entry{ibm-cap-theorem}{misc}{}
       \name{author}{1}{}{%
         {{hash=cbf44511d041dc6d1dd73cc0c033122c}{%
@@ -626,36 +567,6 @@
       \endverb
       \verb{url}
       \verb https://www.ibm.com/topics/cap-theorem
-      \endverb
-    \endentry
-    \entry{Gilbert2012}{misc}{}
-      \name{author}{2}{}{%
-        {{hash=1de0da84dd43d0f480ffc9c70be34dc5}{%
-           family={Gilbert},
-           familyi={G\bibinitperiod},
-           given={Seth},
-           giveni={S\bibinitperiod}}}%
-        {{hash=4cb9c762bb867e8f092a2faa97489360}{%
-           family={Lynch},
-           familyi={L\bibinitperiod},
-           given={Nancy\bibnamedelima A},
-           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-      }
-      \strng{namehash}{451511d159acfcf44fef911c7868a23c}
-      \strng{fullhash}{451511d159acfcf44fef911c7868a23c}
-      \strng{bibnamehash}{451511d159acfcf44fef911c7868a23c}
-      \strng{authorbibnamehash}{451511d159acfcf44fef911c7868a23c}
-      \strng{authornamehash}{451511d159acfcf44fef911c7868a23c}
-      \strng{authorfullhash}{451511d159acfcf44fef911c7868a23c}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Almost twelve years ago, in 2000, Eric Brewer introduced the idea that there is a fundamental trade-off between consistency, availability, and partition tolerance. This trade-off, which has become known as the CAP Theorem, has been widely discussed ever since. In this paper, we review the CAP Theorem and situate it within the broader context of distributed computing theory. We then discuss the practical implications of the CAP Theorem, and explore some general techniques for coping with the inherent trade-offs that it implies.}
-      \field{title}{Perspectives on the CAP Theorem}
-      \field{year}{2012}
-      \verb{doi}
-      \verb 10.1109/MC.2011.389
       \endverb
     \endentry
     \entry{Noor2019}{article}{}
@@ -895,8 +806,8 @@
       \endverb
     \endentry
     \entry{apache-flick}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 03.11.2024}
       \field{title}{Apache Flink Documentation}
@@ -1595,6 +1506,152 @@
       \verb 10.1016/j.jnca.2014.07.022
       \endverb
       \keyw{Apache Hadoop,HDFS,MapReduce,Survey,Systematic literature review}
+    \endentry
+    \entry{erlang-concurrency-blog}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b7fd67d709a9afe59f9a33c045b1d158}{%
+           family={Sragli},
+           familyi={S\bibinitperiod},
+           given={Attila},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{fullhash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{bibnamehash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{authorbibnamehash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{authornamehash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{authorfullhash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Optimising for Concurrency: Comparing and contrasting the BEAM and JVM virtual machines}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.erlang-solutions.com/blog/optimising-for-concurrency-comparing-and-contrasting-the-beam-and-jvm-virtual-machines/
+      \endverb
+      \verb{url}
+      \verb https://www.erlang-solutions.com/blog/optimising-for-concurrency-comparing-and-contrasting-the-beam-and-jvm-virtual-machines/
+      \endverb
+    \endentry
+    \entry{elixir-docs-hexdocs}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Elixir Language Documentation}
+      \verb{urlraw}
+      \verb https://hexdocs.pm/elixir/introduction.html
+      \endverb
+      \verb{url}
+      \verb https://hexdocs.pm/elixir/introduction.html
+      \endverb
+    \endentry
+    \entry{elixir-school}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Elixir School - Official}}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://elixirschool.com/
+      \endverb
+      \verb{url}
+      \verb https://elixirschool.com/
+      \endverb
+    \endentry
+    \entry{LeBrun2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c34258fa19c829f1f443fbc58a595298}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={Matthew\bibnamedelimb Alan\bibnamedelima Le},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5ae1442bdc07c0a07427c68e97664583}{%
+           family={Attard},
+           familyi={A\bibinitperiod},
+           given={Duncan\bibnamedelima Paul},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=3f4fe18ddd88a340594d79091dc27268}{%
+           family={Francalanza},
+           familyi={F\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{fullhash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{bibnamehash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{authorbibnamehash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{authornamehash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{authorfullhash}{eb3830d8263448491a9711e7649d03ad}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781450386128}
+      \field{journaltitle}{Proceedings of the 20th ACM SIGPLAN International Workshop on Erlang}
+      \field{month}{8}
+      \field{title}{Graft: general purpose raft consensus in Elixir}
+      \field{year}{2021}
+      \field{pages}{2\bibrangedash 14}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/3471871.3472963
+      \endverb
+    \endentry
+    \entry{Cassola2020}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a2164974794df260f452f391b37eceb3}{%
+           family={Cassola},
+           familyi={C\bibinitperiod},
+           given={Mauricio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ad70e73675834c5848b52f243b0bbdb0}{%
+           family={Talagorria},
+           familyi={T\bibinitperiod},
+           given={Agustín},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3a5a928637ee8ddb1de2fb293e3fef03}{%
+           family={Pardo},
+           familyi={P\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9b4b74b6821f33cb34ebcbfdf1f51f5d}{%
+           family={Viera},
+           familyi={V\bibinitperiod},
+           given={Marcos},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{248bfd89556a78c87b4f30b8ccba331a}
+      \strng{fullhash}{700ac831cb863125ea10b103fd480ff1}
+      \strng{bibnamehash}{248bfd89556a78c87b4f30b8ccba331a}
+      \strng{authorbibnamehash}{248bfd89556a78c87b4f30b8ccba331a}
+      \strng{authornamehash}{248bfd89556a78c87b4f30b8ccba331a}
+      \strng{authorfullhash}{700ac831cb863125ea10b103fd480ff1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Elixir is a functional programming language with dynamic typing. In this paper we propose a type system that makes it possible to perform static type-checking on a significant fragment of Elixir. An important feature of the type system we introduce is that it does not require any syntactic change to the language. Type information is provided by means of function signatures which are declared in terms of Elixir typespec directives. The proposed type system is based on subtyping and is backward compatible, as it allows the presence of untyped code fragments. We have implemented a prototype of the type-checker in Elixir itself.}
+      \field{booktitle}{ACM International Conference Proceeding Series}
+      \field{isbn}{9781450389433}
+      \field{month}{10}
+      \field{title}{A Gradual Type System for Elixir}
+      \field{year}{2020}
+      \field{pages}{17\bibrangedash 24}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3427081.3427084
+      \endverb
+      \keyw{elixir,functional programming,gradual typing,static typing}
     \endentry
   \enddatalist
 \endrefsection

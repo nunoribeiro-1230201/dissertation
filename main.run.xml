@@ -82,6 +82,7 @@
     <requires type="editable">
       <file>./references.bib</file>
       <file>./other_references.bib</file>
+      <file>./reference_state_of_art.bib</file>
     </requires>
   </external>
 </requests>

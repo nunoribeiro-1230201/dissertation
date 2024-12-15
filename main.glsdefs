@@ -451,4 +451,110 @@ parent={},%
 name={\acronymfont {\glsentryshort {API}}},%
 sort={API},%
 type={acronym},%
-first={
+first={API},%
+firstplural={APIs},%
+text={API},%
+plural={APIs},%
+description={Application Programming Interface},%
+descriptionplural={Application Programming Interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Application Programming Interface},%
+longplural={Application Programming Interfaces},%
+short={API},%
+shortplural={APIs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{BEAM}%
+{%
+name={\acronymfont {\glsentryshort {BEAM}}},%
+sort={BEAM},%
+type={acronym},%
+first={BEAM},%
+firstplural={BEAMs},%
+text={BEAM},%
+plural={BEAMs},%
+description={Bogdan/Björn’s Erlang Abstract Machine},%
+descriptionplural={Bogdan/Björn’s Erlang Abstract Machine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Bogdan/Björn’s Erlang Abstract Machine},%
+longplural={Bogdan/Björn’s Erlang Abstract Machines},%
+short={BEAM},%
+shortplural={BEAMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{VM}%
+{%
+name={\acronymfont {\glsentryshort {VM}}},%
+sort={VM},%
+type={acronym},%
+first={VM},%
+firstplural={VMs},%
+text={VM},%
+plural={VMs},%
+description={Virtual Machine},%
+descriptionplural={Virtual Machine},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Virtual Machine},%
+longplural={Virtual Machines},%
+short={VM},%
+shortplural={VMs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{OS}%
+{%
+name={\acronymfont {\glsentryshort {OS}}},%
+sort={OS},%
+type={acronym},%
+first={OS},%
+firstplural={OSs},%
+text={OS},%
+plural={OSs},%
+description={Operating System},%
+descriptionplural={Operating System},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Operating System},%
+longplural={Operating Systems},%
+short={OS},%
+shortplural={OSs},%
+counter={page},%
+parent={},%
+%
+}%
+

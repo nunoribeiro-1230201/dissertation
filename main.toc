@@ -35,26 +35,36 @@
 \contentsline {subsection}{\numberline {3.1.1}Research Methodology}{17}{subsection.57}%
 \contentsline {section}{\numberline {3.2}Elixir Programming Language Analysis}{19}{section.58}%
 \contentsline {subsection}{\numberline {3.2.1}The Foundation of Erlang}{19}{subsection.59}%
-\contentsline {subsubsection}{Concurrency in Erlang and BEAM}{19}{section*.60}%
-\contentsline {subsubsection}{Garbage Collection and Immutability}{20}{section*.63}%
-\contentsline {subsubsection}{Hot-code swapping}{21}{section*.64}%
+\contentsline {subsubsection}{Concurrency in BEAM}{19}{section*.60}%
+\contentsline {subsubsection}{Garbage Collection and Immutability}{21}{section*.63}%
+\contentsline {subsubsection}{Hot-code swapping}{22}{section*.64}%
 \contentsline {subsection}{\numberline {3.2.2}Fault Tolerance Mechanism and Strategies}{22}{subsection.65}%
 \contentsline {subsubsection}{Let It Crash Philosophy and Actor Model}{22}{section*.66}%
-\contentsline {subsubsection}{Tools and Support}{23}{section*.68}%
-\contentsline {subsubsection}{Drawbacks and Real Applications}{24}{section*.73}%
+\contentsline {subsubsection}{Tools and Support}{24}{section*.68}%
+\contentsline {subsection}{\numberline {3.2.3}Drawbacks and Real Applications}{25}{subsection.73}%
 \contentsline {section}{\numberline {3.3}Scala Programming Language with Akka Toolkit Analysis}{25}{section.74}%
-\contentsline {section}{\numberline {3.4}Go Programming Language Analysis}{25}{section.75}%
-\contentsline {section}{\numberline {3.5}Benchmarking Strategies}{25}{section.76}%
-\contentsline {section}{\numberline {3.6}Conclusions}{25}{section.77}%
-\contentsline {chapter}{\numberline {4}Project Planning}{27}{chapter.78}%
-\contentsline {section}{\numberline {4.1}Project Charter}{27}{section.79}%
-\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{28}{section.81}%
-\contentsline {section}{\numberline {4.3}Gantt Diagram}{31}{section.84}%
-\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{31}{subsection.86}%
-\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{32}{subsection.87}%
-\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{33}{subsection.89}%
-\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{33}{subsection.91}%
-\contentsline {section}{\numberline {4.4}Risk Management}{35}{section.96}%
-\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{35}{subsection.97}%
-\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{36}{subsection.98}%
-\contentsline {chapter}{\numberline {5}Appendix A Gantt Details}{37}{chapter.99}%
+\contentsline {subsection}{\numberline {3.3.1}How Akka Handles the Actor Model}{25}{subsection.75}%
+\contentsline {subsubsection}{Location Transparency and Communication}{26}{section*.76}%
+\contentsline {subsubsection}{Actors Isolation}{26}{section*.77}%
+\contentsline {subsection}{\numberline {3.3.2}Fault Tolerance Mechanism and Strategies}{27}{subsection.78}%
+\contentsline {subsubsection}{Akka Clustering}{27}{section*.79}%
+\contentsline {subsubsection}{Akka Circuit Breaker}{28}{section*.80}%
+\contentsline {subsubsection}{Akka Persistence and Event Sourcing}{28}{section*.81}%
+\contentsline {subsection}{\numberline {3.3.3}Comparison with Elixir/BEAM and Real Applications}{28}{subsection.82}%
+\contentsline {section}{\numberline {3.4}Go Programming Language Analysis}{29}{section.83}%
+\contentsline {section}{\numberline {3.5}Benchmarking Strategies}{29}{section.84}%
+\contentsline {section}{\numberline {3.6}Conclusions}{29}{section.85}%
+\contentsline {chapter}{\numberline {4}Project Planning}{31}{chapter.86}%
+\contentsline {section}{\numberline {4.1}Project Charter}{31}{section.87}%
+\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{32}{section.89}%
+\contentsline {section}{\numberline {4.3}Gantt Diagram}{33}{section.91}%
+\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{33}{subsection.93}%
+\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{34}{subsection.94}%
+\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{34}{subsection.96}%
+\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{35}{subsection.98}%
+\contentsline {section}{\numberline {4.4}Risk Management}{37}{section.103}%
+\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{37}{subsection.104}%
+\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{37}{subsection.105}%
+\contentsline {chapter}{\numberline {5}Appendix A Planning Detailing}{39}{chapter.106}%
+\contentsline {subsection}{\numberline {5.0.1}Gantt Chart}{39}{subsection.107}%
+\contentsline {subsection}{\numberline {5.0.2}Work Breakdown Structure Dictionary}{39}{subsection.109}%

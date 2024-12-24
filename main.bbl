@@ -1554,7 +1554,7 @@
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 03.11.2024}
       \field{title}{{Elixir School - Official}}
-      \field{year}{2023}
+      \field{year}{2024}
       \verb{urlraw}
       \verb https://elixirschool.com/
       \endverb
@@ -1652,6 +1652,222 @@
       \verb 10.1145/3427081.3427084
       \endverb
       \keyw{elixir,functional programming,gradual typing,static typing}
+    \endentry
+    \entry{akka-docs}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Akka Official Documentation}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://doc.akka.io/libraries/akka-core/current/typed/actors.html/
+      \endverb
+      \verb{url}
+      \verb https://doc.akka.io/libraries/akka-core/current/typed/actors.html/
+      \endverb
+    \endentry
+    \entry{Moamen2027}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c9a610bb852d5f524c25c944e6d0131e}{%
+           family={Moamen},
+           familyi={M\bibinitperiod},
+           given={Ahmed\bibnamedelima Abdel},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5b59a934e0b8fd69540e6fc9157b4559}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Dezhong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7ed062dbb2114c57cd352bb78d8ef62a}{%
+           family={Jamali},
+           familyi={J\bibinitperiod},
+           given={Nadeem},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{fullhash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{bibnamehash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{authorbibnamehash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{authornamehash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{authorfullhash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although there are models and prototype implementations for controlling resource use in Actor systems, they are difficult to implement for production implementations of Actors such as Akka. This is because the messaging and scheduling infrastructures of runtime systems are increasingly complex and significantly different from one system to another. This paper presents our efforts in implementing resource control support for Actor systems implemented using the Akka library. Particularly, given the lack of support in Akka for direct scheduling of actors, we compare two different ways of approximating actor-level control support. The first implementation expects messages to actors to provide estimates of resources likely to be consumed for processing them; these estimates are then relied upon to make scheduling decisions. In the second implementation, resource use of scheduled actors is tracked, and compared against allocations to decide when they should be scheduled next. We present experimental results on the performance cost of these resource control mechanisms, as well as their impact on resource utilization.}
+      \field{booktitle}{Proceedings - International Conference on Distributed Computing Systems}
+      \field{isbn}{9781538617915}
+      \field{month}{7}
+      \field{title}{Supporting Resource Control for Actor Systems in Akka}
+      \field{year}{2017}
+      \field{pages}{2642\bibrangedash 2645}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICDCS.2017.291
+      \endverb
+      \keyw{Actors,Akka,Resource Control,Scala}
+    \endentry
+    \entry{Bagherzadeh2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9a8be8c0ce679d488e0635306abe0821}{%
+           family={Bagherzadeh},
+           familyi={B\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e530e338348f298d61b0fd6bcb7bacdc}{%
+           family={Fireman},
+           familyi={F\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=5dce6cc60ac6972ba433fd361a72d9de}{%
+           family={Shawesh},
+           familyi={S\bibinitperiod},
+           given={Anas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c32a4a22cf5d218a2c122856ca779963}{%
+           family={Khatchadourian},
+           familyi={K\bibinitperiod},
+           given={Raffi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
+      \strng{fullhash}{b8e4e2c4a8bcba4d723b48f368bb082f}
+      \strng{bibnamehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
+      \strng{authorbibnamehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
+      \strng{authornamehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
+      \strng{authorfullhash}{b8e4e2c4a8bcba4d723b48f368bb082f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Actor concurrency is becoming increasingly important in the development of real-world software systems. Although actor concurrency may be less susceptible to some multithreaded concurrency bugs, such as low-level data races and deadlocks, it comes with its own bugs that may be different. However, the fundamental characteristics of actor concurrency bugs, including their symptoms, root causes, API usages, examples, and differences when they come from different sources are still largely unknown. Actor software development can significantly benefit from a comprehensive qualitative and quantitative understanding of these characteristics, which is the focus of this work, to foster better API documentation, development practices, testing, debugging, repairing, and verification frameworks. To conduct this study, we take the following major steps. First, we construct a set of 186 real-world Akka actor bugs from Stack Overflow and GitHub via manual analysis of 3,924 Stack Overflow questions, answers, and comments and 3,315 GitHub commits, messages, original and modified code snippets, issues, and pull requests. Second, we manually study these actor bugs and their fixes to understand and classify their symptoms, root causes, and API usages. Third, we study the differences between the commonalities and distributions of symptoms, root causes, and API usages of our Stack Overflow and GitHub actor bugs. Fourth, we discuss real-world examples of our actor bugs with these symptoms and root causes. Finally, we investigate the relation of our findings with those of previous work and discuss their implications. A few findings of our study are: (1) symptoms of our actor bugs can be classified into five categories, with Error as the most common symptom and Incorrect Exceptions as the least common, (2) root causes of our actor bugs can be classified into ten categories, with Logic as the most common root cause and Untyped Communication as the least common, (3) a small number of Akka API packages are responsible for most of API usages by our actor bugs, and (4) our Stack Overflow and GitHub actor bugs can differ significantly in commonalities and distributions of their symptoms, root causes, and API usages. While some of our findings agree with those of previous work, others sharply contrast.}
+      \field{issn}{24751421}
+      \field{issue}{OOPSLA}
+      \field{journaltitle}{Proceedings of the ACM on Programming Languages}
+      \field{month}{11}
+      \field{title}{Actor concurrency bugs: A comprehensive study on symptoms, root causes, API usages, and differences}
+      \field{volume}{4}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1145/3428282
+      \endverb
+      \keyw{Actor bug API usages,Actor bug differences,Actor bug root causes,Actor bug symptoms,Akka actor bugs,GitHub,Stack Overflow}
+    \endentry
+    \entry{Moradi2023}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a789b068447fa68093ae6029d60e0b46}{%
+           family={Moghadam},
+           familyi={M\bibinitperiod},
+           given={Mohsen\bibnamedelima Moradi},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9a8be8c0ce679d488e0635306abe0821}{%
+           family={Bagherzadeh},
+           familyi={B\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c32a4a22cf5d218a2c122856ca779963}{%
+           family={Khatchadourian},
+           familyi={K\bibinitperiod},
+           given={Raffi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cae7a127ea7e7ae2c09c8985d97b8a67}{%
+           family={Bagheri},
+           familyi={B\bibinitperiod},
+           given={Hamid},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{80c66bafb2103be0488bec7a4033224f}
+      \strng{fullhash}{a96c3a94a073ff9b739391ee580d8643}
+      \strng{bibnamehash}{80c66bafb2103be0488bec7a4033224f}
+      \strng{authorbibnamehash}{80c66bafb2103be0488bec7a4033224f}
+      \strng{authornamehash}{80c66bafb2103be0488bec7a4033224f}
+      \strng{authorfullhash}{a96c3a94a073ff9b739391ee580d8643}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Actor concurrency is becoming increasingly important in the real world and mission-critical software. This requires these applications to be free from actor bugs, that occur in the real world, and have tests that are effective in finding these bugs. Mutation testing is a well-established technique that transforms an application to induce its likely bugs and evaluate the effectiveness of its tests in finding these bugs. Mutation testing is available for a broad spectrum of applications and their bugs, ranging from web to mobile to machine learning, and is used at scale in companies like Google and Facebook. However, there still is no mutation testing for actor concurrency that uses real-world actor bugs. In this paper, we propose Akka, a framework for mutation testing of Akka actor concurrency using real actor bugs. Akka is a popular industrial-strength implementation of actor concurrency. To design, implement, and evaluate Akka, we take the following major steps: (1) manually analyze a recent set of 186 real Akka bugs from Stack Overflow and GitHub to understand their causes; (2) design a set of 32 mutation operators, with 138 source code changes in Akka API, to emulate these causes and induce their bugs; (3) implement these operators in an Eclipse plugin for Java Akka; (4) use the plugin to generate 11.7k mutants of 10 real GitHub applications, with 446.4k lines of code and 7.9k tests; (5) run these tests on these mutants to measure the quality of mutants and effectiveness of tests; (6) use PIT to generate 26.2k mutants to compare Akka and PIT mutant quality and test effectiveness. PIT is a popular mutation testing tool with traditional operators; (7) manually analyze the bug coverage and overlap of Akka, PIT, and actor operators in a previous work; and (8) discuss a few implications of our findings. Among others, we find that Akka mutants are higher quality, cover more bugs, and tests are less effective in detecting them.}
+      \field{booktitle}{ESEC/FSE 2023 - Proceedings of the 31st ACM Joint Meeting European Software Engineering Conference and Symposium on the Foundations of Software Engineering}
+      \field{isbn}{9798400703270}
+      \field{month}{11}
+      \field{title}{Akka: Mutation Testing for Actor Concurrency in Akka using Real-World Bugs}
+      \field{year}{2023}
+      \field{pages}{262\bibrangedash 274}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/3611643.3616362
+      \endverb
+      \keyw{Actor concurrency,Akka,Mutant quality,Mutation opertors,Mutation testing,Test effectiveness}
+    \endentry
+    \entry{Chaudhary2024}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=6f993936c918a5d30974e3f2d876d454}{%
+           family={Chaudhary},
+           familyi={C\bibinitperiod},
+           given={Ishu},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2971d1e470a9b5a182fbc0beb7b8873b}{%
+           family={Lohani},
+           familyi={L\bibinitperiod},
+           given={Bhanu\bibnamedelima Prakash},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d9e255af90d3b4191838e9c21952345f}{%
+           family={Kushwaha},
+           familyi={K\bibinitperiod},
+           given={Pradeep\bibnamedelima Kumar},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1f98360a2e3cce93af5eaaed2f9b66dc}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Amar\bibnamedelima Deep},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=efcb9e242fac68fd7eec7bd07cf9f16c}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Bhuvi},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c586f4cefe727a50bd74d4bd6145366f}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Jai},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{603bc46a6f234b77766ee29539e7a6c1}
+      \strng{fullhash}{28093a607df1353b172ecafd8d919731}
+      \strng{bibnamehash}{603bc46a6f234b77766ee29539e7a6c1}
+      \strng{authorbibnamehash}{603bc46a6f234b77766ee29539e7a6c1}
+      \strng{authornamehash}{603bc46a6f234b77766ee29539e7a6c1}
+      \strng{authorfullhash}{28093a607df1353b172ecafd8d919731}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Java support the garbage collection automatically. However, with the introduce of JRE7 it introduces the hotspot Architecture having heap, where object data is stored. Garbage Collection based on Responsiveness and Throughput. The overall Automatic Garbage Collection have three steps Marking, Normal Deletion, Deletion with Compacting to complete the cycle. However, the collection of all objects and marking them is difficult with help of JVM. As JVM divides the heap parts as: Young Generation, Old or Tenured Generation and Permanent Generation. To overcome this, we introduce ZGC (Garbage Collector) introduce in Java 11. ZGC is concurrent, region -based, compact, NUMA-aware, using coloured pointers, using load barriers technique. However, with release of Java 21, we introduce Generational ZGC which maintain separate generators for old and young Generation. Generational ZGC heap memory overhead, lower risks of allocation stalls and lower garbage collection CPU overhead. This paper represents ZGC implementation in java as well as the overall advantages, comparison with Generational ZGC.}
+      \field{booktitle}{Proceedings of International Conference on Communication, Computer Sciences and Engineering, IC3SE 2024}
+      \field{isbn}{9798350366846}
+      \field{title}{Generational ZGC- An Improvement in Garbage Collector in Java 21}
+      \field{year}{2024}
+      \field{pages}{631\bibrangedash 636}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IC3SE62002.2024.10593533
+      \endverb
+      \keyw{Garbage Collection,Generational ZGC,Memory Management,ZGC}
     \endentry
   \enddatalist
 \endrefsection

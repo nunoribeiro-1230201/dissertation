@@ -5,7 +5,7 @@
 %
 \section{Research Questions}
 
-For the literature review and stat of the art analysis, two research questions have been formulated to address the essential background and focus of this dissertation. The first research question centers on the fault tolerance mechanisms of each language under study. The second research question examines the benchmarking strategies that simulate distributed systems, such as microservices, and identifies the metrics necessary for accurately measuring each case.
+For the literature review and the state of the art analysis, two research questions have been formulated to address the essential background and focus of this dissertation. The first research question centers on the fault tolerance mechanisms of each language under study. The second research question examines the benchmarking strategies that simulate distributed systems, including microservices, and identifies the metrics necessary to measure the fault tolerance aspects.
 
 \begin{itemize}
     \item \textbf{RQ1:} How do the programming languages Elixir, Scala with Akka, and Go implement fault tolerance mechanisms in distributed systems, and what are the comparative strengths, weaknesses, and trade-offs of each approach?
@@ -14,11 +14,11 @@ For the literature review and stat of the art analysis, two research questions h
 
 \subsection{Research Methodology}
 
-This section outlines the research methodology adopted in this dissertation. It is important to note that this study addresses a gap in the literature regarding a direct comparison of fault tolerance mechanisms in the programming languages Elixir, Scala with Akka, and Go. To the best of our knowledge, no prior study has evaluated these three languages side-by-side in fault-tolerance test scenarios. 
+This section outlines the research methodology adopted in this dissertation. It is important to note that this study addresses, to the best of our knowledge, a gap in the literature regarding a direct comparison of fault tolerance mechanisms in the programming languages Elixir, Scala with Akka, and Go. To the best of our knowledge, no prior study has evaluated these three languages side-by-side in fault tolerance test scenarios.
 
-However, relevant groundwork can be found in the study by Valkov et al. \cite{Valkov2018}, which compared Erlang, Go, and Scala in terms of inter-process communication latency, process creation time, the maximum number of supported processes, and throughput. This work serves as a valuable reference, but it does not delve into fault-tolerance aspects, which this dissertation seeks to address.
+However, relevant work can be found in the study by Valkov et al. \cite{Valkov2018}, which compared Erlang, Go, and Scala in terms of \gls{IPC} latency, process creation time, the maximum number of supported processes, and throughput. This work serves as a valuable reference, but it does not delve into fault tolerance test scenarios, which this dissertation seeks to address.
 
-To explore the existing body of knowledge and identify studies relevant to the three programming languages, searches were conducted in major academic databases, specifically IEEE Xplore and ACM Digital Library. The objective was to find articles that included the three languages in their titles, allowing for Erlang to be considered in place of Elixir. The search was initiated with a starting date of 2013, coinciding with the publication of the second edition of Joe Armstrong's book on Erlang. However, the search yielded no results in the IEEE Xplore database, while the ACM Digital Library returned only two articles, ultimately filtering down to the work by Valkov et al.
+To explore the existing body of knowledge and identify studies relevant to the three programming languages, searches were conducted in major academic databases, specifically IEEE Xplore and ACM Digital Library. The objective was to find articles that included the three languages in their titles, allowing for Erlang to be considered in place of Elixir. The search was initiated with a starting date of 2013, coinciding with the publication of the second edition of Joe Armstrong's book on Erlang. However, the search yielded no results in the IEEE Xplore database, while the ACM Digital Library returned only two articles, ultimately filtering down to the work by Valkov et al. By modifying the query to search for the same language name but across all metadata, it was identified 13 articles in the ACM Digital Library. Among these, only the work of Valkov et al. \cite{Valkov2018} is relevant.
 
 \textbf{IEEE Xplore Query:}
 \begin{verbatim}
@@ -28,7 +28,6 @@ To explore the existing body of knowledge and identify studies relevant to the t
     ("Document Title": "Akka" OR "Document Title": "Scala") 
 }
 \end{verbatim}
-
 
 
 \textbf{ACM Digital Library Query:}
@@ -43,9 +42,9 @@ To explore the existing body of knowledge and identify studies relevant to the t
 
 
 \textbf{RQ1: How do the programming languages Elixir, Scala with Akka, and Go implement fault tolerance mechanisms in distributed systems, and what are the comparative
-strengths, weaknesses, and trade-offs of each approach?} 
+    strengths, weaknesses, and trade-offs of each approach?}
 
-Given the scope of the research question, developing a research strategy that yields precise and relevant results it challenging. Fault tolerance is a broad subject, spanning diverse areas from hardware to electronic devices until critical systems. Moreover, the programming languages under study are employed in varied contexts, such as Elixir’s popularity in \gls{IoT} and Go’s extensive use in microservices, at the same time being general purpose languages used in diverse areas. This diversity introduces complexity when conducting research queries, resulting in an huge volume of information on a wide range of topics, or the lack of results in a more narrow query like the following one:
+Given the scope of the research question, developing a research strategy that yields precise and relevant results it challenging. Fault tolerance is a broad subject, spanning diverse areas from hardware to electronic devices until critical systems. Moreover, the programming languages under study are employed in varied contexts, such as Elixir’s popularity in \gls{IoT} and Go’s extensive use in microservices, at the same time being general purpose languages used in diverse areas. This diversity introduces complexity when conducting research queries, resulting in an huge volume of information on a wide range of topics, or the lack of results in a more narrow query like the following one, that contains the important keywords for the work:
 
 \begin{verbatim}
 "query": { 
@@ -57,9 +56,9 @@ Given the scope of the research question, developing a research strategy that yi
 }
 \end{verbatim}
 
-To address this, the methodology employed covered grey literature, particularly books, due to their mature, structured content. Books provide comprehensive insights into foundational principles, and given that the evolution of programming languages tends to be gradual, they serve as reliable resources for understanding their core concepts and implementations, taking in consideration the choose of recently books. At the same time, white literature, including academic papers and recent articles, was included to capture the latest advancements, structures, and innovations within these languages. 
+To address this problem, the methodology employed covered grey literature, particularly books, due to their mature, structured content. Books provide comprehensive insights into foundational principles, and given that the evolution of programming languages tends to be gradual, they serve as reliable resources for understanding their core concepts and implementations, taking in consideration the choose of recently books. At the same time, white literature, including academic papers and recent articles, was included to capture the latest advancements, structures, and innovations within these languages.
 
-Given the technical and practical focus of the study, a more ad-hoc research approach was adopted, like searching on the academic databases for more focused themes, not systematic queries or keywords. Official documentation for each language it was also consulted, as it provides up-to-date information directly from the creators. Furthermore, trusted blogs and community resources were consulted in order to utilize the collective knowledge and practical experiences of developers, which often provide valuable insight that may not be addressed elsewhere. 
+Given the technical and practical focus of the study, a more ad-hoc research approach was adopted, like searching on the academic databases for more focused themes, not systematic queries or keywords. Official documentation for each language it was also consulted, as it provides up-to-date information directly from the creators. Furthermore, trusted blogs and community resources were consulted in order to utilize the collective knowledge and practical experiences of developers, which often provide valuable insight that may not be addressed elsewhere.
 
 \textbf{RQ2: What are the most effective benchmarking strategies for simulating distributed environments, and which metrics are most relevant for evaluating fault tolerance in these scenarios?}
 
@@ -67,7 +66,7 @@ Given the technical and practical focus of the study, a more ad-hoc research app
 
 \section{Elixir Programming Language Analysis}
 
-The following sections provide an overview of Elixir and its foundational principles within the Erlang ecosystem. This discussion will explore how the ecosystem relates to Elixir's modernization and how it enhances fault tolerance. Additionally, the fault tolerance strategies employed within this ecosystem will be examined, including their drawbacks and real-world applications.
+The following sections provide an overview of Elixir and its foundational principles within the Erlang ecosystem. This discussion will explore how the ecosystem relates to Elixir's modernization and how it enhances fault tolerance. Additionally, the fault tolerance strategies employed within this ecosystem will be examined, including their drawbacks and real-world applications, such as third-party libraries.
 
 \subsection{The Foundation of Erlang}
 
@@ -75,11 +74,11 @@ Elixir is built on top of Erlang, making it essential to first understand Erlang
 
 Erlang, developed in the mids of 1980s by Ericsson, was specifically designed to support systems that are highly reliable, responsive, scalable, and always available \cite{Armstrong2013,Juric2024}. Over the years, Erlang has evolved significantly, and Elixir represents a major milestone in this environment's evolution. Elixir enhances the ecosystem with modern features, such as a more developer-friendly syntax, powerful metaprogramming capabilities with macros, and improved tooling, all while maintaining full compatibility with the Erlang runtime \cite{Juric2024}. This success is closely tied to its coupling with Erlang’s semantics, also the inclusion of the \gls{OTP}, which provides robust libraries and tools. Additionally, Elixir inherits the power of \gls{BEAM}, the Erlang \gls{VM}, which could be considered as a state of art concurrent programming model \cite{erlang-concurrency-blog}.
 
-\subsubsection{Concurrency in Erlang and BEAM}
+\subsubsection{Concurrency in BEAM}
 
-Concurrency is one of the most defining aspects of the Erlang environment, earning it the title of being a concurrency oriented language by many. At the heart of this model are processes, which adhere to the Actor Model \cite{Juric2024,Valkov2018}. In this paradigm, each process acts as an independent actor, being lightweight and isolated, communicating with others through message-passing via mailboxes. These processes differ from heavyweight \gls{OS} processes or threads, which rely heavily on the operating system for management and lack the flexibility needed for fine-grained optimization. For instance, in the \gls{JVM}, platform threads are a thin abstraction over \gls{OS} threads, limiting control and optimization. However, virtual threads, introduced on Java 21, brings more capabilities to the \gls{JVM}, where the Akka framework take advantage of \cite{erlang-concurrency-blog}.
+Concurrency is one of the most defining aspects of the Erlang environment, earning it the title of being a concurrency oriented language by many. At the heart of this model are processes, which adhere to the Actor Model \cite{Juric2024,Valkov2018}. In this paradigm, each process acts as an independent actor, being lightweight and isolated, communicating with others through message-passing via mailboxes. These processes differ from heavyweight \gls{OS} processes or threads, which rely heavily on the \gls{OS} for management and lack the flexibility needed for optimizations. For instance, in the \gls{JVM}, platform threads are a thin abstraction over \gls{OS} threads, limiting control and optimization due to the fact of \gls{OS} threads are heavy. However, virtual threads, introduced on Java 21, brings more capabilities to the \gls{JVM} allowing a more fined scheduler like BEAM does, but in a less adoption for now \cite{erlang-concurrency-blog}.
 
-In contrast, \gls{BEAM} employs a concurrency-oriented programming model in which one thread per \gls{CPU} core manages numerous lightweight processes. This architecture enables \gls{BEAM} to handle parallelism by letting one scheduler per \gls{CPU} handling multiple lightweight processes. This strategy is illustrated in Figure \ref{fig:beam-process}, where this architecture enables fault tolerance aspects over isolating the processes \cite{Juric2024}.
+In contrast, \gls{BEAM} employs a concurrency oriented programming model in which one thread per \gls{CPU} core manages numerous lightweight processes. This architecture enables \gls{BEAM} to handle parallelism by letting one scheduler per \gls{CPU} handling multiple lightweight processes. This strategy is illustrated in Figure \ref{fig:beam-process}, where this architecture enables fault tolerance aspects over isolating the processes \cite{Juric2024}.
 
 \begin{figure}
     \centering
@@ -88,7 +87,7 @@ In contrast, \gls{BEAM} employs a concurrency-oriented programming model in whic
     \label{fig:beam-process}
 \end{figure}
 
-The \gls{BEAM} scheduler is considered preemptive, meaning that assigns short execution time slices to each process. This ensures that long-running tasks do not monopolize system resources, promoting fairness and responsiveness \cite{Armstrong2013}. Also, it promotes fault tolerance characteristic by stopping processes carried with permanent faults, where on a non-preemptive scheduler could harm the overall system. Processes that are blocked due to I/O operations or waiting for messages are efficiently managed by separate threads or a kernel polling service, preventing unnecessary CPU usage and ensuring that waiting processes do not hinder the execution of others \cite{Juric2024,erlang-concurrency-blog}.
+The \gls{BEAM} scheduler is considered preemptive, meaning that assigns short execution time slices to each process. This ensures that long-running tasks do not monopolize system resources, promoting fairness and responsiveness \cite{Armstrong2013}. Also, it promotes fault tolerance characteristic by stopping processes carried with permanent faults, where on a non-preemptive scheduler could harm the overall system. Processes that are blocked due to I/O operations or waiting for messages are efficiently managed by separate threads or a kernel polling service, preventing unnecessary CPU usage and ensuring that waiting processes do not stop the execution of others \cite{Juric2024,erlang-concurrency-blog}.
 
 \begin{figure}
     \centering
@@ -97,13 +96,13 @@ The \gls{BEAM} scheduler is considered preemptive, meaning that assigns short ex
     \label{fig:beam-vs-jvm}
 \end{figure}
 
-In a direct comparison of Elixir’s processes running on \gls{BEAM} with the two threading techniques of the \gls{JVM}, as illustrated in Figure \ref{fig:beam-vs-jvm}, notable differences appears. Under low load conditions, all three strategies, Elixir’s lightweight processes, the \gls{JVM}’s platform, and virtual threads, perform effectively. However, as the system approaches the stability limits of platform threads, approximately 2500 threads, Elixir continues to handle additional processes, scaling up to approximately 200,000 concurrent processes. Although the per-task completion time increases slightly under such high loads, the system remains operational and stable. The opposite occurs with both \gls{JVM} techniques, resulting in an overload that makes maintaining pace impossible. Furthermore, \gls{BEAM} imposes a theoretical limit of roughly 134 millions processes, where this limit are lowered where the underlying implementation are a direct relationship with \gls{OS} threads \cite{Juric2024}.
+In a direct comparison of Elixir’s processes running on \gls{BEAM} with the two threading techniques of the \gls{JVM}, as illustrated in Figure \ref{fig:beam-vs-jvm}, notable differences appears. Under low load conditions, all three strategies, Elixir’s lightweight processes, the \gls{JVM}’s platform, and virtual threads, perform effectively. However, as the system approaches the stability limits of platform threads, approximately 2500 concurrent units, Elixir continues to handle additional processes, scaling up to approximately 200,000 concurrent processes. Although the per-task completion time increases slightly under such high loads, the system remains operational and stable. The opposite occurs with both \gls{JVM} techniques, resulting in an overload that makes maintaining pace impossible. Furthermore, \gls{BEAM} imposes a theoretical limit of roughly 134 millions processes, where this limit are lowered where the underlying implementation are a direct relationship with \gls{OS} threads, like what happens in \gls{JVM} \cite{Juric2024}.
 
 This scalability advantage can be attributed to the architecture of the underlying \gls{BEAM}. Unlike the \gls{JVM}, which relies on a shared heap and tightly integrates with \gls{OS} threads. However, the \gls{JVM} threading model is better suited for low-concurrency scenarios involving long-lived threads. In contrast, Elixir/\gls{BEAM} excels in high-concurrency situations with short-lived processes \cite{erlang-concurrency-blog, Valkov2018}.
 
 \subsubsection{Garbage Collection and Immutability}
 
-Erlang and Elixir enforce immutability as a fundamental principle, ensuring that all data remains unchangeable. This eliminates many concurrency issues common in systems with shared memory, such as race conditions. Instead of sharing memory, processes communicate by passing immutable data. When a message is sent, the receiving process creates a copy of the data in its stack, eliminating the need for semaphore controls or similar synchronization mechanisms \cite{Juric2024,erlang-concurrency-blog}.
+Erlang and Elixir enforce immutability as a fundamental principle, ensuring that all data remains unchangeable. This eliminates many common concurrency issues in systems with shared memory, such as race conditions. Instead of sharing memory, processes communicate by passing immutable data. When a message is sent, the receiving process creates a copy of the data in its stack, eliminating the need for semaphore controls or similar synchronization mechanisms \cite{Juric2024,erlang-concurrency-blog}.
 
 Because processes are completely isolated and do not share memory, \gls{BEAM} can execute garbage collection at the process level. This per-process garbage collection allows the \gls{VM} to reclaim memory for a single process without pausing the entire system, unlike the global garbage collection approach commonly used in the \gls{JVM}, where all processes share a single heap. Additionally, \gls{BEAM} optimizes garbage collection by focusing on individual schedulers enhancing its efficiency \cite{Armstrong2013,Juric2024}.
 
@@ -127,7 +126,7 @@ The Actor Model plays a central role in achieving this resilience. In Elixir, li
 
 \textit{\underline{Supervisor Pattern}}
 
-The Supervisor pattern is a practical implementation of the “let it crash” philosophy, built on the Actor Model. While the concept is not exclusive to Elixir, other frameworks like Akka also use it, Elixir leverages this pattern to build fault-tolerant systems \cite{Valkov2018}. In this approach, processes are classified into two types \cite{Juric2024}:
+The Supervisor pattern is a practical implementation of the “let it crash” philosophy, built on the Actor Model. While the concept is not exclusive to Elixir, other frameworks like Akka also use it. Elixir leverage this pattern to build fault-tolerant systems \cite{Valkov2018}. In this approach, processes are classified into two types \cite{Juric2024}:
 
 \begin{itemize}
     \item \textbf{Workers:} Processes that perform tasks or contain application logic but do not oversee other processes.
@@ -143,7 +142,7 @@ The Supervisor pattern is a practical implementation of the “let it crash” p
 
 Supervisors are organized into a hierarchical supervision tree, as illustrated in Figure \ref{fig:supervisor-pattern}. This tree defines the relationships between supervisors and workers, with each supervisor managing a group of processes. This structure provides modularity and ensures that fault recovery is localized, reducing the impact of failures \cite{Armstrong2013}.
 
-Supervisors in Elixir operate using restart strategies to determine how to handle failures. The options given by the \gls{OTP} Supervisors and the most common ones are the following \cite{elixir-docs-hexdocs,Juric2024,Armstrong2013}:
+Supervisors in Elixir operate using restart strategies to determine how to handle failures. The options given by the \gls{OTP} Supervisors, and the most common ones, are the following \cite{elixir-docs-hexdocs,Juric2024,Armstrong2013}:
 \begin{itemize}
     \item \textbf{One-for-One:} If a single worker process fails, the supervisor restarts only that process.
     \item \textbf{One-for-All:} If one process fails, the supervisor restarts all processes it manages.
@@ -154,7 +153,7 @@ Each restart strategy addresses specific use cases. Additionally, supervisors ca
 
 The One-for-One strategy is best suited for independent processes \cite{Armstrong2013}. For instance, in a web server handling multiple concurrent requests, this strategy could allow for the rapid recovery of a single failed process without affecting others. In contrast, the One-for-All strategy is ideal for tightly coupled processes \cite{Armstrong2013}. When one process fails, all other processes under the same supervisor are restarted, this could be useful for processes that need synchronization among them. Finally, the Rest-for-One strategy could be used in workflows with sequential dependencies \cite{elixir-docs-hexdocs}. For example, in a data pipeline where each stage relies on the output of the previous stage, a failure in one process triggers the restart of the failed process along with any subsequent ones.
 
-The supervision pattern is not uniquely associated with Elixir, it is also used in other languages that follow the Actor Model, as well as in various frameworks that implement this programming style. One of the most notable \gls{JVM} frameworks is Akka. Additionally, in other paradigms such as Go, there are libraries capable of unifying \gls{CSP} with the Actor Model, such as the proto.actor library.
+The supervision pattern is not uniquely associated with Elixir, it is also used in other languages that follow the Actor Model, as well as in various frameworks that implement this programming style. One of the most notable \gls{JVM} frameworks is Akka. Additionally, in other paradigms such as Go, there are libraries capable of unifying \gls{CSP} with the Actor Model, such as the \textit{proto.actor} library.
 
 
 \subsubsection{Tools and Support}
@@ -165,12 +164,12 @@ The \gls{OTP} framework enables Elixir to use the Supervision Tree pattern, an i
 
 Additionally, \gls{OTP} supports features like hot-code swapping, enabling systems to update running code in real-time without downtime. The inclusion of the Mnesia distributed database within \gls{OTP} further strengthens Elixir’s fault tolerance capabilities. Mnesia allows state storage across distributed nodes, ensuring data consistency and availability even in the presence of node failures \cite{elixir-docs-hexdocs,elixir-school}.
 
-Beyond the core features of \gls{OTP}, Elixir also includes Mix, a build tool that simplifies dependency management, testing, project configuration, and documentation generation. Mix integrates into the Elixir ecosystem, streamlining development workflows and contributing to the reliability of applications by ensuring consistent builds\cite{elixir-docs-hexdocs,elixir-school}.
+Beyond the core features of \gls{OTP}, Elixir also includes Mix, a build tool that simplifies dependency management, testing, project configuration, and documentation generation. Mix integrates into the Elixir ecosystem, simplifying development workflows and contributing to the reliability of applications by ensuring consistent builds\cite{elixir-docs-hexdocs,elixir-school}.
 
-In addition to the built-in capabilities of \gls{OTP}, Elixir’s ecosystem benefits from third-party projects that extend its fault-tolerant capabilities. For instance, Graft, developed by Le Brun et al. \cite{LeBrun2021} in 2019, and Ra, developed by the RabbitMq team 
+In addition to the built-in capabilities of \gls{OTP}, Elixir’s ecosystem benefits from third-party projects that extend its fault-tolerant capabilities. For instance, Graft, developed by Le Brun et al. \cite{LeBrun2021} in 2019, and Ra, developed by the RabbitMq team
 \footnote{Ra: \url{https://github.com/rabbitmq/ra/} (accessed 4 December 2024)}
 , provide an implementation of the Raft consensus algorithm. Similarly, the Fuse library
-\footnote{Fuse: \url{https://github.com/jlouis/fuse/} (accessed 4 December 2024)}, 
+\footnote{Fuse: \url{https://github.com/jlouis/fuse/} (accessed 4 December 2024)},
 a widely-used implementation of the Circuit Breaker pattern, developed in Erlang, is also compatible with Elixir.
 
 Another aspect of Elixir that is important to reference is its metaprogramming capabilities through macros, which allow developers to write code that generates code. This enables the Elixir codebase to be partially constructed using its own macros, extending the language's functionality and reducing boilerplate \cite{Juric2024}.
@@ -179,23 +178,114 @@ Lastly, it's important to mention the Elixir environment, which includes framewo
 \footnote{Phoenix: \url{https://phoenixframework.org/} (accessed 4 December 2024)}
 is a popular framework for building scalable web applications. It inherits Elixir's fault tolerance, allowing applications to handle errors gracefully and maintain uptime. Phoenix also supports real-time features through channels for live updates \cite{Juric2024}. Nerves
 \footnote{Nerves: \url{https://nerves-project.org/} (accessed 4 December 2024)}
-focuses on embedded systems, leveraging Elixir's fault tolerance to create resilient IoT devices. It simplifies firmware development and management, ensuring efficient hardware and system updates.
+focuses on embedded systems, leveraging Elixir's fault tolerance to create resilient IoT devices. It simplifies firmware development and management, ensuring efficient hardware and system updates while addressing fault tolerance concerns.
 
-These integrations, extensions  demonstrate Elixir’s ability to not only leverage the proven robustness of \gls{OTP} but also adapt and grow through innovative tools and libraries, solidifying its position as a leading choice for building fault-tolerant, distributed applications. 
+These integrations, extensions  demonstrate Elixir’s ability to not only leverage the proven robustness of \gls{OTP} but also adapt and grow through innovative tools and libraries, solidifying its position as a leading choice for building fault-tolerant, distributed applications.
 
-\subsubsection{Drawbacks and Real Applications}
+\subsection{Drawbacks and Real Applications}
 
 The benefits of Elixir are closely tied to the powerful features of the \gls{BEAM}, as mentioned earlier. However, there are some drawbacks to consider. One major limitation is the lack of third-party libraries, despite \gls{OTP} providing good support. Currently, it is challenging for Elixir to compete with more popular languages in this regard. Additionally, although the \gls{BEAM} has a distributed nature, its single-threaded architecture with a garbage collector makes it less suitable for fault-tolerant applications in critical systems that require fault tolerance at low level \cite{Juric2024}.Another potential drawback of Elixir is that it is a dynamically-typed programming language, which can result in errors from type mismatches or programming mistakes \cite{Cassola2020}. In contrast, languages such as Scala, Java, and Go offer advantages in this regard due to their static typing. However, there have been efforts to introduce a type system to Elixir without sacrificing the language's inherent dynamism, as demonstrated in the work of Cassola et al. \cite{Cassola2020}.
 
 Despite these limitations, Elixir has been successfully utilized in numerous prominent projects. Taking as reference the official website of Elixir, for example, Discord relies on Elixir as the backbone of its chat infrastructure, leveraging its ability to handle real-time communication effectively. PepsiCo also employs Elixir in a central role within its data pipeline, providing marketing and sales teams with tools to query, analyze, and integrate data from various search marketing partners. Other notable examples of Elixir's application include Heroku, SparkMeter, and several others.
 
-
 \section{Scala Programming Language with Akka Toolkit Analysis}
+
+The success of the actor model, particularly through its implementation in Erlang inspired other programming languages to replicate its concepts \cite{Juric2024,Abraham2023}. Among these were languages running on the \gls{JVM}, such as Scala and Java. However, significant differences emerged due to the JVM’s inherent concurrency challenges. Unlike \gls{BEAM}, which was built with lightweight process isolation and message passing at its core, the \gls{JVM} relied on low-level thread management and shared memory, necessitating careful synchronization through locks and other mechanisms. Although this languages offered \gls{API}s for concurrency management, these general-purpose languages placed much of the responsibility on the developer \cite{Abraham2023,akka-docs}, going against the philosophy of Erlang/Elixir, that it was created for concurrency programming.
+
+This gap on the \gls{JVM} led to the creation of the Akka toolkit, designed to bring the actor programming model to its ecosystem. Inspired by Erlang, Akka offers a runtime and comprehensive tools to support actor-based programming, enabling developers to leverage the \gls{JVM} while benefiting from a more structured approach to concurrency \cite{akka-docs}. By abstracting thread management and providing a framework for asynchronous communication and fault tolerance, Akka creates a solution to implement scalable and distributed systems \cite{Abraham2023}.
+
+\subsection{How Akka Handles the Actor Model}
+
+This section explores one of the two key characteristics of the actor model and how the Akka toolkit addresses it. Specifically, it describes the distributed nature and communication aspects, as well as the isolation provided by Akka. This toolkit functions as an abstraction layer built on top of Scala and the \gls{JVM}.
+
+\subsubsection{Location Transparency and Communication}
+
+The Actor Model, like described before, defines a concurrent paradigm where actors operate independently, maintain their own mailboxes, and communicate exclusively via message passing. This communication should ideally respect the location transparent characteristic of distributed systems, allowing actors to interact seamlessly regardless of their physical location \cite{Armstrong2013}. On the JVM, threading enables scaling within a single machine by utilizing additional CPUs and memory due to the shared heap memory and concurrency model \cite{Abraham2023}. However, native support for scaling across distributed systems is lacking, a contrast to BEAM’s distributed aspect.
+
+BEAM facilitates seamless inter-process communication natively, as previously discussed. Akka addresses this limitation through its latest remoting protocol, Artery, which builds upon the older remoting mechanisms making improvements \cite{akka-docs,Abraham2023}. Artery employs either TCP or Aeron UDP for communication. While Aeron UDP delivers high throughput and low latency, it lacks encryption, making it suitable for specific trusted environments. TCP, on the other hand, offers encrypted communication with similarly high throughput, although with potentially higher latency under extreme load \cite{akka-docs}. Unlike BEAM’s native capabilities, Akka’s abstractions inevitably introduce some overhead to the communication between actors.
+
+Akka facilitates scalability and communication with the discovery module. The discovery module serves a purpose similar to namespaces in Elixir, allowing actors to be registered with a specific name. In this context, actors can be registered using a designated key \cite{Abraham2023}, and other actor can communicate with that name without knowing the specific address. Furthermore, communication with these actors occurs through their mailboxes, following a standard First-In-First-Out (FIFO) protocol, equals to the behavior in Elixir \cite{Moamen2027,Juric2024}.
+
+\subsubsection{Actors Isolation}
+
+Actor isolation is a foundational principle of the Actor Model, where actors are designed to operate independently and avoid shared state \cite{Armstrong2013}. In Java, this independence can be implemented using low-level concurrency mechanisms, while in Scala it is often achieved through immutability. However, Akka significantly simplifies the process by providing an Actor API that inherently enforces isolation \cite{Abraham2023,Bagherzadeh2020}. Initially, Akka introduced the Classic Actors API, which supported untyped actor logic. In this model, messages were transmitted without type safety and processed using pattern matching, similar to the approach employed in Elixir \cite{akka-docs}. In contrast, the modern standard is the Typed Actor API, which provides a more robust and type-safe solution. The Typed Actor API enforces type safety through, ensuring that only messages of the defined type can be sent to an actor \cite{Abraham2023,akka-docs}. This differs from Elixir, where actor communication is dynamically typed and does not provide type guarantees.
+
+Unlike Elixir, Scala permits mutable programming, which introduces the potential for shared mutable data to be passed between actors, a practice strongly discouraged in Akka’s documentation. Despite these guidelines, the use of mutable data within Akka is technically possible. If misused, this could reintroduce well-known concurrency issues in the JVM, such as race conditions and thread interference \cite{akka-docs}. This limitation stands in contrast to Elixir’s approach, where the \gls{VM} guarantees strict process isolation, effectively eliminating such risks \cite{Juric2024,Valkov2018}.
+
+To achieve efficient performance, actors in Akka often share underlying threads, as individual threads are resource-intensive \cite{Moamen2027}. Akka actors mimic the lightweight processes of the \gls{BEAM} by managing multiple actors within a single thread. This approach significantly reduces memory consumption compared to the heavyweight \gls{JVM} threads. For instance, approximately 2.7 million Akka actors can fit within 1 GB of memory, a considerable contrast to the 4,096 threads that would occupy the same space \cite{Abraham2023}
+
+\begin{comment}
+
+\textit{\underline{Messager Dispatchers}}
+
+Message dispatchers plays a important role in Akka’s architecture by managing the execution of actor tasks. A dispatcher serves as the mechanism that determines how messages are delivered to actors and how these actors are allocated to threads for execution. The default dispatcher is a thread pool executor based on the Fork/Join framework, enabling high concurrency with minimal overhead.
+
+The flexibility of Akka dispatchers allows for fine-grained control over thread allocation, ensuring efficient utilization of system resources. For example, the pinned dispatcher assigns each actor its own dedicated thread, suitable for actors requiring uninterrupted execution. Conversely, the default dispatcher facilitates efficient thread sharing across a large number of actors. This configurability enables developers to tailor Akka’s performance characteristics to their application’s specific needs, such as minimizing latency or maximizing throughput.
+
+Elixir’s message dispatching model, in contrast, is built into the \gls{BEAM} and abstracts much of the configuration from the developer. While this simplicity is advantageous, it lacks the level of customization offered by Akka. However, the \gls{BEAM}’s design provides guarantees of fairness and isolation, attributes that are less rigidly enforced in JVM-based systems, where developers must explicitly manage such concerns.
+
+\textit{\underline{Garbage Collector}}
+
+Another significant topic is garbage collection. As mentioned earlier, the \gls{BEAM} focuses on localized updates within individual processes, which allows for process-specific garbage collection. This ensures minimal disruption, as garbage collection can occur independently across processes. In contrast, the JVM employs heap-based garbage collection, which can trigger global stop-the-world pauses. Despite of  These pauses introduce the risk of application latency spikes or even node failures under high load. This fundamental difference highlights a critical limitation of JVM-based actor systems like Akka compared to the \gls{BEAM}, where garbage collection aligns more naturally with the principles of actor isolation.
+\end{comment}
+
+\subsection{Fault Tolerance Mechanism and Strategies}
+
+Akka, built upon the Actor Model, inherits its fault-tolerance philosophy from Erlang’s design principles, like described on Elixir's section. This is the foundation of the fault tolerance aspects, at its core, the Actor Model facilitates fault tolerance through the supervisor pattern. By defining strategies for handling failures, such as restarting, stopping, or resuming child actors, supervisors ensure that errors are contained and localized, preventing system-wide failures \cite{akka-docs,Abraham2023,Juric2024}, like it was detailed before.
+
+In addition to its foundational fault-tolerance mechanisms, Akka’s modular environment offers some modules that extend the toolkit’s capabilities, many of which directly contribute to improving fault tolerance.
+
+\subsubsection{Akka Clustering}
+
+Akka Cluster is a module that enables peer-to-peer communication among a group of nodes, allowing them to function as a unified distributed system \cite{Moradi2023,akka-docs}. Designed to enhance fault tolerance, it implements replication and redundancy strategies while achieving location transparency through the Artery protocol, enabling nodes to communicate without knowing the physical locations of others \cite{Abraham2023}.
+
+The module provides an API for managing cluster operations, including managing nodes, designating a leader node, and obtaining cluster information. Although, Akka Cluster is autonomous, capable of redistributing workloads and managing actor states without manual intervention via API \cite{Abraham2023}. To ensure consistency and reliability, Akka Cluster employs a gossip protocol, a decentralized communication mechanism that facilitates the propagation of information across nodes \cite{Tanenbaum2023,akka-docs}. This protocol enables nodes to maintain a shared, consistent view of the cluster state \cite{Tanenbaum2023}.
+
+For job processing, Akka Cluster employs a divide-and-conquer architecture through the use of master and worker actors. The master actor decomposes large tasks into smaller subtasks, distributing these among worker actors for parallel processing. Once processing is complete, the workers return their results to the master actor, which aggregates them to produce the final output. This design enhances performance and fault tolerance, as the master actor can reassign tasks from failed workers to other available nodes \cite{akka-docs}.
+
+Leader election is a important aspect of a cluster management, and it is efficiently managed within Akka Cluster. In contrast to the Raft consensus, algorithm Akka Cluster adopts a simpler method by automatically assigning the leadership role to the node with the lowest address. This approach minimizes the overhead associated with the election process \cite{raft-diego,akka-docs}.
+
+Furthermore, Akka Cluster supports advanced features such as cluster sharding, which distributes actors across the cluster while preserving their identity and state. This facilitates load balancing and enhances performance by ensuring that workloads are distributed evenly. The module also includes monitoring and health management capabilities, enabling to verify the performance and status of nodes and actors \cite{Abraham2023}.
+
+\subsubsection{Akka Circuit Breaker}
+
+Akka provides a dedicated module for implementing the Circuit Breaker pattern, a technique for improve system stability by isolating faults and preventing cascading failures. As presented earlier, the Circuit Breaker pattern temporarily suspends operations to a failing component, allowing it time to recover while safeguarding the overall system \cite{fowler-circuit-breakers}.
+
+Akka’s Circuit Breaker module offers a straightforward integration, making it possible to configure the way the circuit it will activate, where it can be defined failure thresholds, timeouts, and recovery intervals. This module is effective in monitoring interactions between actors and external services, ensuring that errors are contained and managed without disrupting the broader system \cite{akka-docs}.
+
+Compared to Elixir’s ecosystem, where circuit breaker functionality often relies on third-party libraries, Akka’s Circuit Breaker benefits from being a native part of its comprehensive toolkit.
+
+\subsubsection{Akka Persistence and Event Sourcing}
+
+Akka also provides support for fault tolerance through mechanisms such as message logging and check-pointing. Akka Persistence with event sourcing enables actors to recover their state following a failure, ensuring consistency in system behavior. This is achieved by maintaining an event log that records all changes to an actor’s state in the order they occurred. Upon a restart, often triggered by a supervisor, the actor replays the logged events to reconstruct its previous state, effectively resuming operations from where it left off before the crash \cite{akka-docs}.
+
+To optimize the recovery process, Akka Persistence also supports snapshots, supporting also the check-pointing strategy. Instead of replaying all events from the beginning of the event log, the actor can restore its state from the most recent snapshot and then replay only the events that occurred after that snapshot \cite{Abraham2023,akka-docs}.
+
+\subsection{Comparison with Elixir/BEAM and Real Applications}
+
+The Akka toolkit represents a significant advancement in extending the \gls{JVM} to support modern concurrency models. As noted by Valkov et al. \cite{Valkov2018}, Akka enhances Scala’s performance by reducing communication latency, making it a powerful tool for building reactive systems. However, it operates as an abstraction layer on top of the \gls{JVM}, while the \gls{BEAM} virtual machine is inherently designed as a state of the art concurrency platform \cite{erlang-concurrency-blog}. The \gls{JVM} was originally created to address general-purpose programming needs with a focus on efficiency, but it does not inherently prioritize the actor model or process-level isolation as the \gls{BEAM} does.
+
+\textbf{Garbage Collection.} A notable difference between Akka and the \gls{BEAM} lies in their approach to garbage collection. Akka relies on the \gls{JVM}’s garbage collection strategy, which can introduce latency during stop-the-world events \cite{akka-docs,Abraham2023}. These pauses can negatively affect the performance of highly concurrent systems, especially under heavy load. However, advancements in garbage collection technology, such as the Z Garbage Collector (ZGC), have shown possibilities in reducing pause times significantly. As noted by Chaudhary et al. \cite{Chaudhary2024}, ZGC represents a state of the art approach that is well-suited for applications requiring minimal pauses due to garbage collection. In contrast, the \gls{BEAM} employs a per-process garbage collection mechanism, which localizes memory management to individual lightweight processes \cite{Juric2024}. This architecture ensures that garbage collection in one process does not impact others, making the \gls{BEAM} particularly effective in low-latency and high-reliability scenarios.
+
+\textbf{Scheduling Model.} Scheduling represents a fundamental difference between Akka and the \gls{BEAM}. The \gls{BEAM} employs a preemptive scheduling model designed to efficiently handle numerous small, short-lived tasks, such as high-frequency message handling in highly concurrent systems. This approach ensures equitable CPU time distribution and mitigates process starvation \cite{Juric2024,elixir-docs-hexdocs,erlang-concurrency-blog}. However, frequent context switching can introduce overhead for long-running processes, potentially reducing efficiency in such scenarios. Akka, on the other hand, relies on the \gls{JVM}’s cooperative scheduling model and enhances it with its Message Dispatcher, which supports configurable thread pools like Fork-Join, that leverages a work-stealing algorithm, and Fixed Thread Pools, optimizing resource usage. This mechanism enables Akka to efficiently manage long-lived and computationally intensive tasks \cite{akka-docs,Abraham2023}.
+
+\textbf{Built-in Libraries and Support.} Both the Akka and Elixir/\gls{BEAM} ecosystems offer comprehensive libraries to address common design patterns for concurrency and fault tolerance. Elixir’s \gls{OTP} framework, like stated before, provides a robust suite of built-in patterns, such as supervisors, specifically tailored for managing concurrency and ensuring system reliability \cite{erlang-concurrency-blog,elixir-docs-hexdocs}. Akka, on the other hand, adopts a modular architecture with an easily pluggable library of features, including implementations for replication and circuit breakers. In the Elixir ecosystem, equivalent functionality is often achieved through third-party libraries maintained by the community. While these community-driven libraries are highly effective and widely used, their reliance on external maintenance and updates can present a potential drawback compared to Akka’s more integrated and officially supported approach.
+
+\textbf{Real-World Applications.} Akka, just as Elixir, has demonstrated its capabilities in considerable large-scale applications, emphasizing its scalability, reliability, and performance. For instance, PayPal leverages Akka actors to manage over a billion financial transactions daily, ensuring high availability and robust fault tolerance\cite{Bagherzadeh2020}. Similarly, the Spark big data ecosystem depends on Akka for efficiently shuffling hundreds of terabytes of data across distributed nodes. Other prominent companies, including Twitter, LinkedIn, and Walmart use Akka to solve concurrency and distributed system challenges \cite{Bagherzadeh2020,akka-docs}.
 
 \section{Go Programming Language Analysis}
 
+% - location transparency can be done through streams, elixir and akka have that natively - actor model in general
+
+% - Different from the Actor Model, in CSP, processes are anonymous, while channels are named first-class entities. \url{https://xiangji.me/#beam-vs-jvm}
+
 
 \section{Benchmarking Strategies}
+
+% - https://dl.acm.org/doi/pdf/10.1145/2541329.2541339
+
+% - mutation tests in akka: https://dl.acm.org/doi/pdf/10.1145/3611643.3616362
+
 
 
 \section{Conclusions}

@@ -265,19 +265,101 @@ To optimize the recovery process, Akka Persistence also supports snapshots, supp
 
 The Akka toolkit represents a significant advancement in extending the \gls{JVM} to support modern concurrency models. As noted by Valkov et al. \cite{Valkov2018}, Akka enhances Scala’s performance by reducing communication latency, making it a powerful tool for building reactive systems. However, it operates as an abstraction layer on top of the \gls{JVM}, while the \gls{BEAM} virtual machine is inherently designed as a state of the art concurrency platform \cite{erlang-concurrency-blog}. The \gls{JVM} was originally created to address general-purpose programming needs with a focus on efficiency, but it does not inherently prioritize the actor model or process-level isolation as the \gls{BEAM} does.
 
-\textbf{Garbage Collection.} A notable difference between Akka and the \gls{BEAM} lies in their approach to garbage collection. Akka relies on the \gls{JVM}’s garbage collection strategy, which can introduce latency during stop-the-world events \cite{akka-docs,Abraham2023}. These pauses can negatively affect the performance of highly concurrent systems, especially under heavy load. However, advancements in garbage collection technology, such as the Z Garbage Collector (ZGC), have shown possibilities in reducing pause times significantly. As noted by Chaudhary et al. \cite{Chaudhary2024}, ZGC represents a state of the art approach that is well-suited for applications requiring minimal pauses due to garbage collection. In contrast, the \gls{BEAM} employs a per-process garbage collection mechanism, which localizes memory management to individual lightweight processes \cite{Juric2024}. This architecture ensures that garbage collection in one process does not impact others, making the \gls{BEAM} particularly effective in low-latency and high-reliability scenarios.
+\textbf{Garbage Collection.} A notable difference between Akka and the \gls{BEAM} lies in their approach to garbage collection. Akka relies on the \gls{JVM}’s garbage collection strategy, which can introduce latency during stop-the-world events \cite{akka-docs,Abraham2023}. These pauses can negatively affect the performance of highly concurrent systems, especially under heavy load. However, advancements in garbage collection technology, such as the Z Garbage Collector, have shown possibilities in reducing pause times significantly. As noted by Chaudhary et al. \cite{Chaudhary2024}, Z Garbage Collector represents a state of the art approach that is well-suited for applications requiring minimal pauses due to garbage collection. In contrast, the \gls{BEAM} employs a per-process garbage collection mechanism, which localizes memory management to individual lightweight processes \cite{Juric2024}. This architecture ensures that garbage collection in one process does not impact others, making the \gls{BEAM} particularly effective in low-latency and high-reliability scenarios.
 
 \textbf{Scheduling Model.} Scheduling represents a fundamental difference between Akka and the \gls{BEAM}. The \gls{BEAM} employs a preemptive scheduling model designed to efficiently handle numerous small, short-lived tasks, such as high-frequency message handling in highly concurrent systems. This approach ensures equitable CPU time distribution and mitigates process starvation \cite{Juric2024,elixir-docs-hexdocs,erlang-concurrency-blog}. However, frequent context switching can introduce overhead for long-running processes, potentially reducing efficiency in such scenarios. Akka, on the other hand, relies on the \gls{JVM}’s cooperative scheduling model and enhances it with its Message Dispatcher, which supports configurable thread pools like Fork-Join, that leverages a work-stealing algorithm, and Fixed Thread Pools, optimizing resource usage. This mechanism enables Akka to efficiently manage long-lived and computationally intensive tasks \cite{akka-docs,Abraham2023}.
 
 \textbf{Built-in Libraries and Support.} Both the Akka and Elixir/\gls{BEAM} ecosystems offer comprehensive libraries to address common design patterns for concurrency and fault tolerance. Elixir’s \gls{OTP} framework, like stated before, provides a robust suite of built-in patterns, such as supervisors, specifically tailored for managing concurrency and ensuring system reliability \cite{erlang-concurrency-blog,elixir-docs-hexdocs}. Akka, on the other hand, adopts a modular architecture with an easily pluggable library of features, including implementations for replication and circuit breakers. In the Elixir ecosystem, equivalent functionality is often achieved through third-party libraries maintained by the community. While these community-driven libraries are highly effective and widely used, their reliance on external maintenance and updates can present a potential drawback compared to Akka’s more integrated and officially supported approach.
 
-\textbf{Real-World Applications.} Akka, just as Elixir, has demonstrated its capabilities in considerable large-scale applications, emphasizing its scalability, reliability, and performance. For instance, PayPal leverages Akka actors to manage over a billion financial transactions daily, ensuring high availability and robust fault tolerance\cite{Bagherzadeh2020}. Similarly, the Spark big data ecosystem depends on Akka for efficiently shuffling hundreds of terabytes of data across distributed nodes. Other prominent companies, including Twitter, LinkedIn, and Walmart use Akka to solve concurrency and distributed system challenges \cite{Bagherzadeh2020,akka-docs}.
+\textbf{Real-World Applications.} Akka, just as Elixir, has demonstrated its capabilities in considerable large-scale applications, emphasizing its scalability, reliability, and performance. For instance, PayPal leverages Akka actors to manage over a billion financial transactions daily, ensuring high availability and robust fault tolerance \cite{Bagherzadeh2020}. Similarly, the Spark big data ecosystem depends on Akka for efficiently shuffling hundreds of terabytes of data across distributed nodes. Other prominent companies, including Twitter, LinkedIn, and Walmart use Akka to solve concurrency and distributed system challenges \cite{Bagherzadeh2020,akka-docs}.
 
 \section{Go Programming Language Analysis}
 
-% - location transparency can be done through streams, elixir and akka have that natively - actor model in general
+The Go programming language was designed to facilitate rapid software development while ensuring high execution speed \cite{Kennedy2016, Cox-Buday2017}. It emerged as a balanced alternative to low-level traditional languages like C, which are known for their performance but lack modern development conveniences, and scripting languages such as Python, which prioritize ease of development \cite{Kennedy2016}. Go is a statically typed, compiled language that enforces type safety, marking a distinction compared to Elixir, which is dynamic and immutable, as well as Akka, which also emphasizes immutability.
 
-% - Different from the Actor Model, in CSP, processes are anonymous, while channels are named first-class entities. \url{https://xiangji.me/#beam-vs-jvm}
+While Go is not explicitly classified as a distributed programming language, it has gained considerable popularity in areas such as microservices, cloud applications, and high-concurrency systems. This popularity can be attributed to its simplicity, speed, and robust concurrency model \cite{Castro2019,Shuiskov2022}. In contrast to Elixir, which is designed with immutability and a "let it crash" fault-tolerance philosophy, Go does not inherently prioritize fault tolerance or the "let it crash" approach \cite{Cox-Buday2017}. Nevertheless, Go can be a good candidate for integration into distributed architectures when paired with complementary technologies. By take advantage of Go’s concurrency capabilities, it is possible to replicate certain fault-tolerant strategies typical of Elixir-based systems, making it a valuable language to explore in this context.
+
+\subsection{Concurrency and Distribution in Go}
+
+Go adopts a concurrency model rooted in the \gls{CSP} paradigm, distinguishing itself from other approaches such as the Actor Model. While both paradigms prioritize concurrent communication, they differ fundamentally in their focus \cite{Cox-Buday2017}. In \gls{CSP}, channels are treated as first-class entities, emphasizing the communication mechanism itself, whereas the Actor Model considers processes to be first-class, focusing on the entities performing the computation, like described before. Additionally, the Actor Model enforces strict isolation between processes, with no shared memory, while \gls{CSP} organizes concurrent processes to interact explicitly through channels rather than directly synchronizing access to shared memory \cite{Cox-Buday2017}.  
+
+Go is one of the first programming languages to integrate \gls{CSP} directly into its design, emphasizing data sharing through channels rather than passing references to shared memory among its lightweight threads, known as goroutines \cite{Cox-Buday2017}. This design choice minimizes potential synchronization complexities and aligns with Go’s guiding principle: “Do not communicate by sharing memory; instead, share memory by communicating” \cite{akka-docs}. This philosophy contrasts with shared-memory concurrency models, where processes directly access and modify shared state. In Go, by design, only one goroutine can access a value at any given time, effectively eliminating the possibility of data races \cite{Kennedy2016,akka-docs}. Nevertheless, Go also provides manual synchronization mechanisms, such as explicit mutexes, for situations where they are necessary \cite{Cox-Buday2017}.
+
+In contrast to the Actor Model, where actors encapsulate state and communicate through asynchronous messages, Go’s \gls{CSP}-based model prioritizes structured communication patterns via channels. This distinction encourages developers to design systems by focusing on the flow of data and the relationships between processes, rather than the individual behavior of the computational units \cite{akka-docs}.
+
+Go's strategy utilizing \gls{CSP} is centered around goroutines and channels, which are described below. Additionally, we will briefly discuss how Go's garbage collector operates, as well as the limitations of channels and goroutines in supporting distributed communication.
+
+\subsubsection{Goroutines}
+
+Due to the overhead associated with \gls{OS} threads, Go enhances efficiency by implementing a multiplexing logic that allows multiple processes to run on the same \gls{OS} thread \cite{Cox-Buday2017,Castro2019}, similar to the approaches used in Elixir and Akka. Go achieves this through goroutines, which are lightweight abstractions that enable concurrent and parallel execution. By utilizing goroutines, Go can efficiently manage numerous tasks without significant resource consumption \cite{akka-docs}.
+
+The \gls{OS} is responsible for scheduling threads to run on physical processors, whereas Go handles the scheduling of lightweight goroutines onto logical processors, which are subsequently bound to \gls{OS} threads \cite{Kennedy2016}. As shown in Figure \ref{fig:gorutine-threads-relation}, the example illustrate two \gls{OS} threads (M2 and M3), with goroutines identified by the prefix \textit{G}. The scheduling process involves allocating goroutines to logical processors via a local run queue. However, initially, goroutines are placed in the global scheduler run queue, and only afterward are they assigned to the local queues of logical processors \cite{Kennedy2016,Cox-Buday2017}. The same Figure \ref{fig:gorutine-threads-relation}, also illustrates how Go achieves parallelism. Goroutines can be distributed across multiple CPU cores, provided the hardware supports parallel execution \cite{Kennedy2016}.
+
+\begin{figure}
+    \centering
+    \frame{\includegraphics[width=100mm]{ch-state/assets/goroutine-threads-relation.png}}
+    \caption[Go’s scheduler logic of distributing goroutine by the logical processors]{Go’s scheduler logic of distributing goroutine by the logical processors. Adapted from \cite{Kennedy2016}.}
+    \label{fig:gorutine-threads-relation}
+\end{figure}
+
+\subsubsection{Channels}
+
+Building on the \gls{CSP} model, Go integrates channels as a core element of its concurrency paradigm. These data structures facilitate safe and efficient communication between goroutines, enhancing synchronization while addressing common challenges associated with shared memory access \cite{Kennedy2016}. By following the principle that only one goroutine should modify a piece of data at any given time, channels help ensure data integrity, reducing the risk of concurrent modification and fostering robust and predictable behavior in concurrent programs.
+
+However, channels in Go do not inherently enforce data access protection features such as immutability and isolation, which are central to concurrency models in languages like Elixir and Akka. Despite this limitation, Go’s channels remain a versatile and powerful tool for coordinating goroutines. Their design enables developers to effectively manage concurrency in a broad spectrum of applications, ensuring simplicity and efficiency even in complex systems.
+
+\subsubsection{Garbage Collector}
+
+In Go, the garbage collection strategy is based on a concurrent, non-generational mark-and-sweep algorithm \cite{go-docs}, which operates globally on the heap \cite{Zhao2023}. This approach differs significantly from the BEAM’s garbage collector, which performs garbage collection on a per-process basis. The BEAM’s process-level garbage collection minimizes the impact on overall system performance by isolating garbage collection events to individual processes.
+
+Go’s garbage collector, while global, supports partial heap collection and incurs lower overhead during “stop-the-world” events compared to some state of the art garbage collectors in the JVM, such as ZGC, G1, and Shenandoah, as described by Zhao et al. \cite{Zhao2023}. Nevertheless, the JVM offers extensive configurability and dynamic tuning capabilities, which can provide performance advantages in certain scenarios. Despite this, Go’s garbage collector is designed to maintain pause times between 10 ms and 100 ms, ensuring relatively fast and predictable performance suitable for many high-concurrency applications.
+
+Each garbage collection approach has its own advantages and trade-offs. Elixir’s garbage collection, grounded in the BEAM runtime, is particularly well-suited for distributed programming due to its strong emphasis on process isolation.
+
+\subsubsection{Distributed Communication}
+
+A notable limitation of Go is its lack of native support for distributed communication \cite{Whitney2019, Cox-Buday2017}. While the combination of channels and goroutines serves as an excellent tool for managing concurrency and parallelism, it does not inherently extend to communication across physical machines \cite{Kennedy2016}. This limitation has prompted efforts to extend Go’s concurrency model to support distributed systems. For instance, Whitney et al. \cite{Whitney2019} proposed a novel protocol called Gluster, which provides a library to abstract cluster logic and facilitate distributed communication. However, Gluster has seen limited industrial adoption and is restricted to Linux environments, limiting its general applicability.
+
+Nevertheless, Go it offers seamless integration with mature and optimized networking libraries \cite{Kennedy2016}. Packages such as \gls{TCP}, \gls{HTTP}, and \gls{gRPC} provide efficient mechanisms for enabling communication between distributed components \cite{Castro2019, akka-docs}. These libraries significantly reduce the overhead associated with managing low-level networking concerns. Furthermore, channel-based networking libraries allow developers to manage distributed interactions effectively, leveraging goroutines and channels to handle the inherent asynchronous aspects \cite{Castro2019}.
+
+While Go’s native concurrency primitives do not align with the Actor Model, there are projects of the Actor Model available for the Go ecosystem. One mature example is Proto-Actor \cite{Whitney2019}, a library that abstracts the complexities of distribution through its \gls{API}. Built on top of \gls{gRPC}, Proto-Actor provides a remote facilities and location transparency of the Actor Model within Go.
+
+Go’s rising popularity in the industry is closely tied to its adoption in microservices architectures and cloud-native applications \cite{Zhao2023,Shuiskov2022}. Microservices, by their nature, represent distributed systems and facilitate communication through both asynchronous and synchronous methods, often utilizing discovery services to map all nodes. Another approach involves the use of message queues, which can provide location transparency for processes \cite{Shuiskov2022}. However, these strategies may lead to over-engineering, resulting in additional overhead compared to the more streamlined native approach of Elixir.
+
+\subsection{Fault Tolerance Mechanism and Strategies}
+
+\subsubsection{Error philosophy}
+
+- Error Handling Philosophy: Go’s approach to error handling using explicit error values instead of exceptions or actor-based supervision.
+
+- Panic and Recovery: The mechanism of panic and deferred recovery in Go and how it compares to “let it crash” in Elixir and supervision trees in Akka.
+
+\subsubsection{Strategies and Mechanisms}
+
+- Heal in goroutines pattern
+
+- Resilience Patterns in Microservices: Examination of how Go can implement resilience patterns (e.g., circuit breakers, retries) using libraries or frameworks, as opposed to built-in language constructs.
+
+\subsubsection{Tools, Frameworks, and Libraries for Fault Tolerance}
+
+- Popular Libraries: Overview of libraries such as Hystrix-Go for circuit breaking, Go-Kit for microservices, and other fault-tolerant tools.
+
+- Support for Microservices Architecture: How Go facilitates building distributed systems, including its simplicity and compatibility with containerization tools like Docker and orchestration platforms like Kubernetes.
+
+\subsubsection{Challenges Compared With Akka and Elixir and Real Applications}
+
+- Challenges in Fault Tolerance: Limitations of Go in handling distributed fault tolerance compared to native actor models in Elixir and Akka.
+
+- Case Studies and Industry Usage: Examples of real-world applications where Go has been used in distributed or fault-tolerant systems and analysis of their outcomes.
+
+- Comparison with Elixir/BEAM and Akka: Synthesis of Go’s position relative to Elixir and Akka in the context of fault tolerance and distributed systems.
+
+\hrule
+\hrule
+
+- location transparency can be done through streams/queues, elixir and akka have that natively - actor model in general
+
+- Different from the Actor Model, in CSP, processes are anonymous, while channels are named first-class entities. \url{https://xiangji.me/#beam-vs-jvm}
 
 
 \section{Benchmarking Strategies}

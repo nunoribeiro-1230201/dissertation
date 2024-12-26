@@ -108,3 +108,67 @@
   title     = {Generational ZGC- An Improvement in Garbage Collector in Java 21},
   year      = {2024}
 }
+@book{Cox-Buday2017,
+  abstract  = {First edition. Includes index. Copyright; Table of Contents; Preface; Who Should Read This Book; Navigating This Book; Online Resources; Conventions Used in This Book; Using Code Examples; O'Reilly Safari; How to Contact Us; Acknowledgments; Chapter 1. An Introduction to Concurrency; Moore's Law, Web Scale, and the Mess We're In; Why Is Concurrency Hard?; Race Conditions; Atomicity; Memory Access Synchronization; Deadlocks, Livelocks, and Starvation; Determining Concurrency Safety; Simplicity in the Face of Complexity; Chapter 2. Modeling Your Code: Communicating Sequential Processes.},
+  author    = {Katherine. Cox-Buday},
+  isbn      = {9781491941195},
+  publisher = {O'Reilly Media},
+  title     = {Concurrency in Go : tools and techniques for developers},
+  year      = {2017}
+}
+@misc{Kennedy2016,
+  author = {Brian Kennedy},
+  isbn   = {9781617291784},
+  title  = {Go in Action},
+  url    = {www.allitebooks.com},
+  year   = {2016}
+}
+@article{Castro2019,
+  abstract  = {This paper presents a framework for the static specification and safe programming of message passing protocols where the number and kinds of participants are dynamically instantiated. We develop the first theory of distributed multiparty session types (MPST) to support parameterised protocols with indexed rolesÐour framework statically infers the different kinds of participants induced by a protocol definition as role variants, and produces decoupled endpoint projections of the protocol onto each variant. This enables safe MPST-based programming of the parameterised endpoints in distributed settings: each endpoint can be implemented separately by different programmers, using different techniques (or languages). We prove the decidability of role variant inference and well-formedness checking, and the correctness of projection. We implement our theory as a toolchain for programming such role-parametric MPST protocols in Go. Our approach is to generate API families of lightweight, protocol- and variant-specific type wrappers for I/O. The APIs ensure a well-typed Go endpoint program (by native Go type checking) will perform only compliant I/O actions w.r.t. the source protocol. We leverage the abstractions of MPST to support the specification and implementation of Go applications involving multiple channels, possibly over mixed transports (e.g., Go channels, TCP), and channel passing via a unified programming interface. We evaluate the applicability and run-time performance of our generated APIs using microbenchmarks and real-world applications.},
+  author    = {David Castro and Raymond Hu and Sung Shik Jongmans and Nicholas Ng and Nobuko Yoshida},
+  doi       = {10.1145/3290342},
+  issn      = {24751421},
+  issue     = {POPL},
+  journal   = {Proceedings of the ACM on Programming Languages},
+  keywords  = {Distributed programming,Go,Indexed roles,Multiparty session types},
+  month     = {1},
+  publisher = {Association for Computing Machinery},
+  title     = {Distributed Programming using Role-Parametric Session Types in Go: Statically-typed endpoint APIs for dynamically-instantiated communication structures},
+  volume    = {3},
+  year      = {2019}
+}
+@article{Whitney2019,
+  abstract  = {In the last decade, the majority of new central processing units (CPU) have become multicore. To take advantage of these new architectures, we need programming languages that can express parallelisms. The programming language Golang is well known for providing developers with an easy programming model for communicating sequential process-style concurrency enabling programmers to easily write functions that will execute on the different cores of a modern multicore CPUs. Unfortunately, Golang does not support distributed execution of goroutines on clusters or distributed systems. In this paper, we extend the concurrency capabilities of Golang to a distributed cluster by providing a library called Gluster that is simple and easy to use. We developed a programming model that allows users to easily distribute work between machines, in a similar way as workloads are distributed in multicore CPUs by using operating system threads with libraries similar to Pthreads and OpenMP. Our Gluster solution is based on a single master node that connects to peers over a network and distributes work to these peers. The master node is able to send function arguments over the network to worker nodes as well as receive return values. Results using matrix multiplication show that our distributed implementation can speed up the goroutines by 5× in a small 16 nodes cluster, but more importantly, it shows that the results are scalable to cluster size.},
+  author    = {James Whitney and Chandler Gifford and Maria Pantoja},
+  doi       = {10.1007/s11227-018-2649-2},
+  issn      = {15730484},
+  issue     = {3},
+  journal   = {Journal of Supercomputing},
+  keywords  = {Cluster,Concurrent programming,Distributed computing,HPC},
+  month     = {3},
+  pages     = {1396-1409},
+  publisher = {Springer New York LLC},
+  title     = {Distributed execution of communicating sequential process-style concurrency: Golang case study},
+  volume    = {75},
+  year      = {2019}
+}
+@inproceedings{Zhao2023,
+  abstract  = {Garbage Collection (GC) is a representative automatic memory manager widely deployed in popular programming languages, such as Java, C\#, and Golang (Go). Through GC, these languages provide programmers with flexibility and safety. However, GC leads to non-trivial overhead in compute and memory resources during application runtime. GC threads compete with non-GC threads (mutators) of an application, which particularly impacts latency-critical (LC) applications and causes long tail latency. Existing GC approaches do not efficiently address the interference, as GC is triggered passively without a global insight of the application; or they employ incremental GC to reduce the interference, while the incremental progress is not dynamically tailored during GC process according to runtime characteristics, which leads to significant performance degradation upon bursty requests. We present LEGO, an efficient and non-intrusive GC framework that deploys a novel elastic incremental GC mechanism integrated with an adaptive GC scheduler to reduce CPU contention between GC and mutators, and improve resource utilization and QoS of LC applications. We choose to develop LEGO in Go, as Go is specifically designed for cloud applications and the current GC mechanisms for JVM are ineffective for Go due to its unique GPM thread scheduling and memory allocation model. LEGO adapts incremental GC into Go to tackle the full GC issue and addresses resource contention with a proactive scheduler for adaptive GC triggering. Importantly, LEGO leverages the elastic incremental GC mechanism in mitigating the interference from unavoidable GC in face of bursts of requests. We implement and evaluate LEGO with popular LC applications developed in Go. Results show that compared to the default Go GC and a tailored G1 GC, LEGO significantly improves both the tail latency and throughput for LC applications.},
+  author    = {Junxian Zhao and Xiaobo Zhou and Sang Yoon Chang and Chengzhong Xu},
+  doi       = {10.1145/3588195.3592998},
+  isbn      = {9798400701559},
+  booktitle = {HPDC 2023 - Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing},
+  keywords  = {GC scheduler,Golang (Go),garbage collection (GC),latency critical (LC),tail latency},
+  month     = {8},
+  pages     = {169-180},
+  publisher = {Association for Computing Machinery, Inc},
+  title     = {Let It Go: Relieving Garbage Collection Pain for Latency Critical Applications in Golang},
+  year      = {2023}
+}
+@book{Shuiskov2022,
+  author    = {Alexander. Shuiskov},
+  isbn      = {9781804617007},
+  publisher = {PACKT PUBLISHING LIMITED},
+  title     = {Microservices With GO : Building Scalable and Reliable Go Microservices},
+  year      = {2022}
+}

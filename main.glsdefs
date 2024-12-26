@@ -362,6 +362,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{TCP}%
+{%
+name={\acronymfont {\glsentryshort {TCP}}},%
+sort={TCP},%
+type={acronym},%
+first={TCP},%
+firstplural={TCPs},%
+text={TCP},%
+plural={TCPs},%
+description={Transmission Control Protocol},%
+descriptionplural={Transmission Control Protocol},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Transmission Control Protocol},%
+longplural={Transmission Control Protocols},%
+short={TCP},%
+shortplural={TCPs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{gRPC}%
 {%
 name={\acronymfont {\glsentryshort {gRPC}}},%

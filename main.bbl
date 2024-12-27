@@ -1,0 +1,2180 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{EthicDeb2018}{book}{}
+      \name{author}{3}{}{%
+        {{hash=bcfe04c9acb7b8be977876addd32053c}{%
+           family={Deb},
+           familyi={D\bibinitperiod},
+           given={Dipankar},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f2ba39a57b73e39e10dd504237e35f4f}{%
+           family={Dey},
+           familyi={D\bibinitperiod},
+           given={Rajeeb},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c2e15b2106bbf571486d09bbd7a819bb}{%
+           family={Balas},
+           familyi={B\bibinitperiod},
+           given={Valentina\bibnamedelima E.},
+           giveni={V\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{fullhash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{bibnamehash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{authorbibnamehash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{authornamehash}{d948e66f1d6fb953c74652512c6aa277}
+      \strng{authorfullhash}{d948e66f1d6fb953c74652512c6aa277}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{12}
+      \field{title}{Engineering Research Methodology}
+      \field{year}{2018}
+      \verb{doi}
+      \verb 10.1007/978-981-13-2947-0
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-981-13-2947-0
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-981-13-2947-0
+      \endverb
+    \endentry
+    \entry{nspe-ethics}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b8c32f2a265bfdfa213d29c14d70e6a0}{%
+           family={NSPE},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{b8c32f2a265bfdfa213d29c14d70e6a0}
+      \strng{fullhash}{b8c32f2a265bfdfa213d29c14d70e6a0}
+      \strng{bibnamehash}{b8c32f2a265bfdfa213d29c14d70e6a0}
+      \strng{authorbibnamehash}{b8c32f2a265bfdfa213d29c14d70e6a0}
+      \strng{authornamehash}{b8c32f2a265bfdfa213d29c14d70e6a0}
+      \strng{authorfullhash}{b8c32f2a265bfdfa213d29c14d70e6a0}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 01.12.2024}
+      \field{title}{NSPE Code of Ethics for Engineers}
+      \verb{urlraw}
+      \verb https://www.nspe.org/resources/ethics/code-ethics
+      \endverb
+      \verb{url}
+      \verb https://www.nspe.org/resources/ethics/code-ethics
+      \endverb
+    \endentry
+    \entry{ieee-ethics}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=472abfae8142fdb6f39d081303e8af85}{%
+           family={IEEE},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{fullhash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{bibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
+      \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 01.12.2024}
+      \field{title}{IEEE Code of Ethics}
+      \verb{urlraw}
+      \verb https://www.ieee.org/about/corporate/governance/p7-8.html
+      \endverb
+      \verb{url}
+      \verb https://www.ieee.org/about/corporate/governance/p7-8.html
+      \endverb
+    \endentry
+    \entry{acm-ethics}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0d8f980802951b40c8fa9e3d5de6d587}{%
+           family={ACM},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0d8f980802951b40c8fa9e3d5de6d587}
+      \strng{fullhash}{0d8f980802951b40c8fa9e3d5de6d587}
+      \strng{bibnamehash}{0d8f980802951b40c8fa9e3d5de6d587}
+      \strng{authorbibnamehash}{0d8f980802951b40c8fa9e3d5de6d587}
+      \strng{authornamehash}{0d8f980802951b40c8fa9e3d5de6d587}
+      \strng{authorfullhash}{0d8f980802951b40c8fa9e3d5de6d587}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 01.12.2024}
+      \field{title}{ACM Code of Ethics and Professional Conduct}
+      \verb{urlraw}
+      \verb https://www.acm.org/code-of-ethics/
+      \endverb
+      \verb{url}
+      \verb https://www.acm.org/code-of-ethics/
+      \endverb
+    \endentry
+    \entry{Tanenbaum2023}{book}{}
+      \name{author}{2}{}{%
+        {{hash=47480cd610c72d1e7c2edc59e8457169}{%
+           family={Tanenbaum},
+           familyi={T\bibinitperiod},
+           given={S.\bibnamedelimi Andrew},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7610918bc81a6d18601f52aaa5992600}{%
+           family={Steen},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi Maarten\bibnamedelima Van},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Maarten Van Steen}%
+      }
+      \strng{namehash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{fullhash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{bibnamehash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{authorbibnamehash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{authornamehash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{authorfullhash}{f1f53133e29b8df3266bb778c27356ca}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{isbn}{978-90-815406-3-6}
+      \field{title}{Distributed systems}
+      \field{year}{2023}
+    \endentry
+    \entry{Vitillo2021}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5603251445876a4b8dc0b524fd8f6646}{%
+           family={Vitillo},
+           familyi={V\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{5603251445876a4b8dc0b524fd8f6646}
+      \strng{fullhash}{5603251445876a4b8dc0b524fd8f6646}
+      \strng{bibnamehash}{5603251445876a4b8dc0b524fd8f6646}
+      \strng{authorbibnamehash}{5603251445876a4b8dc0b524fd8f6646}
+      \strng{authornamehash}{5603251445876a4b8dc0b524fd8f6646}
+      \strng{authorfullhash}{5603251445876a4b8dc0b524fd8f6646}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{1838430202}
+      \field{title}{Understanding Distributed Systems: What every developer should know about large distributed applications}
+      \field{year}{2021}
+    \endentry
+    \entry{Sari2015}{article}{}
+      \name{author}{2}{}{%
+        {{hash=261f69fc7fa00ed2c92697975239b5dc}{%
+           family={Sari},
+           familyi={S\bibinitperiod},
+           given={Arif},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0b347529b3ecfa669d3ac2d8ed3e4bd7}{%
+           family={Akkaya},
+           familyi={A\bibinitperiod},
+           given={Murat},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Scientific Research Publishing, Inc,}%
+      }
+      \strng{namehash}{b1bfd48ab51eb1f0389135a2badcbcba}
+      \strng{fullhash}{b1bfd48ab51eb1f0389135a2badcbcba}
+      \strng{bibnamehash}{b1bfd48ab51eb1f0389135a2badcbcba}
+      \strng{authorbibnamehash}{b1bfd48ab51eb1f0389135a2badcbcba}
+      \strng{authornamehash}{b1bfd48ab51eb1f0389135a2badcbcba}
+      \strng{authorfullhash}{b1bfd48ab51eb1f0389135a2badcbcba}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The use of technology has increased vastly and today computer systems are interconnected via different communication medium. The use of distributed systems in our day to day activities has solely improved with data distributions. This is because distributed systems enable nodes to or-ganise and allow their resources to be used among the connected systems or devices that make people to be integrated with geographically distributed computing facilities. The distributed sys-tems may lead to lack of service availability due to multiple system failures on multiple failure points. This article highlights the different fault tolerance mechanism in distributed systems used to prevent multiple system failures on multiple failure points by considering replication, high re-dundancy and high availability of the distributed services.}
+      \field{issn}{1913-3715}
+      \field{issue}{12}
+      \field{journaltitle}{International Journal of Communications, Network and System Sciences}
+      \field{title}{Fault Tolerance Mechanisms in Distributed Systems}
+      \field{volume}{08}
+      \field{year}{2015}
+      \field{pages}{471\bibrangedash 482}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.4236/ijcns.2015.812042
+      \endverb
+    \endentry
+    \entry{Ledmi2018}{book}{}
+      \name{author}{3}{}{%
+        {{hash=d64366cd0fd3eebd568af6b140b81bda}{%
+           family={Amroune},
+           familyi={A\bibinitperiod},
+           given={Mohamed.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f63f880a4447d0a8b8b3bc5740616a7b}{%
+           family={Derdour},
+           familyi={D\bibinitperiod},
+           given={Makhlouf.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9bf705bb1afe023fed705ccd7ae7025a}{%
+           family={Ahmim},
+           familyi={A\bibinitperiod},
+           given={Ahmed.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{51d3900ba53a39656e149c51ab177f91}
+      \strng{fullhash}{51d3900ba53a39656e149c51ab177f91}
+      \strng{bibnamehash}{51d3900ba53a39656e149c51ab177f91}
+      \strng{authorbibnamehash}{51d3900ba53a39656e149c51ab177f91}
+      \strng{authornamehash}{51d3900ba53a39656e149c51ab177f91}
+      \strng{authorfullhash}{51d3900ba53a39656e149c51ab177f91}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{"Part Number: CFP18PAD-ART.".}
+      \field{isbn}{9781538642382}
+      \field{title}{Fault Tolerance in Distributed Systems: A Survey}
+      \field{year}{2018}
+    \endentry
+    \entry{Coulouris2012}{book}{}
+      \name{author}{4}{}{%
+        {{hash=ba7558d26c2b47c68bbd9c3ae78afe6f}{%
+           family={Coulouris},
+           familyi={C\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b8575e961dd1a27c0844cbf89179dd13}{%
+           family={Dollimore},
+           familyi={D\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f331f31acb4f7411c14a757aeb826e85}{%
+           family={Kindberg},
+           familyi={K\bibinitperiod},
+           given={Tim},
+           giveni={T\bibinitperiod}}}%
+        {{hash=bb77f648555e75d8fe09aeb77c01d058}{%
+           family={Blair},
+           familyi={B\bibinitperiod},
+           given={Gordon},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{730f1fe685590bb8a27a9d7bf7801863}
+      \strng{fullhash}{914dc5a7cfb5b71f39fea221cfbef156}
+      \strng{bibnamehash}{730f1fe685590bb8a27a9d7bf7801863}
+      \strng{authorbibnamehash}{730f1fe685590bb8a27a9d7bf7801863}
+      \strng{authornamehash}{730f1fe685590bb8a27a9d7bf7801863}
+      \strng{authorfullhash}{914dc5a7cfb5b71f39fea221cfbef156}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-13-214301-1}
+      \field{title}{Distributed Systems - Concepts and Design}
+      \field{year}{2012}
+    \endentry
+    \entry{Ahmed2013}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=fa0a2c58f36292f11e3f1eab3cd60cff}{%
+           family={Ahmed},
+           familyi={A\bibinitperiod},
+           given={Waseem},
+           giveni={W\bibinitperiod}}}%
+        {{hash=4a84f4d238c1ebf40a53d7908532c823}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Yong\bibnamedelima Wei},
+           giveni={Y\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press Inc.}%
+      }
+      \strng{namehash}{ca0afd9d528c56274daeaef96b69dbfe}
+      \strng{fullhash}{ca0afd9d528c56274daeaef96b69dbfe}
+      \strng{bibnamehash}{ca0afd9d528c56274daeaef96b69dbfe}
+      \strng{authorbibnamehash}{ca0afd9d528c56274daeaef96b69dbfe}
+      \strng{authornamehash}{ca0afd9d528c56274daeaef96b69dbfe}
+      \strng{authorfullhash}{ca0afd9d528c56274daeaef96b69dbfe}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Software's reliability in distributed systems has always been a major concern for all stake holders especially for application's vendors and its users. Various models have been produced to assess or predict reliability of large scale distributed applications including e-government, e-commerce, multimedia services, and end-to-end automotive solutions, but reliability issues with these systems still exists. Ensuring distributed system's reliability in turns requires examining reliability of each individual component or factors involved in enterprise distributed applications before predicting or assessing reliability of whole system, and Implementing transparent fault detection and fault recovery scheme to provide seamless interaction to end users. For this reason we have analyzed in detail existing reliability methodologies from viewpoint of examining reliability of individual component and explained why we still need a comprehensive reliability model for applications running in distributed system. In this paper we have described detailed technical overview of research done in recent years in analyzing and predicting reliability of large scale distributed applications in four parts. We first described some pragmatic requirements for highly reliable systems and highlighted significance and various issues of reliability in different computing environment such as Cloud Computing, Grid Computing, and Service Oriented Architecture. Then we elucidated certain possible factors and various challenges that are nontrivial for highly reliable distributed systems, including fault detection, recovery and removal through testing or various replication techniques. Later we scrutinize various research models which synthesize significant solutions to tackle possible factors and various challenges in predicting as well as measuring reliability of software applications in distributed systems. At the end of this paper we have discussed limitations of existing models and proposed future work for predicting and analyzing reliability of distributed applications in real environment in the light of our analysis. © 2013 Elsevier Inc.}
+      \field{booktitle}{Journal of Computer and System Sciences}
+      \field{issn}{10902724}
+      \field{issue}{8}
+      \field{title}{A survey on reliability in distributed systems}
+      \field{volume}{79}
+      \field{year}{2013}
+      \field{pages}{1243\bibrangedash 1255}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/j.jcss.2013.02.006
+      \endverb
+      \keyw{Assessment,Fault tolerant,Keyword,Reliability prediction}
+    \endentry
+    \entry{atlassian-availability}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a8fd8cd0b6d2cfda939a8ef257e60192}{%
+           family={Atlassian},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{fullhash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{bibnamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authorbibnamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authornamehash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \strng{authorfullhash}{a8fd8cd0b6d2cfda939a8ef257e60192}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 16.10.2024}
+      \field{title}{{Reliability vs availability: Understanding the differences}}
+      \verb{urlraw}
+      \verb https://www.atlassian.com/incident-management/kpis/reliability-vs-availability
+      \endverb
+      \verb{url}
+      \verb https://www.atlassian.com/incident-management/kpis/reliability-vs-availability
+      \endverb
+    \endentry
+    \entry{Valkov2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=d1bd00822c8f2b0e3bb576a9c2f60154}{%
+           family={Valkov},
+           familyi={V\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ba1f1b77168a1665f02964ba235985c0}{%
+           family={Chechina},
+           familyi={C\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod}}}%
+        {{hash=c7febbc5a1f151e714c32fc9de384b86}{%
+           family={Trinder},
+           familyi={T\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{65db2996798d3935f735048e85e9c928}
+      \strng{fullhash}{65db2996798d3935f735048e85e9c928}
+      \strng{bibnamehash}{65db2996798d3935f735048e85e9c928}
+      \strng{authorbibnamehash}{65db2996798d3935f735048e85e9c928}
+      \strng{authornamehash}{65db2996798d3935f735048e85e9c928}
+      \strng{authorfullhash}{65db2996798d3935f735048e85e9c928}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Servers are a key element of current IT infrastructures, and must often deal with large numbers of concurrent requests. The programming language used to construct the server has an important role in engineering efficient server software, and must support massive concurrency on multicore machines with low communication and synchronisation overheads. This paper investigates 12 highly concurrent programming languages suitable for engineering servers, and analyses three representative languages in detail: Erlang, Go, and Scala with Akka. We have designed three server benchmarks that analyse key performance characteristics of the languages. The benchmark results suggest that where minimising message latency is crucial, Go and Erlang are best; that Scala with Akka is capable of supporting the largest number of dormant processes; that for servers that frequently spawn processes Erlang and Go minimise creation time; and that for constantly communicating processes Go provides the best throughput.}
+      \field{booktitle}{Proceedings of the ACM Symposium on Applied Computing}
+      \field{isbn}{9781450351911}
+      \field{month}{4}
+      \field{title}{Comparing languages for engineering server software: Erlang, go, and scala with akka}
+      \field{year}{2018}
+      \field{pages}{218\bibrangedash 225}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3167132.3167144
+      \endverb
+      \keyw{Akka,Erlang,Go,Programming languages,Scala,Server applications}
+    \endentry
+    \entry{Lindsay2021}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9143d5decb5211fe95752cc2afeb8307}{%
+           family={Lindsay},
+           familyi={L\bibinitperiod},
+           given={Dominic},
+           giveni={D\bibinitperiod}}}%
+        {{hash=92dec359375c7439237c384d8cec2240}{%
+           family={Gill},
+           familyi={G\bibinitperiod},
+           given={Sukhpal\bibnamedelima Singh},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=712a2adf9cbb9d3bc070694abce66f91}{%
+           family={Smirnova},
+           familyi={S\bibinitperiod},
+           given={Daria},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f0ce8af212ef53170797f8c65a9b5399}{%
+           family={Garraghan},
+           familyi={G\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0ccdb9a6fc2c36b6a0c4e6782f7836d9}
+      \strng{fullhash}{c0b5c3f01a426e0016d9abba5c3c955a}
+      \strng{bibnamehash}{0ccdb9a6fc2c36b6a0c4e6782f7836d9}
+      \strng{authorbibnamehash}{0ccdb9a6fc2c36b6a0c4e6782f7836d9}
+      \strng{authornamehash}{0ccdb9a6fc2c36b6a0c4e6782f7836d9}
+      \strng{authorfullhash}{c0b5c3f01a426e0016d9abba5c3c955a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Distributed systems have been an active field of research for over 60 years, and has played a crucial role in computer science, enabling the invention of the Internet that underpins all facets of modern life. Through technological advancements and their changing role in society, distributed systems have undergone a perpetual evolution, with each change resulting in the formation of a new paradigm. Each new distributed system paradigm—of which modern prominence include cloud computing, Fog computing, and the Internet of Things (IoT)—allows for new forms of commercial and artistic value, yet also ushers in new research challenges that must be addressed in order to realize and enhance their operation. However, it is necessary to precisely identify what factors drive the formation and growth of a paradigm, and how unique are the research challenges within modern distributed systems in comparison to prior generations of systems. The objective of this work is to study and evaluate the key factors that have influenced and driven the evolution of distributed system paradigms, from early mainframes, inception of the global inter-network, and to present contemporary systems such as edge computing, Fog computing and IoT. Our analysis highlights assumptions that have driven distributed systems appear to be changing, including (1) an accelerated fragmentation of paradigms driven by commercial interests and physical limitations imposed by the end of Moore’s law, (2) a transition away from generalized architectures and frameworks towards increasing specialization, and (3) each paradigm architecture results in some form of pivoting between centralization and decentralization coordination. Finally, we discuss present day and future challenges of distributed research pertaining to studying complex phenomena at scale and the role of distributed systems research in the context of climate change.}
+      \field{issn}{14365057}
+      \field{issue}{8}
+      \field{journaltitle}{Computing}
+      \field{month}{8}
+      \field{title}{The evolution of distributed computing systems: from fundamental to new frontiers}
+      \field{volume}{103}
+      \field{year}{2021}
+      \field{pages}{1859\bibrangedash 1878}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1007/s00607-020-00900-y
+      \endverb
+      \keyw{Computing systems,Distributed computing,Evolution,Green computing}
+    \endentry
+    \entry{Kleppmann2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=34b8d5b1d29d175527a6642f3ec8a76d}{%
+           family={Kleppmann},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{fullhash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{bibnamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authorbibnamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authornamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authorfullhash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1449373320}
+      \field{title}{Designing Data Intensive Applications}
+      \field{year}{2017}
+    \endentry
+    \entry{Naik2021}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=dc0f194568ffac6e0dabf705c2ac2a04}{%
+           family={Naik},
+           familyi={N\bibinitperiod},
+           given={Nitin},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{dc0f194568ffac6e0dabf705c2ac2a04}
+      \strng{fullhash}{dc0f194568ffac6e0dabf705c2ac2a04}
+      \strng{bibnamehash}{dc0f194568ffac6e0dabf705c2ac2a04}
+      \strng{authorbibnamehash}{dc0f194568ffac6e0dabf705c2ac2a04}
+      \strng{authornamehash}{dc0f194568ffac6e0dabf705c2ac2a04}
+      \strng{authorfullhash}{dc0f194568ffac6e0dabf705c2ac2a04}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The design of distributed systems in multiple clouds have been gaining popularity due to various benefits of the multi-cloud infrastructure such as minimizing vendor lock-in, data loss and downtime. Nonetheless, this multi-cloud infrastructure also poses several challenges such as compatibility, interoperability, complex provisioning and configuration due to the variation in technologies and services of each cloud provider. Consequently, it is a tedious task to design distributed systems in multiple clouds. Virtualization is regarded as the base technology of the cloud and therefore, most cloud-based distributed systems are based on it. Nevertheless, virtual machines require substantial resources and cause several issues across multiple clouds such as provisioning, configuration management, load balancing and migration. Docker Swarm is a container-based clustering tool that resolves some of these issues and supports the design of distributed systems in multiple clouds. It has also incorporated several inbuilt attributes of the distributed system, however, it is still evolving. This paper initially presents the simulated development of a Docker Swarm-based distributed system which can be easily replicated in multiple clouds. Subsequently, based on the simulated Docker Swarm-based distributed system, it performs an evaluation of several attributes of this distributed system such as high availability and fault tolerance; automatic scalability, load balancing and maintainability of services; and scalability of large clusters.}
+      \field{booktitle}{15th Annual IEEE International Systems Conference, SysCon 2021 - Proceedings}
+      \field{isbn}{9781665444392}
+      \field{month}{4}
+      \field{title}{Performance Evaluation of Distributed Systems in Multiple Clouds using Docker Swarm}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1109/SysCon48628.2021.9447123
+      \endverb
+      \keyw{Container,Containerization,Distributed System,Docker Swarm,Fault Tolerance,High Availability,Load Balancing,Maintainability,Multiple Clouds,Scalability,Virtual Machine,Virtualization}
+    \endentry
+    \entry{aws-challenges-dist-sys}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5dc49ca5380e7ba6018f02f3903986d9}{%
+           family={Amazon},
+           familyi={A\bibinitperiod},
+           given={AWS\bibnamedelima -},
+           giveni={A\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinitperiod}}}%
+      }
+      \strng{namehash}{5dc49ca5380e7ba6018f02f3903986d9}
+      \strng{fullhash}{5dc49ca5380e7ba6018f02f3903986d9}
+      \strng{bibnamehash}{5dc49ca5380e7ba6018f02f3903986d9}
+      \strng{authorbibnamehash}{5dc49ca5380e7ba6018f02f3903986d9}
+      \strng{authornamehash}{5dc49ca5380e7ba6018f02f3903986d9}
+      \strng{authorfullhash}{5dc49ca5380e7ba6018f02f3903986d9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Challenges with distributed systems}}
+      \verb{urlraw}
+      \verb https://aws.amazon.com/builders-library/challenges-with-distributed-systems/
+      \endverb
+      \verb{url}
+      \verb https://aws.amazon.com/builders-library/challenges-with-distributed-systems/
+      \endverb
+    \endentry
+    \entry{ibm-cap-theorem}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cbf44511d041dc6d1dd73cc0c033122c}{%
+           family={IBM},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{fullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{bibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorbibnamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authornamehash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \strng{authorfullhash}{cbf44511d041dc6d1dd73cc0c033122c}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{What is the CAP theorem?}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.ibm.com/topics/cap-theorem
+      \endverb
+      \verb{url}
+      \verb https://www.ibm.com/topics/cap-theorem
+      \endverb
+    \endentry
+    \entry{Noor2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=52e3f7acef4ccdd406aed6301430dd86}{%
+           family={Noor},
+           familyi={N\bibinitperiod},
+           given={Ahmad\bibnamedelimb Shukri\bibnamedelima Mohd},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=a15090f0965286ee14d936574a145d43}{%
+           family={Zian},
+           familyi={Z\bibinitperiod},
+           given={Nur\bibnamedelimb Farhah\bibnamedelima Mat},
+           giveni={N\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=f16caba5f94dbf3d648ae4f9c0dbc197}{%
+           family={Bahri},
+           familyi={B\bibinitperiod},
+           given={Fatin\bibnamedelimb Nurhanani\bibnamedelimb M.\bibnamedelimi Shaiful},
+           giveni={F\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Advanced Engineering}%
+        {Science}%
+      }
+      \strng{namehash}{a278cba913a8297613ece371f587c3cf}
+      \strng{fullhash}{a278cba913a8297613ece371f587c3cf}
+      \strng{bibnamehash}{a278cba913a8297613ece371f587c3cf}
+      \strng{authorbibnamehash}{a278cba913a8297613ece371f587c3cf}
+      \strng{authornamehash}{a278cba913a8297613ece371f587c3cf}
+      \strng{authorfullhash}{a278cba913a8297613ece371f587c3cf}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Distributed systems mainly provide access to a large amount of data and computational resources through a wide range of interfaces. Besides its dynamic nature, which means that resources may enter and leave the environment at any time, many distributed systems applications will be running in an environment where faults are more likely to occur due to their ever-increasing scales and the complexity. Due to diverse faults and failures conditions, fault tolerance has become a critical element for distributed computing in order for the system to perform its function correctly even in the present of faults. Replication techniques primarily concentrate on the two fault tolerance manners precisely masking the failures as well as reconfigure the system in response. This paper presents a brief survey on different replication techniques such as Read One Write All (ROWA), Quorum Consensus (QC), Tree Quorum (TQ) Protocol, Grid Configuration (GC) Protocol, Two-Replica Distribution Techniques (TRDT), Neighbour Replica Triangular Grid (NRTG) and Neighbour Replication Distributed Techniques (NRDT). These techniques have its own redeeming features and shortcoming which forms the subject matter of this survey.}
+      \field{issn}{20888708}
+      \field{issue}{2}
+      \field{journaltitle}{International Journal of Electrical and Computer Engineering}
+      \field{month}{4}
+      \field{title}{Survey on replication techniques for distributed system}
+      \field{volume}{9}
+      \field{year}{2019}
+      \field{pages}{1298\bibrangedash 1303}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.11591/ijece.v9i2.pp1298-1303
+      \endverb
+      \keyw{Distributed computing,Distributed systems,Fault failure recovery,High availability,Replication technique}
+    \endentry
+    \entry{Isukapalli2024}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=d80f1cacea07377e93008c0f1dcb91f9}{%
+           family={Isukapalli},
+           familyi={I\bibinitperiod},
+           given={Sucharitha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=59d7640dde8a9b3a9a781512fe6a23cc}{%
+           family={Srirama},
+           familyi={S\bibinitperiod},
+           given={Satish\bibnamedelima Narayana},
+           giveni={S\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Ireland Ltd}%
+      }
+      \strng{namehash}{168fdb2a8775e8a32d3cd35a69a53ace}
+      \strng{fullhash}{168fdb2a8775e8a32d3cd35a69a53ace}
+      \strng{bibnamehash}{168fdb2a8775e8a32d3cd35a69a53ace}
+      \strng{authorbibnamehash}{168fdb2a8775e8a32d3cd35a69a53ace}
+      \strng{authornamehash}{168fdb2a8775e8a32d3cd35a69a53ace}
+      \strng{authorfullhash}{168fdb2a8775e8a32d3cd35a69a53ace}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Fault tolerance is becoming increasingly important for upcoming exascale systems, supporting distributed data processing, due to the expected decrease in the Mean Time Between Failures (MTBF). To ensure the availability, reliability, dependability, and performance of the system, addressing the fault tolerance challenge is crucial. It aims to keep the distributed system running at a reduced capacity while avoiding complete data loss, even in the presence of faults, with minimal impact on system performance. This comprehensive survey aims to provide a detailed understanding of the importance of fault tolerance in distributed systems, including a classification of faults, errors, failures, and fault-tolerant techniques (reactive, proactive, and predictive). We collected a corpus of 490 papers published from 2014 to 2023 by searching in Scopus, IEEE Xplore, Springer, and ACM digital library databases. After a systematic review, 17 reactive models, 17 proactive models, and 14 predictive models were shortlisted and compared. A taxonomy of ideas behind the proposed models was also created for each of these categories of fault-tolerant solutions. Additionally, it examines how fault tolerance capability is incorporated into popular big data processing tools such as Apache Hadoop, Spark, and Flink. Finally, promising future research directions in this domain are discussed.}
+      \field{issn}{15740137}
+      \field{journaltitle}{Computer Science Review}
+      \field{month}{8}
+      \field{title}{A systematic survey on fault-tolerant solutions for distributed data analytics: Taxonomy, comparison, and future directions}
+      \field{volume}{53}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1016/j.cosrev.2024.100660
+      \endverb
+      \keyw{Distributed data analytics,Fault-tolerance,Machine learning,MapReduce,Reactive and proactive models,Reliability}
+    \endentry
+    \entry{Reghenzani2023}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c1363097a364153efdd592634b99df00}{%
+           family={Reghenzani},
+           familyi={R\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=a8ba047103a685d6984a73e1f4686a8b}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Zhishan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=4a389c3688d44a0f48e29f8a3a776229}{%
+           family={Fornaciari},
+           familyi={F\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{5d0a6af5a2e8dff0300b04a383ef9f21}
+      \strng{fullhash}{5d0a6af5a2e8dff0300b04a383ef9f21}
+      \strng{bibnamehash}{5d0a6af5a2e8dff0300b04a383ef9f21}
+      \strng{authorbibnamehash}{5d0a6af5a2e8dff0300b04a383ef9f21}
+      \strng{authornamehash}{5d0a6af5a2e8dff0300b04a383ef9f21}
+      \strng{authorfullhash}{5d0a6af5a2e8dff0300b04a383ef9f21}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Tolerating hardware faults in modern architectures is becoming a prominent problem due to the miniaturization of the hardware components, their increasing complexity, and the necessity to reduce costs. Software-Implemented Hardware Fault Tolerance approaches have been developed to improve system dependability regarding hardware faults without resorting to custom hardware solutions. However, these come at the expense of making the satisfaction of the timing constraints of the applications/activities harder from a scheduling standpoint. This article surveys the current state-of-the-art of fault tolerance approaches when used in the context of real-time systems, identifying the main challenges and the cross-links between these two topics. We propose a joint scheduling-failure analysis model that highlights the formal interactions among software fault tolerance mechanisms and timing properties. This model allows us to present and discuss many open research questions with the final aim to spur future research activities.}
+      \field{issn}{15577341}
+      \field{issue}{14}
+      \field{journaltitle}{ACM Computing Surveys}
+      \field{month}{12}
+      \field{title}{Software Fault Tolerance in Real-Time Systems: Identifying the Future Research Questions}
+      \field{volume}{55}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.1145/3589950
+      \endverb
+      \keyw{Real-time,fault-tolerance,mixed-criticality}
+    \endentry
+    \entry{fowler-circuit-breakers}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=312ac886938a9b2be4f8eb607567fe4c}{%
+           family={Fowler},
+           familyi={F\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{fullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{bibnamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorbibnamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authornamehash}{312ac886938a9b2be4f8eb607567fe4c}
+      \strng{authorfullhash}{312ac886938a9b2be4f8eb607567fe4c}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Circuit Breaker}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://martinfowler.com/bliki/CircuitBreaker.html
+      \endverb
+      \verb{url}
+      \verb https://martinfowler.com/bliki/CircuitBreaker.html
+      \endverb
+    \endentry
+    \entry{Howard2020}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=ab451ce5642ffe31693f5d0a199bee34}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={Heidi},
+           giveni={H\bibinitperiod}}}%
+        {{hash=ba494cf2fcd5b5c3ed0f9d081c6a4556}{%
+           family={Mortier},
+           familyi={M\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{fullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{bibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authorbibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authornamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \strng{authorfullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Distributed consensus is a fundamental primitive for constructing fault-tolerant, strongly-consistent distributed systems. Though many distributed consensus algorithms have been proposed, just two dominate production systems: Paxos, the traditional, famously subtle, algorithm; and Raft, a more recent algorithm positioned as a more understandable alternative to Paxos. In this paper, we consider the question of which algorithm, Paxos or Raft, is the better solution to distributed consensus? We analyse both to determine exactly how they differ by describing a simplified Paxos algorithm using Raft’s terminology and pragmatic abstractions. We find that both Paxos and Raft take a very similar approach to distributed consensus, differing only in their approach to leader election. Most notably, Raft only allows servers with up-to-date logs to become leaders, whereas Paxos allows any server to be leader provided it then updates its log to ensure it is up-to-date. Raft’s approach is surprisingly efficient given its simplicity as, unlike Paxos, it does not require log entries to be exchanged during leader election. We surmise that much of the understandability of Raft comes from the paper’s clear presentation rather than being fundamental to the underlying algorithm being presented.}
+      \field{booktitle}{Proceedings of the 7th Workshop on Principles and Practice of Consistency for Distributed Data, PaPoC 2020}
+      \field{isbn}{9781450375245}
+      \field{month}{4}
+      \field{title}{Paxos vs Raft: Have we reached consensus on distributed consensus?}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1145/3380787.3393681
+      \endverb
+      \keyw{Distributed consensus,Paxos,Raft,State machine replication}
+    \endentry
+    \entry{raft-diego}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=7cd6def2de460a2efcd2ef9fb4ce7f68}{%
+           family={Ongaro},
+           familyi={O\bibinitperiod},
+           given={Diego},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ecac04ff101bba23ba67c9332853d538}{%
+           family={Ousterhout},
+           familyi={O\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Philadelphia, PA}%
+      }
+      \list{publisher}{1}{%
+        {USENIX Association}%
+      }
+      \strng{namehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{fullhash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{bibnamehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{authorbibnamehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{authornamehash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \strng{authorfullhash}{ecdcf8824e5963a927e4345e04cb1bcf}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 USENIX Annual Technical Conference (USENIX ATC 14)}
+      \field{isbn}{978-1-931971-10-2}
+      \field{month}{6}
+      \field{title}{In Search of an Understandable Consensus Algorithm}
+      \field{year}{2014}
+      \field{pages}{305\bibrangedash 319}
+      \range{pages}{15}
+      \verb{urlraw}
+      \verb https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro
+      \endverb
+      \verb{url}
+      \verb https://www.usenix.org/conference/atc14/technical-sessions/presentation/ongaro
+      \endverb
+    \endentry
+    \entry{apache-flick}{misc}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{Apache Flink Documentation}
+      \verb{urlraw}
+      \verb https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/fault-tolerance/checkpointing/
+      \endverb
+      \verb{url}
+      \verb https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/fault-tolerance/checkpointing/
+      \endverb
+    \endentry
+    \entry{Armstrong2013}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e9a00852e213280e28c2aeef1d167186}{%
+           family={Armstrong},
+           familyi={A\bibinitperiod},
+           given={Joe},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9a00852e213280e28c2aeef1d167186}
+      \strng{fullhash}{e9a00852e213280e28c2aeef1d167186}
+      \strng{bibnamehash}{e9a00852e213280e28c2aeef1d167186}
+      \strng{authorbibnamehash}{e9a00852e213280e28c2aeef1d167186}
+      \strng{authornamehash}{e9a00852e213280e28c2aeef1d167186}
+      \strng{authorfullhash}{e9a00852e213280e28c2aeef1d167186}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This second edition of Joe's seminal Programming Erlang is a welcome update, covering not only the core language and framework fundamentals but also key community projects such as rebar and cowboy. Even experienced Erlang programmers will find helpful tips and new insights throughout the book, and beginners to the language will appreciate the clear and methodical way Joe introduces and explains key language concepts.}
+      \field{isbn}{978-1-937785-53-6}
+      \field{title}{Early Praise for Programming Erlang, Second Edition}
+      \field{year}{2013}
+    \endentry
+    \entry{Nystrom2009}{book}{}
+      \name{author}{1}{}{%
+        {{hash=704d07f4c928b805bbe4bea255a4c4f9}{%
+           family={Nystrom},
+           familyi={N\bibinitperiod},
+           given={Jan\bibnamedelima Henry},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{704d07f4c928b805bbe4bea255a4c4f9}
+      \strng{fullhash}{704d07f4c928b805bbe4bea255a4c4f9}
+      \strng{bibnamehash}{704d07f4c928b805bbe4bea255a4c4f9}
+      \strng{authorbibnamehash}{704d07f4c928b805bbe4bea255a4c4f9}
+      \strng{authornamehash}{704d07f4c928b805bbe4bea255a4c4f9}
+      \strng{authorfullhash}{704d07f4c928b805bbe4bea255a4c4f9}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-91-554-7532-1}
+      \field{title}{Fault Tolerance in Erlang}
+      \field{year}{2009}
+      \keyw{erlang,fault tolerance,formal methods,symbolic evaluation}
+    \endentry
+    \entry{Hewitt1973}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1c0e112479c525f05924aba5fa22ac9d}{%
+           family={Hewitt},
+           familyi={H\bibinitperiod},
+           given={Carl},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5a01a23398fcbdff2348344ed990f927}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod}}}%
+        {{hash=9e50dae57ba4e906194f716e98e14ada}{%
+           family={Steiger},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Stanford, USA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann Publishers Inc.}%
+      }
+      \strng{namehash}{d817a759ef9c3f2d2856a6479bf631a1}
+      \strng{fullhash}{d817a759ef9c3f2d2856a6479bf631a1}
+      \strng{bibnamehash}{d817a759ef9c3f2d2856a6479bf631a1}
+      \strng{authorbibnamehash}{d817a759ef9c3f2d2856a6479bf631a1}
+      \strng{authornamehash}{d817a759ef9c3f2d2856a6479bf631a1}
+      \strng{authorfullhash}{d817a759ef9c3f2d2856a6479bf631a1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper proposes a modular ACTOR architecture and definitional method for artificial intelligence that is conceptually based on a single kind of object: actors [or, if you will, virtual processors, activation frames, or streams]. The formalism makes no presuppositions about the representation of primitive data structures and control structures. Such structures can be programmed, micro-coded, or hard wired in a uniform modular fashion. In fact it is impossible to determine whether a given object is "really" represented as a list, a vector, a hash table, a function, or a process. The architecture will efficiently run the coming generation of PLANNER-like artificial intelligence languages including those requiring a high degree of parallelism. The efficiency is gained without loss of programming generality because it only makes certain actors more efficient; it does not change their behavioral characteristics. The architecture is general with respect to control structure and does not have or need goto, interrupt, or semaphore primitives. The formalism achieves the goals that the disallowed constructs are intended to achieve by other more structured methods.}
+      \field{booktitle}{Proceedings of the 3rd International Joint Conference on Artificial Intelligence}
+      \field{series}{IJCAI'73}
+      \field{title}{A universal modular ACTOR formalism for artificial intelligence}
+      \field{year}{1973}
+      \field{pages}{235\bibrangedash 245}
+      \range{pages}{11}
+      \verb{doi}
+      \verb doi/10.5555/1624775.1624804
+      \endverb
+    \endentry
+    \entry{Trinder2017}{article}{}
+      \name{author}{25}{}{%
+        {{hash=c7febbc5a1f151e714c32fc9de384b86}{%
+           family={Trinder},
+           familyi={T\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+        {{hash=ba1f1b77168a1665f02964ba235985c0}{%
+           family={Chechina},
+           familyi={C\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod}}}%
+        {{hash=fa26db939493a22da542a884e52e57ef}{%
+           family={Papaspyrou},
+           familyi={P\bibinitperiod},
+           given={Nikolaos},
+           giveni={N\bibinitperiod}}}%
+        {{hash=0f3e7b79c2744ed570115c48051009fb}{%
+           family={Sagonas},
+           familyi={S\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6bc88c88b48cfd8a2c4dc566cd758fde}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b65661a99789440c8e683bcc1d9ceaa2}{%
+           family={Adams},
+           familyi={A\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=8d3668e9b2bd80275881794e8430abd3}{%
+           family={Aronis},
+           familyi={A\bibinitperiod},
+           given={Stavros},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5baab114c489576af67f3f5e1a212c5e}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d8d83c6c7d16161225ccb8454edaa559}{%
+           family={Bihari},
+           familyi={B\bibinitperiod},
+           given={Eva},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b157b8d3a368edbb630906fce943ace9}{%
+           family={Boudeville},
+           familyi={B\bibinitperiod},
+           given={Olivier},
+           giveni={O\bibinitperiod}}}%
+        {{hash=050e0b4dc5912c26ac3dfc697716d6b6}{%
+           family={Cesarini},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3cd3bc060df9edc48bf87fd6c146ef76}{%
+           family={Stefano},
+           familyi={S\bibinitperiod},
+           given={Maurizio\bibnamedelima Di},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=a97854b8170d6f0d122fb7db6e352d65}{%
+           family={Eriksson},
+           familyi={E\bibinitperiod},
+           given={Sverker},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fedfd31076d17339611c1867187b2909}{%
+           family={Fördos},
+           familyi={F\bibinitperiod},
+           given={Viktória},
+           giveni={V\bibinitperiod}}}%
+        {{hash=21ca0f2b1ff56cc9f5df3b1b50ffd56a}{%
+           family={Ghaffari},
+           familyi={G\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=27d5196be550f9d89a2034074229e890}{%
+           family={Giantsios},
+           familyi={G\bibinitperiod},
+           given={Aggelos},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c202e4e91700843bfb6d89d388ac59a7}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Rickard},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2a6192a58d7b0603486853d29df1d4df}{%
+           family={Hoch},
+           familyi={H\bibinitperiod},
+           given={Csaba},
+           giveni={C\bibinitperiod}}}%
+        {{hash=85cb3c18b1fbfef067d181cf9c50bb72}{%
+           family={Klaftenegger},
+           familyi={K\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=ffa464e91e9b9e263e7682599f43136b}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Huiqing},
+           giveni={H\bibinitperiod}}}%
+        {{hash=561622a112572cbc57041389d9678a13}{%
+           family={Lundin},
+           familyi={L\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=86f6e7653b9adfa87175db6897549fa4}{%
+           family={Mackenzie},
+           familyi={M\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+        {{hash=bdd37e44c88fbb89ef70d08963f569e5}{%
+           family={Roukounaki},
+           familyi={R\bibinitperiod},
+           given={Katerina},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9873529916ef970990843b8e143a3843}{%
+           family={Tsiouris},
+           familyi={T\bibinitperiod},
+           given={Yiannis},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3a038f722ed18d83ce4d9d8a919f3850}{%
+           family={Winblad},
+           familyi={W\bibinitperiod},
+           given={Kjell},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b870f031689288c18126a30fb71ec7d8}
+      \strng{fullhash}{efd7aadd60d0557a9db671436f7e7599}
+      \strng{bibnamehash}{b870f031689288c18126a30fb71ec7d8}
+      \strng{authorbibnamehash}{b870f031689288c18126a30fb71ec7d8}
+      \strng{authornamehash}{b870f031689288c18126a30fb71ec7d8}
+      \strng{authorfullhash}{efd7aadd60d0557a9db671436f7e7599}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Distributed actor languages are an effective means of constructing scalable reliable systems, and the Erlang programming language has a well-established and influential model. While the Erlang model conceptually provides reliable scalability, it has some inherent scalability limits and these force developers to depart from the model at scale. This article establishes the scalability limits of Erlang systems and reports the work of the EU RELEASE project to improve the scalability and understandability of the Erlang reliable distributed actor model. We systematically study the scalability limits of Erlang and then address the issues at the virtual machine, language, and tool levels. More specifically: (1) We have evolved the Erlang virtual machine so that it can work effectively in large-scale single-host multicore and NUMA architectures. We have made important changes and architectural improvements to the widely used Erlang/OTP release. (2) We have designed and implemented Scalable Distributed (SD) Erlang libraries to address language-level scalability issues and provided and validated a set of semantics for the new language constructs. (3) To make large Erlang systems easier to deploy, monitor, and debug, we have developed and made open source releases of five complementary tools, some specific to SD Erlang. Throughout the article we use two case studies to investigate the capabilities of our new technologies and tools: a distributed hash table based Orbit calculation and Ant Colony Optimisation (ACO). Chaos Monkey experiments show that two versions of ACO survive random process failure and hence that SD Erlang preserves the Erlang reliability model. While we report measurements on a range of NUMA and cluster architectures, the key scalability experiments are conducted on the Athos cluster with 256 hosts (6,144 cores). Even for programs with no global recovery data to maintain, SD Erlang partitions the network to reduce network traffic and hence improves performance of the Orbit and ACO benchmarks above 80 hosts. ACO measurements show that maintaining global recovery data dramatically limits scalability; however, scalability is recovered by partitioning the recovery data. We exceed the established scalability limits of distributed Erlang, and do not reach the limits of SD Erlang for these benchmarks at this scale (256 hosts, 6,144 cores).}
+      \field{issn}{15584593}
+      \field{issue}{4}
+      \field{journaltitle}{ACM Transactions on Programming Languages and Systems}
+      \field{month}{8}
+      \field{title}{Scaling reliably: Improving the scalability of the Erlang distributed actor platform}
+      \field{volume}{39}
+      \field{year}{2017}
+      \verb{doi}
+      \verb 10.1145/3107937
+      \endverb
+      \keyw{Erlang,Reliability,Scalability}
+    \endentry
+    \entry{Koster2016}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=22b2acae731f0ec4804f973153a604e1}{%
+           family={De\bibnamedelima Koster},
+           familyi={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+           given={Joeri},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bcd344925c5fda09a014c19618dedad2}{%
+           family={Van\bibnamedelima Cutsem},
+           familyi={V\bibinitperiod\bibinitdelim C\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=adbb5599634d37a093e4c0227d5be086}{%
+           family={De\bibnamedelima Meuter},
+           familyi={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Amsterdam, Netherlands}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{7e295867afb442264d2ea8e0d010d85b}
+      \strng{fullhash}{7e295867afb442264d2ea8e0d010d85b}
+      \strng{bibnamehash}{7e295867afb442264d2ea8e0d010d85b}
+      \strng{authorbibnamehash}{7e295867afb442264d2ea8e0d010d85b}
+      \strng{authornamehash}{7e295867afb442264d2ea8e0d010d85b}
+      \strng{authorfullhash}{7e295867afb442264d2ea8e0d010d85b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Actor Model is a message passing concurrency model that was originally proposed by Hewitt et al. in 1973. It is now 43 years later and since then researchers have explored a plethora of variations on this model. This paper presents a history of the Actor Model throughout those years. The goal of this paper is not to provide an exhaustive overview of every actor system in existence but rather to give an overview of some of the exemplar languages and libraries that influenced the design and rationale of other actor systems throughout those years. This paper therefore shows that most actor systems can be roughly classified into four families, namely: Classic Actors, Active Objects, Processes and Communicating Event-Loops. This paper also defines the Isolated Turn Principle as a unifying principle across those four families. Additionally this paper lists some of the key properties along which actor systems can be evaluated and formulates some general insights about the design and rationale of the different actor families across those dimensions.}
+      \field{booktitle}{Proceedings of the 6th International Workshop on Programming Based on Actors, Agents, and Decentralized Control}
+      \field{isbn}{9781450346399}
+      \field{series}{AGERE 2016}
+      \field{title}{43 years of actors: a taxonomy of actor models and their key properties}
+      \field{year}{2016}
+      \field{pages}{31\bibrangedash 40}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3001886.3001890
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/3001886.3001890
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/3001886.3001890
+      \endverb
+      \keyw{Concurrency,Actor Model}
+    \endentry
+    \entry{Randtoul2022}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5847efdf8fe74277f6b44fb7d2d92842}{%
+           family={Randtoul},
+           familyi={R\bibinitperiod},
+           given={Aidan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c7febbc5a1f151e714c32fc9de384b86}{%
+           family={Trinder},
+           familyi={T\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{c2c7f10188bc88f4c5af96993ac3fab7}
+      \strng{fullhash}{c2c7f10188bc88f4c5af96993ac3fab7}
+      \strng{bibnamehash}{c2c7f10188bc88f4c5af96993ac3fab7}
+      \strng{authorbibnamehash}{c2c7f10188bc88f4c5af96993ac3fab7}
+      \strng{authornamehash}{c2c7f10188bc88f4c5af96993ac3fab7}
+      \strng{authorfullhash}{c2c7f10188bc88f4c5af96993ac3fab7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Erlang 2022 - Proceedings of the 21st ACM SIGPLAN International Workshop on Erlang}
+      \field{isbn}{9781450394352}
+      \field{month}{9}
+      \field{title}{A reliability benchmark for actor-based server languages}
+      \field{year}{2022}
+      \field{pages}{21\bibrangedash 32}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/3546186.3549928
+      \endverb
+      \keyw{Benchmark,Distributed System,Erlang,Fault Tolerance,Reliability,Server}
+    \endentry
+    \entry{Hoare1978}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d6facc8397f631d3ef01dd70be993640}{%
+           family={Hoare},
+           familyi={H\bibinitperiod},
+           given={C.\bibnamedelimi A.\bibnamedelimi R.},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY, USA}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{d6facc8397f631d3ef01dd70be993640}
+      \strng{fullhash}{d6facc8397f631d3ef01dd70be993640}
+      \strng{bibnamehash}{d6facc8397f631d3ef01dd70be993640}
+      \strng{authorbibnamehash}{d6facc8397f631d3ef01dd70be993640}
+      \strng{authornamehash}{d6facc8397f631d3ef01dd70be993640}
+      \strng{authorfullhash}{d6facc8397f631d3ef01dd70be993640}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper suggests that input and output are basic primitives of programming and that parallel composition of communicating sequential processes is a fundamental program structuring method. When combined with a development of Dijkstra's guarded command, these concepts are surprisingly versatile. Their use is illustrated by sample solutions of a variety of a familiar programming exercises.}
+      \field{issn}{0001-0782}
+      \field{journaltitle}{Commun. ACM}
+      \field{month}{8}
+      \field{number}{8}
+      \field{title}{Communicating sequential processes}
+      \field{volume}{21}
+      \field{year}{1978}
+      \field{pages}{666\bibrangedash 677}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/359576.359585
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1145/359576.359585
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1145/359576.359585
+      \endverb
+      \keyw{recursion,programming primitives,programming languages,programming,program structures,procedures,parallel programming,output,nondeterminacy,multiple exits,multiple entries,monitors,iterative arrays,input,guarded commands,data representations,coroutines,conditional critical regions,concurrency,classes}
+    \endentry
+    \entry{Paduraru2018}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=3a0f8bb1b53382f102d2ac211994000f}{%
+           family={Paduraru},
+           familyi={P\bibinitperiod},
+           given={Ciprian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5ed96bcb94487cdfc7831deada00e4d2}{%
+           family={Melemciuc},
+           familyi={M\bibinitperiod},
+           given={Marius\bibnamedelima Constantin},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{4610062e886a24e883ca5c09d0bc2806}
+      \strng{fullhash}{4610062e886a24e883ca5c09d0bc2806}
+      \strng{bibnamehash}{4610062e886a24e883ca5c09d0bc2806}
+      \strng{authorbibnamehash}{4610062e886a24e883ca5c09d0bc2806}
+      \strng{authornamehash}{4610062e886a24e883ca5c09d0bc2806}
+      \strng{authorfullhash}{4610062e886a24e883ca5c09d0bc2806}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Programming parallelism with shared memory raises some technical difficulties in synchronization and accessing memory in a thread-safe way. Most of the time the result is a trade-off between application's source code understandability, maintainability and error-prone on one side, and performance on the other side. This trade-off is even tighter when using low-level languages such as C++. The paper presents an open-source library for C++ that provides a Sequential Communicating Processes method for communication and synchronization, and overall, aims to simplify the shared memory parallelism development, make it more predictable and less error-prone, without sacrificing performance. The efficiency of the solution is proven through a set of concrete examples and benchmarks.}
+      \field{booktitle}{Proceedings - 17th International Symposium on Parallel and Distributed Computing, ISPDC 2018}
+      \field{isbn}{9781538653302}
+      \field{month}{8}
+      \field{title}{Parallelism in C++ Using Sequential Communicating Processes}
+      \field{year}{2018}
+      \field{pages}{157\bibrangedash 163}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/ISPDC2018.2018.00030
+      \endverb
+      \keyw{C++,CSP,Parallelism,channels}
+    \endentry
+    \entry{go-docs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5f075ae3e1f9d0382bb8c4632991f96f}{%
+           family={Go},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{fullhash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{bibnamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{authorbibnamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{authornamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{authorfullhash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 10.11.2024}
+      \field{title}{{Official documentation of Go programming language}}
+      \verb{urlraw}
+      \verb https://go.dev/doc//
+      \endverb
+      \verb{url}
+      \verb https://go.dev/doc//
+      \endverb
+    \endentry
+    \entry{Brolos2021}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=4316362c8d133cacbddf319bbdbcbb2a}{%
+           family={Brolos},
+           familyi={B\bibinitperiod},
+           given={Matilde},
+           giveni={M\bibinitperiod}}}%
+        {{hash=41dbb550397e052f6064ccbc9babc614}{%
+           family={Johnsen},
+           familyi={J\bibinitperiod},
+           given={Carl\bibnamedelima Johannes},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=14891cc0327415165fecc09bae83bd11}{%
+           family={Skovhede},
+           familyi={S\bibinitperiod},
+           given={Kenneth},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{5a071eb3cad1f1915f674b4bb0140d44}
+      \strng{fullhash}{5a071eb3cad1f1915f674b4bb0140d44}
+      \strng{bibnamehash}{5a071eb3cad1f1915f674b4bb0140d44}
+      \strng{authorbibnamehash}{5a071eb3cad1f1915f674b4bb0140d44}
+      \strng{authornamehash}{5a071eb3cad1f1915f674b4bb0140d44}
+      \strng{authorfullhash}{5a071eb3cad1f1915f674b4bb0140d44}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Occam is a programming language built on CSP, which for many years has been used for writing safety-critical systems used in space technology and at CERN among others. However, the language has not been developed or maintained for the last 25 years, which makes it difficult to maintain the programs which currently has a code base in Occam. As changing the entire code base for such systems will prove both expensive and time consuming, it is desirable to find an easy and secure way to translate Occam programs into another programming language.This paper lays the foundation of a transpiler from Occam to the newer programming language Go using Haskell. Go is a modern programming language which also implements many of the CSP principles found in Occam, making it a suitable target.The transpiler is implemented for a subset of Occam including only basic functionality, and is successful in translating simple programs from Occam to Go, showing that it is indeed possible to automatically translate Occam programs into Go.}
+      \field{booktitle}{Proceedings - 2021 Concurrent Processes Architectures and Embedded Systems Conference, COPA 2021}
+      \field{isbn}{9781728166834}
+      \field{month}{4}
+      \field{title}{Occam to Go translator}
+      \field{year}{2021}
+      \verb{doi}
+      \verb 10.1109/COPA51043.2021.9541431
+      \endverb
+      \keyw{CSP,Go,Occam,transpiler}
+    \endentry
+    \entry{Jamshidi2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=ac3fa7065c9e1283af5f18092faf6d64}{%
+           family={Jamshidi},
+           familyi={J\bibinitperiod},
+           given={Pooyan},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1b80c1bcc3a83d4cacce8eb1407af343}{%
+           family={Pahl},
+           familyi={P\bibinitperiod},
+           given={Claus},
+           giveni={C\bibinitperiod}}}%
+        {{hash=9efdd7a2a92bb70bad662a8d9b8064ae}{%
+           family={Mendonça},
+           familyi={M\bibinitperiod},
+           given={Nabor\bibnamedelima C.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=bc0d2dbdc2f0a7a80ec11019d6142dbb}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=71539e822b9d217e558698b79d84a8f4}{%
+           family={Tilkov},
+           familyi={T\bibinitperiod},
+           given={Stefan},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5e18dc4c3db773421c8bc2d65abd02c}
+      \strng{fullhash}{d25549247f3d7171c1acd240367866c7}
+      \strng{bibnamehash}{d5e18dc4c3db773421c8bc2d65abd02c}
+      \strng{authorbibnamehash}{d5e18dc4c3db773421c8bc2d65abd02c}
+      \strng{authornamehash}{d5e18dc4c3db773421c8bc2d65abd02c}
+      \strng{authorfullhash}{d25549247f3d7171c1acd240367866c7}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Software}
+      \field{number}{3}
+      \field{title}{Microservices: The Journey So Far and Challenges Ahead}
+      \field{volume}{35}
+      \field{year}{2018}
+      \field{pages}{24\bibrangedash 35}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1109/MS.2018.2141039
+      \endverb
+      \keyw{Special issues and sections;Service computing;Software development;microservices;service-oriented architecture;SOA;domain-driven design;DDD;model-driven development;MDD;architectural antipatterns;legacy systems;software development;software engineering}
+    \endentry
+    \entry{Guidi2017}{inbook}{}
+      \name{author}{4}{}{%
+        {{hash=140e3ce356872f7cce449eab6adca6f3}{%
+           family={Guidi},
+           familyi={G\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bbb49644b74d8274fe1ac9f0986369bf}{%
+           family={Lanese},
+           familyi={L\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=147f187ab39b8aa10377370e35dd100c}{%
+           family={Mazzara},
+           familyi={M\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=94aec34b0ab3aab8d0b52c5b042d902c}{%
+           family={Montesi},
+           familyi={M\bibinitperiod},
+           given={Fabrizio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{0a3c33d75499a24109fd446d70b040b8}
+      \strng{fullhash}{af03f383c875cf5bd70d95b6ce7e0bed}
+      \strng{bibnamehash}{0a3c33d75499a24109fd446d70b040b8}
+      \strng{authorbibnamehash}{0a3c33d75499a24109fd446d70b040b8}
+      \strng{authornamehash}{0a3c33d75499a24109fd446d70b040b8}
+      \strng{authorfullhash}{af03f383c875cf5bd70d95b6ce7e0bed}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Microservices is an emerging development paradigm where software is obtained by composing autonomous entities, called (micro)services. However, microservice systems are currently developed using general-purpose programming languages that do not provide dedicated abstractions for service composition. Instead, current practice is focused on the deployment aspects of microservices, in particular by using containerization. In this chapter, we make the case for a language-based approach to the engineering ofmicroservice architectures,which we believe is complementary to current practice. We discuss the approach in general, and then we instantiate it in terms of the Jolie programming language.}
+      \field{isbn}{9783319674254}
+      \field{journaltitle}{Present and Ulterior Software Engineering}
+      \field{month}{11}
+      \field{title}{Microservices: A language-based approach}
+      \field{year}{2017}
+      \field{pages}{217\bibrangedash 225}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1007/978-3-319-67425-4_13
+      \endverb
+    \endentry
+    \entry{Juric2024}{book}{}
+      \name{author}{2}{}{%
+        {{hash=61fec1a13a3b306e8a4de277de451ad6}{%
+           family={Jurić},
+           familyi={J\bibinitperiod},
+           given={Saša},
+           giveni={S\bibinitperiod}}}%
+        {{hash=050e0b4dc5912c26ac3dfc697716d6b6}{%
+           family={Cesarini},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{fullhash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{bibnamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{authorbibnamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{authornamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{authorfullhash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781633438514}
+      \field{title}{Elixir in Action, Third Edition}
+      \field{year}{2024}
+    \endentry
+    \entry{Abraham2023}{book}{}
+      \name{author}{1}{}{%
+        {{hash=cc9c45585b7b6ddb5e7ca4dd4fce594c}{%
+           family={Abraham},
+           familyi={A\bibinitperiod},
+           given={Francisco\bibnamedelima Lopez-Sancho},
+           giveni={F\bibinitperiod\bibinitdelim L\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Simon}%
+        {Schuster}%
+      }
+      \strng{namehash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
+      \strng{fullhash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
+      \strng{bibnamehash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
+      \strng{authorbibnamehash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
+      \strng{authornamehash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
+      \strng{authorfullhash}{cc9c45585b7b6ddb5e7ca4dd4fce594c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781617299216}
+      \field{title}{Akka in Action, Second Edition}
+      \field{year}{2023}
+    \endentry
+    \entry{Polato2014}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=76112430754d287cb75f64dc23a45ab6}{%
+           family={Polato},
+           familyi={P\bibinitperiod},
+           given={Ivanilton},
+           giveni={I\bibinitperiod}}}%
+        {{hash=71dd1f156180b9f88480d34b5b869318}{%
+           family={Ré},
+           familyi={R\bibinitperiod},
+           given={Reginaldo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=a8ac4fa2090622d8f1e56f858dc1e39c}{%
+           family={Goldman},
+           familyi={G\bibinitperiod},
+           given={Alfredo},
+           giveni={A\bibinitperiod}}}%
+        {{hash=aa1b6c9f1476bc0e2f4c7fed93737a5d}{%
+           family={Kon},
+           familyi={K\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{9911bdf440c7ab728306b487cb95c1aa}
+      \strng{fullhash}{e0a2be04dd7a3462bbd63427a9bf327c}
+      \strng{bibnamehash}{9911bdf440c7ab728306b487cb95c1aa}
+      \strng{authorbibnamehash}{9911bdf440c7ab728306b487cb95c1aa}
+      \strng{authornamehash}{9911bdf440c7ab728306b487cb95c1aa}
+      \strng{authorfullhash}{e0a2be04dd7a3462bbd63427a9bf327c}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Context: In recent years, the valuable knowledge that can be retrieved from petabyte scale datasets - known as Big Data - led to the development of solutions to process information based on parallel and distributed computing. Lately, Apache Hadoop has attracted strong attention due to its applicability to Big Data processing. Problem: The support of Hadoop by the research community has provided the development of new features to the framework. Recently, the number of publications in journals and conferences about Hadoop has increased consistently, which makes it difficult for researchers to comprehend the full body of research and areas that require further investigation. Solution: We conducted a systematic literature review to assess research contributions to Apache Hadoop. Our objective was to identify gaps, providing motivation for new research, and outline collaborations to Apache Hadoop and its ecosystem, classifying and quantifying the main topics addressed in the literature. Results: Our analysis led to some relevant conclusions: many interesting solutions developed in the studies were never incorporated into the framework; most publications lack sufficient formal documentation of the experiments conducted by authors, hindering their reproducibility; finally, the systematic review presented in this paper demonstrates that Hadoop has evolved into a solid platform to process large datasets, but we were able to spot promising areas and suggest topics for future research within the framework. © 2014 Elsevier Ltd.}
+      \field{issn}{10958592}
+      \field{journaltitle}{Journal of Network and Computer Applications}
+      \field{title}{A comprehensive view of Hadoop research - A systematic literature review}
+      \field{volume}{46}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 25}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1016/j.jnca.2014.07.022
+      \endverb
+      \keyw{Apache Hadoop,HDFS,MapReduce,Survey,Systematic literature review}
+    \endentry
+    \entry{erlang-concurrency-blog}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b7fd67d709a9afe59f9a33c045b1d158}{%
+           family={Sragli},
+           familyi={S\bibinitperiod},
+           given={Attila},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{fullhash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{bibnamehash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{authorbibnamehash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{authornamehash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \strng{authorfullhash}{b7fd67d709a9afe59f9a33c045b1d158}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Optimising for Concurrency: Comparing and contrasting the BEAM and JVM virtual machines}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://www.erlang-solutions.com/blog/optimising-for-concurrency-comparing-and-contrasting-the-beam-and-jvm-virtual-machines/
+      \endverb
+      \verb{url}
+      \verb https://www.erlang-solutions.com/blog/optimising-for-concurrency-comparing-and-contrasting-the-beam-and-jvm-virtual-machines/
+      \endverb
+    \endentry
+    \entry{elixir-docs-hexdocs}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{Elixir Language Documentation}
+      \verb{urlraw}
+      \verb https://hexdocs.pm/elixir/introduction.html
+      \endverb
+      \verb{url}
+      \verb https://hexdocs.pm/elixir/introduction.html
+      \endverb
+    \endentry
+    \entry{elixir-school}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Elixir School - Official}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://elixirschool.com/
+      \endverb
+      \verb{url}
+      \verb https://elixirschool.com/
+      \endverb
+    \endentry
+    \entry{LeBrun2021}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c34258fa19c829f1f443fbc58a595298}{%
+           family={Brun},
+           familyi={B\bibinitperiod},
+           given={Matthew\bibnamedelimb Alan\bibnamedelima Le},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=5ae1442bdc07c0a07427c68e97664583}{%
+           family={Attard},
+           familyi={A\bibinitperiod},
+           given={Duncan\bibnamedelima Paul},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=3f4fe18ddd88a340594d79091dc27268}{%
+           family={Francalanza},
+           familyi={F\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{fullhash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{bibnamehash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{authorbibnamehash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{authornamehash}{eb3830d8263448491a9711e7649d03ad}
+      \strng{authorfullhash}{eb3830d8263448491a9711e7649d03ad}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781450386128}
+      \field{journaltitle}{Proceedings of the 20th ACM SIGPLAN International Workshop on Erlang}
+      \field{month}{8}
+      \field{title}{Graft: general purpose raft consensus in Elixir}
+      \field{year}{2021}
+      \field{pages}{2\bibrangedash 14}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/3471871.3472963
+      \endverb
+    \endentry
+    \entry{Cassola2020}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a2164974794df260f452f391b37eceb3}{%
+           family={Cassola},
+           familyi={C\bibinitperiod},
+           given={Mauricio},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ad70e73675834c5848b52f243b0bbdb0}{%
+           family={Talagorria},
+           familyi={T\bibinitperiod},
+           given={Agustín},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3a5a928637ee8ddb1de2fb293e3fef03}{%
+           family={Pardo},
+           familyi={P\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9b4b74b6821f33cb34ebcbfdf1f51f5d}{%
+           family={Viera},
+           familyi={V\bibinitperiod},
+           given={Marcos},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{248bfd89556a78c87b4f30b8ccba331a}
+      \strng{fullhash}{700ac831cb863125ea10b103fd480ff1}
+      \strng{bibnamehash}{248bfd89556a78c87b4f30b8ccba331a}
+      \strng{authorbibnamehash}{248bfd89556a78c87b4f30b8ccba331a}
+      \strng{authornamehash}{248bfd89556a78c87b4f30b8ccba331a}
+      \strng{authorfullhash}{700ac831cb863125ea10b103fd480ff1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Elixir is a functional programming language with dynamic typing. In this paper we propose a type system that makes it possible to perform static type-checking on a significant fragment of Elixir. An important feature of the type system we introduce is that it does not require any syntactic change to the language. Type information is provided by means of function signatures which are declared in terms of Elixir typespec directives. The proposed type system is based on subtyping and is backward compatible, as it allows the presence of untyped code fragments. We have implemented a prototype of the type-checker in Elixir itself.}
+      \field{booktitle}{ACM International Conference Proceeding Series}
+      \field{isbn}{9781450389433}
+      \field{month}{10}
+      \field{title}{A Gradual Type System for Elixir}
+      \field{year}{2020}
+      \field{pages}{17\bibrangedash 24}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3427081.3427084
+      \endverb
+      \keyw{elixir,functional programming,gradual typing,static typing}
+    \endentry
+    \entry{akka-docs}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Akka Official Documentation}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://doc.akka.io/libraries/akka-core/current/typed/actors.html/
+      \endverb
+      \verb{url}
+      \verb https://doc.akka.io/libraries/akka-core/current/typed/actors.html/
+      \endverb
+    \endentry
+    \entry{Moamen2027}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c9a610bb852d5f524c25c944e6d0131e}{%
+           family={Moamen},
+           familyi={M\bibinitperiod},
+           given={Ahmed\bibnamedelima Abdel},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=5b59a934e0b8fd69540e6fc9157b4559}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Dezhong},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7ed062dbb2114c57cd352bb78d8ef62a}{%
+           family={Jamali},
+           familyi={J\bibinitperiod},
+           given={Nadeem},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{fullhash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{bibnamehash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{authorbibnamehash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{authornamehash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \strng{authorfullhash}{8528b3dab25f08170eb89fa34c23ea0a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Although there are models and prototype implementations for controlling resource use in Actor systems, they are difficult to implement for production implementations of Actors such as Akka. This is because the messaging and scheduling infrastructures of runtime systems are increasingly complex and significantly different from one system to another. This paper presents our efforts in implementing resource control support for Actor systems implemented using the Akka library. Particularly, given the lack of support in Akka for direct scheduling of actors, we compare two different ways of approximating actor-level control support. The first implementation expects messages to actors to provide estimates of resources likely to be consumed for processing them; these estimates are then relied upon to make scheduling decisions. In the second implementation, resource use of scheduled actors is tracked, and compared against allocations to decide when they should be scheduled next. We present experimental results on the performance cost of these resource control mechanisms, as well as their impact on resource utilization.}
+      \field{booktitle}{Proceedings - International Conference on Distributed Computing Systems}
+      \field{isbn}{9781538617915}
+      \field{month}{7}
+      \field{title}{Supporting Resource Control for Actor Systems in Akka}
+      \field{year}{2017}
+      \field{pages}{2642\bibrangedash 2645}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ICDCS.2017.291
+      \endverb
+      \keyw{Actors,Akka,Resource Control,Scala}
+    \endentry
+    \entry{Bagherzadeh2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=9a8be8c0ce679d488e0635306abe0821}{%
+           family={Bagherzadeh},
+           familyi={B\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e530e338348f298d61b0fd6bcb7bacdc}{%
+           family={Fireman},
+           familyi={F\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=5dce6cc60ac6972ba433fd361a72d9de}{%
+           family={Shawesh},
+           familyi={S\bibinitperiod},
+           given={Anas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c32a4a22cf5d218a2c122856ca779963}{%
+           family={Khatchadourian},
+           familyi={K\bibinitperiod},
+           given={Raffi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
+      \strng{fullhash}{b8e4e2c4a8bcba4d723b48f368bb082f}
+      \strng{bibnamehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
+      \strng{authorbibnamehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
+      \strng{authornamehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
+      \strng{authorfullhash}{b8e4e2c4a8bcba4d723b48f368bb082f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Actor concurrency is becoming increasingly important in the development of real-world software systems. Although actor concurrency may be less susceptible to some multithreaded concurrency bugs, such as low-level data races and deadlocks, it comes with its own bugs that may be different. However, the fundamental characteristics of actor concurrency bugs, including their symptoms, root causes, API usages, examples, and differences when they come from different sources are still largely unknown. Actor software development can significantly benefit from a comprehensive qualitative and quantitative understanding of these characteristics, which is the focus of this work, to foster better API documentation, development practices, testing, debugging, repairing, and verification frameworks. To conduct this study, we take the following major steps. First, we construct a set of 186 real-world Akka actor bugs from Stack Overflow and GitHub via manual analysis of 3,924 Stack Overflow questions, answers, and comments and 3,315 GitHub commits, messages, original and modified code snippets, issues, and pull requests. Second, we manually study these actor bugs and their fixes to understand and classify their symptoms, root causes, and API usages. Third, we study the differences between the commonalities and distributions of symptoms, root causes, and API usages of our Stack Overflow and GitHub actor bugs. Fourth, we discuss real-world examples of our actor bugs with these symptoms and root causes. Finally, we investigate the relation of our findings with those of previous work and discuss their implications. A few findings of our study are: (1) symptoms of our actor bugs can be classified into five categories, with Error as the most common symptom and Incorrect Exceptions as the least common, (2) root causes of our actor bugs can be classified into ten categories, with Logic as the most common root cause and Untyped Communication as the least common, (3) a small number of Akka API packages are responsible for most of API usages by our actor bugs, and (4) our Stack Overflow and GitHub actor bugs can differ significantly in commonalities and distributions of their symptoms, root causes, and API usages. While some of our findings agree with those of previous work, others sharply contrast.}
+      \field{issn}{24751421}
+      \field{issue}{OOPSLA}
+      \field{journaltitle}{Proceedings of the ACM on Programming Languages}
+      \field{month}{11}
+      \field{title}{Actor concurrency bugs: A comprehensive study on symptoms, root causes, API usages, and differences}
+      \field{volume}{4}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1145/3428282
+      \endverb
+      \keyw{Actor bug API usages,Actor bug differences,Actor bug root causes,Actor bug symptoms,Akka actor bugs,GitHub,Stack Overflow}
+    \endentry
+    \entry{Moradi2023}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=a789b068447fa68093ae6029d60e0b46}{%
+           family={Moghadam},
+           familyi={M\bibinitperiod},
+           given={Mohsen\bibnamedelima Moradi},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9a8be8c0ce679d488e0635306abe0821}{%
+           family={Bagherzadeh},
+           familyi={B\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c32a4a22cf5d218a2c122856ca779963}{%
+           family={Khatchadourian},
+           familyi={K\bibinitperiod},
+           given={Raffi},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cae7a127ea7e7ae2c09c8985d97b8a67}{%
+           family={Bagheri},
+           familyi={B\bibinitperiod},
+           given={Hamid},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{80c66bafb2103be0488bec7a4033224f}
+      \strng{fullhash}{a96c3a94a073ff9b739391ee580d8643}
+      \strng{bibnamehash}{80c66bafb2103be0488bec7a4033224f}
+      \strng{authorbibnamehash}{80c66bafb2103be0488bec7a4033224f}
+      \strng{authornamehash}{80c66bafb2103be0488bec7a4033224f}
+      \strng{authorfullhash}{a96c3a94a073ff9b739391ee580d8643}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Actor concurrency is becoming increasingly important in the real world and mission-critical software. This requires these applications to be free from actor bugs, that occur in the real world, and have tests that are effective in finding these bugs. Mutation testing is a well-established technique that transforms an application to induce its likely bugs and evaluate the effectiveness of its tests in finding these bugs. Mutation testing is available for a broad spectrum of applications and their bugs, ranging from web to mobile to machine learning, and is used at scale in companies like Google and Facebook. However, there still is no mutation testing for actor concurrency that uses real-world actor bugs. In this paper, we propose Akka, a framework for mutation testing of Akka actor concurrency using real actor bugs. Akka is a popular industrial-strength implementation of actor concurrency. To design, implement, and evaluate Akka, we take the following major steps: (1) manually analyze a recent set of 186 real Akka bugs from Stack Overflow and GitHub to understand their causes; (2) design a set of 32 mutation operators, with 138 source code changes in Akka API, to emulate these causes and induce their bugs; (3) implement these operators in an Eclipse plugin for Java Akka; (4) use the plugin to generate 11.7k mutants of 10 real GitHub applications, with 446.4k lines of code and 7.9k tests; (5) run these tests on these mutants to measure the quality of mutants and effectiveness of tests; (6) use PIT to generate 26.2k mutants to compare Akka and PIT mutant quality and test effectiveness. PIT is a popular mutation testing tool with traditional operators; (7) manually analyze the bug coverage and overlap of Akka, PIT, and actor operators in a previous work; and (8) discuss a few implications of our findings. Among others, we find that Akka mutants are higher quality, cover more bugs, and tests are less effective in detecting them.}
+      \field{booktitle}{ESEC/FSE 2023 - Proceedings of the 31st ACM Joint Meeting European Software Engineering Conference and Symposium on the Foundations of Software Engineering}
+      \field{isbn}{9798400703270}
+      \field{month}{11}
+      \field{title}{Akka: Mutation Testing for Actor Concurrency in Akka using Real-World Bugs}
+      \field{year}{2023}
+      \field{pages}{262\bibrangedash 274}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1145/3611643.3616362
+      \endverb
+      \keyw{Actor concurrency,Akka,Mutant quality,Mutation opertors,Mutation testing,Test effectiveness}
+    \endentry
+    \entry{Chaudhary2024}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=6f993936c918a5d30974e3f2d876d454}{%
+           family={Chaudhary},
+           familyi={C\bibinitperiod},
+           given={Ishu},
+           giveni={I\bibinitperiod}}}%
+        {{hash=2971d1e470a9b5a182fbc0beb7b8873b}{%
+           family={Lohani},
+           familyi={L\bibinitperiod},
+           given={Bhanu\bibnamedelima Prakash},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=d9e255af90d3b4191838e9c21952345f}{%
+           family={Kushwaha},
+           familyi={K\bibinitperiod},
+           given={Pradeep\bibnamedelima Kumar},
+           giveni={P\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1f98360a2e3cce93af5eaaed2f9b66dc}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Amar\bibnamedelima Deep},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=efcb9e242fac68fd7eec7bd07cf9f16c}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Bhuvi},
+           giveni={B\bibinitperiod}}}%
+        {{hash=c586f4cefe727a50bd74d4bd6145366f}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Jai},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{603bc46a6f234b77766ee29539e7a6c1}
+      \strng{fullhash}{28093a607df1353b172ecafd8d919731}
+      \strng{bibnamehash}{603bc46a6f234b77766ee29539e7a6c1}
+      \strng{authorbibnamehash}{603bc46a6f234b77766ee29539e7a6c1}
+      \strng{authornamehash}{603bc46a6f234b77766ee29539e7a6c1}
+      \strng{authorfullhash}{28093a607df1353b172ecafd8d919731}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Java support the garbage collection automatically. However, with the introduce of JRE7 it introduces the hotspot Architecture having heap, where object data is stored. Garbage Collection based on Responsiveness and Throughput. The overall Automatic Garbage Collection have three steps Marking, Normal Deletion, Deletion with Compacting to complete the cycle. However, the collection of all objects and marking them is difficult with help of JVM. As JVM divides the heap parts as: Young Generation, Old or Tenured Generation and Permanent Generation. To overcome this, we introduce ZGC (Garbage Collector) introduce in Java 11. ZGC is concurrent, region -based, compact, NUMA-aware, using coloured pointers, using load barriers technique. However, with release of Java 21, we introduce Generational ZGC which maintain separate generators for old and young Generation. Generational ZGC heap memory overhead, lower risks of allocation stalls and lower garbage collection CPU overhead. This paper represents ZGC implementation in java as well as the overall advantages, comparison with Generational ZGC.}
+      \field{booktitle}{Proceedings of International Conference on Communication, Computer Sciences and Engineering, IC3SE 2024}
+      \field{isbn}{9798350366846}
+      \field{title}{Generational ZGC- An Improvement in Garbage Collector in Java 21}
+      \field{year}{2024}
+      \field{pages}{631\bibrangedash 636}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/IC3SE62002.2024.10593533
+      \endverb
+      \keyw{Garbage Collection,Generational ZGC,Memory Management,ZGC}
+    \endentry
+    \entry{Kennedy2016}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=043278e6a0f51cede7d9276333823f4f}{%
+           family={Kennedy},
+           familyi={K\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{043278e6a0f51cede7d9276333823f4f}
+      \strng{fullhash}{043278e6a0f51cede7d9276333823f4f}
+      \strng{bibnamehash}{043278e6a0f51cede7d9276333823f4f}
+      \strng{authorbibnamehash}{043278e6a0f51cede7d9276333823f4f}
+      \strng{authornamehash}{043278e6a0f51cede7d9276333823f4f}
+      \strng{authorfullhash}{043278e6a0f51cede7d9276333823f4f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781617291784}
+      \field{title}{Go in Action}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb www.allitebooks.com
+      \endverb
+      \verb{url}
+      \verb www.allitebooks.com
+      \endverb
+    \endentry
+    \entry{Cox-Buday2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=cb15fceac7ca486986e56681239bdd6a}{%
+           family={Cox-Buday},
+           familyi={C\bibinithyphendelim B\bibinitperiod},
+           given={Katherine.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{cb15fceac7ca486986e56681239bdd6a}
+      \strng{fullhash}{cb15fceac7ca486986e56681239bdd6a}
+      \strng{bibnamehash}{cb15fceac7ca486986e56681239bdd6a}
+      \strng{authorbibnamehash}{cb15fceac7ca486986e56681239bdd6a}
+      \strng{authornamehash}{cb15fceac7ca486986e56681239bdd6a}
+      \strng{authorfullhash}{cb15fceac7ca486986e56681239bdd6a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{First edition. Includes index. Copyright; Table of Contents; Preface; Who Should Read This Book; Navigating This Book; Online Resources; Conventions Used in This Book; Using Code Examples; O'Reilly Safari; How to Contact Us; Acknowledgments; Chapter 1. An Introduction to Concurrency; Moore's Law, Web Scale, and the Mess We're In; Why Is Concurrency Hard?; Race Conditions; Atomicity; Memory Access Synchronization; Deadlocks, Livelocks, and Starvation; Determining Concurrency Safety; Simplicity in the Face of Complexity; Chapter 2. Modeling Your Code: Communicating Sequential Processes.}
+      \field{isbn}{9781491941195}
+      \field{title}{Concurrency in Go : tools and techniques for developers}
+      \field{year}{2017}
+    \endentry
+    \entry{Castro2019}{article}{}
+      \name{author}{5}{}{%
+        {{hash=562910701d3abff01e7a76faeea50197}{%
+           family={Castro},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=64873b14233d552152fb1d005e878173}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Raymond},
+           giveni={R\bibinitperiod}}}%
+        {{hash=35522fe2d4f01d423731255e113cb54b}{%
+           family={Jongmans},
+           familyi={J\bibinitperiod},
+           given={Sung\bibnamedelima Shik},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=389f392f6ce16217ecdeba3fc6f65739}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Nicholas},
+           giveni={N\bibinitperiod}}}%
+        {{hash=dd15efe878ded803fb2ab56512b2179e}{%
+           family={Yoshida},
+           familyi={Y\bibinitperiod},
+           given={Nobuko},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{901060d91aa209569cbbfe7b93aa9b2d}
+      \strng{fullhash}{a22a61b06a7da53bb616c760c14ff3a5}
+      \strng{bibnamehash}{901060d91aa209569cbbfe7b93aa9b2d}
+      \strng{authorbibnamehash}{901060d91aa209569cbbfe7b93aa9b2d}
+      \strng{authornamehash}{901060d91aa209569cbbfe7b93aa9b2d}
+      \strng{authorfullhash}{a22a61b06a7da53bb616c760c14ff3a5}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a framework for the static specification and safe programming of message passing protocols where the number and kinds of participants are dynamically instantiated. We develop the first theory of distributed multiparty session types (MPST) to support parameterised protocols with indexed rolesÐour framework statically infers the different kinds of participants induced by a protocol definition as role variants, and produces decoupled endpoint projections of the protocol onto each variant. This enables safe MPST-based programming of the parameterised endpoints in distributed settings: each endpoint can be implemented separately by different programmers, using different techniques (or languages). We prove the decidability of role variant inference and well-formedness checking, and the correctness of projection. We implement our theory as a toolchain for programming such role-parametric MPST protocols in Go. Our approach is to generate API families of lightweight, protocol- and variant-specific type wrappers for I/O. The APIs ensure a well-typed Go endpoint program (by native Go type checking) will perform only compliant I/O actions w.r.t. the source protocol. We leverage the abstractions of MPST to support the specification and implementation of Go applications involving multiple channels, possibly over mixed transports (e.g., Go channels, TCP), and channel passing via a unified programming interface. We evaluate the applicability and run-time performance of our generated APIs using microbenchmarks and real-world applications.}
+      \field{issn}{24751421}
+      \field{issue}{POPL}
+      \field{journaltitle}{Proceedings of the ACM on Programming Languages}
+      \field{month}{1}
+      \field{title}{Distributed Programming using Role-Parametric Session Types in Go: Statically-typed endpoint APIs for dynamically-instantiated communication structures}
+      \field{volume}{3}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.1145/3290342
+      \endverb
+      \keyw{Distributed programming,Go,Indexed roles,Multiparty session types}
+    \endentry
+    \entry{Shuiskov2022}{book}{}
+      \name{author}{1}{}{%
+        {{hash=74f3332937852b0f9b7d7120dbe3f11c}{%
+           family={Shuiskov},
+           familyi={S\bibinitperiod},
+           given={Alexander.},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {PACKT PUBLISHING LIMITED}%
+      }
+      \strng{namehash}{74f3332937852b0f9b7d7120dbe3f11c}
+      \strng{fullhash}{74f3332937852b0f9b7d7120dbe3f11c}
+      \strng{bibnamehash}{74f3332937852b0f9b7d7120dbe3f11c}
+      \strng{authorbibnamehash}{74f3332937852b0f9b7d7120dbe3f11c}
+      \strng{authornamehash}{74f3332937852b0f9b7d7120dbe3f11c}
+      \strng{authorfullhash}{74f3332937852b0f9b7d7120dbe3f11c}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781804617007}
+      \field{title}{Microservices With GO : Building Scalable and Reliable Go Microservices}
+      \field{year}{2022}
+    \endentry
+    \entry{Zhao2023}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=ac2426e1ce352cb4b79951cc2b4b2d0a}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Junxian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=596e565ae03135b3d3a3dbfeeda86737}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xiaobo},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c333f22f16632b3cc89cf820c03369d4}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Sang\bibnamedelima Yoon},
+           giveni={S\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=38a17359db2f4fc7444ba94263768ed8}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Chengzhong},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{dc50d9c95809733d53076d0d6c7ac08f}
+      \strng{fullhash}{1308019b78acf55951d8c7e99bba4934}
+      \strng{bibnamehash}{dc50d9c95809733d53076d0d6c7ac08f}
+      \strng{authorbibnamehash}{dc50d9c95809733d53076d0d6c7ac08f}
+      \strng{authornamehash}{dc50d9c95809733d53076d0d6c7ac08f}
+      \strng{authorfullhash}{1308019b78acf55951d8c7e99bba4934}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Garbage Collection (GC) is a representative automatic memory manager widely deployed in popular programming languages, such as Java, C\#, and Golang (Go). Through GC, these languages provide programmers with flexibility and safety. However, GC leads to non-trivial overhead in compute and memory resources during application runtime. GC threads compete with non-GC threads (mutators) of an application, which particularly impacts latency-critical (LC) applications and causes long tail latency. Existing GC approaches do not efficiently address the interference, as GC is triggered passively without a global insight of the application; or they employ incremental GC to reduce the interference, while the incremental progress is not dynamically tailored during GC process according to runtime characteristics, which leads to significant performance degradation upon bursty requests. We present LEGO, an efficient and non-intrusive GC framework that deploys a novel elastic incremental GC mechanism integrated with an adaptive GC scheduler to reduce CPU contention between GC and mutators, and improve resource utilization and QoS of LC applications. We choose to develop LEGO in Go, as Go is specifically designed for cloud applications and the current GC mechanisms for JVM are ineffective for Go due to its unique GPM thread scheduling and memory allocation model. LEGO adapts incremental GC into Go to tackle the full GC issue and addresses resource contention with a proactive scheduler for adaptive GC triggering. Importantly, LEGO leverages the elastic incremental GC mechanism in mitigating the interference from unavoidable GC in face of bursts of requests. We implement and evaluate LEGO with popular LC applications developed in Go. Results show that compared to the default Go GC and a tailored G1 GC, LEGO significantly improves both the tail latency and throughput for LC applications.}
+      \field{booktitle}{HPDC 2023 - Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing}
+      \field{isbn}{9798400701559}
+      \field{month}{8}
+      \field{title}{Let It Go: Relieving Garbage Collection Pain for Latency Critical Applications in Golang}
+      \field{year}{2023}
+      \field{pages}{169\bibrangedash 180}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1145/3588195.3592998
+      \endverb
+      \keyw{GC scheduler,Golang (Go),garbage collection (GC),latency critical (LC),tail latency}
+    \endentry
+    \entry{Zhang2021}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=754769aea83eb44a600ee15c6f9419f6}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jiayi},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{2}{%
+        {Institute of Electrical}%
+        {Electronics Engineers Inc.}%
+      }
+      \strng{namehash}{754769aea83eb44a600ee15c6f9419f6}
+      \strng{fullhash}{754769aea83eb44a600ee15c6f9419f6}
+      \strng{bibnamehash}{754769aea83eb44a600ee15c6f9419f6}
+      \strng{authorbibnamehash}{754769aea83eb44a600ee15c6f9419f6}
+      \strng{authornamehash}{754769aea83eb44a600ee15c6f9419f6}
+      \strng{authorfullhash}{754769aea83eb44a600ee15c6f9419f6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Well-designed garbage collectors for Java are essential for automatic memory management. Garbage First Garbage Collector (G1GC) is the default garbage collector for JVM, and Z Garbage Collector (ZGC) has been the latest-released garbage collector since JDK 11. These two garbage collectors possess distinctive performance based on different environments. Knowing the different features and performance between these two garbage collectors can help developers to make choices according to their own requirements of garbage collection so that developers can carry out better. Meanwhile, there are relatively less comparative studies between G1GC and ZGC at present. Hence, this paper introduces and compares two garbage collectors and runs an object-creation-and-disposal experiment on G1GC and ZGC to examine their performance in the aspects of heap allocation, CPU usage and time consumption on multiple stages on Java 16. Yield that ZGC unexpectedly has higher throughput and longer total execution time than G1GC, and other attributes are in line with expectations. According to the results, ZGC has a better overall performance than G1GC under the testing circumstances.}
+      \field{booktitle}{2021 IEEE 3rd International Conference on Frontiers Technology of Information and Computer, ICFTIC 2021}
+      \field{isbn}{9781665406055}
+      \field{title}{Performance Comparative Analysis on Garbage First Garbage Collector and Z Garbage Collector}
+      \field{year}{2021}
+      \field{pages}{733\bibrangedash 740}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICFTIC54370.2021.9647167
+      \endverb
+      \keyw{Comparison,G1,Garbage Collection,Java Garbage Collector,Performance,ZGC}
+    \endentry
+    \entry{Whitney2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bfd77b4858920a1ca91d861787c643a1}{%
+           family={Whitney},
+           familyi={W\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=60f740c3555e00b27644452abac79257}{%
+           family={Gifford},
+           familyi={G\bibinitperiod},
+           given={Chandler},
+           giveni={C\bibinitperiod}}}%
+        {{hash=97794818a8955b179360d040d499f7ff}{%
+           family={Pantoja},
+           familyi={P\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer New York LLC}%
+      }
+      \strng{namehash}{bfe7c1bc2bc0480b742f6f017aad4ff6}
+      \strng{fullhash}{bfe7c1bc2bc0480b742f6f017aad4ff6}
+      \strng{bibnamehash}{bfe7c1bc2bc0480b742f6f017aad4ff6}
+      \strng{authorbibnamehash}{bfe7c1bc2bc0480b742f6f017aad4ff6}
+      \strng{authornamehash}{bfe7c1bc2bc0480b742f6f017aad4ff6}
+      \strng{authorfullhash}{bfe7c1bc2bc0480b742f6f017aad4ff6}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In the last decade, the majority of new central processing units (CPU) have become multicore. To take advantage of these new architectures, we need programming languages that can express parallelisms. The programming language Golang is well known for providing developers with an easy programming model for communicating sequential process-style concurrency enabling programmers to easily write functions that will execute on the different cores of a modern multicore CPUs. Unfortunately, Golang does not support distributed execution of goroutines on clusters or distributed systems. In this paper, we extend the concurrency capabilities of Golang to a distributed cluster by providing a library called Gluster that is simple and easy to use. We developed a programming model that allows users to easily distribute work between machines, in a similar way as workloads are distributed in multicore CPUs by using operating system threads with libraries similar to Pthreads and OpenMP. Our Gluster solution is based on a single master node that connects to peers over a network and distributes work to these peers. The master node is able to send function arguments over the network to worker nodes as well as receive return values. Results using matrix multiplication show that our distributed implementation can speed up the goroutines by 5× in a small 16 nodes cluster, but more importantly, it shows that the results are scalable to cluster size.}
+      \field{issn}{15730484}
+      \field{issue}{3}
+      \field{journaltitle}{Journal of Supercomputing}
+      \field{month}{3}
+      \field{title}{Distributed execution of communicating sequential process-style concurrency: Golang case study}
+      \field{volume}{75}
+      \field{year}{2019}
+      \field{pages}{1396\bibrangedash 1409}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s11227-018-2649-2
+      \endverb
+      \keyw{Cluster,Concurrent programming,Distributed computing,HPC}
+    \endentry
+    \entry{proto-actor-docs}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Proto.Actor Documentation}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://proto.actor/docs/
+      \endverb
+      \verb{url}
+      \verb https://proto.actor/docs/
+      \endverb
+    \endentry
+    \entry{go-kit-docs}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Go-kit Documentation}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://gokit.io/
+      \endverb
+      \verb{url}
+      \verb https://gokit.io/
+      \endverb
+    \endentry
+    \entry{discord-blog-rust-go}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Discord blog - Why discord is switching from go to rust}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://discord.com/blog/why-discord-is-switching-from-go-to-rust/
+      \endverb
+      \verb{url}
+      \verb https://discord.com/blog/why-discord-is-switching-from-go-to-rust/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

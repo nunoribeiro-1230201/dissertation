@@ -1,18 +1,18 @@
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram illustrating the states of a Circuit Breaker}}{8}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagram illustrating the states of a Circuit Breaker}}{7}{figure.caption.28}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Diagram illustrating the states of a node in the Raft algorithm}}{11}{figure.caption.36}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Concurrency in the Erlang virtual machine}}{22}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Elixir/BEAM processes vs JVM threads}}{23}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Supervisor tree pattern}}{25}{figure.caption.67}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Go’s scheduler logic of distributing goroutine by the logical processors}}{33}{figure.caption.86}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Concurrency in the Erlang virtual machine}}{20}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Elixir/BEAM processes vs JVM threads}}{21}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Supervisor tree pattern}}{23}{figure.caption.67}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Go’s scheduler logic of distributing goroutine by the logical processors}}{31}{figure.caption.86}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The WBS of the project.}}{38}{figure.caption.101}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Gantt timeline of the project}}{39}{figure.caption.103}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Monitoring and control procedures displayed on the Gantt chart.}}{41}{figure.caption.106}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Meeting sessions represented on the Gantt chart.}}{42}{figure.caption.108}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Competencies development plan represented on the Gantt chart.}}{42}{figure.caption.110}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The WBS of the project.}}{38}{figure.caption.100}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Gantt timeline of the project}}{39}{figure.caption.102}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Monitoring and control procedures displayed on the Gantt chart.}}{41}{figure.caption.105}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Meeting sessions represented on the Gantt chart.}}{42}{figure.caption.107}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Competencies development plan represented on the Gantt chart.}}{42}{figure.caption.109}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Complete demonstration of the Gantt}}{48}{figure.caption.119}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Complete demonstration of the Gantt}}{48}{figure.caption.118}%

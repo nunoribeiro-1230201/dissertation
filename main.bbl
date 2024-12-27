@@ -1549,6 +1549,34 @@
       \verb https://hexdocs.pm/elixir/introduction.html
       \endverb
     \endentry
+    \entry{akka-docs}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Akka Official Documentation}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://doc.akka.io/libraries/akka-core/current/typed/actors.html/
+      \endverb
+      \verb{url}
+      \verb https://doc.akka.io/libraries/akka-core/current/typed/actors.html/
+      \endverb
+    \endentry
+    \entry{proto-actor-docs}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 03.11.2024}
+      \field{title}{{Proto.Actor Documentation}}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://proto.actor/docs/
+      \endverb
+      \verb{url}
+      \verb https://proto.actor/docs/
+      \endverb
+    \endentry
     \entry{elixir-school}{misc}{}
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
@@ -1654,20 +1682,6 @@
       \endverb
       \keyw{elixir,functional programming,gradual typing,static typing}
     \endentry
-    \entry{akka-docs}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
-      \field{title}{{Akka Official Documentation}}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://doc.akka.io/libraries/akka-core/current/typed/actors.html/
-      \endverb
-      \verb{url}
-      \verb https://doc.akka.io/libraries/akka-core/current/typed/actors.html/
-      \endverb
-    \endentry
     \entry{Moamen2027}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=c9a610bb852d5f524c25c944e6d0131e}{%
@@ -1745,8 +1759,8 @@
       \strng{authorbibnamehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
       \strng{authornamehash}{cf6678a7bcfcfb7ecedd3e14c374889c}
       \strng{authorfullhash}{b8e4e2c4a8bcba4d723b48f368bb082f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Actor concurrency is becoming increasingly important in the development of real-world software systems. Although actor concurrency may be less susceptible to some multithreaded concurrency bugs, such as low-level data races and deadlocks, it comes with its own bugs that may be different. However, the fundamental characteristics of actor concurrency bugs, including their symptoms, root causes, API usages, examples, and differences when they come from different sources are still largely unknown. Actor software development can significantly benefit from a comprehensive qualitative and quantitative understanding of these characteristics, which is the focus of this work, to foster better API documentation, development practices, testing, debugging, repairing, and verification frameworks. To conduct this study, we take the following major steps. First, we construct a set of 186 real-world Akka actor bugs from Stack Overflow and GitHub via manual analysis of 3,924 Stack Overflow questions, answers, and comments and 3,315 GitHub commits, messages, original and modified code snippets, issues, and pull requests. Second, we manually study these actor bugs and their fixes to understand and classify their symptoms, root causes, and API usages. Third, we study the differences between the commonalities and distributions of symptoms, root causes, and API usages of our Stack Overflow and GitHub actor bugs. Fourth, we discuss real-world examples of our actor bugs with these symptoms and root causes. Finally, we investigate the relation of our findings with those of previous work and discuss their implications. A few findings of our study are: (1) symptoms of our actor bugs can be classified into five categories, with Error as the most common symptom and Incorrect Exceptions as the least common, (2) root causes of our actor bugs can be classified into ten categories, with Logic as the most common root cause and Untyped Communication as the least common, (3) a small number of Akka API packages are responsible for most of API usages by our actor bugs, and (4) our Stack Overflow and GitHub actor bugs can differ significantly in commonalities and distributions of their symptoms, root causes, and API usages. While some of our findings agree with those of previous work, others sharply contrast.}
@@ -2132,20 +2146,6 @@
       \endverb
       \keyw{Cluster,Concurrent programming,Distributed computing,HPC}
     \endentry
-    \entry{proto-actor-docs}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
-      \field{title}{{Proto.Actor Documentation}}
-      \field{year}{2024}
-      \verb{urlraw}
-      \verb https://proto.actor/docs/
-      \endverb
-      \verb{url}
-      \verb https://proto.actor/docs/
-      \endverb
-    \endentry
     \entry{go-kit-docs}{misc}{}
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
@@ -2159,6 +2159,46 @@
       \verb{url}
       \verb https://gokit.io/
       \endverb
+    \endentry
+    \entry{Marchuk2023}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=85e29611c0dbf381dcfbb99bbdd526e0}{%
+           family={Marchuk},
+           familyi={M\bibinitperiod},
+           given={Yaroslav},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=bb610f4eecacf640918e82aba6751812}{%
+           family={Melnyk},
+           familyi={M\bibinitperiod},
+           given={Bohdan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e914cc6733b2bf1f90ae73de394df87b}{%
+           family={Melnyk},
+           familyi={M\bibinitperiod},
+           given={Nataliya},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{50c6125f0222ace743a934e8b03d2e57}
+      \strng{fullhash}{50c6125f0222ace743a934e8b03d2e57}
+      \strng{bibnamehash}{50c6125f0222ace743a934e8b03d2e57}
+      \strng{authorbibnamehash}{50c6125f0222ace743a934e8b03d2e57}
+      \strng{authornamehash}{50c6125f0222ace743a934e8b03d2e57}
+      \strng{authorfullhash}{50c6125f0222ace743a934e8b03d2e57}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The article is dedicated to the study of the execution speed of the back-end part of the application, which functions under high load conditions. The study was conducted for program codes written in different programming languages. At the same time, the REST API style in the microservices architecture was used to implement the application. Modern software environments based on Python, Golang, JavaScript, and Elixir programming languages were selected for analysis. Several characteristics of the software code were experimentally investigated, which reflect the speed qualities of the application. An analysis of the obtained results was carried out and relevant conclusions were drawn.}
+      \field{booktitle}{Proceedings - International Conference on Advanced Computer Information Technologies, ACIT}
+      \field{issn}{27705226}
+      \field{title}{Analysis of the Speed of Execution of Business Logic in Applications Created in Different Software Environments}
+      \field{year}{2023}
+      \field{pages}{357\bibrangedash 360}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1109/ACIT58437.2023.10275631
+      \endverb
+      \keyw{REST API,application speed,business analytics,net/http,programming language}
     \endentry
     \entry{discord-blog-rust-go}{misc}{}
       \field{sortinit}{2}

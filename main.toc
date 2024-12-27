@@ -40,40 +40,40 @@
 \contentsline {subsubsection}{Hot-code swapping}{22}{section*.64}%
 \contentsline {subsection}{\numberline {3.2.2}Fault Tolerance Mechanism and Strategies}{22}{subsection.65}%
 \contentsline {subsubsection}{Let It Crash Philosophy and Actor Model}{22}{section*.66}%
-\contentsline {subsubsection}{Tools and Support}{24}{section*.68}%
-\contentsline {subsection}{\numberline {3.2.3}Drawbacks and Real Applications}{25}{subsection.73}%
-\contentsline {section}{\numberline {3.3}Scala Programming Language with Akka Toolkit Analysis}{25}{section.74}%
-\contentsline {subsection}{\numberline {3.3.1}How Akka Handles the Actor Model}{25}{subsection.75}%
-\contentsline {subsubsection}{Location Transparency and Communication}{26}{section*.76}%
-\contentsline {subsubsection}{Actors Isolation}{26}{section*.77}%
-\contentsline {subsection}{\numberline {3.3.2}Fault Tolerance Mechanism and Strategies}{27}{subsection.78}%
-\contentsline {subsubsection}{Akka Clustering}{27}{section*.79}%
-\contentsline {subsubsection}{Akka Circuit Breaker}{28}{section*.80}%
-\contentsline {subsubsection}{Akka Persistence and Event Sourcing}{28}{section*.81}%
-\contentsline {subsection}{\numberline {3.3.3}Comparison with Elixir/BEAM and Real Applications}{28}{subsection.82}%
-\contentsline {section}{\numberline {3.4}Go Programming Language Analysis}{29}{section.83}%
-\contentsline {subsection}{\numberline {3.4.1}Concurrency and Distribution in Go}{30}{subsection.84}%
-\contentsline {subsubsection}{Goroutines}{30}{section*.85}%
-\contentsline {subsubsection}{Channels}{31}{section*.87}%
-\contentsline {subsubsection}{Garbage Collector}{32}{section*.88}%
-\contentsline {subsubsection}{Distributed Communication}{32}{section*.89}%
-\contentsline {subsection}{\numberline {3.4.2}Fault Tolerance Mechanism and Strategies}{33}{subsection.90}%
-\contentsline {subsubsection}{Error Philosophy}{33}{section*.91}%
-\contentsline {subsubsection}{Fault Tolerance Mechanisms and Strategies}{33}{section*.92}%
-\contentsline {subsection}{\numberline {3.4.3}Challenges Compared With Akka and Elixir and Real Applications}{34}{subsection.93}%
-\contentsline {section}{\numberline {3.5}Benchmarking Strategies}{35}{section.94}%
-\contentsline {section}{\numberline {3.6}Conclusions}{35}{section.95}%
-\contentsline {chapter}{\numberline {4}Project Planning}{37}{chapter.96}%
-\contentsline {section}{\numberline {4.1}Project Charter}{37}{section.97}%
-\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{38}{section.99}%
-\contentsline {section}{\numberline {4.3}Gantt Diagram}{39}{section.101}%
-\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{39}{subsection.103}%
-\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{40}{subsection.104}%
-\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{40}{subsection.106}%
-\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{41}{subsection.108}%
-\contentsline {section}{\numberline {4.4}Risk Management}{43}{section.113}%
-\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{43}{subsection.114}%
-\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{43}{subsection.115}%
-\contentsline {chapter}{\numberline {5}Appendix A Planning Detailing}{45}{chapter.116}%
-\contentsline {section}{\numberline {5.1}Gantt Chart}{45}{section.117}%
-\contentsline {section}{\numberline {5.2}Work Breakdown Structure Dictionary}{45}{section.119}%
+\contentsline {subsubsection}{Tools and Support}{24}{section*.69}%
+\contentsline {subsection}{\numberline {3.2.3}Drawbacks and Real Applications}{25}{subsection.74}%
+\contentsline {section}{\numberline {3.3}Scala Programming Language with Akka Toolkit Analysis}{25}{section.75}%
+\contentsline {subsection}{\numberline {3.3.1}How Akka Handles the Actor Model}{26}{subsection.76}%
+\contentsline {subsubsection}{Location Transparency and Communication}{26}{section*.77}%
+\contentsline {subsubsection}{Actors Isolation}{26}{section*.78}%
+\contentsline {subsection}{\numberline {3.3.2}Fault Tolerance Mechanism and Strategies}{27}{subsection.79}%
+\contentsline {subsubsection}{Akka Clustering}{27}{section*.80}%
+\contentsline {subsubsection}{Akka Circuit Breaker}{28}{section*.81}%
+\contentsline {subsubsection}{Akka Persistence and Event Sourcing}{28}{section*.82}%
+\contentsline {subsection}{\numberline {3.3.3}Comparison with Elixir/BEAM and Real Applications}{29}{subsection.83}%
+\contentsline {section}{\numberline {3.4}Go Programming Language Analysis}{30}{section.84}%
+\contentsline {subsection}{\numberline {3.4.1}Concurrency and Distribution in Go}{30}{subsection.85}%
+\contentsline {subsubsection}{Goroutines}{31}{section*.86}%
+\contentsline {subsubsection}{Channels}{31}{section*.88}%
+\contentsline {subsubsection}{Garbage Collector}{32}{section*.89}%
+\contentsline {subsubsection}{Distributed Communication}{32}{section*.90}%
+\contentsline {subsection}{\numberline {3.4.2}Fault Tolerance Mechanism and Strategies}{33}{subsection.91}%
+\contentsline {subsubsection}{Error Philosophy}{33}{section*.92}%
+\contentsline {subsubsection}{Fault Tolerance Mechanisms and Strategies}{34}{section*.93}%
+\contentsline {subsection}{\numberline {3.4.3}Challenges Compared With Akka and Elixir and Real Applications}{35}{subsection.97}%
+\contentsline {section}{\numberline {3.5}Benchmarking Strategies}{36}{section.98}%
+\contentsline {section}{\numberline {3.6}Conclusions}{36}{section.99}%
+\contentsline {chapter}{\numberline {4}Project Planning}{37}{chapter.100}%
+\contentsline {section}{\numberline {4.1}Project Charter}{37}{section.101}%
+\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{38}{section.103}%
+\contentsline {section}{\numberline {4.3}Gantt Diagram}{39}{section.105}%
+\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{39}{subsection.107}%
+\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{40}{subsection.108}%
+\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{40}{subsection.110}%
+\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{41}{subsection.112}%
+\contentsline {section}{\numberline {4.4}Risk Management}{43}{section.117}%
+\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{43}{subsection.118}%
+\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{43}{subsection.119}%
+\contentsline {chapter}{\numberline {5}Appendix A Planning Detailing}{45}{chapter.120}%
+\contentsline {section}{\numberline {5.1}Gantt Chart}{45}{section.121}%
+\contentsline {section}{\numberline {5.2}Work Breakdown Structure Dictionary}{45}{section.123}%

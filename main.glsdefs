@@ -390,6 +390,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{UDP}%
+{%
+name={\acronymfont {\glsentryshort {UDP}}},%
+sort={UDP},%
+type={acronym},%
+first={UDP},%
+firstplural={UDPs},%
+text={UDP},%
+plural={UDPs},%
+description={User Datagram Protocol},%
+descriptionplural={User Datagram Protocol},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={User Datagram Protocol},%
+longplural={User Datagram Protocols},%
+short={UDP},%
+shortplural={UDPs},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{gRPC}%
 {%
 name={\acronymfont {\glsentryshort {gRPC}}},%

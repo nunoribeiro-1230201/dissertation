@@ -61,19 +61,24 @@
 \contentsline {subsubsection}{Error Philosophy}{33}{section*.92}%
 \contentsline {subsubsection}{Fault Tolerance Mechanisms and Strategies}{34}{section*.93}%
 \contentsline {subsection}{\numberline {3.4.3}Challenges Compared With Akka and Elixir and Real Applications}{35}{subsection.97}%
-\contentsline {section}{\numberline {3.5}Benchmarking Strategies}{36}{section.98}%
-\contentsline {section}{\numberline {3.6}Conclusions}{36}{section.99}%
-\contentsline {chapter}{\numberline {4}Project Planning}{37}{chapter.100}%
-\contentsline {section}{\numberline {4.1}Project Charter}{37}{section.101}%
-\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{38}{section.103}%
-\contentsline {section}{\numberline {4.3}Gantt Diagram}{39}{section.105}%
-\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{39}{subsection.107}%
-\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{40}{subsection.108}%
-\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{40}{subsection.110}%
-\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{41}{subsection.112}%
-\contentsline {section}{\numberline {4.4}Risk Management}{43}{section.117}%
-\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{43}{subsection.118}%
-\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{43}{subsection.119}%
-\contentsline {chapter}{\numberline {5}Appendix A Planning Detailing}{45}{chapter.120}%
-\contentsline {section}{\numberline {5.1}Gantt Chart}{45}{section.121}%
-\contentsline {section}{\numberline {5.2}Work Breakdown Structure Dictionary}{45}{section.123}%
+\contentsline {section}{\numberline {3.5}Benchmarking Analyses}{36}{section.98}%
+\contentsline {subsection}{\numberline {3.5.1}Fault-Tolerant and Distributed Benchmarking}{37}{subsection.100}%
+\contentsline {subsubsection}{Strategies}{38}{section*.102}%
+\contentsline {subsubsection}{Metrics}{39}{section*.105}%
+\contentsline {section}{\numberline {3.6}Conclusions}{40}{section.106}%
+\contentsline {subsection}{\numberline {3.6.1}Research Questions}{40}{subsection.107}%
+\contentsline {subsection}{\numberline {3.6.2}Future Work}{40}{subsection.108}%
+\contentsline {chapter}{\numberline {4}Project Planning}{41}{chapter.109}%
+\contentsline {section}{\numberline {4.1}Project Charter}{41}{section.110}%
+\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{42}{section.112}%
+\contentsline {section}{\numberline {4.3}Gantt Diagram}{43}{section.114}%
+\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{43}{subsection.116}%
+\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{44}{subsection.117}%
+\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{44}{subsection.119}%
+\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{45}{subsection.121}%
+\contentsline {section}{\numberline {4.4}Risk Management}{47}{section.126}%
+\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{47}{subsection.127}%
+\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{47}{subsection.128}%
+\contentsline {chapter}{\numberline {5}Appendix A Planning Detailing}{49}{chapter.129}%
+\contentsline {section}{\numberline {5.1}Gantt Chart}{49}{section.130}%
+\contentsline {section}{\numberline {5.2}Work Breakdown Structure Dictionary}{49}{section.132}%

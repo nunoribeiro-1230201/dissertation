@@ -614,3 +614,59 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{MTTR}%
+{%
+name={\acronymfont {\glsentryshort {MTTR}}},%
+sort={MTTR},%
+type={acronym},%
+first={MTTR},%
+firstplural={MTTRs},%
+text={MTTR},%
+plural={MTTRs},%
+description={Mean Time to Repair},%
+descriptionplural={Mean Time to Repair},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Mean Time to Repair},%
+longplural={Mean Time to Repairs},%
+short={MTTR},%
+shortplural={MTTRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{LOC}%
+{%
+name={\acronymfont {\glsentryshort {LOC}}},%
+sort={LOC},%
+type={acronym},%
+first={LOC},%
+firstplural={LOCs},%
+text={LOC},%
+plural={LOCs},%
+description={Lines of code},%
+descriptionplural={Lines of code},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Lines of code},%
+longplural={Lines of codes},%
+short={LOC},%
+shortplural={LOCs},%
+counter={page},%
+parent={},%
+%
+}%
+

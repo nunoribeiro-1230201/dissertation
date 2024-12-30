@@ -2214,6 +2214,180 @@
       \verb https://discord.com/blog/why-discord-is-switching-from-go-to-rust/
       \endverb
     \endentry
+    \entry{Almeida2013}{book}{}
+      \name{author}{2}{}{%
+        {{hash=dbcb91f5cb79c90004e0c487882c3e75}{%
+           family={Almeida},
+           familyi={A\bibinitperiod},
+           given={Raquel},
+           giveni={R\bibinitperiod}}}%
+        {{hash=587af43f9f64c38a8b7e3c942a9a41ca}{%
+           family={Vieira},
+           familyi={V\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM Digital Library}%
+      }
+      \strng{namehash}{a7ad4f8c85500428abd669fe479f2136}
+      \strng{fullhash}{a7ad4f8c85500428abd669fe479f2136}
+      \strng{bibnamehash}{a7ad4f8c85500428abd669fe479f2136}
+      \strng{authorbibnamehash}{a7ad4f8c85500428abd669fe479f2136}
+      \strng{authornamehash}{a7ad4f8c85500428abd669fe479f2136}
+      \strng{authorfullhash}{a7ad4f8c85500428abd669fe479f2136}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781450305754}
+      \field{title}{Proceedings of the 6th International Symposium on Software Engineering for Adaptive and Self-Managing Systems}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1145/1988008.1988035
+      \endverb
+    \endentry
+    \entry{Blessing2019}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=00fd3cb4361c281e9a71489ea5f1dc09}{%
+           family={Blessing},
+           familyi={B\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e11d6910609dbd5a834a56a485fc3ded}{%
+           family={Fernandez-Reyes},
+           familyi={F\bibinithyphendelim R\bibinitperiod},
+           given={Kiko},
+           giveni={K\bibinitperiod}}}%
+        {{hash=5e2e46234e3f4f09bdd8ee31cf04ce5a}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Albert\bibnamedelima Mingkun},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=5b320475fc79eefbd802529eaa6d56a4}{%
+           family={Drossopoulou},
+           familyi={D\bibinitperiod},
+           given={Sophia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=36449bee61599fb05d9d413c8a4a3db6}{%
+           family={Wrigstad},
+           familyi={W\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery, Inc}%
+      }
+      \strng{namehash}{8d3a5a20747a8230b3d9aeb45bf9cae9}
+      \strng{fullhash}{416f5fe62ff06aae98b0c47b91adf9e2}
+      \strng{bibnamehash}{8d3a5a20747a8230b3d9aeb45bf9cae9}
+      \strng{authorbibnamehash}{8d3a5a20747a8230b3d9aeb45bf9cae9}
+      \strng{authornamehash}{8d3a5a20747a8230b3d9aeb45bf9cae9}
+      \strng{authorfullhash}{416f5fe62ff06aae98b0c47b91adf9e2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The actor paradigm supports the natural expression of concurrency. It has inspired the development of several actor-based languages, whose adoption depends, to a large extent, on the runtime characteristics (i.e., the performance and scaling behaviour) of programs written in these languages. This paper investigates the relative runtime characteristics of Akka, CAF and Pony, based on the Savina benchmarks. We observe that the scaling of many of the Savina benchmarks does not reflect their categorization (into essentially sequential, concurrent and parallel), that many programs have similar runtime characteristics, and that their runtime behaviour may drastically change nature (e.g., go from essentially sequential to parallel) by tweaking some parameters. These observations lead to our proposal of a single benchmark program which we designed so that through tweaking of some knobs (we hope) we can simulate most of the programs of the Savina suite.}
+      \field{booktitle}{AGERE 2019 - Proceedings of the 9th ACM SIGPLAN International Workshop on Programming Based on Actors, Agents, and Decentralized Control, co-located with SPLASH 2019}
+      \field{isbn}{9781450369824}
+      \field{month}{10}
+      \field{title}{Run, actor, run towards cross-actor language benchmarking}
+      \field{year}{2019}
+      \field{pages}{41\bibrangedash 50}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1145/3358499.3361224
+      \endverb
+      \keyw{Actor programming,Benchmarks}
+    \endentry
+    \entry{Imam2014}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=e8172e8ca1b1e348bfb13fad8aeee9b7}{%
+           family={Imam},
+           familyi={I\bibinitperiod},
+           given={Shams},
+           giveni={S\bibinitperiod}}}%
+        {{hash=694b6a2cda85144b301a8f45936cf9bb}{%
+           family={Sarkar},
+           familyi={S\bibinitperiod},
+           given={Vivek},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{b78c3e5e7b200e1431dc0f028bf17ed3}
+      \strng{fullhash}{b78c3e5e7b200e1431dc0f028bf17ed3}
+      \strng{bibnamehash}{b78c3e5e7b200e1431dc0f028bf17ed3}
+      \strng{authorbibnamehash}{b78c3e5e7b200e1431dc0f028bf17ed3}
+      \strng{authornamehash}{b78c3e5e7b200e1431dc0f028bf17ed3}
+      \strng{authorfullhash}{b78c3e5e7b200e1431dc0f028bf17ed3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper introduces the Savina benchmark suite for actor-oriented programs. Our goal is to provide a standard benchmark suite that enables researchers and application developers to compare different actor implementations and identify those that deliver the best performance for a given use-case. The benchmarks in Savina are diverse, realistic, and represent compute (rather than I/O) intensive applications. They range from popular micro-benchmarks to classical concurrency problems to applications that demonstrate various styles of parallelism. Implementations of the benchmarks on various actor libraries are made publicly available through an open source release. This will allow other developers and researchers to compare the performance of their actor libraries on these common set of benchmarks.}
+      \field{booktitle}{AGERE! 2014 - Proceedings of the 2014 ACM SIGPLAN Workshop on Programming Based on Actors, Agents, and Decentralized Control, Part of SPLASH 2014}
+      \field{isbn}{9781450321891}
+      \field{month}{10}
+      \field{title}{Savina - An actor benchmark suite: Enabling empirical evaluation of actor libraries}
+      \field{year}{2014}
+      \field{pages}{67\bibrangedash 80}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1145/2687357.2687368
+      \endverb
+      \keyw{Actor model,Benchmark suite,Java actor libraries,Performance comparison}
+    \endentry
+    \entry{Cardoso2013}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=689b34d32c915dc339fa4380eb09fa75}{%
+           family={Cardoso},
+           familyi={C\bibinitperiod},
+           given={Rafael\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=f5831f33965459fc2bb3f1168289c167}{%
+           family={Zatelli},
+           familyi={Z\bibinitperiod},
+           given={Maicon\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=43df5466a15067a65adf8511979ddbe6}{%
+           family={Hübner},
+           familyi={H\bibinitperiod},
+           given={Jomi\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=90020a67bac615126ff712521c158d3e}{%
+           family={Bordini},
+           familyi={B\bibinitperiod},
+           given={Rafael\bibnamedelima H.},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{6d0e6a93eb75a892818471f0013ff47a}
+      \strng{fullhash}{3343c7c9e4d5ebe4e67f14fa51858e79}
+      \strng{bibnamehash}{6d0e6a93eb75a892818471f0013ff47a}
+      \strng{authorbibnamehash}{6d0e6a93eb75a892818471f0013ff47a}
+      \strng{authornamehash}{6d0e6a93eb75a892818471f0013ff47a}
+      \strng{authorfullhash}{3343c7c9e4d5ebe4e67f14fa51858e79}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Over the past few years there have been several advances in distributed systems, and more recently multi-core processors. Consequently, a natural need for concurrent and parallel programming languages arises. In this paper, we compare some aspects of two concurrency models, Actors and Agents, using benchmarks to evaluate: (i) the communication performance on a concurrency-heavy scenario; (ii) the performance in a scenario with the presence of bottleneck and synchronization problems; and (iii) the reactivity and fairness of the models. We chose Jason, 2APL, and GOAL as the agent-oriented programming languages and Erlang, Akka, and Actor-Foundry as the actor-oriented programming languages. Overall, Erlang displayed the best performance of all languages used in this comparison, followed by Actor- Foundry, Akka, Jason, 2APL, and GOAL, in this particular order. Copyright is held by the owner/author(s).}
+      \field{booktitle}{AGERE! 2013 - Proceedings of the 2013 ACM Workshop on Programming Based on Actors, Agents, and Decentralized Control}
+      \field{isbn}{9781450326025}
+      \field{title}{Towards benchmarking actor- and agent-based programming languages}
+      \field{year}{2013}
+      \field{pages}{115\bibrangedash 125}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1145/2541329.2541339
+      \endverb
+      \keyw{Actors,Agents,Benchmark,Concurrency,Programming languages}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

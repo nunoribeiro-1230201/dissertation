@@ -120,7 +120,7 @@ Circuit breakers operate in three primary states: Closed, Open, and Half-Open \c
     \caption[Diagram illustrating the states of a Circuit Breaker]{Diagram illustrating the states of a Circuit Breaker \footnotemark.}
     \label{fig:circuit-breaker}
 \end{figure}
-\footnotetext{Adapted from Oscar Blancarte Blog. \url{https://www.oscarblancarteblog.com/2018/12/04/circuit-breaker-pattern/} (accessed 8 December 2024).}
+\footnotetext{From Oscar Blancarte Blog. \url{https://www.oscarblancarteblog.com/2018/12/04/circuit-breaker-pattern/} (accessed 8 December 2024).}
 
 The Circuit Breaker pattern is particularly well-suited for distributed systems, such as microservice architectures, where dependencies on external services can lead to cascading failures \cite{fowler-circuit-breakers}. For instance, if a downstream service becomes unresponsive, the circuit breaker blocks further requests, providing the service with time to heal and avoiding the risk of overloading it with retries \cite{Vitillo2021}. It is equally effective in scenarios involving a third-party \gls{API}, where temporary rate limits or outages can impact availability. In database systems, circuit breakers can mitigate the effects of resource contention or extended downtime by isolating problematic queries, ensuring the broader system remains operational.
 

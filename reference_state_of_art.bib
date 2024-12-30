@@ -195,3 +195,62 @@
   title     = {Analysis of the Speed of Execution of Business Logic in Applications Created in Different Software Environments},
   year      = {2023}
 }
+@book{Almeida2013,
+  author    = {Raquel Almeida and Marco Vieira},
+  doi       = {10.1145/1988008.1988035},
+  isbn      = {9781450305754},
+  publisher = {ACM Digital Library},
+  title     = {Proceedings of the 6th International Symposium on Software Engineering for Adaptive and Self-Managing Systems},
+  year      = {2013}
+}
+@inproceedings{Blessing2019,
+  abstract  = {The actor paradigm supports the natural expression of concurrency. It has inspired the development of several actor-based languages, whose adoption depends, to a large extent, on the runtime characteristics (i.e., the performance and scaling behaviour) of programs written in these languages. This paper investigates the relative runtime characteristics of Akka, CAF and Pony, based on the Savina benchmarks. We observe that the scaling of many of the Savina benchmarks does not reflect their categorization (into essentially sequential, concurrent and parallel), that many programs have similar runtime characteristics, and that their runtime behaviour may drastically change nature (e.g., go from essentially sequential to parallel) by tweaking some parameters. These observations lead to our proposal of a single benchmark program which we designed so that through tweaking of some knobs (we hope) we can simulate most of the programs of the Savina suite.},
+  author    = {Sebastian Blessing and Kiko Fernandez-Reyes and Albert Mingkun Yang and Sophia Drossopoulou and Tobias Wrigstad},
+  doi       = {10.1145/3358499.3361224},
+  isbn      = {9781450369824},
+  booktitle = {AGERE 2019 - Proceedings of the 9th ACM SIGPLAN International Workshop on Programming Based on Actors, Agents, and Decentralized Control, co-located with SPLASH 2019},
+  keywords  = {Actor programming,Benchmarks},
+  month     = {10},
+  pages     = {41-50},
+  publisher = {Association for Computing Machinery, Inc},
+  title     = {Run, actor, run towards cross-actor language benchmarking},
+  year      = {2019}
+}
+@inproceedings{Cardoso2013,
+  abstract  = {Over the past few years there have been several advances in distributed systems, and more recently multi-core processors. Consequently, a natural need for concurrent and parallel programming languages arises. In this paper, we compare some aspects of two concurrency models, Actors and Agents, using benchmarks to evaluate: (i) the communication performance on a concurrency-heavy scenario; (ii) the performance in a scenario with the presence of bottleneck and synchronization problems; and (iii) the reactivity and fairness of the models. We chose Jason, 2APL, and GOAL as the agent-oriented programming languages and Erlang, Akka, and Actor-Foundry as the actor-oriented programming languages. Overall, Erlang displayed the best performance of all languages used in this comparison, followed by Actor- Foundry, Akka, Jason, 2APL, and GOAL, in this particular order. Copyright is held by the owner/author(s).},
+  author    = {Rafael C. Cardoso and Maicon R. Zatelli and Jomi F. Hübner and Rafael H. Bordini},
+  doi       = {10.1145/2541329.2541339},
+  isbn      = {9781450326025},
+  booktitle = {AGERE! 2013 - Proceedings of the 2013 ACM Workshop on Programming Based on Actors, Agents, and Decentralized Control},
+  keywords  = {Actors,Agents,Benchmark,Concurrency,Programming languages},
+  pages     = {115-125},
+  publisher = {Association for Computing Machinery},
+  title     = {Towards benchmarking actor- and agent-based programming languages},
+  year      = {2013}
+}
+@inproceedings{Vogel2024,
+  abstract  = {Nowadays, several software systems rely on stream processing architectures to deliver scalable performance and handle large volumes of data in near real-time. Stream processing frameworks facilitate scalable computing by distributing the application's execution across multiple machines. Despite performance being extensively studied, the measurement of fault tolerance - -a key feature offered by stream processing frameworks - -has still not been measured properly with updated and comprehensive testbeds. Moreover, the impact that fault recovery can have on performance is mostly ignored. This paper provides a comprehensive analysis of fault recovery performance, stability, and recovery time in a cloud-native environment with modern open-source frameworks, namely Flink, Kafka Streams, and Spark Structured Streaming. Our benchmarking analysis is inspired by chaos engineering to inject failures. Generally, our results indicate that much has changed compared to previous studies on fault recovery in distributed stream processing. In particular, the results indicate that Flink is the most stable and has one of the best fault recovery. Moreover, Kafka Streams shows performance instabilities after failures, which is due to its current rebalancing strategy that can be suboptimal in terms of load balancing. Spark Structured Streaming shows suitable fault recovery performance and stability, but with higher event latency. Our study intends to (i) help industry practitioners in choosing the most suitable stream processing framework for efficient and reliable executions of data-intensive applications; (ii) support researchers in applying and extending our research method as well as our benchmark; (iii) identify, prevent, and assist in solving potential issues in production deployments.},
+  author    = {Adriano Vogel and Sören Henning and Esteban Perez-Wohlfeil and Otmar Ertl and Rick Rabiser},
+  doi       = {10.1145/3629104.3666040},
+  isbn      = {9798400704437},
+  booktitle = {DEBS 2024 - Proceedings of the 18th ACM International Conference on Distributed and Event-Based Systems},
+  keywords  = {benchmarking,fault tolerance,performance,stream processing},
+  month     = {6},
+  pages     = {171-182},
+  publisher = {Association for Computing Machinery, Inc},
+  title     = {A Comprehensive Benchmarking Analysis of Fault Recovery in Stream Processing Frameworks},
+  year      = {2024}
+}
+@inproceedings{Imam2014,
+  abstract  = {This paper introduces the Savina benchmark suite for actor-oriented programs. Our goal is to provide a standard benchmark suite that enables researchers and application developers to compare different actor implementations and identify those that deliver the best performance for a given use-case. The benchmarks in Savina are diverse, realistic, and represent compute (rather than I/O) intensive applications. They range from popular micro-benchmarks to classical concurrency problems to applications that demonstrate various styles of parallelism. Implementations of the benchmarks on various actor libraries are made publicly available through an open source release. This will allow other developers and researchers to compare the performance of their actor libraries on these common set of benchmarks.},
+  author    = {Shams Imam and Vivek Sarkar},
+  doi       = {10.1145/2687357.2687368},
+  isbn      = {9781450321891},
+  booktitle = {AGERE! 2014 - Proceedings of the 2014 ACM SIGPLAN Workshop on Programming Based on Actors, Agents, and Decentralized Control, Part of SPLASH 2014},
+  keywords  = {Actor model,Benchmark suite,Java actor libraries,Performance comparison},
+  month     = {10},
+  pages     = {67-80},
+  publisher = {Association for Computing Machinery},
+  title     = {Savina - An actor benchmark suite: Enabling empirical evaluation of actor libraries},
+  year      = {2014}
+}

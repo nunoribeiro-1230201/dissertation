@@ -9,42 +9,30 @@ For the literature review and the state of the art analysis, two research questi
 
 \begin{itemize}
     \item \textbf{RQ1:} How do the programming languages Elixir, Scala with Akka, and Go implement fault tolerance mechanisms in distributed systems, and what are the comparative strengths, weaknesses, and trade-offs of each approach?
-    \item \textbf{RQ2:} What are the most effective benchmarking strategies for simulating distributed environments, and which metrics are most relevant for evaluating fault tolerance in these scenarios?
+    \item \textbf{RQ2:} What are the most effective benchmarking strategies for distributed environments focusing on fault tolerance aspects?
 \end{itemize}
 
 \subsection{Research Methodology}
 
 This section outlines the research methodology adopted in this dissertation. It is important to note that this study addresses, to the best of our knowledge, a gap in the literature regarding a direct comparison of fault tolerance mechanisms in the programming languages Elixir, Scala with Akka, and Go. To the best of our knowledge, no prior study has evaluated these three languages side-by-side in fault tolerance test scenarios.
 
-However, relevant work can be found in the study by Valkov et al. \cite{Valkov2018}, which compared Erlang, Go, and Scala in terms of \gls{IPC} latency, process creation time, the maximum number of supported processes, and throughput. This work serves as a valuable reference, but it does not delve into fault tolerance test scenarios, which this dissertation seeks to address.
+Relevant work can be found in the study by Valkov et al. \cite{Valkov2018}, which compared Erlang, Go, and Scala in terms of \gls{IPC} latency, process creation time, the maximum number of supported processes, and throughput. Another study by \textcite{Randtoul2022} shares a similar intent, focusing on reliability, however, it excludes Go and does not encompass a comprehensive range of test scenarios, concentrating primarily on message throughput rather than other metrics. While these studies provide valuable insights, they do not explore fault tolerance test scenarios, which is the primary focus of this dissertation.
 
-To explore the existing body of knowledge and identify studies relevant to the three programming languages, searches were conducted in major academic databases, specifically IEEE Xplore and ACM Digital Library. The objective was to find articles that included the three languages in their titles, allowing for Erlang to be considered in place of Elixir. The search was initiated with a starting date of 2013, coinciding with the publication of the second edition of Joe Armstrong's book on Erlang. However, the search yielded no results in the IEEE Xplore database, while the ACM Digital Library returned only two articles, ultimately filtering down to the work by Valkov et al. By modifying the query to search for the same language name but across all metadata, it was identified 13 articles in the ACM Digital Library. Among these, only the work of Valkov et al. \cite{Valkov2018} is relevant.
+To explore the existing body of knowledge and identify studies relevant to the three programming languages, searches were conducted in major academic databases, specifically IEEE Xplore and ACM Digital Library. The objective was to find articles that included the three languages in their titles, allowing for Erlang to be considered in place of Elixir. The search was initiated with a starting date of 2013, coinciding with the publication of the second edition of Joe Armstrong's book on Erlang. However, the search yielded no results in the IEEE Xplore database, while the ACM Digital Library returned only two articles, ultimately filtering down to the work by Valkov et al. By modifying the query to search for the same language name but across all metadata, it was identified 13 articles in the ACM Digital Library. Among these, only the work of Valkov et al. \cite{Valkov2018} is relevant. The query used it was the following:
 
-\textbf{IEEE Xplore Query:}
-\begin{verbatim}
-"query": { 
-    ("Document Title": "Elixir" OR "Document Title": "Erlang") AND
-    ("Document Title": "Go" OR "Document Title": "Golang") AND 
-    ("Document Title": "Akka" OR "Document Title": "Scala") 
-}
-\end{verbatim}
-
-
-\textbf{ACM Digital Library Query:}
 \begin{verbatim}
 "query": { 
     Title:((Elixir OR Erlang) AND (Go OR Golang)) 
 }
 "filter": {
-     E-Publication Date: (01/01/2013 TO 12/31/2024), ACM Content: DL 
+     E-Publication Date: (01/01/2013 TO 12/31/2024)
 }
 \end{verbatim}
-
 
 \textbf{RQ1: How do the programming languages Elixir, Scala with Akka, and Go implement fault tolerance mechanisms in distributed systems, and what are the comparative
     strengths, weaknesses, and trade-offs of each approach?}
 
-Given the scope of the research question, developing a research strategy that yields precise and relevant results it challenging. Fault tolerance is a broad subject, spanning diverse areas from hardware to electronic devices until critical systems. Moreover, the programming languages under study are employed in varied contexts, such as Elixir’s popularity in \gls{IoT} and Go’s extensive use in microservices, at the same time being general purpose languages used in diverse areas. This diversity introduces complexity when conducting research queries, resulting in an huge volume of information on a wide range of topics, or the lack of results in a more narrow query like the following one, that contains the important keywords for the work:
+Given the scope of the research question, developing a research strategy that yields precise and relevant results it challenging. Fault tolerance is a broad subject, spanning diverse areas from hardware to electronic devices until critical systems. Moreover, the programming languages under study are employed in varied contexts, such as Elixir’s popularity in \gls{IoT} and Go’s extensive use in cloud-based applications and microservices, at the same time being general purpose languages used in diverse areas. This diversity introduces complexity when conducting research queries, resulting in an huge volume of information on a wide range of topics, or the lack of results in a more narrow query like the following one, that contains the important keywords for the work:
 
 \begin{verbatim}
 "query": { 
@@ -60,9 +48,31 @@ To address this problem, the methodology employed covered grey literature, parti
 
 Given the technical and practical focus of the study, a more ad-hoc research approach was adopted, like searching on the academic databases for more focused themes, not systematic queries or keywords. Official documentation for each language it was also consulted, as it provides up-to-date information directly from the creators. Furthermore, trusted blogs and community resources were consulted in order to utilize the collective knowledge and practical experiences of developers, which often provide valuable insight that may not be addressed elsewhere.
 
-\textbf{RQ2: What are the most effective benchmarking strategies for simulating distributed environments, and which metrics are most relevant for evaluating fault tolerance in these scenarios?}
+\textbf{RQ2: What are the most effective benchmarking strategies for distributed environments focusing on fault tolerance aspects?}
 
-...
+The methodology for addressing this research question is described below. It focuses on aspects crucial to this work, particularly fault tolerance and actor-based approaches due to the nature of the benchmarking process.
+
+\begin{verbatim}
+"query": {
+    "Abstract": (
+        ("fault tolerance" OR "reliability" OR "resilience") AND 
+        ("actor-based" OR "actor model" OR "actor programming") AND 
+        ("benchmark" OR "benchmarking") AND 
+        ("performance evaluation" OR "comparative") AND 
+        ("Erlang" OR "Scala" OR "Akka") AND 
+        ("concurrent" OR "distributed")
+    ),
+    "Title": (
+        ("benchmark" OR "benchmarking") AND 
+        ("Actor" OR "Reliability")
+    ),
+    "Keywords": (
+        ("benchmark" AND "fault tolerance")
+    )
+}
+\end{verbatim}
+
+The query returned no results on IEEE Xplore and yielded 39 articles from the ACM Digital Library. However, some articles appeared in the results despite not fully matching the accessibility criteria defined by the query keywords. Additionally, certain papers focused primarily on the development of a product that underwent benchmarking, rather than being directly centered on the topic of interest. This filtering process, combined with the application of the snowballing technique, leveraged references from relevant articles. 
 
 \section{Elixir Programming Language Analysis}
 
@@ -372,21 +382,19 @@ In a similar vein, Valkov et al. \cite{Valkov2018} found that Go, likely due to 
 
 \section{Benchmarking Analyses}
 
-According to Almeida et al. \cite{Almeida2013}, the primary objectives of benchmarking are to \textit{“provide a practical way to characterize and compare systems or components according to specific characteristics (e.g., performance, dependability)}”. Benchmarking delivers insights within a specific domain by quantifying key metrics, enabling practical comparisons. For results to be valid and meaningful, it is critical to conduct precise, repeatable experiments. Benchmarking serves as an experimental approach that derives value from measurable outcomes, which can be deterministic, yielding consistent results under identical conditions, or statistically analyzed \cite{Almeida2013, Blessing2019}. Deterministic benchmarks are especially valuable as they ensure reproducibility when the same assumptions are applied.
+According to Almeida et al. \cite{Almeida2013}, the primary objectives of benchmarking are to \textit{“provide a practical way to characterize and compare systems or components according to specific characteristics (e.g., performance, dependability)}”. Benchmarking delivers insights within a specific domain by quantifying key metrics, enabling practical comparisons. For results to be valid and meaningful, it is critical to conduct repeatable experiments. Benchmarking serves as an experimental approach that derives value from measurable outcomes, yielding consistent results under identical conditions, or statistically analyzed \cite{Almeida2013, Blessing2019}. Deterministic benchmarks are especially valuable as they ensure reproducibility when the same assumptions are applied.
 
 Non-deterministic approaches are typically associated with chaos engineering, which focuses on testing system resilience by intentionally introducing random faults \cite{Randtoul2022}. However, the insights gained from benchmarking in this context are relative and applicable only to the specific conditions under which the tests were conducted, due to the inherent randomness of the process. Consequently, these tests often lack reproducibility and may not offer comprehensive coverage across all system sizes \cite{Almeida2013}.
 
 On a overview, benchmarking is generally divided into two categories \cite{Imam2014,Blessing2019,Valkov2018,Almeida2013}:
 \begin{itemize}
-    \item \textbf{Macro Benchmarking:} This approach assesses the overall performance of an application or system. It evaluates the application as a whole, which can make it difficult to isolate and analyze specific components or performance aspects. Macro benchmarking is particularly useful when it is important to observe the interactions among components in their entirety.
+    \item \textbf{Macro Benchmarking:} This approach assesses the overall performance of an application or system. It evaluates the application as a whole, which can make it difficult to isolate and analyze specific components. Macro benchmarking is particularly useful when it is important to observe the interactions among components in their entirety.
     \item \textbf{Micro Benchmarking:} This method focuses on individual components, functions, or metrics, allowing for detailed and targeted analyses. Micro benchmarking is especially beneficial for studies that require an in-depth examination of specific aspects of the application, enabling developers to identify performance bottlenecks and optimize accordingly.
 \end{itemize}
 
 The well-known Computer Language Benchmarks Game\footnote{Computer Language Benchmarks Game: \url{https://benchmarksgame-team.pages.debian.net/benchmarksgame/} (accessed 4 December 2024)} supports various algorithmic benchmarking tests, evaluating runtime, memory usage, and related performance metrics \cite{Blessing2019}. However, this benchmarkings does not support newer languages like Elixir, Scala, and Scala with Akka, nor does it address resilience-focused benchmarks. This limitation highlights the need for dedicated tools and frameworks tailored to resilience benchmarking in modern programming environments.
 
-Building on this introduction, the following section will present a literature review focused on benchmarking in this area, specifically addressing actor-based benchmarking as well as server and distributed benchmarking. This overview will highlight the current state of the literature and the advancements in the field, detailing key points relevant to the objectives of this dissertation, which centers on distributed and fault-tolerant benchmarking.
-
-\begin{comment}    
+\begin{comment}
 \subsection{Literature Review of Benchmark}
 
 Imam et al. \cite{Imam2014} developed an actor benchmarking framework called Savina, designed for actor-based languages running on the \gls{JVM}. Savina includes 30 built-in programs that analyze various actor-related problems, such as the ping-pong benchmark, where two actors exchange messages back and forth; the thread-ring benchmark, where a token circulates among N connected actors; and the fork-join strategy, which creates millions of actors sequentially, sends each a single message to process with minimal computation, and then terminates the actors. This benchmarking framework evaluates aspects such as messaging throughput, message-passing overhead, and resource allocation efficiency on \gls{IPC}, among other metrics. Despite its strengths, Savina’s focus on \gls{JVM} languages limits its applicability to languages like Elixir and Go, and it lacks robust support for resilience testing. Nevertheless, its strategies and metrics remain valuable for actor-system analysis.
@@ -398,35 +406,31 @@ Randtoul et al. \cite{Randtoul2022} are considered state of the art in testing t
 Valkov et al. \cite{Valkov2018} conducted a study comparing Erlang, Go, and Scala with Akka, focusing on server performance. The study provided performance insights using matrix multiplication, stated by the authors as a complex algorithm suitable for parallelization. Key metrics evaluated included process communication latency, process creation time, the maximum number of processes supported, and concurrent process throughput. However, the study did not address resilience or distributed aspects, limiting its scope to performance.
 \end{comment}
 
-
 \subsection{Fault-Tolerant and Distributed Benchmarking}
 
-Benchmarking fault tolerance in distributed systems presents specific challenges, requiring evaluative strategies that extend beyond conventional performance testing. Key considerations include not only throughput and latency under nominal conditions, or how the computational occurs under an algorithm execution, but also the ability to keep executing, to detect and recover from faults, including node failures, communication interruptions, and state inconsistencies \cite{Randtoul2022, Blessing2019, Almeida2013}. This complexity necessitates diverse strategies and comprehensive metrics that evaluate both individual components and their interactions within the system.
+Benchmarking fault tolerance in distributed systems presents specific challenges, requiring evaluative strategies that extend beyond conventional performance testing. Key considerations include not only throughput and latency under nominal conditions, or how the computational occurs under an algorithm execution, but also the ability to keep executing, to detect and recover from faults, including node failures, communication interruptions, and state inconsistencies \cite{Randtoul2022, Blessing2019, Almeida2013}.
 
-The objective is to develop benchmarks that accurately simulate real-world errors. These benchmarks should closely reflect actual software behavior, taking into account factors such as overload conditions and software faults. In fault-tolerance benchmarks, it is crucial to incorporate components that introduce faults in order to achieve dynamic accuracy. This can be accomplished through random fault injection methods, such as Chaos Monkey, developed by Netflix, which randomly destabilizes the system, or through deterministic fault injections, where specific errors are deliberately introduced into the system and it is known what happened in order to corelate the metrics with the faults.
+The objective is to develop benchmarks that accurately simulate real-world errors. These benchmarks should closely reflect actual software behavior, taking into account factors such as overload conditions and software faults. In fault-tolerance benchmarks, it is crucial to incorporate components that introduce faults in order to achieve dynamic accuracy \cite{Almeida2013}. This can be accomplished through random fault injection methods, such as Chaos Monkey, developed by Netflix, which randomly destabilizes the system, or through deterministic fault injections, where specific errors are deliberately introduced into the system and it is known what happened in order to corelate the metrics with the faults \cite{Randtoul2022}.
 
-Distributed benchmarks present several challenges, particularly in maintaining effective communication between components. These challenges can lead to increased latency and may involve physical limitations, such as managing multiple machines, dealing with diverse hardware configurations, and relying on network connectivity. One effective strategy to address these challenges is to simulate a distributed environment on a single machine by employing multiple virtual machines or containers. This approach allows for the testing of distributed systems without the complexities of managing separate physical hardware. In this setup, the primary variable that can be manipulated is latency, enabling a more controlled and efficient benchmarking process.
-
-Benchmarking fault tolerance involves strategies ranging from micro-benchmarks focused on isolated system behaviors to macro-benchmarks simulating real-world applications. Each approach has unique strengths and trade-offs, suggesting that a hybrid methodology might yield the most comprehensive insights.
-\todo{melhorar}
+Distributed benchmarks present some challenges, particularly in maintaining effective communication between components. These challenges can lead to increased latency and may involve physical limitations, such as managing multiple machines, dealing with diverse hardware configurations, and relying on network connectivity.
 
 \subsubsection{Strategies}
 
-The Computer Language Benchmarks Game, as previously introduced, provides a foundational collection of micro-benchmarks designed to compare the performance of programming languages. Although it does not include distributed systems and lacks support for some newer languages, it has a set of algorithms that have served as the basis for other benchmarks, such as the work by \textcite{Cardoso2013}. This particular benchmark focuses on the agent and actor model, leveraging three algorithms from the collection: Fibonacci numbers, token-ring\footnote{The token-ring algorithm simulates a network of nodes passing tokens in a circular manner, which is useful for evaluating message-passing and synchronization in concurrent systems \cite{Cardoso2013}.}, and chameneos-redux\footnote{Chameneos-redux is a concurrency benchmark that models a group of agents (chameneos) interacting with each other based on color, showcasing the complexities of state management and communication in concurrent programming \cite{Cardoso2013}.}. These algorithms, each tailored to distinct computational tasks, offer a valuable resource for designing performance tests in a variety of contexts \cite{Cardoso2013,Randtoul2022}. They can be used in conjunction with resilience benchmarks to simulate processing, for example.
+The Computer Language Benchmarks Game, as previously introduced, provides a foundational collection of micro benchmarks designed to compare the performance of programming languages. Although it does not include distributed systems and lacks support for some newer languages, it has a set of algorithms that have served as the basis for other benchmarks, such as the work by \textcite{Cardoso2013}. This particular benchmark focuses on the agent and actor model, leveraging three algorithms from the collection: Fibonacci numbers, token-ring\footnote{The token-ring algorithm simulates a network of nodes passing tokens in a circular manner, which is useful for evaluating message-passing and synchronization in concurrent systems \cite{Cardoso2013}.}, and chameneos-redux\footnote{Chameneos-redux is a concurrency benchmark that models a group of agents (chameneos) interacting with each other based on color, showcasing the complexities of state management and communication in concurrent programming \cite{Cardoso2013}.}. These algorithms, each tailored to distinct computational tasks, offer a valuable resource for designing performance tests in a variety of contexts \cite{Cardoso2013,Randtoul2022}. They can be used in conjunction with resilience benchmarks to simulate processing, for example.
 
-For instance, Savina, developed by \textcite{Imam2014}, has emerged as the de facto benchmark for evaluating actor model performance. It utilizes micro-benchmarks alongside concurrency and parallelism techniques to assess the behavior of actor-oriented programs in compute-intensive applications. While Savina provides valuable performance insights, its scope is restricted to JVM-based languages, such as Akka with Java, thereby excluding languages like Elixir, Go, and Scala with Akka. Additionally, its focus is limited to single-node environments, offering no support for evaluating distributed systems.
+For instance, Savina, developed by \textcite{Imam2014}, has emerged as the de facto benchmark for evaluating actor model performance. It utilizes micro benchmarks alongside concurrency and parallelism techniques to assess the behavior of actor-oriented programs in compute-intensive applications. While Savina provides valuable performance insights, its scope is restricted to JVM-based languages, such as Akka with Java, thereby excluding languages like Elixir, Go, and Scala with Akka. Additionally, its focus is limited to single-node environments, offering no support for evaluating distributed systems.
 
 Savina employs 28 benchmarking strategies, categorized into three groups: 7 for micro-benchmarking, 8 for concurrency, and 13 for parallelism. These benchmarks evaluate critical aspects such as communication efficiency, node creation and termination, mailbox contention, \gls{IPC} resource allocation, among others \cite{Imam2014,Blessing2019}. However, Savina’s focus is confined to actor-based systems and localized performance, excluding non-actor-based and distributed communication scenarios.
 
-\textcite{Blessing2019} highlighted significant limitations in the micro-benchmarking Savina, particularly their narrow focus on isolated performance metrics. To address these issues, they proposed an application-oriented benchmarking approach that simulates real-world scenarios, such as a chat application like Facebook or WhatsApp. This approach shifts away from isolated micro-benchmarks, such as evaluating latency in message-passing programs, to consider broader application-level metrics.
+\textcite{Blessing2019} highlighted significant limitations in the micro benchmarking Savina, particularly their narrow focus on isolated performance metrics. To address these issues, they proposed an application-oriented benchmarking approach that simulates real-world scenarios, such as a chat application like Facebook or WhatsApp. This approach shifts away from isolated micro benchmarks, such as evaluating latency in message-passing programs, to consider broader application-level metrics.
 
-Their proposal centers on creating a comprehensive application that encompasses multiple scenarios. This approach aims to make benchmarks more relatable to real-world applications, encouraging developers to optimize the all system performance rather than focusing on discrete, independent cases \cite{Blessing2019}. To enhance flexibility, they introduced tunable options, such as varying the number of load balancers, if applicable, to simulate bottlenecks or adjusting message sizes to test system behavior under different conditions, for example.
+Their proposal centers on creating a comprehensive application that encompasses multiple scenarios. This approach aims to make benchmarks more relatable to real-world applications, encouraging developers to optimize the all system rather than focusing on discrete, independent cases \cite{Blessing2019}. To enhance flexibility, they propose the addition of tunable options, such as varying the number of load balancers, if applicable, to simulate bottlenecks or adjusting message sizes to test system behavior under different conditions, for example.
 
-Despite its innovative approach, the implementation by \textcite{Blessing2019} had notable shortcomings. It did not support stateful clients, distributed environments spanning virtual machines, or resilience testing. Additionally, the proposed implementation was limited to Erlang, Pony, and the C++ Actor Framework (CAF). These limitations highlight opportunities to design advanced application-based benchmarks that incorporate fault-tolerance techniques and cater to broader, more complex distributed systems.
+Despite its innovative approach, the implementation by \textcite{Blessing2019} had some shortcomings. It did not support stateful clients, distributed environments spanning virtual machines, or resilience testing. These limitations highlight opportunities to design advanced application-based benchmarks that incorporate fault-tolerance techniques and cater to broader, more complex distributed systems.
 
 \textcite{Randtoul2022} present a study focused on evaluating the resilience of actor-based systems under fault scenarios through fault injection techniques. The authors did not used chaos engineering due to its inherent unpredictability, opting instead for a deterministic approach. This choice ensures reproducibility and controlled experimentation. Being deterministic, also facilitates a clear relation between fault inputs and the resulting metrics.
 
-The benchmark developed in the study operates within a single physical machine, deploying multiple nodes without relying on separate physical machines or cloud-based resources \cite{Randtoul2022}. It employs the supervisor pattern, a mechanism designed to recover from errors affecting supervised actors. The system allows for customization of the supervisor-to-supervisee ratio, with configurations ranging from 1:1 to 1:1024. Fault injection tests are designed to simulate errors that closely mirror real-world scenarios, using the following fault patterns \cite{Randtoul2022}:
+The benchmark developed in the study operates within a single physical machine, deploying multiple nodes without relying on separate physical machines or cloud-based resources \cite{Randtoul2022}. It employs the supervisor pattern, a mechanism designed to recover from errors affecting supervised actors. The system allows for customization of the supervisor-to-supervisee ratio, with configurations ranging from 1:1 to 1:128. Fault injection tests are designed to simulate errors that closely mirror real-world scenarios, using the following fault patterns \cite{Randtoul2022}:
 
 \begin{itemize}
     \item \textbf{Uniform Failure Pattern:} Distributes failures evenly, by a spontaneous injection, simulating periodic failures typical of web servers handling distributed requests.
@@ -437,7 +441,7 @@ The benchmark developed in the study operates within a single physical machine, 
 
 The benchmark was implemented using Erlang and Scala with Akka \cite{Randtoul2022}. The authors noted a limitation of the benchmark, that is the inability to utilize stateful actors, which presents certain challenges. Consequently, all tests were conducted using stateless actors.
 
-After reviewing the most recent and relevant benchmark studies suitable, for this case, it is concluded that there are gaps in the current benchmarks available. However, these gaps present an opportunity to propose a benchmarking approach in this dissertation. This approach could employ a hybrid methodology, integrating various aspects discussed in the reviewed studies. For example, it could incorporate the fault injection strategies detailed in the work of \cite{Randtoul2022}, while adopting the generic application framework proposed by \cite{Blessing2019}, which involves implementing a chat application. To address distributed communication, all nodes could be deployed on a single physical machine across different \glspl{VM}, as similar of the work described on \cite{Randtoul2022}. This setup minimizes the complexities associated with infrastructure management and network latency, as the nodes are distributed across virtual machines on the same host.
+After reviewing the most recent and relevant benchmark studies suitable, for this case, it is concluded that there are gaps in the current benchmarks available. However, these gaps present an opportunity to propose a benchmarking approach. This approach could employ a hybrid methodology, integrating various aspects discussed in the reviewed studies. For example, it could incorporate the fault injection strategies detailed in the work of \cite{Randtoul2022}, while adopting the generic application framework proposed by \cite{Blessing2019}, which involves implementing a chat application. To address distributed communication, all nodes could be deployed on a single physical machine across different \glspl{VM}, as similar of the work described on \cite{Randtoul2022}. This setup minimizes the complexities associated with infrastructure management and network latency, as the nodes are distributed across virtual machines on the same host.
 
 \subsubsection{Metrics}
 
@@ -447,14 +451,125 @@ In the observed context, metrics are generally categorized into two main types: 
 
 For this study, metrics such as those employed by Valkov et al. \cite{Valkov2018}, process creation time and latency among concurrent, are useful to assess server performance. Additionally, performance metrics from the Savina benchmarking suite \cite{Imam2014}, which focuses on message passing and actor-based performance aspects, are considered a valuable. Fault tolerance metrics add further depth by measuring specific attributes related to failure management \cite{Randtoul2022}, where it has information about how system can recover.
 
-For this type of benchmark it is valuabel metrics such as \gls{MTTR}, the , where it verifies which are the times that it takes to detect and to recover from the errors, where it is suitable for . 
-
-Static metrics are another critical focus area, providing insights into the structural properties of the software. These metrics are influenced by language-specific implementations and API differences. For instance, comparing the Go programming language without an Actor Model framework to other implementations highlights trade-offs between language design and system performance. Static metrics facilitate a comparative analysis of maintainability, complexity, and system behavior across programming languages and frameworks, offering valuable data for optimizing software design.
+Code metrics, despite not being used on the studies, are a valuable tool that provides insights into the nature of the code. Considering the variety of programming languages and paradigms available, it is useful to make comparisons. For instance, one might examine whether the \gls{LOC} significantly differs between languages to gain insights into code complexity \cite{Tanenbaum2023}.
 
 \section{Conclusions}
 
 After the research about the topics of study, it is now possibility to answear to the research questions and also state what are the goals to the upcomming work of this dissertation with the future work.
 
-\subsection{Research Questions}
+\subsection{Research Questions Answers}
+
+\textit{RQ1: How do the programming languages Elixir, Scala with Akka, and Go implement fault tolerance mechanisms in distributed systems, and what are the comparative strengths, weaknesses, and trade-offs of each approach?}
+
+Elixir, built on the foundation of Erlang and its \gls{BEAM} \gls{VM}, stands as a paradigm of fault tolerance in distributed systems. The \gls{BEAM}'s concurrency model, combined with immutable data structures and garbage collection, provides a robust environment for concurrent operations \cite{Juric2024}. More importantly, Elixir inherits Erlang’s “let it crash” philosophy, which embraces failure as a natural part of system operation \cite{Armstrong2013}. This principle is reinforced by the supervisor pattern, where supervisors manage hierarchies of processes, ensuring that when failures occur, they are isolated and handled by restarting failed processes in a controlled manner \cite{Juric2024}. This native implementation makes fault tolerance intrinsic to Elixir’s design, requiring minimal overhead from developers and allowing systems to recover gracefully.
+
+In contrast, Scala with the Akka toolkit extends the JVM’s capabilities to include actor-based concurrency and fault tolerance. While Scala does not natively provide fault tolerance at the language level as Elixir does, the Akka it offers a powerful toolkit for building resilient systems \cite{akka-docs,Abraham2023}. Features such as Akka Persistence, Akka Clustering, and Akka Circuit Breaker significantly enhance its capabilities, enabling systems to support state recovery, fault isolation, and resilience in distributed environments. However, Akka’s reliance on the JVM introduces certain complexities and potential performance overhead when compared to BEAM’s purpose-built design. Additionally, the possibility of mutable programming in Scala can pose risks \cite{akka-docs}.
+
+Go, with its different approach to fault tolerance, offers a different paradigm. The language emphasizes error handling explicitly, being different from the "let it crash" philosophy found in Elixir or Akka \cite{go-docs}. Instead, Go encourages developers to take a proactive role in managing errors and system behavior. Concurrency in Go is achieved through goroutines and channels, inspired by \gls{CSP} \cite{proto-actor-docs}. While Go lacks a native actor model, libraries such as Proto-Actor merge CSP concepts with actor patterns, offering a mature option. Additionally, Go’s efficient network communication libraries and tools enable developers to build distributed systems that can integrate with service discovery and orchestration tools, to achieve fault tolerance \cite{Shuiskov2022}.
+
+Elixir’s BEAM VM, with its preemptive scheduler, handles lightweight, short-lived processes efficiently, ensuring fair CPU distribution even under high concurrency \cite{elixir-docs-hexdocs}. Go’s cooperative scheduler is simpler and resource-efficient but can suffer from CPU monopolization if goroutines fail to yield \cite{go-docs}. Akka, using the JVM’s dispatcher with work-stealing algorithms, balances threads effectively for longer-running tasks but incurs higher overhead compared to BEAM’s lightweight processes \cite{akka-docs}. Additionally, Elixir’s hot-code swapping supports live updates without downtime, a capability not supported on the same level in Akka in Go \cite{Juric2024}.
+
+Fault tolerance is deeply ingrained in Elixir’s OTP, providing native tools like supervision trees, process isolation, and fault recovery mechanisms designed specifically for distributed systems \cite{elixir-docs-hexdocs}. Akka, while not native to Scala, offers a powerful suite of tools like Clustering, Persistence, and Circuit Breakers but requires some configuration and runs atop the JVM, introducing additional complexity \cite{akka-docs}. Go’s explicit error handling prioritizes simplicity but shifts the burden of fault recovery onto developers \cite{go-docs}. While Go supports distributed systems via libraries like Proto-Actor and efficient network communication tools, it lacks the seamless fault-tolerance integration of OTP or Akka’s abstractions. Elixir’s immutable state and BEAM’s process isolation enhance safety, whereas Akka and Go, with their reliance on mutable constructs, require extra vigilance to avoid shared-state corruption \cite{go-docs,akka-docs}. Finally, in ecosystem maturity, Elixir benefits from OTP’s decades of optimization, while Akka and Go rely on frameworks layered atop general-purpose runtime environments, offering flexibility but at the cost of tight native integration.
+
+\textit{RQ2: What are the most effective benchmarking strategies for distributed environments focusing on fault tolerance aspects?}
+
+Benchmarking fault tolerance, a key aspect of system resilience, in distributed environments, presents a significant challenge due to the diverse factors involved. Although some benchmarking techniques, particularly those designed for actor-based systems, are available, there is currently no formal standard. Each technique introduces its own methodologies and metrics, complicating direct comparisons of results across different systems. Nevertheless, a common theme among these benchmarks is the simultaneous evaluation of fault tolerance and performance metrics.
+
+Error injection, a core element of these strategies, is typically implemented using two main approaches: chaos engineering or deterministic error injection. Chaos engineering emphasizes introducing random failures into a system to evaluate its resilience under unpredictable conditions, mimicking real-world faults \cite{Almeida2013}. On the other hand, deterministic error injection follows a structured approach, simulating specific failure scenarios to predictably test system responses \cite{Randtoul2022}. Deterministic error injection offers greater reproducibility and precision, making it a more reliable option for controlled benchmarking efforts.
+
+There are strategies focused on micro benchmarking, which involve targeted tests, as well as broader benchmarking approaches that encompass various tests within a more wide system. Given the diversity of available strategies, a hybrid approach that combines generic application simulations with deterministic error injection can offer a balanced and comprehensive perspective \cite{Randtoul2022}. This strategy should also integrate performance monitoring, resilience assessment, and static code analysis to address fault tolerance in a holistic manner \cite{Imam2014,Cardoso2013,Valkov2018,Randtoul2022}.
+
+In terms of metrics, effective benchmarking should take into account both performance and resilience indicators. Common performance metrics include latency, throughput, response time, and resource utilization \cite{Imam2014,Valkov2018}. Resilience-specific metrics may include time to recovery, error rate, and time to detect errors, among others, due to the fact that it is dependable of the benchmarking design \cite{Randtoul2022,Blessing2019}. Additionally, static code analysis can provide valuable insights into the development effort associated with each programming language, like the \gls{LOC} metric.
 
 \subsection{Future Work}
+
+For future work, the goal is to build a chat application based on the conclusions drawn, creating use cases to explore and compare how the selected languages and the fault tolerance patterns and designs handle fault tolerance and resilience in distributed environments.
+
+This chat application will be implemented in all three languages. For Go, two separate implementations will be developed: one using the Proto-Actor library to provide a direct comparison of actor models across Elixir, Akka, and Proto-Actor, and another leveraging Go’s native features combined with libraries that mimic distributed communication and fault tolerance.
+
+The primary objective of this application is not to evaluate scalability, such as handling a high number of requests by scaling up to additional \glspl{VM}. Instead, the setup will use a fixed number of three \glspl{VM} to simulate distributed communication, focusing on fault tolerance and performance. Scalability-related considerations will not be employed. Furthermore, as mentioned, the distribution simulation it will be implemented on a single physical machine though inter-VM communication. This approach assumes that the primary difference between communication across different physical machine and one machine it is the latency.
+
+\subsubsection{Design and Architecture}
+
+The application will be designed taking inspiration from the work by \textcite{Randtoul2022} with increments and adjustments. The application will have five main responsibilities:
+
+\begin{itemize}
+    \item \textbf{Clients:} Represent the users, acting as the client side. Each user will be represented by a client, which will have the capability to send and receive messages. It will manage connections to directories and chats. Also, it will the responsible to simulate failures from the client side.
+
+    \item \textbf{Discovery:} Acts as the registry and discovery server to store and provide client addresses. This serves as the source of truth for client locations and will be used by the external injector for action orchestration.
+
+    \item \textbf{Chats:} Represents group conversations and supports multiple clients. Handles operations related to group chats, such as join, leave, and message forwarding.
+
+    \item \textbf{External Injector:} Injects actions into the system, including fault injection and operational commands. This orchestrates application behavior, dictating client activities and fault simulations such as node crashes. Maintains constant communication with the discovery server to stay updated on client addresses. However, this part it is not related to the system itself, so it do not have to be protected against fault.
+
+    \item \textbf{External Logger:} Responsible for tracking the traceability of actions and generating logs for metrics and analysis. Similar to the external injector, this component do not have to be fault-tolerant, if a error happens all the benchmark need to abort and be restarted.
+\end{itemize}
+
+There exists an "inner world" and an "external world" within the system architecture. The inner world comprises the core components of the real system, such as the client, discovery, and chat functionalities. In contrast, the external world consists of supporting components that facilitate benchmarking by issuing commands and collecting metrics. It is important to note that the external world is not safeguarded by fault-tolerant mechanisms, and because of that, in the event of a failure, it must be aborted to prevent interference with the test.
+
+This architecture is intentionally designed to be generic, avoiding assumptions about the Actor Model or microservices paradigms, thereby allowing for customization based on specific system properties.
+
+\subsubsection{Implementation and Functioning}
+
+The primary goal of this architecture is to facilitate general-purpose fault tolerance testing, which encompasses the evaluation of performance and system design. For instance, this architecture can be implemented using the Actor Model across all three programming languages, incorporating the supervisor pattern. This approach enables a comparison of recovery mechanisms and the effectiveness of the "let it crash" philosophy.
+
+Furthermore, the design allows for the evaluation of various fault-tolerance mechanisms, such as the Akka Circuit Breaker in comparison to Elixir’s supervision strategy and Go's explicit error handling. By measuring downtime and system recovery time, we can assess the suitability of these different approaches.
+
+The implementation will leverage the Actor Model for both Elixir and Scala using Akka, utilizing their native supervisor patterns. For Go, two distinct implementations will be developed: one will employ the Proto-Actor library to mimic the Actor Model approach used in Elixir and Akka, while the other will be a "vanilla" implementation utilizing goroutines and channels. This second implementation will simulate a lightweight microservices architecture, with communication between components facilitated via \gls{gRPC} and inter-node communication managed through goroutines and channels.
+
+\subsubsection{Configuration}
+
+In accordance with the principles outlined by \textcite{Randtoul2022}, the benchmark should incorporate various configuration aspects, referred to as tuning knobs:
+
+\begin{itemize}
+    \item \textbf{Message Characteristics:} This allows for the configuration of message size, enabling representation of both small texts and large objects. Additionally, the type of message can be specified, whether it involves \gls{CPU}-intensive or memory-intensive operations, with adjustable algorithms. The intention is for the message to execute the algorithm either upon receipt or prior to being sent.
+
+    \item \textbf{Failure Scenarios:} This feature enables the simulation of various failure bursts, such as the simultaneous crashing of all clients in a chat, targeted failures (e.g., a single client or chat crashing), or cascading failures that propagate through the system.
+
+    \item \textbf{Client Behavior:} Allows for customization of client activity levels, such as the frequency of sending messages, joining or leaving chats, and interacting with other clients. Parameters can control the ratio of active to idle clients, simulating various system loads.
+
+    \item \textbf{Discovery Server Load:} Enables adjustment of the number of clients handled per discovery server, testing the impact of load balancing and potential bottlenecks. This can be used to evaluate the performance of the discovery mechanism under high demand.
+
+    \item \textbf{Chat Size and Connectivity:} Configures the number of clients per chat and the probability of clients being invited to new chats. This can simulate low-connectivity systems versus highly interconnected networks.
+
+    \item \textbf{Supervision Strategies:} For Actor Model implementations, allows selection of different supervision strategies (e.g., one-for-one, one-for-all) and configuration of supervisor tree depth and breadth. This helps analyze recovery performance and bottlenecks in supervision hierarchies.
+
+\end{itemize}
+
+\subsubsection{Test Scenarios and Metrics}
+
+The benchmark will evaluate fault tolerance through the following test scenarios:
+
+\textit{\underline{Client Crash Recovery:}}
+
+Description: Simulate a client crashing and being recovered. The crash must be fatal and non-fatal, for example, one scenario could simulate a complete outage for some seconds, and another could simulate an internal error, such as an exception. This allows comparison of the "let it crash" philosophy with the explicit error handling in Go, specifically in scenarios where exceptions can be controlled.
+
+Metrics: Time taken to recover, consistency of the system state post-recovery, and \gls{LOC} of different strategies or the supervisor implementation in the different languages.
+
+\textit{\underline{Chat Crash Recovery:}}
+
+Description: Simulate the chat system crashing and recovering. Upon recovery, all clients must also reconnect successfully. The test registers the time taken for the system to stabilize, including reconnecting all clients. This scenario also tests replication, where each language will implement replication using the Raft algorithm, having a replicated chat for fault tolerance.
+
+Metrics: Time taken to recover, time to leader election after a crash, time to recover all state, and consistency of the system state post-recovery.
+
+\textit{\underline{Message Delivery Durability:}}
+
+Description: The system must continue to deliver messages even during failures and messages that it will trigger the chat to have a processes running infinity. This test simulates a client sending a consistent stream of messages while inducing infinity messages in order to target how the different schedulers it will operate among languages.
+
+Metrics: Number of undelivered messages, time to recover message flow after failure, and consistency of delivered message order.
+
+\textit{\underline{Message Throughput Durability:}}
+
+Description: Evaluate the system's ability to maintain message throughput during fault injection. This test will simulate various failures, such as client crashes, server crashes, or high resource utilization, while measuring the message throughput across the system. The objective is to assess how well the system sustains performance under stress and whether it degrades gracefully during failures.
+
+Metrics: Average and peak message throughput during faults, percentage drop in throughput compared to normal operation, recovery time to regain baseline throughput, and the impact of different fault tolerance mechanisms (e.g., "let it crash" vs. explicit error handling).
+
+\textit{\underline{Network Test:}}
+
+Description: Assess the system's resilience to network-related issues. This scenario will compare the effectiveness of fault-tolerance mechanisms like supervisor hierarchies in Elixir and Akka versus circuit breakers in Akka and Go. The test will involve simulating network partitions and latency spikes to measure the system's ability to recover and maintain consistent communication.
+
+Metrics: Time to detect and recover from network partitions, latency impact on message delivery and system state synchronization, time to stabilize after network recovery, and a comparative analysis of recovery performance between supervisor-based and circuit breaker-based mechanisms.
+
+\subsubsection{Data Analysis}
+
+To obtain the results, we will utilize a logger that consolidates the final information. The logs are received by the logger in a disordered manner, necessitating organization. Each event will have a unique identifier, allowing for effective tracking and tracing.

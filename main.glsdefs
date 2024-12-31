@@ -670,3 +670,31 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{CLI}%
+{%
+name={\acronymfont {\glsentryshort {CLI}}},%
+sort={CLI},%
+type={acronym},%
+first={CLI},%
+firstplural={CLIs},%
+text={CLI},%
+plural={CLIs},%
+description={Command-line interface},%
+descriptionplural={Command-line interface},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Command-line interface},%
+longplural={Command-line interfaces},%
+short={CLI},%
+shortplural={CLIs},%
+counter={page},%
+parent={},%
+%
+}%
+

@@ -1,15 +1,15 @@
 # Fdb version 4
-["biber main"] 1735528197.46907 "main.bcf" "main.bbl" "main" 1735528210.54806 0
+["biber main"] 1735618188.65676 "main.bcf" "main.bbl" "main" 1735619424.08919 0
   "./other_references.bib" 1735265755.59873 10796 a22e8b78c0db9fdf4d7e5c78bb57318a ""
   "./reference_state_of_art.bib" 1735429632.11669 31187 b68e753321c0397421dbd80ade48526c ""
   "./references.bib" 1733885431.41807 83655 f9bf9035c079ab5cf17317d1e4bf927a ""
-  "main.bcf" 1735528210.43294 136995 ec77a0c66ff11153d1b477dbb778b248 "pdflatex"
+  "main.bcf" 1735619423.89552 139577 06aea182a85bced7edfd7a7211f667c7 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1735528205.1657 "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" "main.pdf" "main" 1735528210.54838 0
-  "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" 1735210934.2598 7940 86019283a1f1515c1ef13d6fed3f8430 ""
+["pdflatex"] 1735619414.88732 "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" "main.pdf" "main" 1735619424.08974 0
+  "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" 1735555528.08758 7940 86019283a1f1515c1ef13d6fed3f8430 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -320,19 +320,19 @@
   "ch-state/assets/elixir-vs-jvm-threads.png" 1734171947.36836 104966 8f74af82de1610f8edef14fe95e4d8cf ""
   "ch-state/assets/goroutine-threads-relation.png" 1735132053.96102 46188 1636e3a23800e2720f82f9415392cfe5 ""
   "ch-state/assets/supervisor-design.jpg" 1734144684.43569 9500 d79aee8cf3eecc96c69ab1c2617c18e1 ""
-  "ch-state/chapter-state.tex" 1735528203.87831 88267 669ff7bbbf345cdca3d199d3517c5d2f ""
+  "ch-state/chapter-state.tex" 1735619414.59684 105480 4474c1ab4178cbc830e995c3acc637e7 ""
   "frontmatter/frontmatter.tex" 1732476592 6149 6b943ea3bc3698503f16738d65ccc95e ""
-  "frontmatter/glossary.tex" 1735528042.52535 1168 1e990b4ab62d42e2e67857ed87bd580a ""
+  "frontmatter/glossary.tex" 1735585309.58423 1214 a324c1f1ee65acb3a68812df330f67ad ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1735528210.40645 48876 544a6339386b186ead50957d2ad31de8 "pdflatex"
-  "main.bbl" 1735528199.98096 135398 dad6e062496e0bf3e4534bc221168c49 "biber main"
-  "main.glsdefs" 1735528210.4031 12160 75e528879f216c18760e926f6826c584 "pdflatex"
-  "main.lof" 1735528210.43396 1667 61f0461de86f507479ec933ca5613113 "pdflatex"
-  "main.lot" 1735528210.43398 595 997c980801b1e839c9e3694ab1e2f2e5 "pdflatex"
-  "main.out" 1735528210.43016 15347 5e6accd8197ac4f4f8101a47080317e0 "pdflatex"
-  "main.run.xml" 1735528210.43378 2438 1eab3f28d4331e32d71593dc877901b7 "pdflatex"
-  "main.tex" 1735210934.2598 7940 86019283a1f1515c1ef13d6fed3f8430 ""
-  "main.toc" 1735528210.4339 6886 d6e078aacaceca2d6c8cf4a36a03ae44 "pdflatex"
+  "main.aux" 1735619423.84758 51566 78b2ae6241dc3fd6af50e6b1ce8bf3fe "pdflatex"
+  "main.bbl" 1735618192.50526 135398 fff9256210507153f371385b7efb8794 "biber main"
+  "main.glsdefs" 1735619423.84151 12664 69f4d0c8c9ce706ea7025f0f0d4c8ec6 "pdflatex"
+  "main.lof" 1735619423.89713 1667 cd6b97959132c380af73be705d6e3639 "pdflatex"
+  "main.lot" 1735619423.89716 595 047679b4f0e169de7a650195dba9c5a7 "pdflatex"
+  "main.out" 1735619423.89101 16244 c7eaa73e573942d6335ff9d53028cdd1 "pdflatex"
+  "main.run.xml" 1735619423.8969 2438 1eab3f28d4331e32d71593dc877901b7 "pdflatex"
+  "main.tex" 1735555528.08758 7940 86019283a1f1515c1ef13d6fed3f8430 ""
+  "main.toc" 1735619423.89706 7253 7550186faae2eefb016afbba1ca9dcfc "pdflatex"
   "tmdei-style.cls" 1734047117.80826 24761 0812b24a513bd7d3d41ab0856a639792 ""
   (generated)
   "main.acn"

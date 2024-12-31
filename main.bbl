@@ -1710,8 +1710,8 @@
       \strng{authorbibnamehash}{8528b3dab25f08170eb89fa34c23ea0a}
       \strng{authornamehash}{8528b3dab25f08170eb89fa34c23ea0a}
       \strng{authorfullhash}{8528b3dab25f08170eb89fa34c23ea0a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Although there are models and prototype implementations for controlling resource use in Actor systems, they are difficult to implement for production implementations of Actors such as Akka. This is because the messaging and scheduling infrastructures of runtime systems are increasingly complex and significantly different from one system to another. This paper presents our efforts in implementing resource control support for Actor systems implemented using the Akka library. Particularly, given the lack of support in Akka for direct scheduling of actors, we compare two different ways of approximating actor-level control support. The first implementation expects messages to actors to provide estimates of resources likely to be consumed for processing them; these estimates are then relied upon to make scheduling decisions. In the second implementation, resource use of scheduled actors is tracked, and compared against allocations to decide when they should be scheduled next. We present experimental results on the performance cost of these resource control mechanisms, as well as their impact on resource utilization.}
@@ -2201,8 +2201,8 @@
       \keyw{REST API,application speed,business analytics,net/http,programming language}
     \endentry
     \entry{discord-blog-rust-go}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 03.11.2024}
       \field{title}{{Discord blog - Why discord is switching from go to rust}}

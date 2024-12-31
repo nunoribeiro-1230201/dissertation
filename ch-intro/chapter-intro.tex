@@ -1,24 +1,31 @@
 % Chapter 1
 % 
 \chapter{Introduction} % Main chapter title
-\label{chap:Chapter1} % For referencing the chapter elsewhere, use Chapter~\ref{Chapter1}
+\label{chap:Intro} % For referencing the chapter elsewhere, use Chapter~\ref{Chapter1}
 
 
 %-------------------------------------------------------------------------------
 %---------
 %
-\section{Context and Problem} 
+\section{Context and Problem}
 
-- Lack of information focusing on fault tolerance comparison
+In the rapidly evolving landscape of software development, fault tolerance and resilience have become critical attributes for building robust, scalable systems \cite{Kleppmann2017}. Fault tolerance ensures that systems can continue operating despite failures, while resilience enables them to recover gracefully, minimizing downtime and data loss. The importance of these characteristics has grown significantly with the increasing prevalence of distributed systems and cloud computing \cite{Tanenbaum2023,Kleppmann2017}.
 
-- Old information available
+Elixir, a functional programming language built on the Erlang \gls{VM} called \gls{BEAM}, has gained significant popularity for its “let it crash” paradigm, a philosophy that emphasizes process isolation, supervision trees, and fault recovery \cite{Juric2024,go-docs,Valkov2018}. This design approach, which originates from Erlang’s legacy in telecom systems, positions Elixir as a strong candidate for developing fault-tolerant systems. At the same time, other distributed and concurrent programming languages offers alternative approaches to addressing fault tolerance, each with distinct methodologies and advantages tailored to different use cases and developer communities.
 
-- Increase usage of microservices / distributed systems 
-
-% \cite{Randtoul2022} na parte 2.1.1
+Despite the recognized importance of fault tolerance in software systems, there is a lack of comprehensive, up-to-date research that directly compares the fault tolerance and resilience aspects of Elixir with other programming languages. This gap in comparative analysis makes it difficult for software developers and architects to make informed decisions when selecting a language or framework for building fault-tolerant applications.
 
 \section{Objectives}
 
+The primary goal of this dissertation is to study Elixir’s fault tolerance in comparison with other distributed and concurrent programming languages. Specifically, it aims to determine which languages provide the best support for fault-tolerance mechanisms and identify the most suitable language for implementing common techniques in fault-tolerant system design. The objectives of this study are as follows:
+
+\begin{itemize}
+    \item Comprehensively analyze the fault-tolerant mechanisms in Elixir, including its design paradigms, implementation strategies, and practical applications.
+    \item Identify the most popular and relevant distributed and concurrent programming languages for comparison and investigate their fault-tolerant mechanisms.
+    \item Compare Elixir’s fault-tolerant capabilities with those of other languages to elucidate their respective strengths, weaknesses, and trade-offs.
+    \item Conduct benchmarking experiments to empirically evaluate and compare the fault tolerance and resilience of Elixir against other distributed and concurrent programming languages, providing quantitative data to support the analysis.
+    \item Extract best practices and propose potential improvements in fault-tolerant system design across the analyzed languages.
+\end{itemize}
 
 \section{Ethical Considerations}
 
@@ -32,4 +39,14 @@ Ethical considerations play a crucial role in software engineering research, ens
 
 \textbf{Avoidance of Plagiarism and Proper Citation.} Plagiarism undermines the credibility and value of academic work. In alignment with the Code of Good Practices and Conduct of Polytechnic of Porto, particularly Article 10, this dissertation ensures proper attribution of all referenced works. Accurate citation is fundamental to acknowledge the contributions of others, demonstrate the research’s academic honesty, and respect intellectual property.
 
-\section{Document structure} 
+\section{Document Structure}
+
+The document is organized as follows:
+
+\textbf{\nameref{chap:Intro}.} An initial overview of the dissertation's scope is provided, including a discussion of the context, the problem statement, and the goals the study aims to achieve.
+
+\textbf{\nameref{chap:Background}.} Foundational knowledge supporting the context of the dissertation is presented here. The section is divided into three parts: the first examines the general aspects of distributed systems, highlighting their characteristics and theoretical foundations. The second part delves into fault tolerance, exploring the strategies employed and the theoretical principles involved. The final part conducts a study of distributed and concurrent programming languages, offering a list of relevant options and a justification for the specific languages selected for analysis.
+
+\textbf{\nameref{chap:State}.} Current insights into the themes explored in the dissertation are presented in this chapter. It opens with the research questions to be investigated and the research methodology to be used. The research questions are divided into two sections: the first investigates the fault-tolerance mechanisms of Elixir, Scala with Akka, and Go, which were identified in the background as the primary languages of interest. The chapter concludes with a discussion of benchmarking strategies from the literature to support future work. This is followed by a brief high-level outline of the practical aspects of future work. 
+
+\textbf{\nameref{chap:ProjectPlan}.} The planning and management aspects of the dissertation are outlined, including the project charter, a Gantt chart, and a Work Breakdown Structure to guide the execution of the project.

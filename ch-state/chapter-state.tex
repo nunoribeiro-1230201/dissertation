@@ -1,4 +1,5 @@
-\chapter{State of the art} % Main chapter title
+\chapter{State of the art} 
+\label{chap:State}
 
 %-------------------------------------------------------------------------------
 %---------
@@ -44,7 +45,7 @@ Given the scope of the research question, developing a research strategy that yi
 }
 \end{verbatim}
 
-To address this problem, the methodology employed covered grey literature, particularly books, due to their mature, structured content. Books provide comprehensive insights into foundational principles, and given that the evolution of programming languages tends to be gradual, they serve as reliable resources for understanding their core concepts and implementations, taking in consideration the choose of recently books. At the same time, white literature, including academic papers and recent articles, was included to capture the latest advancements, structures, and innovations within these languages.
+To address this problem, the methodology employed covered using books, due to their mature and structure content, as also grey literature. Books provide comprehensive insights into foundational principles, and given that the evolution of programming languages tends to be gradual, they serve as reliable resources for understanding their core concepts and implementations, taking in consideration the choose of recently books. At the same time, white literature, including academic papers and recent articles, was included to capture the latest advancements, structures, and innovations within these languages.
 
 Given the technical and practical focus of the study, a more ad-hoc research approach was adopted, like searching on the academic databases for more focused themes, not systematic queries or keywords. Official documentation for each language it was also consulted, as it provides up-to-date information directly from the creators. Furthermore, trusted blogs and community resources were consulted in order to utilize the collective knowledge and practical experiences of developers, which often provide valuable insight that may not be addressed elsewhere.
 
@@ -72,7 +73,7 @@ The methodology for addressing this research question is described below. It foc
 }
 \end{verbatim}
 
-The query returned no results on IEEE Xplore and yielded 39 articles from the ACM Digital Library. However, some articles appeared in the results despite not fully matching the accessibility criteria defined by the query keywords. Additionally, certain papers focused primarily on the development of a product that underwent benchmarking, rather than being directly centered on the topic of interest. This filtering process, combined with the application of the snowballing technique, leveraged references from relevant articles. 
+The query returned no results from IEEE Xplore but yielded 39 articles from the ACM Digital Library. However, some of these articles did not fully meet the accessibility criteria defined by the query keywords, leading to their exclusion. Additionally, certain papers primarily focused on product development rather than benchmarking techniques, which also contributed to the filtering process. To enhance the search, the snowballing technique was applied, allowing for the leveraging of references from relevant articles.
 
 \section{Elixir Programming Language Analysis}
 
@@ -489,7 +490,7 @@ This chat application will be implemented in all three languages. For Go, two se
 
 The primary objective of this application is not to evaluate scalability, such as handling a high number of requests by scaling up to additional \glspl{VM}. Instead, the setup will use a fixed number of three \glspl{VM} to simulate distributed communication, focusing on fault tolerance and performance. Scalability-related considerations will not be employed. Furthermore, as mentioned, the distribution simulation it will be implemented on a single physical machine though inter-VM communication. This approach assumes that the primary difference between communication across different physical machine and one machine it is the latency.
 
-\subsubsection{Design and Architecture}
+\textit{\underline{Design and Architecture}}
 
 The application will be designed taking inspiration from the work by \textcite{Randtoul2022} with increments and adjustments. The application will have five main responsibilities:
 
@@ -509,7 +510,7 @@ There exists an "inner world" and an "external world" within the system architec
 
 This architecture is intentionally designed to be generic, avoiding assumptions about the Actor Model or microservices paradigms, thereby allowing for customization based on specific system properties.
 
-\subsubsection{Implementation and Functioning}
+\textit{\underline{Implementation and Functioning}}
 
 The primary goal of this architecture is to facilitate general-purpose fault tolerance testing, which encompasses the evaluation of performance and system design. For instance, this architecture can be implemented using the Actor Model across all three programming languages, incorporating the supervisor pattern. This approach enables a comparison of recovery mechanisms and the effectiveness of the "let it crash" philosophy.
 
@@ -517,7 +518,7 @@ Furthermore, the design allows for the evaluation of various fault-tolerance mec
 
 The implementation will leverage the Actor Model for both Elixir and Scala using Akka, utilizing their native supervisor patterns. For Go, two distinct implementations will be developed: one will employ the Proto-Actor library to mimic the Actor Model approach used in Elixir and Akka, while the other will be a "vanilla" implementation utilizing goroutines and channels. This second implementation will simulate a lightweight microservices architecture, with communication between components facilitated via \gls{gRPC} and inter-node communication managed through goroutines and channels.
 
-\subsubsection{Configuration}
+\textit{\underline{Configuration}}
 
 In accordance with the principles outlined by \textcite{Randtoul2022}, the benchmark should incorporate various configuration aspects, referred to as tuning knobs:
 
@@ -536,40 +537,32 @@ In accordance with the principles outlined by \textcite{Randtoul2022}, the bench
 
 \end{itemize}
 
-\subsubsection{Test Scenarios and Metrics}
+\textit{\underline{Test Scenarios and Metrics}}
 
 The benchmark will evaluate fault tolerance through the following test scenarios:
 
-\textit{\underline{Client Crash Recovery:}}
+\begin{itemize}
+    \item \textbf{Client Crash Recovery:} \\
+    \textit{Description:} Simulate a client crashing and being recovered. The crash must be fatal and non-fatal. For example, one scenario could simulate a complete outage for some seconds, and another could simulate an internal error, such as an exception. This allows comparison of the "let it crash" philosophy with the explicit error handling in Go, specifically in scenarios where exceptions can be controlled. \\
+    \textit{Metrics:} Time taken to recover, consistency of the system state post-recovery, and \gls{LOC} of different strategies or the supervisor implementation in the different languages.
+    
+    \item \textbf{Chat Crash Recovery:} \\
+    \textit{Description:} Simulate the chat system crashing and recovering. Upon recovery, all clients must also reconnect successfully. The test registers the time taken for the system to stabilize, including reconnecting all clients. This scenario also tests replication, where each language will implement replication using the Raft algorithm, having a replicated chat for fault tolerance. \\
+    \textit{Metrics:} Time taken to recover, time to leader election after a crash, time to recover all state, and consistency of the system state post-recovery.
+    
+    \item \textbf{Message Delivery Durability:} \\
+    \textit{Description:} The system must continue to deliver messages even during failures and during scenarios where processes run indefinitely. This test simulates a client sending a consistent stream of messages while inducing infinite message loops to evaluate how the different schedulers operate across languages. \\
+    \textit{Metrics:} Number of undelivered messages, time to recover message flow after failure, and consistency of delivered message order.
+    
+    \item \textbf{Message Throughput Durability:} \\
+    \textit{Description:} Evaluate the system's ability to maintain message throughput during fault injection. This test simulates various failures, such as client crashes, server crashes, or high resource utilization, while measuring the message throughput across the system. The objective is to assess how well the system sustains performance under stress and whether it degrades gracefully during failures. \\
+    \textit{Metrics:} Average and peak message throughput during faults, percentage drop in throughput compared to normal operation, recovery time to regain baseline throughput, and the impact of different fault tolerance mechanisms (e.g., "let it crash" vs. explicit error handling).
+    
+    \item \textbf{Network Test:} \\
+    \textit{Description:} Assess the system's resilience to network-related issues. This scenario compares the effectiveness of fault-tolerance mechanisms like supervisor hierarchies in Elixir and Akka versus circuit breakers in Akka and Go. The test involves simulating network partitions and latency spikes to measure the system's ability to recover and maintain consistent communication. \\
+    \textit{Metrics:} Time to detect and recover from network partitions, latency impact on message delivery and system state synchronization, time to stabilize after network recovery, and a comparative analysis of recovery performance between supervisor-based and circuit breaker-based mechanisms.
+\end{itemize}
 
-Description: Simulate a client crashing and being recovered. The crash must be fatal and non-fatal, for example, one scenario could simulate a complete outage for some seconds, and another could simulate an internal error, such as an exception. This allows comparison of the "let it crash" philosophy with the explicit error handling in Go, specifically in scenarios where exceptions can be controlled.
-
-Metrics: Time taken to recover, consistency of the system state post-recovery, and \gls{LOC} of different strategies or the supervisor implementation in the different languages.
-
-\textit{\underline{Chat Crash Recovery:}}
-
-Description: Simulate the chat system crashing and recovering. Upon recovery, all clients must also reconnect successfully. The test registers the time taken for the system to stabilize, including reconnecting all clients. This scenario also tests replication, where each language will implement replication using the Raft algorithm, having a replicated chat for fault tolerance.
-
-Metrics: Time taken to recover, time to leader election after a crash, time to recover all state, and consistency of the system state post-recovery.
-
-\textit{\underline{Message Delivery Durability:}}
-
-Description: The system must continue to deliver messages even during failures and messages that it will trigger the chat to have a processes running infinity. This test simulates a client sending a consistent stream of messages while inducing infinity messages in order to target how the different schedulers it will operate among languages.
-
-Metrics: Number of undelivered messages, time to recover message flow after failure, and consistency of delivered message order.
-
-\textit{\underline{Message Throughput Durability:}}
-
-Description: Evaluate the system's ability to maintain message throughput during fault injection. This test will simulate various failures, such as client crashes, server crashes, or high resource utilization, while measuring the message throughput across the system. The objective is to assess how well the system sustains performance under stress and whether it degrades gracefully during failures.
-
-Metrics: Average and peak message throughput during faults, percentage drop in throughput compared to normal operation, recovery time to regain baseline throughput, and the impact of different fault tolerance mechanisms (e.g., "let it crash" vs. explicit error handling).
-
-\textit{\underline{Network Test:}}
-
-Description: Assess the system's resilience to network-related issues. This scenario will compare the effectiveness of fault-tolerance mechanisms like supervisor hierarchies in Elixir and Akka versus circuit breakers in Akka and Go. The test will involve simulating network partitions and latency spikes to measure the system's ability to recover and maintain consistent communication.
-
-Metrics: Time to detect and recover from network partitions, latency impact on message delivery and system state synchronization, time to stabilize after network recovery, and a comparative analysis of recovery performance between supervisor-based and circuit breaker-based mechanisms.
-
-\subsubsection{Data Analysis}
+\textit{\underline{Data Analysis}}
 
 To obtain the results, we will utilize a logger that consolidates the final information. The logs are received by the logger in a disordered manner, necessitating organization. Each event will have a unique identifier, allowing for effective tracking and tracing.

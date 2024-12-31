@@ -19,6 +19,155 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Kleppmann2017}{book}{}
+      \name{author}{1}{}{%
+        {{hash=34b8d5b1d29d175527a6642f3ec8a76d}{%
+           family={Kleppmann},
+           familyi={K\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{fullhash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{bibnamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authorbibnamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authornamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \strng{authorfullhash}{34b8d5b1d29d175527a6642f3ec8a76d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-1449373320}
+      \field{title}{Designing Data Intensive Applications}
+      \field{year}{2017}
+    \endentry
+    \entry{Tanenbaum2023}{book}{}
+      \name{author}{2}{}{%
+        {{hash=47480cd610c72d1e7c2edc59e8457169}{%
+           family={Tanenbaum},
+           familyi={T\bibinitperiod},
+           given={S.\bibnamedelimi Andrew},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=7610918bc81a6d18601f52aaa5992600}{%
+           family={Steen},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi Maarten\bibnamedelima Van},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Maarten Van Steen}%
+      }
+      \strng{namehash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{fullhash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{bibnamehash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{authorbibnamehash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{authornamehash}{f1f53133e29b8df3266bb778c27356ca}
+      \strng{authorfullhash}{f1f53133e29b8df3266bb778c27356ca}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{isbn}{978-90-815406-3-6}
+      \field{title}{Distributed systems}
+      \field{year}{2023}
+    \endentry
+    \entry{Juric2024}{book}{}
+      \name{author}{2}{}{%
+        {{hash=61fec1a13a3b306e8a4de277de451ad6}{%
+           family={Jurić},
+           familyi={J\bibinitperiod},
+           given={Saša},
+           giveni={S\bibinitperiod}}}%
+        {{hash=050e0b4dc5912c26ac3dfc697716d6b6}{%
+           family={Cesarini},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{fullhash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{bibnamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{authorbibnamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{authornamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \strng{authorfullhash}{08ce6d86d6c5bbf9d1e364348c357e74}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781633438514}
+      \field{title}{Elixir in Action, Third Edition}
+      \field{year}{2024}
+    \endentry
+    \entry{go-docs}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=5f075ae3e1f9d0382bb8c4632991f96f}{%
+           family={Go},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{fullhash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{bibnamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{authorbibnamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{authornamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \strng{authorfullhash}{5f075ae3e1f9d0382bb8c4632991f96f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 10.11.2024}
+      \field{title}{{Official documentation of Go programming language}}
+      \verb{urlraw}
+      \verb https://go.dev/doc//
+      \endverb
+      \verb{url}
+      \verb https://go.dev/doc//
+      \endverb
+    \endentry
+    \entry{Valkov2018}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=d1bd00822c8f2b0e3bb576a9c2f60154}{%
+           family={Valkov},
+           familyi={V\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=ba1f1b77168a1665f02964ba235985c0}{%
+           family={Chechina},
+           familyi={C\bibinitperiod},
+           given={Natalia},
+           giveni={N\bibinitperiod}}}%
+        {{hash=c7febbc5a1f151e714c32fc9de384b86}{%
+           family={Trinder},
+           familyi={T\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Association for Computing Machinery}%
+      }
+      \strng{namehash}{65db2996798d3935f735048e85e9c928}
+      \strng{fullhash}{65db2996798d3935f735048e85e9c928}
+      \strng{bibnamehash}{65db2996798d3935f735048e85e9c928}
+      \strng{authorbibnamehash}{65db2996798d3935f735048e85e9c928}
+      \strng{authornamehash}{65db2996798d3935f735048e85e9c928}
+      \strng{authorfullhash}{65db2996798d3935f735048e85e9c928}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Servers are a key element of current IT infrastructures, and must often deal with large numbers of concurrent requests. The programming language used to construct the server has an important role in engineering efficient server software, and must support massive concurrency on multicore machines with low communication and synchronisation overheads. This paper investigates 12 highly concurrent programming languages suitable for engineering servers, and analyses three representative languages in detail: Erlang, Go, and Scala with Akka. We have designed three server benchmarks that analyse key performance characteristics of the languages. The benchmark results suggest that where minimising message latency is crucial, Go and Erlang are best; that Scala with Akka is capable of supporting the largest number of dormant processes; that for servers that frequently spawn processes Erlang and Go minimise creation time; and that for constantly communicating processes Go provides the best throughput.}
+      \field{booktitle}{Proceedings of the ACM Symposium on Applied Computing}
+      \field{isbn}{9781450351911}
+      \field{month}{4}
+      \field{title}{Comparing languages for engineering server software: Erlang, go, and scala with akka}
+      \field{year}{2018}
+      \field{pages}{218\bibrangedash 225}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1145/3167132.3167144
+      \endverb
+      \keyw{Akka,Erlang,Go,Programming languages,Scala,Server applications}
+    \endentry
     \entry{EthicDeb2018}{book}{}
       \name{author}{3}{}{%
         {{hash=bcfe04c9acb7b8be977876addd32053c}{%
@@ -43,8 +192,8 @@
       \strng{authorbibnamehash}{d948e66f1d6fb953c74652512c6aa277}
       \strng{authornamehash}{d948e66f1d6fb953c74652512c6aa277}
       \strng{authorfullhash}{d948e66f1d6fb953c74652512c6aa277}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{12}
@@ -72,8 +221,8 @@
       \strng{authorbibnamehash}{b8c32f2a265bfdfa213d29c14d70e6a0}
       \strng{authornamehash}{b8c32f2a265bfdfa213d29c14d70e6a0}
       \strng{authorfullhash}{b8c32f2a265bfdfa213d29c14d70e6a0}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 01.12.2024}
@@ -97,8 +246,8 @@
       \strng{authorbibnamehash}{472abfae8142fdb6f39d081303e8af85}
       \strng{authornamehash}{472abfae8142fdb6f39d081303e8af85}
       \strng{authorfullhash}{472abfae8142fdb6f39d081303e8af85}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 01.12.2024}
@@ -122,8 +271,8 @@
       \strng{authorbibnamehash}{0d8f980802951b40c8fa9e3d5de6d587}
       \strng{authornamehash}{0d8f980802951b40c8fa9e3d5de6d587}
       \strng{authorfullhash}{0d8f980802951b40c8fa9e3d5de6d587}
-      \field{sortinit}{4}
-      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 01.12.2024}
@@ -134,37 +283,6 @@
       \verb{url}
       \verb https://www.acm.org/code-of-ethics/
       \endverb
-    \endentry
-    \entry{Tanenbaum2023}{book}{}
-      \name{author}{2}{}{%
-        {{hash=47480cd610c72d1e7c2edc59e8457169}{%
-           family={Tanenbaum},
-           familyi={T\bibinitperiod},
-           given={S.\bibnamedelimi Andrew},
-           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
-        {{hash=7610918bc81a6d18601f52aaa5992600}{%
-           family={Steen},
-           familyi={S\bibinitperiod},
-           given={M.\bibnamedelimi Maarten\bibnamedelima Van},
-           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Maarten Van Steen}%
-      }
-      \strng{namehash}{f1f53133e29b8df3266bb778c27356ca}
-      \strng{fullhash}{f1f53133e29b8df3266bb778c27356ca}
-      \strng{bibnamehash}{f1f53133e29b8df3266bb778c27356ca}
-      \strng{authorbibnamehash}{f1f53133e29b8df3266bb778c27356ca}
-      \strng{authornamehash}{f1f53133e29b8df3266bb778c27356ca}
-      \strng{authorfullhash}{f1f53133e29b8df3266bb778c27356ca}
-      \field{sortinit}{5}
-      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{4}
-      \field{isbn}{978-90-815406-3-6}
-      \field{title}{Distributed systems}
-      \field{year}{2023}
     \endentry
     \entry{Vitillo2021}{book}{}
       \name{author}{1}{}{%
@@ -180,8 +298,8 @@
       \strng{authorbibnamehash}{5603251445876a4b8dc0b524fd8f6646}
       \strng{authornamehash}{5603251445876a4b8dc0b524fd8f6646}
       \strng{authorfullhash}{5603251445876a4b8dc0b524fd8f6646}
-      \field{sortinit}{7}
-      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{isbn}{1838430202}
@@ -210,8 +328,8 @@
       \strng{authorbibnamehash}{b1bfd48ab51eb1f0389135a2badcbcba}
       \strng{authornamehash}{b1bfd48ab51eb1f0389135a2badcbcba}
       \strng{authorfullhash}{b1bfd48ab51eb1f0389135a2badcbcba}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The use of technology has increased vastly and today computer systems are interconnected via different communication medium. The use of distributed systems in our day to day activities has solely improved with data distributions. This is because distributed systems enable nodes to or-ganise and allow their resources to be used among the connected systems or devices that make people to be integrated with geographically distributed computing facilities. The distributed sys-tems may lead to lack of service availability due to multiple system failures on multiple failure points. This article highlights the different fault tolerance mechanism in distributed systems used to prevent multiple system failures on multiple failure points by considering replication, high re-dundancy and high availability of the distributed services.}
@@ -365,50 +483,6 @@
       \verb https://www.atlassian.com/incident-management/kpis/reliability-vs-availability
       \endverb
     \endentry
-    \entry{Valkov2018}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=d1bd00822c8f2b0e3bb576a9c2f60154}{%
-           family={Valkov},
-           familyi={V\bibinitperiod},
-           given={Ivan},
-           giveni={I\bibinitperiod}}}%
-        {{hash=ba1f1b77168a1665f02964ba235985c0}{%
-           family={Chechina},
-           familyi={C\bibinitperiod},
-           given={Natalia},
-           giveni={N\bibinitperiod}}}%
-        {{hash=c7febbc5a1f151e714c32fc9de384b86}{%
-           family={Trinder},
-           familyi={T\bibinitperiod},
-           given={Phil},
-           giveni={P\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Association for Computing Machinery}%
-      }
-      \strng{namehash}{65db2996798d3935f735048e85e9c928}
-      \strng{fullhash}{65db2996798d3935f735048e85e9c928}
-      \strng{bibnamehash}{65db2996798d3935f735048e85e9c928}
-      \strng{authorbibnamehash}{65db2996798d3935f735048e85e9c928}
-      \strng{authornamehash}{65db2996798d3935f735048e85e9c928}
-      \strng{authorfullhash}{65db2996798d3935f735048e85e9c928}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Servers are a key element of current IT infrastructures, and must often deal with large numbers of concurrent requests. The programming language used to construct the server has an important role in engineering efficient server software, and must support massive concurrency on multicore machines with low communication and synchronisation overheads. This paper investigates 12 highly concurrent programming languages suitable for engineering servers, and analyses three representative languages in detail: Erlang, Go, and Scala with Akka. We have designed three server benchmarks that analyse key performance characteristics of the languages. The benchmark results suggest that where minimising message latency is crucial, Go and Erlang are best; that Scala with Akka is capable of supporting the largest number of dormant processes; that for servers that frequently spawn processes Erlang and Go minimise creation time; and that for constantly communicating processes Go provides the best throughput.}
-      \field{booktitle}{Proceedings of the ACM Symposium on Applied Computing}
-      \field{isbn}{9781450351911}
-      \field{month}{4}
-      \field{title}{Comparing languages for engineering server software: Erlang, go, and scala with akka}
-      \field{year}{2018}
-      \field{pages}{218\bibrangedash 225}
-      \range{pages}{8}
-      \verb{doi}
-      \verb 10.1145/3167132.3167144
-      \endverb
-      \keyw{Akka,Erlang,Go,Programming languages,Scala,Server applications}
-    \endentry
     \entry{Lindsay2021}{article}{}
       \name{author}{4}{}{%
         {{hash=9143d5decb5211fe95752cc2afeb8307}{%
@@ -441,8 +515,8 @@
       \strng{authorbibnamehash}{0ccdb9a6fc2c36b6a0c4e6782f7836d9}
       \strng{authornamehash}{0ccdb9a6fc2c36b6a0c4e6782f7836d9}
       \strng{authorfullhash}{c0b5c3f01a426e0016d9abba5c3c955a}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Distributed systems have been an active field of research for over 60 years, and has played a crucial role in computer science, enabling the invention of the Internet that underpins all facets of modern life. Through technological advancements and their changing role in society, distributed systems have undergone a perpetual evolution, with each change resulting in the formation of a new paradigm. Each new distributed system paradigm—of which modern prominence include cloud computing, Fog computing, and the Internet of Things (IoT)—allows for new forms of commercial and artistic value, yet also ushers in new research challenges that must be addressed in order to realize and enhance their operation. However, it is necessary to precisely identify what factors drive the formation and growth of a paradigm, and how unique are the research challenges within modern distributed systems in comparison to prior generations of systems. The objective of this work is to study and evaluate the key factors that have influenced and driven the evolution of distributed system paradigms, from early mainframes, inception of the global inter-network, and to present contemporary systems such as edge computing, Fog computing and IoT. Our analysis highlights assumptions that have driven distributed systems appear to be changing, including (1) an accelerated fragmentation of paradigms driven by commercial interests and physical limitations imposed by the end of Moore’s law, (2) a transition away from generalized architectures and frameworks towards increasing specialization, and (3) each paradigm architecture results in some form of pivoting between centralization and decentralization coordination. Finally, we discuss present day and future challenges of distributed research pertaining to studying complex phenomena at scale and the role of distributed systems research in the context of climate change.}
@@ -459,28 +533,6 @@
       \verb 10.1007/s00607-020-00900-y
       \endverb
       \keyw{Computing systems,Distributed computing,Evolution,Green computing}
-    \endentry
-    \entry{Kleppmann2017}{book}{}
-      \name{author}{1}{}{%
-        {{hash=34b8d5b1d29d175527a6642f3ec8a76d}{%
-           family={Kleppmann},
-           familyi={K\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{34b8d5b1d29d175527a6642f3ec8a76d}
-      \strng{fullhash}{34b8d5b1d29d175527a6642f3ec8a76d}
-      \strng{bibnamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
-      \strng{authorbibnamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
-      \strng{authornamehash}{34b8d5b1d29d175527a6642f3ec8a76d}
-      \strng{authorfullhash}{34b8d5b1d29d175527a6642f3ec8a76d}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{978-1449373320}
-      \field{title}{Designing Data Intensive Applications}
-      \field{year}{2017}
     \endentry
     \entry{Naik2021}{inproceedings}{}
       \name{author}{1}{}{%
@@ -500,8 +552,8 @@
       \strng{authorbibnamehash}{dc0f194568ffac6e0dabf705c2ac2a04}
       \strng{authornamehash}{dc0f194568ffac6e0dabf705c2ac2a04}
       \strng{authorfullhash}{dc0f194568ffac6e0dabf705c2ac2a04}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The design of distributed systems in multiple clouds have been gaining popularity due to various benefits of the multi-cloud infrastructure such as minimizing vendor lock-in, data loss and downtime. Nonetheless, this multi-cloud infrastructure also poses several challenges such as compatibility, interoperability, complex provisioning and configuration due to the variation in technologies and services of each cloud provider. Consequently, it is a tedious task to design distributed systems in multiple clouds. Virtualization is regarded as the base technology of the cloud and therefore, most cloud-based distributed systems are based on it. Nevertheless, virtual machines require substantial resources and cause several issues across multiple clouds such as provisioning, configuration management, load balancing and migration. Docker Swarm is a container-based clustering tool that resolves some of these issues and supports the design of distributed systems in multiple clouds. It has also incorporated several inbuilt attributes of the distributed system, however, it is still evolving. This paper initially presents the simulated development of a Docker Swarm-based distributed system which can be easily replicated in multiple clouds. Subsequently, based on the simulated Docker Swarm-based distributed system, it performs an evaluation of several attributes of this distributed system such as high availability and fault tolerance; automatic scalability, load balancing and maintainability of services; and scalability of large clusters.}
@@ -529,8 +581,8 @@
       \strng{authorbibnamehash}{5dc49ca5380e7ba6018f02f3903986d9}
       \strng{authornamehash}{5dc49ca5380e7ba6018f02f3903986d9}
       \strng{authorfullhash}{5dc49ca5380e7ba6018f02f3903986d9}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 03.11.2024}
@@ -747,8 +799,8 @@
       \strng{authorbibnamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
       \strng{authornamehash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
       \strng{authorfullhash}{155eaf7d6e5116ee52dc6e1fc8ee63c9}
-      \field{sortinit}{6}
-      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Distributed consensus is a fundamental primitive for constructing fault-tolerant, strongly-consistent distributed systems. Though many distributed consensus algorithms have been proposed, just two dominate production systems: Paxos, the traditional, famously subtle, algorithm; and Raft, a more recent algorithm positioned as a more understandable alternative to Paxos. In this paper, we consider the question of which algorithm, Paxos or Raft, is the better solution to distributed consensus? We analyse both to determine exactly how they differ by describing a simplified Paxos algorithm using Raft’s terminology and pragmatic abstractions. We find that both Paxos and Raft take a very similar approach to distributed consensus, differing only in their approach to leader election. Most notably, Raft only allows servers with up-to-date logs to become leaders, whereas Paxos allows any server to be leader provided it then updates its log to ensure it is up-to-date. Raft’s approach is surprisingly efficient given its simplicity as, unlike Paxos, it does not require log entries to be exchanged during leader election. We surmise that much of the understandability of Raft comes from the paper’s clear presentation rather than being fundamental to the underlying algorithm being presented.}
@@ -806,8 +858,8 @@
       \endverb
     \endentry
     \entry{apache-flick}{misc}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 03.11.2024}
       \field{title}{Apache Flink Documentation}
@@ -1239,31 +1291,6 @@
       \endverb
       \keyw{C++,CSP,Parallelism,channels}
     \endentry
-    \entry{go-docs}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=5f075ae3e1f9d0382bb8c4632991f96f}{%
-           family={Go},
-           familyi={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{5f075ae3e1f9d0382bb8c4632991f96f}
-      \strng{fullhash}{5f075ae3e1f9d0382bb8c4632991f96f}
-      \strng{bibnamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
-      \strng{authorbibnamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
-      \strng{authornamehash}{5f075ae3e1f9d0382bb8c4632991f96f}
-      \strng{authorfullhash}{5f075ae3e1f9d0382bb8c4632991f96f}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed at 10.11.2024}
-      \field{title}{{Official documentation of Go programming language}}
-      \verb{urlraw}
-      \verb https://go.dev/doc//
-      \endverb
-      \verb{url}
-      \verb https://go.dev/doc//
-      \endverb
-    \endentry
     \entry{Brolos2021}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=4316362c8d133cacbddf319bbdbcbb2a}{%
@@ -1404,33 +1431,6 @@
       \verb{doi}
       \verb 10.1007/978-3-319-67425-4_13
       \endverb
-    \endentry
-    \entry{Juric2024}{book}{}
-      \name{author}{2}{}{%
-        {{hash=61fec1a13a3b306e8a4de277de451ad6}{%
-           family={Jurić},
-           familyi={J\bibinitperiod},
-           given={Saša},
-           giveni={S\bibinitperiod}}}%
-        {{hash=050e0b4dc5912c26ac3dfc697716d6b6}{%
-           family={Cesarini},
-           familyi={C\bibinitperiod},
-           given={Francesco},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{08ce6d86d6c5bbf9d1e364348c357e74}
-      \strng{fullhash}{08ce6d86d6c5bbf9d1e364348c357e74}
-      \strng{bibnamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
-      \strng{authorbibnamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
-      \strng{authornamehash}{08ce6d86d6c5bbf9d1e364348c357e74}
-      \strng{authorfullhash}{08ce6d86d6c5bbf9d1e364348c357e74}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9781633438514}
-      \field{title}{Elixir in Action, Third Edition}
-      \field{year}{2024}
     \endentry
     \entry{Abraham2023}{book}{}
       \name{author}{1}{}{%

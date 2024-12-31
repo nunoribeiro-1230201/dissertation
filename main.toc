@@ -1,89 +1,84 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{List of Figures}{ix}{section*.4}%
-\contentsline {chapter}{List of Tables}{xi}{section*.6}%
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.7}%
-\contentsline {section}{\numberline {1.1}Context and Problem}{1}{section.8}%
-\contentsline {section}{\numberline {1.2}Objectives}{1}{section.9}%
-\contentsline {section}{\numberline {1.3}Ethical Considerations}{1}{section.10}%
-\contentsline {section}{\numberline {1.4}Document structure}{2}{section.11}%
-\contentsline {chapter}{\numberline {2}Background}{3}{chapter.12}%
-\contentsline {section}{\numberline {2.1}Distributed Systems}{3}{section.13}%
-\contentsline {subsection}{\numberline {2.1.1}Characteristics}{3}{subsection.14}%
-\contentsline {subsubsection}{Transparency}{3}{section*.15}%
-\contentsline {subsubsection}{Reliability and Availability}{3}{section*.16}%
-\contentsline {subsubsection}{Scalability}{4}{section*.17}%
-\contentsline {subsubsection}{Fault tolerance}{4}{section*.18}%
-\contentsline {subsection}{\numberline {2.1.2}Communication}{4}{subsection.19}%
-\contentsline {subsection}{\numberline {2.1.3}Challenges}{4}{subsection.20}%
-\contentsline {section}{\numberline {2.2}Fault Tolerance}{5}{section.21}%
-\contentsline {subsection}{\numberline {2.2.1}Fault Tolerance Taxonomy}{5}{subsection.22}%
-\contentsline {subsection}{\numberline {2.2.2}Strategies}{6}{subsection.25}%
-\contentsline {subsubsection}{Retry Mechanism}{6}{section*.26}%
-\contentsline {subsubsection}{Circuit Breaker Pattern}{7}{section*.27}%
-\contentsline {subsubsection}{Replication and Redundancy}{8}{section*.30}%
-\contentsline {subsubsection}{Check-pointing and Message Logging}{11}{section*.38}%
-\contentsline {subsubsection}{Briefly Comparison Between Strategies}{12}{section*.39}%
-\contentsline {section}{\numberline {2.3}Distributed and Concurrency Programming}{12}{section.40}%
-\contentsline {subsection}{\numberline {2.3.1}Models and Paradigms}{13}{subsection.41}%
-\contentsline {subsubsection}{Actor Model}{13}{section*.42}%
-\contentsline {subsubsection}{Communicating Sequential Processes}{13}{section*.43}%
-\contentsline {subsubsection}{Microservices Architectures}{14}{section*.44}%
-\contentsline {subsection}{\numberline {2.3.2}Distributed and Concurrent Programming Languages}{14}{subsection.45}%
-\contentsline {subsubsection}{Analyses and Language Choice Justification}{15}{section*.54}%
-\contentsline {chapter}{\numberline {3}State of the art}{17}{chapter.55}%
-\contentsline {section}{\numberline {3.1}Research Questions}{17}{section.56}%
-\contentsline {subsection}{\numberline {3.1.1}Research Methodology}{17}{subsection.57}%
-\contentsline {section}{\numberline {3.2}Elixir Programming Language Analysis}{19}{section.58}%
-\contentsline {subsection}{\numberline {3.2.1}The Foundation of Erlang}{19}{subsection.59}%
-\contentsline {subsubsection}{Concurrency in BEAM}{20}{section*.60}%
-\contentsline {subsubsection}{Garbage Collection and Immutability}{22}{section*.63}%
-\contentsline {subsubsection}{Hot-code swapping}{22}{section*.64}%
-\contentsline {subsection}{\numberline {3.2.2}Fault Tolerance Mechanism and Strategies}{22}{subsection.65}%
-\contentsline {subsubsection}{Let It Crash Philosophy and Actor Model}{22}{section*.66}%
-\contentsline {subsubsection}{Tools and Support}{24}{section*.69}%
-\contentsline {subsection}{\numberline {3.2.3}Drawbacks and Real Applications}{25}{subsection.74}%
-\contentsline {section}{\numberline {3.3}Scala Programming Language with Akka Toolkit Analysis}{26}{section.75}%
-\contentsline {subsection}{\numberline {3.3.1}How Akka Handles the Actor Model}{26}{subsection.76}%
-\contentsline {subsubsection}{Location Transparency and Communication}{26}{section*.77}%
-\contentsline {subsubsection}{Actors Isolation}{27}{section*.78}%
-\contentsline {subsection}{\numberline {3.3.2}Fault Tolerance Mechanism and Strategies}{27}{subsection.79}%
-\contentsline {subsubsection}{Akka Clustering}{28}{section*.80}%
-\contentsline {subsubsection}{Akka Circuit Breaker}{28}{section*.81}%
-\contentsline {subsubsection}{Akka Persistence and Event Sourcing}{29}{section*.82}%
-\contentsline {subsection}{\numberline {3.3.3}Comparison with Elixir/BEAM and Real Applications}{29}{subsection.83}%
-\contentsline {section}{\numberline {3.4}Go Programming Language Analysis}{30}{section.84}%
-\contentsline {subsection}{\numberline {3.4.1}Concurrency and Distribution in Go}{31}{subsection.85}%
-\contentsline {subsubsection}{Goroutines}{31}{section*.86}%
-\contentsline {subsubsection}{Channels}{32}{section*.88}%
-\contentsline {subsubsection}{Garbage Collector}{32}{section*.89}%
-\contentsline {subsubsection}{Distributed Communication}{33}{section*.90}%
-\contentsline {subsection}{\numberline {3.4.2}Fault Tolerance Mechanism and Strategies}{33}{subsection.91}%
-\contentsline {subsubsection}{Error Philosophy}{34}{section*.92}%
-\contentsline {subsubsection}{Fault Tolerance Mechanisms and Strategies}{34}{section*.93}%
-\contentsline {subsection}{\numberline {3.4.3}Challenges Compared With Akka and Elixir and Real Applications}{35}{subsection.97}%
-\contentsline {section}{\numberline {3.5}Benchmarking Analyses}{36}{section.98}%
-\contentsline {subsection}{\numberline {3.5.1}Fault-Tolerant and Distributed Benchmarking}{37}{subsection.100}%
-\contentsline {subsubsection}{Strategies}{38}{section*.101}%
-\contentsline {subsubsection}{Metrics}{39}{section*.104}%
-\contentsline {section}{\numberline {3.6}Conclusions}{40}{section.105}%
-\contentsline {subsection}{\numberline {3.6.1}Research Questions Answers}{40}{subsection.106}%
-\contentsline {subsection}{\numberline {3.6.2}Future Work}{42}{subsection.107}%
-\contentsline {subsubsection}{Design and Architecture}{42}{section*.108}%
-\contentsline {subsubsection}{Implementation and Functioning}{43}{section*.109}%
-\contentsline {subsubsection}{Configuration}{43}{section*.110}%
-\contentsline {subsubsection}{Test Scenarios and Metrics}{44}{section*.111}%
-\contentsline {subsubsection}{Data Analysis}{45}{section*.112}%
-\contentsline {chapter}{\numberline {4}Project Planning}{47}{chapter.113}%
-\contentsline {section}{\numberline {4.1}Project Charter}{47}{section.114}%
-\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{48}{section.116}%
-\contentsline {section}{\numberline {4.3}Gantt Diagram}{49}{section.118}%
-\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{49}{subsection.120}%
-\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{50}{subsection.121}%
-\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{50}{subsection.123}%
-\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{51}{subsection.125}%
-\contentsline {section}{\numberline {4.4}Risk Management}{53}{section.130}%
-\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{53}{subsection.131}%
-\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{53}{subsection.132}%
-\contentsline {chapter}{\numberline {5}Appendix A Planning Detailing}{55}{chapter.133}%
-\contentsline {section}{\numberline {5.1}Gantt Chart}{55}{section.134}%
-\contentsline {section}{\numberline {5.2}Work Breakdown Structure Dictionary}{55}{section.136}%
+\contentsline {chapter}{List of Figures}{xi}{section*.7}%
+\contentsline {chapter}{List of Tables}{xiii}{section*.9}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.10}%
+\contentsline {section}{\numberline {1.1}Context and Problem}{1}{section.11}%
+\contentsline {section}{\numberline {1.2}Objectives}{1}{section.12}%
+\contentsline {section}{\numberline {1.3}Ethical Considerations}{2}{section.13}%
+\contentsline {section}{\numberline {1.4}Document Structure}{2}{section.14}%
+\contentsline {chapter}{\numberline {2}Background}{5}{chapter.15}%
+\contentsline {section}{\numberline {2.1}Distributed Systems}{5}{section.16}%
+\contentsline {subsection}{\numberline {2.1.1}Characteristics}{5}{subsection.17}%
+\contentsline {subsubsection}{Transparency}{5}{section*.18}%
+\contentsline {subsubsection}{Reliability and Availability}{5}{section*.19}%
+\contentsline {subsubsection}{Scalability}{6}{section*.20}%
+\contentsline {subsubsection}{Fault tolerance}{6}{section*.21}%
+\contentsline {subsection}{\numberline {2.1.2}Communication}{6}{subsection.22}%
+\contentsline {subsection}{\numberline {2.1.3}Challenges}{6}{subsection.23}%
+\contentsline {section}{\numberline {2.2}Fault Tolerance}{7}{section.24}%
+\contentsline {subsection}{\numberline {2.2.1}Fault Tolerance Taxonomy}{7}{subsection.25}%
+\contentsline {subsection}{\numberline {2.2.2}Strategies}{8}{subsection.28}%
+\contentsline {subsubsection}{Retry Mechanism}{8}{section*.29}%
+\contentsline {subsubsection}{Circuit Breaker Pattern}{9}{section*.30}%
+\contentsline {subsubsection}{Replication and Redundancy}{10}{section*.33}%
+\contentsline {subsubsection}{Check-pointing and Message Logging}{13}{section*.41}%
+\contentsline {subsubsection}{Briefly Comparison Between Strategies}{14}{section*.42}%
+\contentsline {section}{\numberline {2.3}Distributed and Concurrency Programming}{14}{section.43}%
+\contentsline {subsection}{\numberline {2.3.1}Models and Paradigms}{15}{subsection.44}%
+\contentsline {subsubsection}{Actor Model}{15}{section*.45}%
+\contentsline {subsubsection}{Communicating Sequential Processes}{15}{section*.46}%
+\contentsline {subsubsection}{Microservices Architectures}{16}{section*.47}%
+\contentsline {subsection}{\numberline {2.3.2}Distributed and Concurrent Programming Languages}{16}{subsection.48}%
+\contentsline {subsubsection}{Analyses and Language Choice Justification}{17}{section*.57}%
+\contentsline {chapter}{\numberline {3}State of the art}{19}{chapter.58}%
+\contentsline {section}{\numberline {3.1}Research Questions}{19}{section.59}%
+\contentsline {subsection}{\numberline {3.1.1}Research Methodology}{19}{subsection.60}%
+\contentsline {section}{\numberline {3.2}Elixir Programming Language Analysis}{21}{section.61}%
+\contentsline {subsection}{\numberline {3.2.1}The Foundation of Erlang}{21}{subsection.62}%
+\contentsline {subsubsection}{Concurrency in BEAM}{22}{section*.63}%
+\contentsline {subsubsection}{Garbage Collection and Immutability}{24}{section*.66}%
+\contentsline {subsubsection}{Hot-code swapping}{24}{section*.67}%
+\contentsline {subsection}{\numberline {3.2.2}Fault Tolerance Mechanism and Strategies}{24}{subsection.68}%
+\contentsline {subsubsection}{Let It Crash Philosophy and Actor Model}{24}{section*.69}%
+\contentsline {subsubsection}{Tools and Support}{26}{section*.72}%
+\contentsline {subsection}{\numberline {3.2.3}Drawbacks and Real Applications}{27}{subsection.77}%
+\contentsline {section}{\numberline {3.3}Scala Programming Language with Akka Toolkit Analysis}{28}{section.78}%
+\contentsline {subsection}{\numberline {3.3.1}How Akka Handles the Actor Model}{28}{subsection.79}%
+\contentsline {subsubsection}{Location Transparency and Communication}{28}{section*.80}%
+\contentsline {subsubsection}{Actors Isolation}{29}{section*.81}%
+\contentsline {subsection}{\numberline {3.3.2}Fault Tolerance Mechanism and Strategies}{29}{subsection.82}%
+\contentsline {subsubsection}{Akka Clustering}{30}{section*.83}%
+\contentsline {subsubsection}{Akka Circuit Breaker}{30}{section*.84}%
+\contentsline {subsubsection}{Akka Persistence and Event Sourcing}{31}{section*.85}%
+\contentsline {subsection}{\numberline {3.3.3}Comparison with Elixir/BEAM and Real Applications}{31}{subsection.86}%
+\contentsline {section}{\numberline {3.4}Go Programming Language Analysis}{32}{section.87}%
+\contentsline {subsection}{\numberline {3.4.1}Concurrency and Distribution in Go}{33}{subsection.88}%
+\contentsline {subsubsection}{Goroutines}{33}{section*.89}%
+\contentsline {subsubsection}{Channels}{34}{section*.91}%
+\contentsline {subsubsection}{Garbage Collector}{34}{section*.92}%
+\contentsline {subsubsection}{Distributed Communication}{35}{section*.93}%
+\contentsline {subsection}{\numberline {3.4.2}Fault Tolerance Mechanism and Strategies}{35}{subsection.94}%
+\contentsline {subsubsection}{Error Philosophy}{36}{section*.95}%
+\contentsline {subsubsection}{Fault Tolerance Mechanisms and Strategies}{36}{section*.96}%
+\contentsline {subsection}{\numberline {3.4.3}Challenges Compared With Akka and Elixir and Real Applications}{37}{subsection.100}%
+\contentsline {section}{\numberline {3.5}Benchmarking Analyses}{38}{section.101}%
+\contentsline {subsection}{\numberline {3.5.1}Fault-Tolerant and Distributed Benchmarking}{39}{subsection.103}%
+\contentsline {subsubsection}{Strategies}{40}{section*.104}%
+\contentsline {subsubsection}{Metrics}{41}{section*.107}%
+\contentsline {section}{\numberline {3.6}Conclusions}{42}{section.108}%
+\contentsline {subsection}{\numberline {3.6.1}Research Questions Answers}{42}{subsection.109}%
+\contentsline {subsection}{\numberline {3.6.2}Future Work}{44}{subsection.110}%
+\contentsline {chapter}{\numberline {4}Project Planning}{49}{chapter.111}%
+\contentsline {section}{\numberline {4.1}Project Charter}{49}{section.112}%
+\contentsline {section}{\numberline {4.2}Work Breakdown Structure}{50}{section.114}%
+\contentsline {section}{\numberline {4.3}Gantt Diagram}{51}{section.116}%
+\contentsline {subsection}{\numberline {4.3.1}Project Management and Scheduling}{51}{subsection.118}%
+\contentsline {subsection}{\numberline {4.3.2}Monitoring and Controlling Procedures}{52}{subsection.119}%
+\contentsline {subsection}{\numberline {4.3.3}Meeting Sessions}{52}{subsection.121}%
+\contentsline {subsection}{\numberline {4.3.4}Competencies Development Plan}{53}{subsection.123}%
+\contentsline {section}{\numberline {4.4}Risk Management}{55}{section.128}%
+\contentsline {subsection}{\numberline {4.4.1}Risk 1: Bugs in Third-Party Libraries}{55}{subsection.129}%
+\contentsline {subsection}{\numberline {4.4.2}Risk 2: Integration Challenges Between Components}{55}{subsection.130}%
+\contentsline {chapter}{\numberline {5}Appendix A Planning Detailing}{57}{chapter.131}%
+\contentsline {section}{\numberline {5.1}Gantt Chart}{57}{section.132}%
+\contentsline {section}{\numberline {5.2}Work Breakdown Structure Dictionary}{57}{section.134}%

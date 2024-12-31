@@ -115,7 +115,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 10.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Official documentation of Go programming language}}
       \verb{urlraw}
       \verb https://go.dev/doc//
@@ -225,7 +225,7 @@
       \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 01.12.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{NSPE Code of Ethics for Engineers}
       \verb{urlraw}
       \verb https://www.nspe.org/resources/ethics/code-ethics
@@ -250,7 +250,7 @@
       \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 01.12.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{IEEE Code of Ethics}
       \verb{urlraw}
       \verb https://www.ieee.org/about/corporate/governance/p7-8.html
@@ -275,7 +275,7 @@
       \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 01.12.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{ACM Code of Ethics and Professional Conduct}
       \verb{urlraw}
       \verb https://www.acm.org/code-of-ethics/
@@ -474,7 +474,7 @@
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 16.10.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Reliability vs availability: Understanding the differences}}
       \verb{urlraw}
       \verb https://www.atlassian.com/incident-management/kpis/reliability-vs-availability
@@ -585,7 +585,7 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Challenges with distributed systems}}
       \verb{urlraw}
       \verb https://aws.amazon.com/builders-library/challenges-with-distributed-systems/
@@ -611,7 +611,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{8}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{What is the CAP theorem?}}
       \field{year}{2024}
       \verb{urlraw}
@@ -861,7 +861,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{Apache Flink Documentation}
       \verb{urlraw}
       \verb https://nightlies.apache.org/flink/flink-docs-master/docs/dev/datastream/fault-tolerance/checkpointing/
@@ -1526,7 +1526,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{11}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Optimising for Concurrency: Comparing and contrasting the BEAM and JVM virtual machines}}
       \field{year}{2024}
       \verb{urlraw}
@@ -1540,7 +1540,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{Elixir Language Documentation}
       \verb{urlraw}
       \verb https://hexdocs.pm/elixir/introduction.html
@@ -1553,7 +1553,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Akka Official Documentation}}
       \field{year}{2024}
       \verb{urlraw}
@@ -1567,7 +1567,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Proto.Actor Documentation}}
       \field{year}{2024}
       \verb{urlraw}
@@ -1581,7 +1581,7 @@
       \field{sortinit}{1}
       \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Elixir School - Official}}
       \field{year}{2024}
       \verb{urlraw}
@@ -2150,7 +2150,7 @@
       \field{sortinit}{2}
       \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Go-kit Documentation}}
       \field{year}{2024}
       \verb{urlraw}
@@ -2184,8 +2184,8 @@
       \strng{authorbibnamehash}{50c6125f0222ace743a934e8b03d2e57}
       \strng{authornamehash}{50c6125f0222ace743a934e8b03d2e57}
       \strng{authorfullhash}{50c6125f0222ace743a934e8b03d2e57}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{The article is dedicated to the study of the execution speed of the back-end part of the application, which functions under high load conditions. The study was conducted for program codes written in different programming languages. At the same time, the REST API style in the microservices architecture was used to implement the application. Modern software environments based on Python, Golang, JavaScript, and Elixir programming languages were selected for analysis. Several characteristics of the software code were experimentally investigated, which reflect the speed qualities of the application. An analysis of the obtained results was carried out and relevant conclusions were drawn.}
@@ -2204,7 +2204,7 @@
       \field{sortinit}{3}
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
-      \field{note}{Accessed at 03.11.2024}
+      \field{note}{Accessed at 04.01.2025}
       \field{title}{{Discord blog - Why discord is switching from go to rust}}
       \field{year}{2024}
       \verb{urlraw}
@@ -2389,6 +2389,7 @@
       \keyw{Actors,Agents,Benchmark,Concurrency,Programming languages}
     \endentry
   \enddatalist
+  \missing{Valkov et al}
 \endrefsection
 \endinput
 

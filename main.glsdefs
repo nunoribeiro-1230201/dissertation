@@ -623,8 +623,8 @@ first={MTTR},%
 firstplural={MTTRs},%
 text={MTTR},%
 plural={MTTRs},%
-description={Mean Time to Repair},%
-descriptionplural={Mean Time to Repair},%
+description={Mean Time To Repair},%
+descriptionplural={Mean Time To Repair},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -633,10 +633,38 @@ user3={},%
 user4={},%
 user5={},%
 user6={},%
-long={Mean Time to Repair},%
-longplural={Mean Time to Repairs},%
+long={Mean Time To Repair},%
+longplural={Mean Time To Repairs},%
 short={MTTR},%
 shortplural={MTTRs},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{MTTF}%
+{%
+name={\acronymfont {\glsentryshort {MTTF}}},%
+sort={MTTF},%
+type={acronym},%
+first={MTTF},%
+firstplural={MTTFs},%
+text={MTTF},%
+plural={MTTFs},%
+description={Mean Time To Fail},%
+descriptionplural={Mean Time To Fail},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Mean Time To Fail},%
+longplural={Mean Time To Fails},%
+short={MTTF},%
+shortplural={MTTFs},%
 counter={page},%
 parent={},%
 %
@@ -646,55 +674,4 @@ parent={},%
 {%
 name={\acronymfont {\glsentryshort {LOC}}},%
 sort={LOC},%
-type={acronym},%
-first={LOC},%
-firstplural={LOCs},%
-text={LOC},%
-plural={LOCs},%
-description={Lines of code},%
-descriptionplural={Lines of code},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Lines of code},%
-longplural={Lines of codes},%
-short={LOC},%
-shortplural={LOCs},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{CLI}%
-{%
-name={\acronymfont {\glsentryshort {CLI}}},%
-sort={CLI},%
-type={acronym},%
-first={CLI},%
-firstplural={CLIs},%
-text={CLI},%
-plural={CLIs},%
-description={Command-line interface},%
-descriptionplural={Command-line interface},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={Command-line interface},%
-longplural={Command-line interfaces},%
-short={CLI},%
-shortplural={CLIs},%
-counter={page},%
-parent={},%
-%
-}%
-
+type={acronym},

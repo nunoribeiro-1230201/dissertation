@@ -120,7 +120,7 @@ Circuit breakers operate in three primary states: Closed, Open, and Half-Open \c
     \caption[Diagram illustrating the states of a Circuit Breaker]{Diagram illustrating the states of a Circuit Breaker \footnotemark.}
     \label{fig:circuit-breaker}
 \end{figure}
-\footnotetext{From Oscar Blancarte Blog. \url{https://www.oscarblancarteblog.com/2018/12/04/circuit-breaker-pattern/} (accessed 8 December 2024).}
+\footnotetext{From Oscar Blancarte Blog. \url{https://www.oscarblancarteblog.com/2018/12/04/circuit-breaker-pattern/} (accessed 4 January 2025).}
 
 The Circuit Breaker pattern is particularly well-suited for distributed systems, such as microservice architectures, where dependencies on external services can lead to cascading failures \cite{fowler-circuit-breakers}. For instance, if a downstream service becomes unresponsive, the circuit breaker blocks further requests, providing the service with time to heal and avoiding the risk of overloading it with retries \cite{Vitillo2021}. It is equally effective in scenarios involving a third-party \gls{API}, where temporary rate limits or outages can impact availability. In database systems, circuit breakers can mitigate the effects of resource contention or extended downtime by isolating problematic queries, ensuring the broader system remains operational.
 
@@ -215,7 +215,7 @@ Once elected, the new leader reconciles any inconsistencies by broadcasting miss
     \caption[Diagram illustrating the states of a node in the Raft algorithm]{Diagram illustrating the states of a node in the Raft algorithm \footnotemark.}
     \label{fig:state-raft}
 \end{figure}
-\footnotetext{Adapted from Jinjie Xu and colleagues. \url{https://doi.org/10.3390/sym14061122/} (accessed 8 December 2024).}
+\footnotetext{Adapted from Jinjie Xu and colleagues. \url{https://doi.org/10.3390/sym14061122/} (accessed 4 January 2025).}
 
 Raft’s structured and modular design prioritizes simplicity, reliability, and fault tolerance. Its leader-based model centralizes decision-making and log synchronization, while its robust mechanisms for log replication and leader election ensure consistency and availability even in the face of failures.
 
@@ -288,7 +288,7 @@ Distributed and concurrent programming languages are designed to handle multiple
 
 One widely adopted paradigm for mitigating concurrency issues is the Actor Model. By avoiding shared state and using message passing for communication, the Actor Model reduces risks inherent in traditional concurrency mechanisms such as mutexes and locks \cite{Valkov2018}. Erlang, for instance, is renowned for its fault tolerance and “let-it-crash” philosophy \cite{Armstrong2013}. Supervising actors monitor and recover from failures, making Erlang highly suitable for building robust distributed systems \cite{Armstrong2013}. Building on Erlang’s foundation, Elixir introduces modern syntax and developer tooling while retaining Erlang’s strengths for creating large-scale, fault-tolerant systems. These features make Elixir a popular choice for modern distributed systems development \cite{Juric2024}.
 
-Haskell, a pure functional programming language, provides a deterministic approach to concurrency, ensuring consistent results regardless of execution order \cite{Valkov2018}. Its extension Cloud Haskell\footnote{Cloud Haskell: \url{https://haskell-distributed.github.io/} (accessed 25 November 2024)}, builds upon the Actor Model, drawing inspiration from Erlang, to allow distributed computation through message passing.
+Haskell, a pure functional programming language, provides a deterministic approach to concurrency, ensuring consistent results regardless of execution order \cite{Valkov2018}. Its extension Cloud Haskell\footnote{Cloud Haskell: \url{https://haskell-distributed.github.io/} (accessed 4 January 2025)}, builds upon the Actor Model, drawing inspiration from Erlang, to allow distributed computation through message passing.
 
 Similarly, Akka, a framework built with Scala, adopts the Actor Model to support distributed and concurrent applications. Akka combines Scala’s strengths in functional and object-oriented programming, enabling developers to merge these paradigms effectively \cite{Valkov2018}. Unlike Erlang, Akka operates on the \gls{JVM}, providing seamless interoperability with Java-based systems \cite{Abraham2023}.
 
@@ -296,11 +296,11 @@ Go, developed by Google, simplifies concurrent programming through its lightweig
 
 For specialized use cases like Big Data processing, frameworks such as Hadoop provide distributed computing capabilities tailored to data-intensive tasks. Hadoop abstracts the complexities of handling distributed storage and processing, offering features such as scalability, fault tolerance, and data replication \cite{Polato2014}.
 
-Other pioneer languages, such as Emerald, Oz, and Hermes, still exist but have minimal community and industry support, as reflected in popularity rankings like RedMonk January 2024\footnote{RedMonk January 2024: \url{https://redmonk.com/sogrady/2024/03/08/language-rankings-1-24/} (accessed 28 November 2024)} and Tiobe November 2024\footnote{Tiobe November 2024: \url{https://www.tiobe.com/tiobe-index/} (accessed 28 November 2024)}.
+Other pioneer languages, such as Emerald, Oz, and Hermes, still exist but have minimal community and industry support, as reflected in popularity rankings like RedMonk January 2024\footnote{RedMonk January 2024: \url{https://redmonk.com/sogrady/2024/03/08/language-rankings-1-24/} (accessed 4 January 2025)} and Tiobe November 2024\footnote{Tiobe November 2024: \url{https://www.tiobe.com/tiobe-index/} (accessed 4 January 2025)}.
 
-Conversely, some relatively recent languages have gained attention. Unison\footnote{Unison: \url{https://www.unisonweb.org/} (accessed 27 November 2024)} employs content-addressed programming using hash references to improve code management and distribution. Gleam\footnote{Gleam: \url{https://gleam.run/} (accessed 27 November 2024)} compiles to Erlang and offers its own type-safe implementation of \gls{OTP}, Erlang’s actor framework. Pony\footnote{Pony: \url{https://www.ponylang.io/} (accessed 27 November 2024)}, an object-oriented language based on the Actor Model, introduces reference capabilities to ensure concurrency safety. However, these languages have yet to achieve significant industry adoption, as evidenced by their absence from the RedMonk January 2024 and Tiobe November 2024 rankings.
+Conversely, some relatively recent languages have gained attention. Unison\footnote{Unison: \url{https://www.unisonweb.org/} (accessed 4 January 2025)} employs content-addressed programming using hash references to improve code management and distribution. Gleam\footnote{Gleam: \url{https://gleam.run/} (accessed 4 January 2025)} compiles to Erlang and offers its own type-safe implementation of \gls{OTP}, Erlang’s actor framework. Pony\footnote{Pony: \url{https://www.ponylang.io/} (accessed 4 January 2025)}, an object-oriented language based on the Actor Model, introduces reference capabilities to ensure concurrency safety. However, these languages have yet to achieve significant industry adoption, as evidenced by their absence from the RedMonk January 2024 and Tiobe November 2024 rankings.
 
-In Table \ref{tab:languages_comparison}, the most relevant languages and frameworks for this theme are presented to facilitate a concise analysis. Additionally, rankings from TIOBE November 2024 and IEEE Spectrum August 2024\footnote{IEEE Spectrum 2024: \url{https://spectrum.ieee.org/top-programming-languages-2024/} (accessed 28 November 2024)} are included to provide an overview of their popularity and adoption.
+In Table \ref{tab:languages_comparison}, the most relevant languages and frameworks for this theme are presented to facilitate a concise analysis. Additionally, rankings from TIOBE November 2024 and IEEE Spectrum August 2024\footnote{IEEE Spectrum 2024: \url{https://spectrum.ieee.org/top-programming-languages-2024/} (accessed 4 January 2025)} are included to provide an overview of their popularity and adoption.
 
 \begin{table}[h!]
     \centering

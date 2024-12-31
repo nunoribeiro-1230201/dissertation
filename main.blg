@@ -1,0 +1,32 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'main.blg'
+[56] biber-darwin:340> INFO - === Tue Dec 31, 2024, 18:16:45
+[70] Biber.pm:419> INFO - Reading 'main.bcf'
+[243] Biber.pm:979> INFO - Found 65 citekeys in bib section 0
+[255] Biber.pm:4419> INFO - Processing section 0
+[263] Biber.pm:4610> INFO - Looking for bibtex file './references.bib' for section 0
+[270] bibtex.pm:1713> INFO - LaTeX decoding ...
+[327] bibtex.pm:1519> INFO - Found BibTeX data source './references.bib'
+[454] Biber.pm:4610> INFO - Looking for bibtex file './other_references.bib' for section 0
+[455] bibtex.pm:1713> INFO - LaTeX decoding ...
+[469] bibtex.pm:1519> INFO - Found BibTeX data source './other_references.bib'
+[511] Biber.pm:4610> INFO - Looking for bibtex file './reference_state_of_art.bib' for section 0
+[514] bibtex.pm:1713> INFO - LaTeX decoding ...
+[535] bibtex.pm:1519> INFO - Found BibTeX data source './reference_state_of_art.bib'
+[646] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[646] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[646] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[646] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[677] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[703] bbl.pm:763> INFO - Output to main.bbl
+[703] Biber.pm:131> WARN - Duplicate entry key: 'Haridi1998' in file './references.bib', skipping ...
+[703] Biber.pm:131> WARN - Duplicate entry key: 'Trinder2017' in file './references.bib', skipping ...
+[703] Biber.pm:131> WARN - Duplicate entry key: 'Valkov2018' in file './reference_state_of_art.bib', skipping ...
+[703] Biber.pm:131> WARN - Duplicate entry key: 'Cutajar2023' in file './reference_state_of_art.bib', skipping ...
+[703] Biber.pm:131> WARN - Duplicate entry key: 'Abraham2023' in file './reference_state_of_art.bib', skipping ...
+[703] Biber.pm:131> WARN - Duplicate entry key: 'Juric2024' in file './reference_state_of_art.bib', skipping ...
+[703] Biber.pm:131> WARN - ISBN '9798400703270' in entry 'Moradi2023' is invalid - run biber with '--validate_datamodel' for details.
+[703] Biber.pm:131> WARN - ISBN '9798350366846' in entry 'Chaudhary2024' is invalid - run biber with '--validate_datamodel' for details.
+[703] Biber.pm:131> WARN - ISBN '9798400701559' in entry 'Zhao2023' is invalid - run biber with '--validate_datamodel' for details.
+[703] Biber.pm:131> WARN - I didn't find a database entry for 'Valkov et al' (section 0)
+[703] Biber.pm:133> INFO - WARNINGS: 10

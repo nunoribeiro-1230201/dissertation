@@ -1,15 +1,15 @@
 # Fdb version 4
-["biber main"] 1735643519.27091 "main.bcf" "main.bbl" "main" 1735650997.64524 0
+["biber main"] 1735643519.27091 "main.bcf" "main.bbl" "main" 1735659988.42847 0
   "./other_references.bib" 1735265755.59873 10796 a22e8b78c0db9fdf4d7e5c78bb57318a ""
   "./reference_state_of_art.bib" 1735429632.11669 31187 b68e753321c0397421dbd80ade48526c ""
   "./references.bib" 1733885431.41807 83655 f9bf9035c079ab5cf17317d1e4bf927a ""
-  "main.bcf" 1735650997.44814 139979 cebc2150c8ea46339d62bbaba9432c5e "pdflatex"
+  "main.bcf" 1735659988.31383 139979 cebc2150c8ea46339d62bbaba9432c5e "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1735650988.80774 "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" "main.pdf" "main" 1735650997.64575 0
-  "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" 1735555528.08758 7940 86019283a1f1515c1ef13d6fed3f8430 ""
+["pdflatex"] 1735659983.12796 "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" "main.pdf" "main" 1735659988.4288 0
+  "/Users/nunoribeiro/Desktop/ISEP/2Ano/Tese/LaTeX_Dissertation/main.tex" 1735655190.89982 7991 65c0680e971391c09ab4de06098db51f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -309,7 +309,7 @@
   "ch-background/assets/circuit-breaker.png" 1733684669.74135 172961 4280274b719331bdbf0740f45b7107d7 ""
   "ch-background/assets/state-raft.png" 1733879751.28263 41356 74339c67e057a99818b55093631cd0d1 ""
   "ch-background/chapter-background.tex" 1735646455.1684 63395 17b3ca968562e8b7972299d1c84fcac9 ""
-  "ch-intro/chapter-intro.tex" 1735650883.81419 7174 c769309d622510933662ab814b097639 ""
+  "ch-intro/chapter-intro.tex" 1735659923.70772 7174 7359b3ea0e67b8758c19adef6a519489 ""
   "ch-planning/assets/gantt_meetings.png" 1733974659.81664 53629 b3f511933806f7ab754aba5019e8617a ""
   "ch-planning/assets/gantt_monitoring.png" 1733974431.0368 88545 fb4519171f22da8f14ee82fdda3dc777 ""
   "ch-planning/assets/gantt_skills.png" 1733974803.9883 30437 4d709ac9d98f264cca797da71e5ae6bf ""
@@ -320,19 +320,19 @@
   "ch-state/assets/elixir-vs-jvm-threads.png" 1734171947.36836 104966 8f74af82de1610f8edef14fe95e4d8cf ""
   "ch-state/assets/goroutine-threads-relation.png" 1735132053.96102 46188 1636e3a23800e2720f82f9415392cfe5 ""
   "ch-state/assets/supervisor-design.jpg" 1734144684.43569 9500 d79aee8cf3eecc96c69ab1c2617c18e1 ""
-  "ch-state/chapter-state.tex" 1735646250.49225 105637 462c54080f3d20a3ea0e1154127daae0 ""
-  "frontmatter/frontmatter.tex" 1735650979.59327 6119 a490cf2943ba01bce40b6a0b5f3b2205 ""
+  "ch-state/chapter-state.tex" 1735659982.90041 105641 fb6eacb35637e620d830382bb5347e70 ""
+  "frontmatter/frontmatter.tex" 1735659734.31263 11965 f98d17ab6ff06c1ab8908ee47ca2b26f ""
   "frontmatter/glossary.tex" 1735585309.58423 1214 a324c1f1ee65acb3a68812df330f67ad ""
   "main.acr" 0 -1 0 ""
-  "main.aux" 1735650997.39741 51509 ae1a73ed83146b9ef04c27ea89ffc248 "pdflatex"
+  "main.aux" 1735659988.28415 51506 7b51604574922e6c4b984b3d34023a91 "pdflatex"
   "main.bbl" 1735643522.8706 135398 bb8a80b84b70b5601608d3569d63f9be "biber main"
-  "main.glsdefs" 1735650997.39164 12664 69f4d0c8c9ce706ea7025f0f0d4c8ec6 "pdflatex"
-  "main.lof" 1735650997.44941 1667 19b65830c89447d5a0b31f65c60e2b65 "pdflatex"
-  "main.lot" 1735650997.44944 595 0abf88ce8e51178e7313fa62aa2280b1 "pdflatex"
-  "main.out" 1735650997.444 15400 a03f219cf3277c5c3d512cfe4788b5d1 "pdflatex"
-  "main.run.xml" 1735650997.44915 2438 1eab3f28d4331e32d71593dc877901b7 "pdflatex"
-  "main.tex" 1735555528.08758 7940 86019283a1f1515c1ef13d6fed3f8430 ""
-  "main.toc" 1735650997.44935 6901 acfdc7ab7fd3ca656c55f99c674c7c57 "pdflatex"
+  "main.glsdefs" 1735659988.28106 12664 69f4d0c8c9ce706ea7025f0f0d4c8ec6 "pdflatex"
+  "main.lof" 1735659988.31475 1667 ee8b9b20dd05d4e01b284ae05af6ecc2 "pdflatex"
+  "main.lot" 1735659988.31477 595 a6cb7e8e0672d41f36890d275be4b721 "pdflatex"
+  "main.out" 1735659988.31122 15394 1b264c86bf54206b22d9d0c63b41a8f5 "pdflatex"
+  "main.run.xml" 1735659988.31462 2438 1eab3f28d4331e32d71593dc877901b7 "pdflatex"
+  "main.tex" 1735655190.89982 7991 65c0680e971391c09ab4de06098db51f ""
+  "main.toc" 1735659988.31471 6899 72478e110c5359415ed9e94411479800 "pdflatex"
   "tmdei-style.cls" 1734047117.80826 24761 0812b24a513bd7d3d41ab0856a639792 ""
   (generated)
   "main.acn"

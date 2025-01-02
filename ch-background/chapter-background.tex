@@ -19,11 +19,11 @@ On a distributed system, when being well-structured, it is possible to find, amo
 
 \subsubsection{Transparency}
 
-Transparency in distributed systems enables seamless user interaction by hiding the complexity of underlying operations \cite{Tanenbaum2023, Ledmi2018}. Key aspects include access transparency, which allows resource usage without concern for system differences, and location transparency, which hides the physical location of resources, as seen with \glspl{URL} \cite{Tanenbaum2023, Coulouris2012}. Replication transparency ensures reliability by masking data duplication, while failure transparency enables systems to handle faults without user disruption \cite{Tanenbaum2023, Coulouris2012}. Together, these forms of transparency enhance usability, robustness, and reliability.
+Transparency in distributed systems enables seamless user interaction by hiding the complexity of underlying operations \cite{Tanenbaum2023, Ledmi2018}. Key aspects include access transparency, which allows resource usage without concern for system differences, and location transparency, which hides the physical location of resources, as seen with the \glspl{URL} \cite{Tanenbaum2023, Coulouris2012}. Replication transparency ensures reliability by masking data duplication, while failure transparency enables systems to handle faults without user disruption \cite{Tanenbaum2023, Coulouris2012}. Together, these forms of transparency enhance usability, robustness, and reliability.
 
 \subsubsection{Reliability and Availability}
 
-A distributed system should have reliability and availability aspects. Reliability refers to its ability to continuously perform its intended requirements without interruption, operating exactly as designed, even in the presence of certain internal failures \cite{Ahmed2013}. A highly reliable system maintains consistent, uninterrupted service over an extended period, minimizing disruptions for users \cite{Tanenbaum2023}, on other hand, availability measures the probability that the system is operational and ready to respond correctly at any given moment, often expressed as a percentage of system up-time \cite{Tanenbaum2023, atlassian-availability}.
+A distributed system should have reliability and availability aspects. Reliability refers to its ability to continuously perform its intended requirements without interruption, operating exactly as designed, even in the presence of certain internal failures \cite{Ahmed2013}. A highly reliable system maintains consistent, uninterrupted service over an extended period, minimizing disruptions for users \cite{Tanenbaum2023}. On other hand, availability measures the probability that the system is operational and ready to respond correctly at any given moment, often expressed as a percentage of system up-time \cite{Tanenbaum2023, atlassian-availability}.
 
 \subsubsection{Scalability}
 
@@ -37,7 +37,7 @@ The primary goal of a fault-tolerant system is to enable continuous operation by
 
 \subsection{Communication}
 
-Communication is fundamental in distributed systems for coordination and data exchange. Nodes communicate over networks or via \gls{IPC} when on the same machine \cite{Vitillo2021}. Synchronous communication involves blocking operations where the sender waits for a response, suitable for scenarios requiring confirmation \cite{Tanenbaum2023, Coulouris2012}. In contrast, asynchronous communication allows non-blocking operations, enabling the sender to proceed without waiting. This approach, often supported by message queues, is ideal for decoupled and heterogeneous systems \cite{Tanenbaum2023}.
+Communication is fundamental in distributed systems for coordination and data exchange. Nodes communicate over networks or via \gls{IPC} when on the same machine \cite{Vitillo2021}. Synchronous communication involves blocking operations where the sender waits for a response, suitable for scenarios requiring confirmation \cite{Tanenbaum2023, Coulouris2012}. In contrast, asynchronous communication allows non-blocking operations, enabling the sender to proceed without waiting. This approach, often supported by message queues, is a good suit for decoupled and heterogeneous systems \cite{Tanenbaum2023}.
 
 \subsection{Challenges}
 
@@ -61,17 +61,17 @@ With the extensive use of software systems across various domains, the demand fo
 
 \subsection{Fault Tolerance Taxonomy}
 
-Firstly, it is important to classify and understand the types of failures that can arise. This section presents a taxonomy of fault tolerance concepts, drawing on the framework proposed by Isukapalli et al. \cite{Isukapalli2024}. A fault, which types are summarized in the Table \ref{tab:faults_types}, is defined as an underlying defect within a system component that can lead to a failure, which is a deviation from the intended internal state. If this error remains unresolved, it may escalate into a system failure, potentially impacting system functionality either partially or completely \cite{Isukapalli2024,Reghenzani2023}.
+Firstly, it is important to classify and understand the types of failures that can arise. This section presents a taxonomy of fault tolerance concepts, drawing on the framework proposed by \textcite{Isukapalli2024}. A fault, which types are summarized in the Table \ref{tab:faults_types}, is defined as an underlying defect within a system component that can lead to a failure, which is a deviation from the intended internal state. If this error remains unresolved, it may escalate into a system failure, potentially impacting system functionality either partially or completely \cite{Isukapalli2024,Reghenzani2023}.
 
 \begin{table}[h!]
     \centering
     \begin{tabular}{|l|p{11.3cm}|}
         \hline
-        \textbf{Type of Fault} & \textbf{Description}                                                                                                                                                                               \\ \hline
-        Transient Faults       & Temporary conditions like network issues or service unavailability. Can typically be resolved by restarting the application when the underlying condition is fixed \cite{Isukapalli2024}.          \\ \hline
-        Intermittent Faults    & Unpredictable symptoms related to system or hardware malfunction. Difficult to detect during testing and emerge during system operation, and also hard to completely resolve \cite{Isukapalli2024}.   \\ \hline
-        Permanent Faults       & Persistent issues that continue until the root cause is identified and addressed. Relatively straightforward to fix, typically related to complete component malfunction \cite{Tanenbaum2023}. \\ \hline
-        Byzantine Faults       & Caused by internal system state corruption or incorrect network routing. Handling is complex and costly, often requiring multiple component replicas and voting mechanisms \cite{Isukapalli2024}.  \\ \hline
+        \textbf{Type of Fault} & \textbf{Description}                                                                                                                                                                                \\ \hline
+        Transient Faults       & Temporary conditions like network issues or service unavailability. Can typically be resolved by restarting the application when the underlying condition is fixed \cite{Isukapalli2024}.           \\ \hline
+        Intermittent Faults    & Unpredictable symptoms related to system or hardware malfunction. Difficult to detect during testing and emerge during system operation, and also hard to completely resolve \cite{Isukapalli2024}. \\ \hline
+        Permanent Faults       & Persistent issues that continue until the root cause is identified and addressed. Relatively straightforward to fix, typically related to complete component malfunction \cite{Tanenbaum2023}.      \\ \hline
+        Byzantine Faults       & Caused by internal system state corruption or incorrect network routing. Handling is complex and costly, often requiring multiple component replicas and voting mechanisms \cite{Isukapalli2024}.   \\ \hline
     \end{tabular}
     \caption{Brief description of fauls types}
     \label{tab:faults_types}
@@ -83,12 +83,12 @@ Failures are the external manifestations of the internal faults, as outlined in 
     \centering
     \begin{tabular}{|l|p{11.3cm}|}
         \hline
-        \textbf{Type of Failure} & \textbf{Description}                                                                                                                                                                                       \\ \hline
-        Crash Failure            & The system halts and stops all operations entirely. Although it was functioning correctly before the halt, it does not resume operations or provide responses after the failure. \cite{Tanenbaum2023}      \\ \hline
-        Omission Failure         & The system fails to send or receive necessary messages, impacting communication and task coordination. \cite{Isukapalli2024}                                                                               \\ \hline
-        Timing Failure           & The system’s response occurs outside a specified time interval, either too early or too late, causing issues in time-sensitive operations. \cite{Isukapalli2024}                                           \\ \hline
-        Response Failure         & The system provides incorrect outputs or deviates from expected state transitions, potentially leading to wrong results. \cite{Tanenbaum2023}                                                          \\ \hline
-        Arbitrary Failure        & The system produces random or unpredictable responses at arbitrary times, potentially with incorrect data. This type of failure is challenging to diagnose and manage. \cite{Tanenbaum2023} \\ \hline
+        \textbf{Type of Failure} & \textbf{Description}                                                                                                                                                                                  \\ \hline
+        Crash Failure            & The system halts and stops all operations entirely. Although it was functioning correctly before the halt, it does not resume operations or provide responses after the failure \cite{Tanenbaum2023}. \\ \hline
+        Omission Failure         & The system fails to send or receive necessary messages, impacting communication and task coordination \cite{Isukapalli2024}.                                                                          \\ \hline
+        Timing Failure           & The system’s response occurs outside a specified time interval, either too early or too late, causing issues in time-sensitive operations \cite{Isukapalli2024}.                                      \\ \hline
+        Response Failure         & The system provides incorrect outputs or deviates from expected state transitions, potentially leading to wrong results \cite{Tanenbaum2023}.                                                         \\ \hline
+        Arbitrary Failure        & The system produces random or unpredictable responses at arbitrary times, potentially with incorrect data. This type of failure is challenging to diagnose and manage \cite{Tanenbaum2023}.           \\ \hline
     \end{tabular}
     \caption{Brief description of failure types}
     \label{tab:failure_types}
@@ -104,7 +104,7 @@ The retry mechanism is a widely adopted and straightforward technique that invol
 
 This approach operates by attempting the operation a predefined number of times or until a set timeout is reached. If the retries ultimately fail, the system can fallback on alternative measures, such as logging the failure, invoking a fallback operation, or redirecting the request to another asset \cite{Isukapalli2024}. These measures ensure that in the event of a persistent fault, the system will make controlled attempts and try to fallback in a safe manner.
 
-The retry mechanism’s simplicity and low implementation overhead make it ideal for scenarios where the cost of a retry is negligible compared to the complexity of alternative solutions. It is particularly effective in network communication, where transient issues such as dropped packets or server unavailability often resolve with subsequent attempts. In case of an unresolved situation it is created an omission failure due to the missing communication. Additionally, it is well-suited for database systems to handle transient locking or deadlock conditions, as well as in microservice architectures, where downstream services may temporarily become unresponsive but recover shortly thereafter \cite{Kleppmann2017}.
+The retry mechanism’s simplicity and low implementation overhead make it ideal for scenarios where the cost of a retry is insignificant compared to the complexity of alternative solutions. It is particularly effective in network communication, where transient issues such as dropped packets or server unavailability often resolve with subsequent attempts \cite{Isukapalli2024}. In case of an unresolved situation it is created an omission failure due to the missing communication. Additionally, it is well-suited for database systems to handle transient locking or deadlock conditions, as well as in microservice architectures, where downstream services may temporarily become unresponsive but recover shortly thereafter \cite{Kleppmann2017}.
 
 This strategy aligns effectively with Actor Models due to their inherent monitoring capabilities, which detect errors and initiate retries automatically. Frameworks such as Akka with Scala have built-in support for this mechanism \cite{Isukapalli2024}.
 
@@ -124,7 +124,7 @@ Circuit breakers operate in three primary states: Closed, Open, and Half-Open \c
 
 The Circuit Breaker pattern is particularly well-suited for distributed systems, such as microservice architectures, where dependencies on external services can lead to cascading failures \cite{fowler-circuit-breakers}. For instance, if a downstream service becomes unresponsive, the circuit breaker blocks further requests, providing the service with time to heal and avoiding the risk of overloading it with retries \cite{Vitillo2021}. It is equally effective in scenarios involving a third-party \gls{API}, where temporary rate limits or outages can impact availability. In database systems, circuit breakers can mitigate the effects of resource contention or extended downtime by isolating problematic queries, ensuring the broader system remains operational.
 
-When compared to pure retry mechanisms, the Circuit Breaker pattern provides a more sophisticated approach to fault tolerance. While retries focus on recovering from transient faults, they can harm even more issues under conditions such as system overload or persistent failures \cite{Vitillo2021}. In contrast, circuit breakers proactively block failing operations, reducing the risk of cascading failures and preserving overall system stability. This type of isolation makes circuit breakers an valuable strategy in building fault-tolerant systems.
+When compared to pure retry mechanisms, the Circuit Breaker pattern provides a more sophisticated approach to fault tolerance. While retries focus on recovering from transient faults, they can harm even more issues under conditions such as system overload or persistent failures \cite{Vitillo2021}. In contrast, circuit breakers proactively block failing operations, reducing the risk of cascading failures and preserving overall system stability.
 
 \subsubsection{Replication and Redundancy}
 
@@ -146,7 +146,7 @@ Achieving consensus is essential in distributed systems to ensure that a group o
 
 \textit{\underline{Paxos}}
 
-Paxos appeared in 1989 and has evolved over time, earning a reputation as a complex and difficult to understand algorithm \cite{Tanenbaum2023}. Due to its challenges and the availability of newer alternatives, such as Raft, that is described bellow. This Paxos explanation will focus on its core concepts without delving into exhaustive details.
+Paxos appeared in 1989 and has evolved over time, earning a reputation as a complex and difficult to understand algorithm \cite{Tanenbaum2023}. Due to its challenges and the emergence of newer alternatives like Raft, which is described below, this explanation of Paxos will concentrate on its core concepts without going into exhaustive detail.
 
 Paxos ensures that a group of distributed replicas agrees on a single value, even in the presence of faults. It operates under challenging conditions: replicas may crash and recover, messages can be delayed, reordered, or lost, and no assumptions are made about message delivery timing \cite{Howard2020, Tanenbaum2023}. The algorithm revolves around three distinct roles \cite{Coulouris2012, Howard2020}:
 
@@ -160,7 +160,7 @@ With the roles defined, the Paxos algorithm progresses through the following pha
 
 \begin{itemize}
     \item \textbf{Prepare Phase:}
-          A proposer generates a proposal with a unique sequence number and sends a \textit{prepare request} to a list of acceptors.
+          A proposer generates a proposal with a unique sequence number and sends a \emph{prepare request} to a list of acceptors.
           \begin{itemize}
               \item Acceptors respond with a \textit{promise} not to accept earlier proposals.
               \item If an acceptor has already accepted a value, it shares this value with the proposer.
@@ -189,7 +189,7 @@ The inherent complexity of Paxos has also driven the creation of simpler consens
 
 Raft is a consensus protocol designed to enable fault-tolerant operation in distributed systems. It ensures that a process will eventually detect if another process has failed and take appropriate corrective action. Raft was developed as a more comprehensible and practical alternative to Paxos, addressing its complexity and promoting clarity \cite{raft-diego,Tanenbaum2023}. This algorithm fits on semi passive replication strategy.
 
-Each process in Raft maintains a log of operations, which may include both committed and uncommitted entries. The primary goal of Raft is to ensure that these logs remain consistent across all servers, such that committed operations appear in the same order and position in every log \cite{Tanenbaum2023}. To achieve this, Raft uses a leader-based approach, where one server assumes the role of leader while the remaining servers act as followers. The leader is responsible for determining the sequence of operations and ensuring their consistent replication \cite{Vitillo2021}. The typical number of nodes is five, which theoretically allows for two failures \cite{raft-diego}.
+Each process in Raft maintains a log of operations, which may include both committed and uncommitted entries. The primary goal of Raft is to ensure that these logs remain consistent across all servers, such that committed operations appear in the same order and position in every log \cite{Tanenbaum2023}. To achieve this, Raft uses a leader-based approach, where one server assumes the role of leader while the remaining servers act as followers. The leader is responsible for determining the sequence of operations and ensuring their consistent replication \cite{Vitillo2021}. The typical number of nodes used is five \cite{raft-diego}.
 
 When a operation request is submitted, the leader appends the operation to its log as a tuple where it contains: the operation to be executed, the current term of the leader, and the index of the operation in the leader's logs \cite{Tanenbaum2023}. The term is reset every time an election occurs, starting from zero \cite{raft-diego}. This information is then propagated to the followers using a process inspired by the two-phase commit protocol, where it consists on \cite{Tanenbaum2023,Vitillo2021}:
 \begin{enumerate}
@@ -227,19 +227,19 @@ Raft is widely used in distributed systems requiring high availability and consi
 
 \subsubsection{Check-pointing and Message Logging}
 
-When an error compromises the system’s state, recovery actions must be taken. These strategies focus on fault recovery by addressing errors after they occur. Their primary goal is to restore the system to an error-free state. Recovery strategies are generally classified as either backward recovery or forward recovery \cite{Tanenbaum2023}.
+When an error compromises the system’s state, recovery actions must be taken. These strategies focus on fault recovery by addressing errors after they occur. Their primary goal is to restore the system to an state without error. Recovery strategies are generally classified as either backward recovery or forward recovery \cite{Tanenbaum2023}.
 
 Forward recovery seeks to return the system to a correct state after it has entered an erroneous one. However, this approach requires prior knowledge of potential errors to execute fixes, which can be challenging or even unreliable \cite{Tanenbaum2023}. Alternatively, backward recovery involves periodically saving the system’s state and restoring it to the last known correct state when issues arise. This approach uses checkpoints, which are recorded snapshots of the system state that enables the recovery process \cite{Tanenbaum2023}.
 
-Check-pointing is a backward recovery technique. It periodically saves the state of a process, enabling it to restart from the last saved state in the event of a failure. However, this approach is computationally expensive and introduces performance overhead \cite{Tanenbaum2023,Isukapalli2024}. Furthermore, some operations are inherently irreversible, which limits the effectiveness of this strategy \cite{Tanenbaum2023}. Despite these challenges, check-pointing is a popular option for restoring the system to a known correct state where it is the reasonable strategy to be applied \cite{Isukapalli2024,Ledmi2018}.
+Check-pointing is a backward recovery technique. It periodically saves the state of a process, enabling it to restart from the last saved state in the event of a failure. However, this approach is computationally expensive and introduces performance overhead \cite{Tanenbaum2023,Isukapalli2024}. Furthermore, some operations are inherently irreversible, which limits the effectiveness of this strategy \cite{Tanenbaum2023,Ledmi2018}. 
 
 To address the performance overhead of check-pointing, a lighter approach, message logging, has been developed. This strategy involves maintaining a log of action messages of the system. By replaying these messages in the correct order, the system can recover to a consistent state without the need to record its entire state continuously \cite{Isukapalli2024,Ledmi2018}. Although checkpoints are still required to avoid replaying all messages from the beginning, the overhead is significantly reduced compared to traditional check-pointing \cite{Isukapalli2024}. For this strategy to work effectively, system operations must be deterministic, ensuring that replaying messages reproduces the correct state, which is also a limitation or even an impossibility in some cases \cite{Tanenbaum2023}.
 
-Apache Flink employs check-pointing to recover state and stream positions, ensuring that the application maintains consistent semantics even in the event of failures, as outlined in the project's documentation \cite{apache-flick}. However, these strategies can be resource-intensive, and it is crucial to carefully evaluate their suitability. In database environments where data consistency and order are critical it could be justified.
+Apache Flink employs check-pointing to recover state and stream positions, ensuring that the application maintains consistent semantics even in the event of failures, as outlined in the project's documentation \cite{apache-flick}. However, these strategies can be resource-intensive, and it is crucial to carefully evaluate their suitability.
 
-\subsubsection{Briefly Comparison Between Strategies}
+\subsubsection{Overview of Fault Tolerance Strategies}
 
-Fault tolerance is essential to ensure reliability and performance. Four key strategies have been explored, each suitable for specific scenarios of varying complexity. Retry mechanisms are a simple but effective way of dealing with transient failures such as network interruptions. For example, in an e-commerce platform, retrying a failed payment gateway request can often resolve temporary connectivity issues. In microservices, retries can be enhanced with circuit breakers that temporarily halt requests to unstable services to prevent cascading failures, such as when a downstream service becomes overloaded. For critical scenarios where fault transparency is essential, replication is more appropriate. For example, in distributed databases, replication ensures data availability even if a node fails, providing resilience for applications such as online banking or real-time analytics. Check-pointing and message logging, on the other hand, are ideal for systems where restarting is costly or inefficient. In resource-intensive processes such as \gls{AI} model training or large-scale simulations, check-pointing could allow the system to recover from the last point of progress, rather than starting from scratch and losing all data. 
+Fault tolerance is essential to ensure reliability and performance. Four key strategies have been explored, each suitable for specific scenarios of varying complexity. Retry mechanisms are a simple but effective way of dealing with transient failures such as network interruptions. For example, in an e-commerce platform, retrying a failed payment gateway request can often resolve temporary connectivity issues. In microservices, retries can be enhanced with circuit breakers that temporarily halt requests to unstable services to prevent cascading failures, such as when a downstream service becomes overloaded. For critical scenarios where fault transparency is essential, replication is more appropriate. For example, in distributed databases, replication ensures data availability even if a node fails, providing resilience for applications such as online banking or real-time analytics. Check-pointing and message logging, on the other hand, are ideal for systems where restarting is costly or inefficient. In resource-intensive processes such as \gls{AI} model training or large-scale simulations, check-pointing could allow the system to recover from the last point of progress, rather than starting from scratch and losing all data.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%% Distributed Programming Languages %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -247,7 +247,7 @@ Fault tolerance is essential to ensure reliability and performance. Four key str
 
 \section{Distributed and Concurrency Programming}
 
-Distributed and concurrent programming languages plays a important role in building resilient and fault-tolerant systems \cite{Armstrong2013}. In distributed systems, where components operate across multiple nodes, and in concurrent systems, where tasks can execute in parallel or concurrently on the same machine's \gls{CPU}, programming languages must provide mechanisms to manage faults effectively. These mechanisms should isolate faults to prevent cascading failures, at the same time ensuring overall system reliability and availability \cite{Nystrom2009}, or should have forms to equip the language with capacities to handle this type of systems by frameworks or libraries.
+Distributed and concurrent programming plays an important aspect in building resilient and fault-tolerant systems \cite{Armstrong2013}. In distributed systems, where components operate across multiple nodes, and in concurrent systems, where tasks can execute in parallel or concurrently on the same machine's \gls{CPU}, programming languages must provide mechanisms to manage faults effectively. These mechanisms should isolate faults to prevent cascading failures, at the same time ensuring overall system reliability and availability \cite{Nystrom2009}, or should have forms to equip the language with capacities to handle this type of systems by frameworks or libraries.
 
 The evolution of distributed programming languages help to address the complexities of developing distributed systems, which include issues such as concurrency, parallelism, fault tolerance, and secure communication \cite{Armstrong2013}. This has driven the evolution of new paradigms, languages, frameworks, and libraries aimed at reducing development complexity in distributed and concurrent systems \cite{Valkov2018}.
 
@@ -263,7 +263,7 @@ A core principle of the Actor Model is isolation, maintaining their own internal
 
 The Actor Model also introduces the concept of supervision, where actors can monitor the behavior of other actors and take corrective actions in the event of a failure. This supervisory mechanism significantly enhances fault tolerance, enabling systems to recover gracefully from errors without compromising overall reliability \cite{Trinder2017}.
 
-The Actor Model has been instrumental in shaping distributed system design and has been natively implemented in programming languages such as Erlang, Clojure and Elixir \cite{Randtoul2022}. Additionally, the model has been extended to other languages through frameworks and libraries. For instance, Akka brings actor-based concurrency to Scala, C\texttt{\#} and F\texttt{\#} while Kilim offers similar functionality for Java \cite{Trinder2017}. Comparable patterns can also be adopted in other languages like Go, Rust, and Ruby using libraries or custom abstractions.
+The Actor Model has been instrumental in shaping distributed system design and has been natively implemented in programming languages such as Erlang, Clojure and Elixir \cite{Randtoul2022}. Additionally, the model has been extended to other languages through frameworks and libraries. For instance, Akka brings actor-based concurrency to Java, Scala, C\texttt{\#} and F\texttt{\#} while Kilim provides similar functionality specifically for Java \cite{Trinder2017}. Comparable patterns can also be adopted in other languages like Go, Rust, and Ruby using libraries or custom abstractions.
 
 \subsubsection{Communicating Sequential Processes}
 
@@ -275,9 +275,9 @@ The \gls{CSP} model influenced on programming languages and frameworks. For exam
 
 \subsubsection{Microservices Architectures}
 
-A significant evolution in designing distributed systems has emerged with the appearance of microservices architectures. This paradigm elevates the focus to a higher level of abstraction, enabling language-agnostic systems by decomposing a monolithic application into a collection of loosely coupled, independently deployable services, each responsible for a specific function \cite{Jamshidi2018}. These services communicate using lightweight protocols such as \gls{HTTP}, \gls{gRPC}, or message queues, fostering separation of concerns, modularity, scalability, and fault tolerance \cite{Jamshidi2018}.
+A significant evolution in designing distributed systems has emerged with the appearance of microservices architectures. This paradigm elevates the focus to a higher level of abstraction, enabling language-agnostic systems by decomposing a monolithic application into a collection of loosely coupled, independently deployable services, each responsible for a specific function \cite{Jamshidi2018}. These services communicate using lightweight protocols such as \gls{HTTP}, \gls{gRPC}, or message queues, promoting separation of concerns, modularity, scalability, and fault tolerance \cite{Jamshidi2018}.
 
-Microservices architectures allow general purpose programming languages to participate in distributed computing paradigms by leveraging frameworks, libraries, and microservices principles \cite{Guidi2017}.
+Microservices architectures allow general-purpose programming languages to participate in distributed computing paradigms by leveraging frameworks, libraries, and microservices principles \cite{Guidi2017}.
 
 Although microservices are often associated with strict business principles, their abstract concepts can be adapted to focus on architectural designs that leverage communication middleware for distributed communication. By adopting these principles, it becomes possible to create distributed systems with fault-tolerant capabilities using general-purpose programming languages.
 
@@ -290,7 +290,7 @@ One widely adopted paradigm for mitigating concurrency issues is the Actor Model
 
 Haskell, a pure functional programming language, provides a deterministic approach to concurrency, ensuring consistent results regardless of execution order \cite{Valkov2018}. Its extension Cloud Haskell\footnote{Cloud Haskell: \url{https://haskell-distributed.github.io/} (accessed 4 January 2025)}, builds upon the Actor Model, drawing inspiration from Erlang, to allow distributed computation through message passing.
 
-Similarly, Akka, a framework built with Scala, adopts the Actor Model to support distributed and concurrent applications. Akka combines Scala’s strengths in functional and object-oriented programming, enabling developers to merge these paradigms effectively \cite{Valkov2018}. Unlike Erlang, Akka operates on the \gls{JVM}, providing seamless interoperability with Java-based systems \cite{Abraham2023}.
+Similarly, Akka, a framework built for Scala, adopts the Actor Model to support distributed and concurrent applications. Akka combines Scala’s strengths in functional and object-oriented programming, enabling developers to merge these paradigms effectively \cite{Valkov2018}. Unlike Erlang, Akka operates on the \gls{JVM}, providing seamless interoperability with Java-based systems \cite{Abraham2023}.
 
 Go, developed by Google, simplifies concurrent programming through its lightweight goroutines and channels, inspired by the \gls{CSP} paradigm, which abstracts threading complexities \cite{Brolos2021}. Go’s emphasis on simplicity and performance has made it a preferred choice for developing scalable microservices and cloud-native applications, particularly as microservices architectures continue to gain popularity \cite{go-docs}.
 
@@ -335,7 +335,7 @@ Instead, a comparison with Scala and Akka provides a more relevant perspective. 
 
 Furthermore, too recent or older languages with minimal popularity, such as Emerald, Oz, Unison and Gleam are excluded from this study. These languages lack widespread adoption, and insights derived from them would have limited applicability for the majority of developers, as demonstrated in Table \ref{tab:languages_comparison} with a non-appearance in the Tiobe and IEEE Spectum rankings.
 
-From another perspective, the inclusion of Go in this study adds an interesting dimension to the comparison. Go, unlike Elixir and Akka, does not have built-in support for native distributed systems. However, its increasing popularity and industry adoption make it a strong candidate for exploration \cite{Brolos2021}. By examining how Go can achieve fault tolerance using libraries and abstractions under a microservices strategy, for example, the study can assess whether an external abstraction layer can match or exceed the capabilities of languages with native support. This investigation could reveal whether the flexibility of a non-native distributed model can compensate for the lack of built-in features, providing valuable insights for developers operating in modern cloud-native environments.
+From another perspective, the inclusion of Go in this study adds an interesting dimension to the comparison. Go, unlike Elixir and Akka, does not have built-in support for native distributed systems. However, its increasing popularity and industry adoption make it a strong candidate for exploration \cite{Brolos2021}. By exploring how Go can achieve fault tolerance through libraries and abstraction strategies, this study aims to assess whether an external abstraction layer can match or even surpass the capabilities of languages with native fault tolerance support. This investigation may uncover whether the flexibility of a non-native distributed model can compensate for the absence of built-in features.
 
 \begin{comment}
 

@@ -674,4 +674,27 @@ parent={},%
 {%
 name={\acronymfont {\glsentryshort {LOC}}},%
 sort={LOC},%
-type={acronym},
+type={acronym},%
+first={LOC},%
+firstplural={LOCs},%
+text={LOC},%
+plural={LOCs},%
+description={Lines of code},%
+descriptionplural={Lines of code},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Lines of code},%
+longplural={Lines of codes},%
+short={LOC},%
+shortplural={LOCs},%
+counter={page},%
+parent={},%
+%
+}%
+

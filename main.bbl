@@ -733,8 +733,8 @@
       \strng{authorbibnamehash}{5d0a6af5a2e8dff0300b04a383ef9f21}
       \strng{authornamehash}{5d0a6af5a2e8dff0300b04a383ef9f21}
       \strng{authorfullhash}{5d0a6af5a2e8dff0300b04a383ef9f21}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{abstract}{Tolerating hardware faults in modern architectures is becoming a prominent problem due to the miniaturization of the hardware components, their increasing complexity, and the necessity to reduce costs. Software-Implemented Hardware Fault Tolerance approaches have been developed to improve system dependability regarding hardware faults without resorting to custom hardware solutions. However, these come at the expense of making the satisfaction of the timing constraints of the applications/activities harder from a scheduling standpoint. This article surveys the current state-of-the-art of fault tolerance approaches when used in the context of real-time systems, identifying the main challenges and the cross-links between these two topics. We propose a joint scheduling-failure analysis model that highlights the formal interactions among software fault tolerance mechanisms and timing properties. This model allows us to present and discuss many open research questions with the final aim to spur future research activities.}
@@ -1507,6 +1507,19 @@
       \endverb
       \keyw{Apache Hadoop,HDFS,MapReduce,Survey,Systematic literature review}
     \endentry
+    \entry{elixir-docs-hexdocs}{misc}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed at 04.01.2025}
+      \field{title}{Elixir Language Documentation}
+      \verb{urlraw}
+      \verb https://hexdocs.pm/elixir/introduction.html
+      \endverb
+      \verb{url}
+      \verb https://hexdocs.pm/elixir/introduction.html
+      \endverb
+    \endentry
     \entry{erlang-concurrency-blog}{misc}{}
       \name{author}{1}{}{%
         {{hash=b7fd67d709a9afe59f9a33c045b1d158}{%
@@ -1534,19 +1547,6 @@
       \endverb
       \verb{url}
       \verb https://www.erlang-solutions.com/blog/optimising-for-concurrency-comparing-and-contrasting-the-beam-and-jvm-virtual-machines/
-      \endverb
-    \endentry
-    \entry{elixir-docs-hexdocs}{misc}{}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
-      \field{labeltitlesource}{title}
-      \field{note}{Accessed at 04.01.2025}
-      \field{title}{Elixir Language Documentation}
-      \verb{urlraw}
-      \verb https://hexdocs.pm/elixir/introduction.html
-      \endverb
-      \verb{url}
-      \verb https://hexdocs.pm/elixir/introduction.html
       \endverb
     \endentry
     \entry{akka-docs}{misc}{}
@@ -2147,8 +2147,8 @@
       \keyw{Cluster,Concurrent programming,Distributed computing,HPC}
     \endentry
     \entry{go-kit-docs}{misc}{}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labeltitlesource}{title}
       \field{note}{Accessed at 04.01.2025}
       \field{title}{{Go-kit Documentation}}
@@ -2389,7 +2389,6 @@
       \keyw{Actors,Agents,Benchmark,Concurrency,Programming languages}
     \endentry
   \enddatalist
-  \missing{Valkov et al}
 \endrefsection
 \endinput
 
